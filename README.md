@@ -12,19 +12,12 @@
 
 ## Features.
 
-### PIC-AS PIC16F.
-
-- [PIC16F - PIC-AS General Purpose Register (GPR) Bank.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic16f/gpr.md)
-- [PIC16F - PIC-AS Common RAM Memories.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic16f/ram.md)
-
 ### PIC16F1777/8/9.
 
-- [PIC16F1777/8/9 - Internal Oscillator.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic16f177x/intosc.md)
-- [PIC16F1777/8/9 - External Oscillator.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic16f177x/extosc.md)
-- [PIC16F1777/8/9 - GPIO.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic16f177x/gpio.md)
-<!--- [PIC16F1777/8/9 - CPP-PWM](https://github.com/tronixio/trainers-pic16bit/blob/main/features/pic16f177x//cpp-pwm.md) -->
-<!--- [PIC16F1777/8/9 - SPI](https://github.com/tronixio/trainers-pic16bit/blob/main/features/pic16f177x//spi.md) -->
-<!--- [PIC16F1777/8/9 - EUSART](https://github.com/tronixio/trainers-pic16bit/blob/main/features/pic16f177x//eusart.md) -->
+- [PIC24FJxxGA00x - Internal Oscillator.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/intosc.md)
+- [PIC24FJxxGA00x - External Oscillator.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/extosc.md)
+- [PIC24FJxxGA00x - GPIO.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/gpio.md)
+- [PIC24FJxxGA00x - EUSART.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/eusart.md)
 
 ## NANO Trainer top.
 
