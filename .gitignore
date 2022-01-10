@@ -1,0 +1,14 @@
+.DS_Store
+Diptrace/
+Docs/
+*.kicad_prl
+*.kicad_sch-bak
+Kicad/*/gerber/
+Kicad/*/*-backups/
+Kicad/*/fp-info-cache
+MplabX/XC16-P24FJ64GA004.X/main.c
+MplabX/XC16-P24FJ64GA004.X/Makefile
+MplabX/XC16-P24FJ64GA004.X/build/
+MplabX/XC16-P24FJ64GA004.X/disassembly/
+MplabX/XC16-P24FJ64GA004.X/dist/
+MplabX/XC16-P24FJ64GA004.X/nbproject/
