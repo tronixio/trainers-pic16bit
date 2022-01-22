@@ -4,10 +4,6 @@
 
 - [**Nano** Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/nano/pdf/schematic.pdf)
 
-<!-- ## PIC 16-Bit MCU Features. -->
-
-<!-- - [PIC16F1777/8/9 Features](https://github.com/tronixio/trainers-pic16bit/tree/main/features#readme) -->
-
 ## Features.
 
 ### PIC16F1777/8/9.
