@@ -2,9 +2,7 @@
 
 ## Schematics.
 
-- [Schematic Nano Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/nano/pdf/schematic.pdf)
-<!-- - [PIC 16-Bit Mini Trainer.]() -->
-<!--- [PIC 16-Bit Trainer.]() -->
+- [**Nano** Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/nano/pdf/schematic.pdf)
 
 <!-- ## PIC 16-Bit MCU Features. -->
 
