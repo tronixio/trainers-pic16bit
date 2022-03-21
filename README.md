@@ -3,7 +3,9 @@
 ## Schematics.
 
 - [**Nano** Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/nano/extras/schematic.pdf)
-- [DRAFT - **Mini** Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/mini/)
+- [TODO - **Micro** Trainer.](https://github.com/tronixio/trainers-pic8bit/blob/main/Kicad/micro/extras/schematic.pdf)
+- [DRAFT - **Mini** Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/mini/extras/schematic.pdf)
+- [TODO - **PIC 16-Bit** Trainer.](https://github.com/tronixio/trainers-pic8bit/blob/main/Kicad/micro/extras/schematic.pdf)
 
 ## Features.
 
@@ -29,6 +31,14 @@
 ## MINI Trainer bottom.
 
 ![MINI Trainer bottom.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/mini/extras/bottom.png)
+
+## TODO - PIC 16-Bit Trainer top.
+
+![PIC 16-Bit Trainer top.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/trainer/extras/top.png)
+
+## TODO - PIC 16-Bit Trainer bottom.
+
+![PIC 16-Bit Trainer bottom.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/trainer/extras/bottom.png)
 
 ## Notes.
 
