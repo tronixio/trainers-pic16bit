@@ -1,6 +1,6 @@
-# Trainers Boards PIC 8-Bit.
+# Trainers Boards PIC 16-Bit.
 
-- [Trainers Boards PIC 8-Bit.](https://github.com/tronixio/trainers-pic8bit)
+- [Trainers Boards PIC 16-Bit.](https://github.com/tronixio/trainers-pic16bit)
 
 ## Notes.
 
