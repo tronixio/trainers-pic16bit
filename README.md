@@ -2,7 +2,8 @@
 
 ## Schematics.
 
-- [**Nano** Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/nano/pdf/schematic.pdf)
+- [**Nano** Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/nano/extras/schematic.pdf)
+- [DRAF - **Mini** Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/mini/)
 
 ## Features.
 
@@ -15,11 +16,19 @@
 
 ## NANO Trainer top.
 
-![NANO Trainer top.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/nano/pics/nano-top.png)
+![NANO Trainer top.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/nano/extras/top.png)
 
 ## NANO Trainer bottom.
 
-![NANO Trainer bottom.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/nano/pics/nano-bottom.png)
+![NANO Trainer bottom.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/nano/extras/bottom.png)
+
+## MINI Trainer top.
+
+![MINI Trainer top.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/mini/extras/top.png)
+
+## MINI Trainer bottom.
+
+![MINI Trainer bottom.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/mini/extras/bottom.png)
 
 ## Notes.
 
