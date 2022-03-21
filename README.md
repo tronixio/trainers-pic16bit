@@ -24,6 +24,14 @@
 
 ![NANO Trainer bottom.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/nano/extras/bottom.png)
 
+## Micro Trainer top.
+
+<!-- ![Micro Trainer top.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/micros/extras/top.png) -->
+
+## Micro Trainer bottom.
+
+<!-- ![Micro Trainer bottom.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/micros/extras/bottom.png) -->
+
 ## MINI Trainer top.
 
 ![MINI Trainer top.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/mini/extras/top.png)
