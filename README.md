@@ -3,7 +3,7 @@
 ## Schematics.
 
 - [**Nano** Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/nano/extras/schematic.pdf)
-- [DRAF - **Mini** Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/mini/)
+- [DRAFT - **Mini** Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/mini/)
 
 ## Features.
 
