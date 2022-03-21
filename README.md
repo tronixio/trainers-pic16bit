@@ -34,11 +34,11 @@
 
 ## TODO - PIC 16-Bit Trainer top.
 
-![PIC 16-Bit Trainer top.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/trainer/extras/top.png)
+<!-- ![PIC 16-Bit Trainer top.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/trainer/extras/top.png) -->
 
 ## TODO - PIC 16-Bit Trainer bottom.
 
-![PIC 16-Bit Trainer bottom.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/trainer/extras/bottom.png)
+<!-- ![PIC 16-Bit Trainer bottom.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/trainer/extras/bottom.png) -->
 
 ## Notes.
 
