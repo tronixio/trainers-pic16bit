@@ -25,7 +25,7 @@
       (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 0 -7.62 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "MOUSER" "855-M7582" (id 4) (at 0 -10.16 0)
+      (property "Mouser" "855-M7582" (id 4) (at 0 -10.16 0)
         (effects (font (size 1 1)) hide)
       )
       (property "ki_description" "2.54 Pitch Open Top Jumper Socket" (id 5) (at 0 0 0)
@@ -67,7 +67,7 @@
       (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (id 3) (at 0 -7.62 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "MOUSER" "534-9055" (id 4) (at 0 -10.16 0)
+      (property "Mouser" "534-9055" (id 4) (at 0 -10.16 0)
         (effects (font (size 1 1)) hide)
       )
       (property "ki_description" "PC Lock-In Support 3.18mm" (id 5) (at 0 0 0)
@@ -109,7 +109,7 @@
       (property "Datasheet" "https://www.mouser.fr/datasheet/2/209/EPD-200220-1171146.pdf" (id 3) (at 0 -7.62 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "MOUSER" "450-476" (id 4) (at 0 -10.16 0)
+      (property "Mouser" "450-476" (id 4) (at 0 -10.16 0)
         (effects (font (size 1 1)) hide)
       )
       (property "ki_description" "Instrument Control Knobs" (id 5) (at 0 0 0)
@@ -181,7 +181,7 @@
     (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 256.54 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "MOUSER" "855-M7582" (id 4) (at 256.54 182.88 0)
+    (property "Mouser" "855-M7582" (id 4) (at 256.54 182.88 0)
       (effects (font (size 1 1)) hide)
     )
   )
@@ -201,7 +201,7 @@
     (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 276.86 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "MOUSER" "855-M7582" (id 4) (at 276.86 182.88 0)
+    (property "Mouser" "855-M7582" (id 4) (at 276.86 182.88 0)
       (effects (font (size 1 1)) hide)
     )
   )
@@ -221,7 +221,7 @@
     (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 246.38 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "MOUSER" "855-M7582" (id 4) (at 246.38 182.88 0)
+    (property "Mouser" "855-M7582" (id 4) (at 246.38 182.88 0)
       (effects (font (size 1 1)) hide)
     )
   )
@@ -241,7 +241,7 @@
     (property "Datasheet" "https://www.mouser.fr/datasheet/2/209/EPD-200220-1171146.pdf" (id 3) (at 246.38 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "MOUSER" "450-476" (id 4) (at 246.38 177.8 0)
+    (property "Mouser" "450-476" (id 4) (at 246.38 177.8 0)
       (effects (font (size 1 1)) hide)
     )
   )
@@ -261,7 +261,7 @@
     (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 271.78 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "MOUSER" "855-M7582" (id 4) (at 271.78 182.88 0)
+    (property "Mouser" "855-M7582" (id 4) (at 271.78 182.88 0)
       (effects (font (size 1 1)) hide)
     )
   )
@@ -281,7 +281,7 @@
     (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (id 3) (at 271.78 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "MOUSER" "534-9055" (id 4) (at 271.78 177.8 0)
+    (property "Mouser" "534-9055" (id 4) (at 271.78 177.8 0)
       (effects (font (size 1 1)) hide)
     )
   )
@@ -301,7 +301,7 @@
     (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 251.46 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "MOUSER" "855-M7582" (id 4) (at 251.46 182.88 0)
+    (property "Mouser" "855-M7582" (id 4) (at 251.46 182.88 0)
       (effects (font (size 1 1)) hide)
     )
   )
@@ -321,7 +321,7 @@
     (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (id 3) (at 261.62 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "MOUSER" "534-9055" (id 4) (at 261.62 177.8 0)
+    (property "Mouser" "534-9055" (id 4) (at 261.62 177.8 0)
       (effects (font (size 1 1)) hide)
     )
   )
@@ -341,7 +341,7 @@
     (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 266.7 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "MOUSER" "855-M7582" (id 4) (at 266.7 182.88 0)
+    (property "Mouser" "855-M7582" (id 4) (at 266.7 182.88 0)
       (effects (font (size 1 1)) hide)
     )
   )
@@ -361,7 +361,7 @@
     (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 261.62 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "MOUSER" "855-M7582" (id 4) (at 261.62 182.88 0)
+    (property "Mouser" "855-M7582" (id 4) (at 261.62 182.88 0)
       (effects (font (size 1 1)) hide)
     )
   )
@@ -381,7 +381,7 @@
     (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (id 3) (at 266.7 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "MOUSER" "534-9055" (id 4) (at 266.7 177.8 0)
+    (property "Mouser" "534-9055" (id 4) (at 266.7 177.8 0)
       (effects (font (size 1 1)) hide)
     )
   )
@@ -401,7 +401,7 @@
     (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (id 3) (at 276.86 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "MOUSER" "534-9055" (id 4) (at 276.86 177.8 0)
+    (property "Mouser" "534-9055" (id 4) (at 276.86 177.8 0)
       (effects (font (size 1 1)) hide)
     )
   )
@@ -752,14 +752,14 @@
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/03f77ef7-6e4b-422a-b999-2a79ff915960"
       (reference "IC201") (unit 1) (value "TLV1117-33") (footprint "tronixio:SOT-223-3")
     )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/8842f04d-1cf7-4bd1-8f4b-6cc06a70b624"
-      (reference "IC202") (unit 1) (value "dsPIC33/PIC24F") (footprint "tronixio:DIP-28-W762")
+    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/96657b4e-50d9-46c1-88bb-d97296a2209a"
+      (reference "IC202") (unit 1) (value "MICROCHIP-PIC24FJ64GA102-ISP") (footprint "tronixio:DIP-28-W762")
     )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/253151d6-cdc9-4c0d-9799-515e8cbda321"
-      (reference "IC301") (unit 1) (value "CAT4002A") (footprint "tronixio:SOT-23-6")
+    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/2a18c81a-56c3-4e70-b384-8772ef4752eb"
+      (reference "IC301") (unit 1) (value "ONSEMI-CAT4002A-SOT-23") (footprint "tronixio:SOT-23-6")
     )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/20f9a251-d03b-4c79-a0b6-ede074b32619"
-      (reference "IC302") (unit 1) (value "MCP2221A") (footprint "tronixio:SOIC-SL-14")
+    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ff1657d3-e3fc-4778-bbec-5be8aca2417b"
+      (reference "IC302") (unit 1) (value "MICROCHIP-MCP2221A-ISL") (footprint "tronixio:SOIC-SL-14")
     )
     (path "/55795f44-b358-4de2-a286-91a0aa0ebc8a"
       (reference "JP101") (unit 1) (value "HARWIN-JUMPER-0254-06MM-BLACK") (footprint "tronixio:HARWIN-M20-7580-7583")
@@ -828,7 +828,7 @@
       (reference "K206") (unit 1) (value "MCU 2") (footprint "tronixio:zzHARWIN-M20-782144x")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/d8dfe39a-4c2d-4583-9a29-5f6578ad8af3"
-      (reference "K301") (unit 1) (value "HARWIN-254-F-1X08-VERTICAL") (footprint "tronixio:zzHARWIN-M20-782084x")
+      (reference "K301") (unit 1) (value "HARWIN-254-F-1X08-VERTICAL") (footprint "tronixio:HARWIN-M20-782084x")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/50151c1d-c91d-453c-a0af-92c029bb2229"
       (reference "K302") (unit 1) (value "HARWIN-254-F-1X06-VERTICAL") (footprint "tronixio:zzHARWIN-M20-782064x")
@@ -852,79 +852,79 @@
       (reference "P302") (unit 1) (value "PIHER-PT10MV-10K") (footprint "tronixio:PIHER-PT10MV")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/a9369e84-04c4-4b26-8073-c4fbe88c7f4d"
-      (reference "R201") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R201") (unit 1) (value "10K") (footprint "tronixio:LED-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/78883502-61df-41cc-8136-60a362ad2eda"
-      (reference "R202") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R202") (unit 1) (value "1K") (footprint "tronixio:LED-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/b7c8618b-5fd5-4999-89e8-fba013cb9ede"
-      (reference "R203") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-1206")
+      (reference "R203") (unit 1) (value "4K7") (footprint "tronixio:LED-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/99c5437e-dbc3-47a3-aae9-b12482fa0399"
-      (reference "R204") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-1206")
+      (reference "R204") (unit 1) (value "4K7") (footprint "tronixio:LED-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/8822b915-443b-4169-9f73-615862607291"
-      (reference "R205") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-1206")
+      (reference "R205") (unit 1) (value "4K7") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/773b24ed-e183-4884-993c-a78095e3e90d"
-      (reference "R301") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R301") (unit 1) (value "10K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/72591d40-dd00-4777-af3d-d80c5cac85f3"
-      (reference "R302") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R302") (unit 1) (value "1K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/97492dce-bba5-47d8-951f-eaa79d996277"
-      (reference "R303") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R303") (unit 1) (value "10K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/a84e35e6-1e41-4a8a-ad9c-3922173c0585"
-      (reference "R304") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R304") (unit 1) (value "10K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/8506ac1c-c638-4004-aaf3-6231f2fd9cb5"
-      (reference "R305") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R305") (unit 1) (value "1K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/06e9f46f-7e4c-4bed-b773-9e488e693926"
-      (reference "R306") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R306") (unit 1) (value "1K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/45472bb6-324f-458e-9081-e3a7656dc643"
-      (reference "R307") (unit 1) (value "2K4") (footprint "tronixio:RESISTOR-1206")
+      (reference "R307") (unit 1) (value "2K4") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/c0c29c26-bf3e-4c51-9e2e-c56140cbf94a"
-      (reference "R308") (unit 1) (value "2K4") (footprint "tronixio:RESISTOR-1206")
+      (reference "R308") (unit 1) (value "2K4") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/d7c3e985-bc82-4d7c-8d2e-533d7ecfd562"
-      (reference "R309") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R309") (unit 1) (value "1K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ffecd68c-c34f-42ba-9a8b-4590333b714c"
-      (reference "R310") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R310") (unit 1) (value "10K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/455f8c04-e1da-434c-ab20-39164d1b2dc0"
-      (reference "R311") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R311") (unit 1) (value "10K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/79c9c3ec-cbfe-4c66-af16-1a4d9910a649"
-      (reference "R312") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R312") (unit 1) (value "10K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/3de56383-f2b0-4cd0-9a46-6838739f3426"
-      (reference "R313") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R313") (unit 1) (value "10K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/664c73c5-bddc-422e-9b5c-68a23bc28633"
-      (reference "R314") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R314") (unit 1) (value "10K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/e60ba7f3-9b7c-4420-8c63-5afe6c50232c"
-      (reference "R315") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R315") (unit 1) (value "10K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ba9d7be2-a498-4ea6-bfa9-3798135b3eec"
-      (reference "R316") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R316") (unit 1) (value "10K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/b9cad6ce-c6ed-4a76-9d23-f660e91262df"
-      (reference "R317") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R317") (unit 1) (value "10K") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ac20018c-912f-4a10-a6a7-a8083633335f"
-      (reference "R318") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-1206")
+      (reference "R318") (unit 1) (value "4K7") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/9b7d39ee-2d23-4644-ad92-ecffb4ffdd66"
-      (reference "R319") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-1206")
+      (reference "R319") (unit 1) (value "4K7") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/4790101c-700d-40cb-8e55-6b2a24c43566"
-      (reference "R320") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-1206")
+      (reference "R320") (unit 1) (value "1K") (footprint "tronixio:LED-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/cd8bddaf-c746-41ce-944b-266ce9f17a95"
       (reference "S201") (unit 1) (value "Reset") (footprint "tronixio:ALPS-SKRPAC")
