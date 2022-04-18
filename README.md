@@ -14,6 +14,12 @@
 - [PIC24FJxxGA00x - GPIO.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/gpio.md)
 - [PIC24FJxxGA00x - EUSART.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/eusart.md)
 
+## PIC24FJxxGA10x.
+
+- [PIC24FJxxGA10x - Internal Oscillator.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga10x/intosc.md)
+- [PIC24FJxxGA10x - GPIO.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga10x/gpio.md)
+- [PIC24FJxxGA10x - EUSART.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxgaq0x/eusart.md)
+
 ## NANO Trainer Top.
 
 ![NANO Trainer Top.](https://raw.githubusercontent.com/tronixio/trainers-pic16bit/main/Kicad/nano/extras/top.png)
