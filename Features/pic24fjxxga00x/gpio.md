@@ -1,9 +1,9 @@
-# PIC24FJxxGA002/GA004 - GPIO.
+# PIC24FJxxGA002/4 - GPIO.
 
 ## 0.Contents.
 
 - [1.PIC24FJxxGA002 GPIO.](#1pic24fjxxga002-gpio)
-- [2.PIC24FJxxGA004 GPIO.](#2gpio-pic24fjxxga004-gpio)
+- [2.PIC24FJxxGA004 GPIO.](#2pic24fjxxga004-gpio)
 
 ## 1.PIC24FJxxGA002 GPIO.
 
@@ -75,7 +75,7 @@ int main(void)
 
 <p align="center"><img alt="GPIO B" src="../pics/pic24fjxxga002-gpio-b.png"></p>
 
-## 2.GPIO PIC24FJxxGA004 GPIO.
+## 2.PIC24FJxxGA004 GPIO.
 
 ```c
 // Configuration Registers.
@@ -85,8 +85,8 @@ int main(void)
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA002 - Compile with XC16(v2.00).
-// PIC24FJxxGA002 - @8MHz Internal Oscillator.
+// PIC24FJxxGA004 - Compile with XC16(v2.00).
+// PIC24FJxxGA004 - @8MHz Internal Oscillator.
 
 // GPIO Ports.
 
