@@ -16,7 +16,7 @@
 #pragma config WPFP = WPFP63, SOSCSEL = IO, WUTSEL = LEG
 #pragma config WPDIS = WPDIS, WPCFG = WPCFGDIS, WPEND = WPENDMEM
 #pragma config POSCMOD = NONE, I2C1SEL = PRI, IOL1WAY = ON
-#pragma config OSCIOFNC = ON, FCKSM = CSDCMD, FNOSC = FRC, IESO = OFF
+#pragma config OSCIOFNC = OFF, FCKSM = CSDCMD, FNOSC = LPRC, IESO = OFF
 #pragma config WDTPS = PS32768, FWPSA = PR128, WINDIS = OFF
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
@@ -90,7 +90,7 @@ int main(void)
 #pragma config WPFP = WPFP63, SOSCSEL = IO, WUTSEL = LEG
 #pragma config WPDIS = WPDIS, WPCFG = WPCFGDIS, WPEND = WPENDMEM
 #pragma config POSCMOD = NONE, I2C1SEL = PRI, IOL1WAY = ON
-#pragma config OSCIOFNC = ON, FCKSM = CSDCMD, FNOSC = FRC, IESO = OFF
+#pragma config OSCIOFNC = OFF, FCKSM = CSDCMD, FNOSC = FRC, IESO = OFF
 #pragma config WDTPS = PS32768, FWPSA = PR128, WINDIS = OFF
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
@@ -179,7 +179,7 @@ int main(void)
 #pragma config WPFP = WPFP63, SOSCSEL = IO, WUTSEL = LEG
 #pragma config WPDIS = WPDIS, WPCFG = WPCFGDIS, WPEND = WPENDMEM
 #pragma config POSCMOD = NONE, I2C1SEL = PRI, IOL1WAY = ON
-#pragma config OSCIOFNC = ON, FCKSM = CSDCMD, FNOSC = FRC, IESO = OFF
+#pragma config OSCIOFNC = OFF, FCKSM = CSDCMD, FNOSC = FRCDIV, IESO = OFF
 #pragma config WDTPS = PS32768, FWPSA = PR128, WINDIS = OFF
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
@@ -298,7 +298,7 @@ int main(void)
 #pragma config WPFP = WPFP63, SOSCSEL = IO, WUTSEL = LEG
 #pragma config WPDIS = WPDIS, WPCFG = WPCFGDIS, WPEND = WPENDMEM
 #pragma config POSCMOD = NONE, I2C1SEL = PRI, IOL1WAY = ON
-#pragma config OSCIOFNC = ON, FCKSM = CSDCMD, FNOSC = FRC, IESO = OFF
+#pragma config OSCIOFNC = OFF, FCKSM = CSDCMD, FNOSC = FRCPLL, IESO = OFF
 #pragma config WDTPS = PS32768, FWPSA = PR128, WINDIS = OFF
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
