@@ -54,7 +54,7 @@ int main(void)
 
 - FOSC=24.576MHz, DOZE=000, DOZEN=0.
 
-<p align="center"><img alt=="EC" src="./pics/ec.png"></p>
+<p align="center"><img alt="EC" src="../pics/ec.png"></p>
 
 ---
 DISCLAIMER: THIS CODE IS PROVIDED WITHOUT ANY WARRANTY OR GUARANTEES.
