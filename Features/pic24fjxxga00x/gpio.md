@@ -69,11 +69,11 @@ int main(void)
 
 - Port A.
 
-<p align="center"><img alt=="GPIO A" src="./pics/pic24fjxxga002-gpio-a.png"></p>
+<p align="center"><img alt="GPIO A" src="../pics/pic24fjxxga002-gpio-a.png"></p>
 
 - Port B.
 
-<p align="center"><img alt=="GPIO B" src="./pics/pic24fjxxga002-gpio-b.png"></p>
+<p align="center"><img alt="GPIO B" src="../pics/pic24fjxxga002-gpio-b.png"></p>
 
 ## 2.GPIO PIC24FJxxGA004 GPIO.
 
@@ -131,15 +131,15 @@ int main(void)
 
 - Port A.
 
-<p align="center"><img alt=="GPIO A" src="./pics/pic24fjxxga004-gpio-a.png"></p>
+<p align="center"><img alt="GPIO A" src="../pics/pic24fjxxga004-gpio-a.png"></p>
 
 - Port B.
 
-<p align="center"><img alt=="GPIO B" src="./pics/pic24fjxxga004-gpio-b.png"></p>
+<p align="center"><img alt="GPIO B" src="../pics/pic24fjxxga004-gpio-b.png"></p>
 
 - Port C.
 
-<p align="center"><img alt=="GPIO C" src="./pics/pic24fjxxga004-gpio-c.png"></p>
+<p align="center"><img alt="GPIO C" src="../pics/pic24fjxxga004-gpio-c.png"></p>
 
 ---
 DISCLAIMER: THIS CODE IS PROVIDED WITHOUT ANY WARRANTY OR GUARANTEES.
