@@ -26,26 +26,26 @@
 // MCU.RA3 -> OSCILLOSCOPE.PROBE.A.
 
 // PIC16-Bit Nano Trainer.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
 
 // PIC16-Bit Mini Trainer.
-// JUMPER.URX - Open.
-// JUMPER.UTX - Open.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
+// JUMPER.URX - Not Use.
+// JUMPER.UTX - Not Use.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
 // JUMPER.VREG - GND.
 // JUMPER.VCAP - Close.
-// JUMPER.BCKL - Open.
+// JUMPER.BCKL - Not Use.
 
 // PIC16-Bit Trainer.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
-// JUMPER.VEE - Open.
-// JUMPER.BCKL - Open.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
+// JUMPER.VEE - Not Use.
+// JUMPER.BCKL - Not Use.
 // JUMPER.VREG - GND.
 // JUMPER.VCAP - Close.
-// JUMPER.SPI/I2C - Open.
+// JUMPER.SPI/I2C - Not Use.
 
 // Main.
 int main(void)
@@ -96,26 +96,26 @@ int main(void)
 // MCU.RA3 -> OSCILLOSCOPE.PROBE.A.
 
 // PIC16-Bit Nano Trainer.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
 
 // PIC16-Bit Mini Trainer.
-// JUMPER.URX - Open.
-// JUMPER.UTX - Open.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
+// JUMPER.URX - Not Use.
+// JUMPER.UTX - Not Use.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
 // JUMPER.VREG - GND.
 // JUMPER.VCAP - Close.
-// JUMPER.BCKL - Open.
+// JUMPER.BCKL - Not Use.
 
 // PIC16-Bit Trainer.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
-// JUMPER.VEE - Open.
-// JUMPER.BCKL - Open.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
+// JUMPER.VEE - Not Use.
+// JUMPER.BCKL - Not Use.
 // JUMPER.VREG - GND.
 // JUMPER.VCAP - Close.
-// JUMPER.SPI/I2C - Open.
+// JUMPER.SPI/I2C - Not Use.
 
 // Main.
 int main(void)
@@ -181,26 +181,26 @@ int main(void)
 // MCU.RA3 -> OSCILLOSCOPE.PROBE.A.
 
 // PIC16-Bit Nano Trainer.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
 
 // PIC16-Bit Mini Trainer.
-// JUMPER.URX - Open.
-// JUMPER.UTX - Open.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
+// JUMPER.URX - Not Use.
+// JUMPER.UTX - Not Use.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
 // JUMPER.VREG - GND.
 // JUMPER.VCAP - Close.
-// JUMPER.BCKL - Open.
+// JUMPER.BCKL - Not Use.
 
 // PIC16-Bit Trainer.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
-// JUMPER.VEE - Open.
-// JUMPER.BCKL - Open.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
+// JUMPER.VEE - Not Use.
+// JUMPER.BCKL - Not Use.
 // JUMPER.VREG - GND.
 // JUMPER.VCAP - Close.
-// JUMPER.SPI/I2C - Open.
+// JUMPER.SPI/I2C - Not Use.
 
 // Main.
 int main(void)
@@ -296,26 +296,26 @@ int main(void)
 // MCU.RA3 -> OSCILLOSCOPE.PROBE.A.
 
 // PIC16-Bit Nano Trainer.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
 
 // PIC16-Bit Mini Trainer.
-// JUMPER.URX - Open.
-// JUMPER.UTX - Open.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
+// JUMPER.URX - Not Use.
+// JUMPER.UTX - Not Use.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
 // JUMPER.VREG - GND.
 // JUMPER.VCAP - Close.
-// JUMPER.BCKL - Open.
+// JUMPER.BCKL - Not Use.
 
 // PIC16-Bit Trainer.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
-// JUMPER.VEE - Open.
-// JUMPER.BCKL - Open.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
+// JUMPER.VEE - Not Use.
+// JUMPER.BCKL - Not Use.
 // JUMPER.VREG - GND.
 // JUMPER.VCAP - Close.
-// JUMPER.SPI/I2C - Open.
+// JUMPER.SPI/I2C - Not Use.
 
 // Main.
 int main(void)
