@@ -2,9 +2,9 @@
 
 ## 0.Contents.
 
-- [1.PIC24FJxxGA002 - UART Rx/Tx Asynchronous - Internal Oscillator.](#1pic24fjxxga002---uart-rxtx-asynchronous---internal-oscillator)
+- [1.PIC24FJxxGA102 - UART Rx/Tx Asynchronous - Internal Oscillator.](#1pic24fjxxga102---uart-rxtx-asynchronous---internal-oscillator)
 
-## 1.PIC24FJxxGA002 - UART Rx/Tx Asynchronous - Internal Oscillator
+## 1.PIC24FJxxGA102 - UART Rx/Tx Asynchronous - Internal Oscillator
 
 ```c
 // Configuration Registers.
