@@ -2,10 +2,10 @@
 
 ## 0.Contents.
 
-- [1.PIC24FJxxGA002 GPIO.](#1pic24fjxxga002-gpio)
-- [2.PIC24FJxxGA004 GPIO.](#2pic24fjxxga004-gpio)
+- [1.PIC24FJxxGA002 - GPIO.](#1pic24fjxxga002---gpio)
+- [2.PIC24FJxxGA004 - GPIO.](#2pic24fjxxga004---gpio)
 
-## 1.PIC24FJxxGA002 GPIO.
+## 1.PIC24FJxxGA002 - GPIO.
 
 ```c
 // Configuration Registers.
@@ -75,7 +75,7 @@ int main(void)
 
 <p align="center"><img alt="GPIO B" src="../pics/pic24fjxxga002-gpio-b.png"></p>
 
-## 2.PIC24FJxxGA004 GPIO.
+## 2.PIC24FJxxGA004 - GPIO.
 
 ```c
 // Configuration Registers.
