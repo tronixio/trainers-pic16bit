@@ -50,7 +50,7 @@ int main(void)
     CLKDIVbits.DOZEN = 0b0;
     // Ports Initialization.
     // Analog Inputs Settings.
-    AD1PCFG = 0b1001111000111111;
+    AD1PCFG = 0b1111111000111111;
     // Port A Settings.
     TRISA = 0b0000000000000000;
     PORTA = 0b0000000000000000;
