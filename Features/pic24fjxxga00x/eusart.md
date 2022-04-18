@@ -1,4 +1,4 @@
-# PIC24FJxxGA002/GA004 - EUSART.
+# PIC24FJxxGA002/4 - EUSART.
 
 ## 0.Contents.
 
@@ -21,7 +21,6 @@
 #include <xc.h>
 // PIC24FJxxGA002 - Compile with XC16(v2.00).
 // PIC24FJxxGA002 - @8MHz Internal Oscillator.
-// v0.1 - 11/2020.
 
 // EUSART Asynchronous.
 
