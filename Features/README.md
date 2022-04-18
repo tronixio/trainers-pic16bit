@@ -1,6 +1,6 @@
-# Trainers Boards PIC 16-Bit.
+# PIC 16-Bit MCU Features.
 
-- [Trainers Boards PIC 16-Bit.](https://github.com/tronixio/trainers-pic16bit)
+- [PIC 16-Bit MCU Features.](https://github.com/tronixio/trainers-pic16bit#features)
 
 ## Notes.
 
