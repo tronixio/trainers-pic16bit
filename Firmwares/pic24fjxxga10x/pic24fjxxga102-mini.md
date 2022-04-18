@@ -51,11 +51,11 @@
 // Pinout.
 // MCU.RA0 <- ANALOG.AN1.
 // MCU.RA1 <- ANALOG.AN2.
-// MCU.RB2 <- ROTARY.A.
-// MCU.RB3 <- ROTARY.B.
-// MCU.RB4 <- ROTARY.S3.
-// MCU.RB5 <- SWITCH.S1.
-// MCU.RB6 <- SWITCH.S2.
+// MCU.RB2 <- SWITCH.S1.
+// MCU.RB3 <- SWITCH.S2.
+// MCU.RA2 <- ROTARY.A.
+// MCU.RA3 <- ROTARY.B.
+// MCU.RB4 <- ROTARY.S.
 
 // Definitions.
 // EUSART.
@@ -65,19 +65,19 @@
 // ASCII Characters.
 #define ASCII_CR                    0x0D
 // Rotary Encoder.
-#define ROTARY_ENCODER_A            PORTBbits.RB2
-#define ROTARY_ENCODER_B            PORTBbits.RB3
+#define ROTARY_ENCODER_A            PORTAbits.RA2
+#define ROTARY_ENCODER_B            PORTAbits.RA3
 #define ROTARY_ENCODER_SWITCH       PORTBbits.RB4
 // Switchs.
-#define SWITCH_S1                   PORTBbits.RB5
-#define SWITCH_S2                   PORTBbits.RB6
+#define SWITCH_S1                   PORTBbits.RB2
+#define SWITCH_S2                   PORTBbits.RB3
 
 // Function Prototypes.
 uint8_t eusart_readCharacter(void);
 void eusart_writeCharacter(uint8_t u8Data);
 void eusart_writeString(const uint8_t * u8Data);
 int8_t rotary_u8encoderRead(void);
-void U16toA(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base);
+void u16toa(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base);
 
 // Strings & Custom Patterns.
 const uint8_t au8Tronix[] = "\r\n\r\nTronix I/O";
@@ -113,7 +113,7 @@ void _ISR_NOPSV _T1Interrupt(void)
 }
 
 // Main.
-void main(void)
+int main(void)
 {
     // MCU Initialization.
     // Internal Oscillator Settings.
@@ -122,12 +122,12 @@ void main(void)
     // Analog Inputs Settings.
     AD1PCFG = 0b1001111000111100;
     // Port A Settings.
-    TRISA = 0b0000000000000011;
+    TRISA = 0b0000000000001111;
     PORTA = 0b0000000000000000;
     LATA = 0b0000000000000000;
     ODCA = 0b0000000000000000;
     // Port B Settings.
-    TRISB = 0b0000000001111110;
+    TRISB = 0b0000000000011110;
     PORTB = 0b0000000000000000;
     LATB = 0b0000000000000000;
     ODCB = 0b0000000000000000;
@@ -214,25 +214,25 @@ void main(void)
             __delay_us(5);
             AD1CON1bits.DONE = 0b1;
             while(!AD1CON1bits.DONE){};
-            u16ADCRead = ADC1BUF0;
-            if(u16ADC0Last != u16ADCRead){
-                U16toA(u16ADCRead, au8Buffer, 10);
-                eusart_writeString(au8Adc0);
-                eusart_writeString(au8Buffer);
-                u16ADC0Last = u16ADCRead;
-            }
+                u16ADCRead = ADC1BUF0;
+                if(u16ADC0Last != u16ADCRead){
+                    u16toa(u16ADCRead, au8Buffer, 10);
+                    eusart_writeString(au8Adc0);
+                    eusart_writeString(au8Buffer);
+                    u16ADC0Last = u16ADCRead;
+                }
             u16ADCRead = 0;
             AD1CHSbits.CH0SA = 0b00001;
             __delay_us(5);
             AD1CON1bits.DONE = 0b1;
             while(!AD1CON1bits.DONE){};
-            u16ADCRead = ADC1BUF1;
-            if(u16ADC1Last != u16ADCRead){
-                U16toA(u16ADCRead, au8Buffer, 10);
-                eusart_writeString(au8Adc1);
-                eusart_writeString(au8Buffer);
-                u16ADC1Last = u16ADCRead;
-            }
+                u16ADCRead = ADC1BUF1;
+                if(u16ADC1Last != u16ADCRead){
+                    u16toa(u16ADCRead, au8Buffer, 10);
+                    eusart_writeString(au8Adc1);
+                    eusart_writeString(au8Buffer);
+                    u16ADC1Last = u16ADCRead;
+                }
             u16AdcTimer = 0;
         }
 
@@ -262,7 +262,7 @@ void main(void)
 
         u8encoderRead += rotary_u8encoderRead();
         if(u8encoderLast != u8encoderRead){
-            U16toA(u8encoderRead, au8Buffer, 10);
+            u16toa(u8encoderRead, au8Buffer, 10);
             eusart_writeString(au8Encoder);
             eusart_writeString(au8Buffer);
             u8encoderLast = u8encoderRead;
@@ -289,11 +289,12 @@ void main(void)
         }else if(SWITCH_S2){
             if(u8switchS2Pressed){
                 eusart_writeString(au8Switch2);
-                eusart_writeString(au8Released);
-                u8switchS2Pressed = 0;
+            eusart_writeString(au8Released);
+            u8switchS2Pressed = 0;
             }
         }
     }
+    return(0);
 }
 
 // Functions.
@@ -327,7 +328,7 @@ int8_t rotary_u8encoderRead(void)
     return(u8encoderRead>>2);
 }
 
-void U16toA(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base)
+void u16toa(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base)
 {
     uint8_t u8Buffer;
     uint16_t data = u16Data;
@@ -390,135 +391,135 @@ void U16toA(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base)
 // SCL - Close.
 // VREG - GND.
 // VCAP - Close.
-// BCKL - Close.
+// BCKL - Open.
 
 // Pinout.
 // MCU.RA0 <- ANALOG.AN1.
 // MCU.RA1 <- ANALOG.AN2.
-// MCU.RB2 <- ROTARY.A.
-// MCU.RB3 <- ROTARY.B.
-// MCU.RB4 <- ROTARY.S3.
-// MCU.RB5 <- SWITCH.S1.
-// MCU.RB6 <- SWITCH.S2.
-// MCU.RB7 -> LCD.BACKLIGHT.EN.
+// MCU.RB2 <- SWITCH.S1.
+// MCU.RB3 <- SWITCH.S2.
+// MCU.RA2 <- ROTARY.A.
+// MCU.RA3 <- ROTARY.B.
+// MCU.RB4 <- ROTARY.S.
+// MCU.RB6 -> BACKLIGHT.EN.
 
 // Definitions.
 // I2C.
-#define I2C_READ                                           0b1
-#define I2C_WRITE                                          0b0
-#define I2C_FSCL_HZ                                        400000
-#define I2C_BRG                                            (((FCY/I2C_FSCL_HZ)-(FCY/10000000))-1)
+#define I2C_READ                                            0b1
+#define I2C_WRITE                                           0b0
+#define I2C_FSCL_HZ                                         400000
+#define I2C_BRG                                             (((FCY/I2C_FSCL_HZ)-(FCY/10000000))-1)
 // CAT4002A.
-#define CAT4002_DELAY_HIGH_US                              1                               
-#define CAT4002_DELAY_LED_US                               10
-#define CAT4002_DELAY_LOW_US                               5
-#define CAT4002_DELAY_DOWN_MS                              3
+#define CAT4002_DELAY_HIGH_US                               1                               
+#define CAT4002_DELAY_LED_US                                10
+#define CAT4002_DELAY_LOW_US                                5
+#define CAT4002_DELAY_DOWN_MS                               3
 // ST7036 I2C Address.
-#define ST7036_I2C_ADDRESS_78                              0x78
-#define ST7036_I2C_CONTROL_CONTINUOUS_COMMAND              0x00
-#define ST7036_I2C_CONTROL_CONTINUOUS_DATA                 0x40
-#define ST7036_I2C_CONTROL_NO_CONTINUOUS_COMMAND           0x80
-#define ST7036_I2C_CONTROL_NO_CONTINUOUS_DATA              0xC0
+#define ST7036_I2C_ADDRESS_78                               0x78
+#define ST7036_I2C_CONTROL_CONTINUOUS_COMMAND               0x00
+#define ST7036_I2C_CONTROL_CONTINUOUS_DATA                  0x40
+#define ST7036_I2C_CONTROL_NO_CONTINUOUS_COMMAND            0x80
+#define ST7036_I2C_CONTROL_NO_CONTINUOUS_DATA               0xC0
 // ST7036 Instruction Table IS2=0, IS1=0.
-#define ST7036_CLEAR_DISPLAY                               0x01
-#define ST7036_RETURN_HOME                                 0x02
-#define ST7036_ENTRY_MODE_SET_DDRAM_DECREMENT_NOSHIFT      0x04
-#define ST7036_ENTRY_MODE_SET_DDRAM_DECREMENT_SHIFT_RIGHT  0x05
-#define ST7036_ENTRY_MODE_SET_DDRAM_INCREMENT_NOSHIFT      0x06
-#define ST7036_ENTRY_MODE_SET_DDRAM_INCREMENT_SHIFT_LEFT   0x07
-#define ST7036_DISPLAY_OFF                                 0x08
-#define ST7036_DISPLAY_ON_CURSOR_OFF                       0x0C
-#define ST7036_DISPLAY_ON_CURSOR_ON_NOBLINK                0x0E
-#define ST7036_DISPLAY_ON_CURSOR_ON_BLINK                  0x0F
-#define ST7036_DISPLAY_CURSOR_SHIFT_LEFT                   0x10
-#define ST7036_DISPLAY_CURSOR_SHIFT_RIGHT                  0x14
-#define ST7036_DISPLAY_DISPLAY_SHIFT_LEFT                  0x18
-#define ST7036_DISPLAY_DISPLAY_SHIFT_RIGH                  0x1C
-#define ST7036_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x8         0x20
-#define ST7036_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x8_IS1     0x21
-#define ST7036_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x8_IS2     0x22
-#define ST7036_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8         0x28
-#define ST7036_FUNCTION_SET_4_BIT_ONE_LINE_DHFONT5x8       0x24
-#define ST7036_FUNCTION_SET_4_BIT_TWO_LINE_DHFONT5x8       0x2C
-#define ST7036_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x8         0x30
-#define ST7036_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x8_IS1     0x31
-#define ST7036_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x8_IS2     0x32
-#define ST7036_FUNCTION_SET_8_BIT_ONE_LINE_DHFONT5x8       0x34
-#define ST7036_FUNCTION_SET_8_BIT_TWO_LINE_FONT5x8         0x38
-#define ST7036_FUNCTION_SET_8_BIT_TWO_LINE_DHFONT5x8       0x3C
-#define ST7036_SET_ICON_RAM_ADDRESS                        0X40
-#define ST7036_SET_CGRAM_ADDRESS                           0x40
-#define ST7036_DDRAM_ADDRESS_FIRST_LINE                    0x80
-#define ST7036_DDRAM_ADDRESS_SECOND_LINE                   0xC0
+#define ST7036_CLEAR_DISPLAY                                0x01
+#define ST7036_RETURN_HOME                                  0x02
+#define ST7036_ENTRY_MODE_SET_DDRAM_DECREMENT_NOSHIFT       0x04
+#define ST7036_ENTRY_MODE_SET_DDRAM_DECREMENT_SHIFT_RIGHT   0x05
+#define ST7036_ENTRY_MODE_SET_DDRAM_INCREMENT_NOSHIFT       0x06
+#define ST7036_ENTRY_MODE_SET_DDRAM_INCREMENT_SHIFT_LEFT    0x07
+#define ST7036_DISPLAY_OFF                                  0x08
+#define ST7036_DISPLAY_ON_CURSOR_OFF                        0x0C
+#define ST7036_DISPLAY_ON_CURSOR_ON_NOBLINK                 0x0E
+#define ST7036_DISPLAY_ON_CURSOR_ON_BLINK                   0x0F
+#define ST7036_DISPLAY_CURSOR_SHIFT_LEFT                    0x10
+#define ST7036_DISPLAY_CURSOR_SHIFT_RIGHT                   0x14
+#define ST7036_DISPLAY_DISPLAY_SHIFT_LEFT                   0x18
+#define ST7036_DISPLAY_DISPLAY_SHIFT_RIGH                   0x1C
+#define ST7036_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x8          0x20
+#define ST7036_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x8_IS1      0x21
+#define ST7036_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x8_IS2      0x22
+#define ST7036_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8          0x28
+#define ST7036_FUNCTION_SET_4_BIT_ONE_LINE_DHFONT5x8        0x24
+#define ST7036_FUNCTION_SET_4_BIT_TWO_LINE_DHFONT5x8        0x2C
+#define ST7036_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x8          0x30
+#define ST7036_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x8_IS1      0x31
+#define ST7036_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x8_IS2      0x32
+#define ST7036_FUNCTION_SET_8_BIT_ONE_LINE_DHFONT5x8        0x34
+#define ST7036_FUNCTION_SET_8_BIT_TWO_LINE_FONT5x8          0x38
+#define ST7036_FUNCTION_SET_8_BIT_TWO_LINE_DHFONT5x8        0x3C
+#define ST7036_SET_ICON_RAM_ADDRESS                         0X40
+#define ST7036_SET_CGRAM_ADDRESS                            0x40
+#define ST7036_DDRAM_ADDRESS_FIRST_LINE                     0x80
+#define ST7036_DDRAM_ADDRESS_SECOND_LINE                    0xC0
 // ST7036 Instruction Table IS2=0, IS1=1.
-#define ST7036_BIAS_SET_1_5                                0x14
-#define ST7036_BIAS_SET_1_5_3_LINE                         0x15
-#define ST7036_BIAS_SET_1_4                                0x1C
-#define ST7036_BIAS_SET_1_4_3_LINE                         0x1D
-#define ST7036_POWER_ICON_OFF_BOOST_OFF_NO_CONTRAST        0x50
-#define ST7036_POWER_ICON_ON_BOOST_OFF_NO_CONTRAST         0x58
-#define ST7036_POWER_ICON_OFF_BOOST_ON_CONTRAST_MSB_0      0x54
-#define ST7036_POWER_ICON_OFF_BOOST_ON_CONTRAST_MSB_1      0x55
-#define ST7036_POWER_ICON_OFF_BOOST_ON_CONTRAST_MSB_2      0x56
-#define ST7036_POWER_ICON_OFF_BOOST_ON_CONTRAST_MSB_3      0x57
-#define ST7036_POWER_ICON_ON_BOOST_ON_CONTRAST_MSB_0       0x5C
-#define ST7036_POWER_ICON_ON_BOOST_ON_CONTRAST_MSB_1       0x5D
-#define ST7036_POWER_ICON_ON_BOOST_ON_CONTRAST_MSB_2       0x5E
-#define ST7036_POWER_ICON_ON_BOOST_ON_CONTRAST_MSB_3       0x5F
-#define ST7036_FOLLOWER_CONTROL_OFF                        0x60
-#define ST7036_FOLLOWER_CONTROL_ON_RAB_0                   0x68
-#define ST7036_FOLLOWER_CONTROL_ON_RAB_1                   0x69
-#define ST7036_FOLLOWER_CONTROL_ON_RAB_2                   0x6A
-#define ST7036_FOLLOWER_CONTROL_ON_RAB_3                   0x6B
-#define ST7036_FOLLOWER_CONTROL_ON_RAB_4                   0x6C
-#define ST7036_FOLLOWER_CONTROL_ON_RAB_5                   0x6D
-#define ST7036_FOLLOWER_CONTROL_ON_RAB_6                   0x6E
-#define ST7036_FOLLOWER_CONTROL_ON_RAB_7                   0x6F
-#define ST7036_CONTRAST_LSB_0                              0x70
-#define ST7036_CONTRAST_LSB_1                              0x71
-#define ST7036_CONTRAST_LSB_2                              0x72
-#define ST7036_CONTRAST_LSB_3                              0x73
-#define ST7036_CONTRAST_LSB_4                              0x74
-#define ST7036_CONTRAST_LSB_5                              0x75
-#define ST7036_CONTRAST_LSB_6                              0x76
-#define ST7036_CONTRAST_LSB_7                              0x77
-#define ST7036_CONTRAST_LSB_8                              0x78
-#define ST7036_CONTRAST_LSB_9                              0x79
-#define ST7036_CONTRAST_LSB_10                             0x7A
-#define ST7036_CONTRAST_LSB_11                             0x7B
-#define ST7036_CONTRAST_LSB_12                             0x7C
-#define ST7036_CONTRAST_LSB_13                             0x7D
-#define ST7036_CONTRAST_LSB_14                             0x7E
-#define ST7036_CONTRAST_LSB_15                             0x7F
+#define ST7036_BIAS_SET_1_5                                 0x14
+#define ST7036_BIAS_SET_1_5_3_LINE                          0x15
+#define ST7036_BIAS_SET_1_4                                 0x1C
+#define ST7036_BIAS_SET_1_4_3_LINE                          0x1D
+#define ST7036_POWER_ICON_OFF_BOOST_OFF_NO_CONTRAST         0x50
+#define ST7036_POWER_ICON_ON_BOOST_OFF_NO_CONTRAST          0x58
+#define ST7036_POWER_ICON_OFF_BOOST_ON_CONTRAST_MSB_0       0x54
+#define ST7036_POWER_ICON_OFF_BOOST_ON_CONTRAST_MSB_1       0x55
+#define ST7036_POWER_ICON_OFF_BOOST_ON_CONTRAST_MSB_2       0x56
+#define ST7036_POWER_ICON_OFF_BOOST_ON_CONTRAST_MSB_3       0x57
+#define ST7036_POWER_ICON_ON_BOOST_ON_CONTRAST_MSB_0        0x5C
+#define ST7036_POWER_ICON_ON_BOOST_ON_CONTRAST_MSB_1        0x5D
+#define ST7036_POWER_ICON_ON_BOOST_ON_CONTRAST_MSB_2        0x5E
+#define ST7036_POWER_ICON_ON_BOOST_ON_CONTRAST_MSB_3        0x5F
+#define ST7036_FOLLOWER_CONTROL_OFF                         0x60
+#define ST7036_FOLLOWER_CONTROL_ON_RAB_0                    0x68
+#define ST7036_FOLLOWER_CONTROL_ON_RAB_1                    0x69
+#define ST7036_FOLLOWER_CONTROL_ON_RAB_2                    0x6A
+#define ST7036_FOLLOWER_CONTROL_ON_RAB_3                    0x6B
+#define ST7036_FOLLOWER_CONTROL_ON_RAB_4                    0x6C
+#define ST7036_FOLLOWER_CONTROL_ON_RAB_5                    0x6D
+#define ST7036_FOLLOWER_CONTROL_ON_RAB_6                    0x6E
+#define ST7036_FOLLOWER_CONTROL_ON_RAB_7                    0x6F
+#define ST7036_CONTRAST_LSB_0                               0x70
+#define ST7036_CONTRAST_LSB_1                               0x71
+#define ST7036_CONTRAST_LSB_2                               0x72
+#define ST7036_CONTRAST_LSB_3                               0x73
+#define ST7036_CONTRAST_LSB_4                               0x74
+#define ST7036_CONTRAST_LSB_5                               0x75
+#define ST7036_CONTRAST_LSB_6                               0x76
+#define ST7036_CONTRAST_LSB_7                               0x77
+#define ST7036_CONTRAST_LSB_8                               0x78
+#define ST7036_CONTRAST_LSB_9                               0x79
+#define ST7036_CONTRAST_LSB_10                              0x7A
+#define ST7036_CONTRAST_LSB_11                              0x7B
+#define ST7036_CONTRAST_LSB_12                              0x7C
+#define ST7036_CONTRAST_LSB_13                              0x7D
+#define ST7036_CONTRAST_LSB_14                              0x7E
+#define ST7036_CONTRAST_LSB_15                              0x7F
 // ST7036 Instruction Table IS2=1, IS1=0.
-#define ST7036_DOUBLE_HEIGHT_FONT_COM9_COM24               0x10
-#define ST7036_DOUBLE_HEIGHT_FONT_COM1_COM16               0x11
+#define ST7036_DOUBLE_HEIGHT_FONT_COM9_COM24                0x10
+#define ST7036_DOUBLE_HEIGHT_FONT_COM1_COM16                0x11
 // ST7036 Delays.
-#define ST7036_CLEAR_DISPLAY_DELAY_MS                      2
-#define ST7036_INITIALIZATION_DELAY_MS                     40
+#define ST7036_CLEAR_DISPLAY_DELAY_MS                       2
+#define ST7036_INITIALIZATION_DELAY_MS                      40
 // NHD-C0220BiZ Configuration.
-#define C0220BiZ_CONFIGURATION_I2C_ADDRESS                 ST7036_I2C_ADDRESS_78
-#define C0220BiZ_CONFIGURATION_FIRST_LINE                  ST7036_DDRAM_ADDRESS_FIRST_LINE
-#define C0220BiZ_CONFIGURATION_SECOND_LINE                 ST7036_DDRAM_ADDRESS_SECOND_LINE
-#define C0220BiZ_CONFIGURATION_CHARACTERS                  20
+#define C0220BiZ_CONFIGURATION_I2C_ADDRESS                  ST7036_I2C_ADDRESS_78
+#define C0220BiZ_CONFIGURATION_FIRST_LINE                   ST7036_DDRAM_ADDRESS_FIRST_LINE
+#define C0220BiZ_CONFIGURATION_SECOND_LINE                  ST7036_DDRAM_ADDRESS_SECOND_LINE
+#define C0220BiZ_CONFIGURATION_CHARACTERS                   20
 // ASCII Characters.
-#define ASCII_SPACE                                        0x20
+#define ASCII_SPACE                                         0x20
 // Patterns.
-#define PATTERN_BATTERY_FULL                               0x04
-#define PATTERN_BATTERY_3_5                                0x03
-#define PATTERN_BATTERY_2_5                                0x02
-#define PATTERN_BATTERY_1_5                                0x01
-#define PATTERN_BATTERY_EMPTY                              0x00
+#define PATTERN_BATTERY_FULL                                0x04
+#define PATTERN_BATTERY_3_5                                 0x03
+#define PATTERN_BATTERY_2_5                                 0x02
+#define PATTERN_BATTERY_1_5                                 0x01
+#define PATTERN_BATTERY_EMPTY                               0x00
 // LCD.
-#define LCD_BACKLIGHT_OFF                                  LATBbits.LATB7 = 0b0
-#define LCD_BACKLIGHT_ON                                   LATBbits.LATB7 = 0b1
+#define LCD_BACKLIGHT_OFF                                   LATBbits.LATB6 = 0b0
+#define LCD_BACKLIGHT_ON                                    LATBbits.LATB6 = 0b1
 // Rotary Encoder.
-#define ROTARY_ENCODER_A                                   PORTBbits.RB2
-#define ROTARY_ENCODER_B                                   PORTBbits.RB3
-#define ROTARY_ENCODER_SWITCH                              PORTBbits.RB4
+#define ROTARY_ENCODER_A                                    PORTAbits.RA2
+#define ROTARY_ENCODER_B                                    PORTAbits.RA3
+#define ROTARY_ENCODER_SWITCH                               PORTBbits.RB4
 // Switchs.
-#define SWITCH_S1                                          PORTBbits.RB5
-#define SWITCH_S2                                          PORTBbits.RB6
+#define SWITCH_S1                                           PORTBbits.RB2
+#define SWITCH_S2                                           PORTBbits.RB3
 
 // Function Prototypes.
 void i2c_restart(void);
@@ -587,12 +588,12 @@ int main(void)
     // Analog Inputs Settings.
     AD1PCFG = 0b1001111000111100;
     // Port A Settings.
-    TRISA = 0b0000000000000011;
+    TRISA = 0b0000000000001111;
     PORTA = 0b0000000000000000;
     LATA = 0b0000000000000000;
     ODCA = 0b0000000000000000;
     // Port B Settings.
-    TRISB = 0b0000001101111100;
+    TRISB = 0b0000000000011110;
     PORTB = 0b0000000000000000;
     LATB = 0b0000000000000000;
     ODCB = 0b0000000000000000;
@@ -668,7 +669,6 @@ int main(void)
 
     uint8_t au8Buffer[6];
     uint16_t u16ADCRead, u16ADC0Last, u16ADC1Last;
-//    uint8_t u8LCDBacklight=0, u8encoderRead=0, u8encoderLast, u8encoderSwitchPressed;
     uint8_t u8LCDBacklight=0, u8encoderRotary=0, u8encoderRead=0, u8encoderLast=0, u8encoderSwitchPressed;
     uint8_t u8switchS1Pressed, u8switchS2Pressed;
     while(1){
