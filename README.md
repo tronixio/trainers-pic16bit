@@ -14,7 +14,7 @@
 
 ## Features.
 
-### PIC24FJxxGA00x
+### PIC24FJxxGA002/4
 
 - [Internal Oscillator.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/intosc.md)
 - [External Oscillator.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/extosc.md)
