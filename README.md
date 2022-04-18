@@ -7,18 +7,24 @@
 - [DRAFT - Mini Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/mini/extras/schematic.pdf)
 - [TODO - PIC 16-Bit Trainer.](https://github.com/tronixio/trainers-pic8bit/blob/main/Kicad/micro/extras/schematic.pdf)
 
-## PIC24FJxxGA00x.
+## Firmwares.
+
+- [PIC24FJxxGA10x - Internal Oscillator.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmawares/pic24fjxxga10x/pic24fjxxga102-mini.md)
+
+## Features.
+
+### PIC24FJxxGA00x
 
 - [PIC24FJxxGA00x - Internal Oscillator.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/intosc.md)
 - [PIC24FJxxGA00x - External Oscillator.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/extosc.md)
 - [PIC24FJxxGA00x - GPIO.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/gpio.md)
 - [PIC24FJxxGA00x - EUSART.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/eusart.md)
 
-## PIC24FJxxGA10x.
+### PIC24FJxxGA10x
 
-- [PIC24FJxxGA10x - Internal Oscillator.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga10x/intosc.md)
-- [PIC24FJxxGA10x - GPIO.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga10x/gpio.md)
-- [PIC24FJxxGA10x - EUSART.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga10x/eusart.md)
+- [Internal Oscillator.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga10x/intosc.md)
+- [GPIO.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga10x/gpio.md)
+- [EUSART.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga10x/eusart.md)
 
 ## NANO Trainer Top.
 
@@ -38,11 +44,11 @@
 ![Micro Trainer Bottom.](https://raw.githubusercontent.com/tronixio/trainers-pic16bit/main/Kicad/micros/extras/bottom.png)
 -->
 
-## DRAFT - MINI Trainer Top.
+## MINI Trainer Top.
 
 ![MINI Trainer Top.](https://raw.githubusercontent.com/tronixio/trainers-pic16bit/main/Kicad/mini/extras/top.png)
 
-## DRAFT - MINI Trainer Bottom.
+## MINI Trainer Bottom.
 
 ![MINI Trainer Bottom.](https://raw.githubusercontent.com/tronixio/trainers-pic16bit/main/Kicad/mini/extras/bottom.png)
 
