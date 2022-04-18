@@ -1,6 +1,6 @@
 # PIC 16-Bit MCU Features.
 
-- [PIC 16-Bit MCU Features.](https://github.com/tronixio/trainers-pic16bit/blob/main/features/README.md)
+- [PIC 16-Bit MCU Features.](https://github.com/tronixio/trainers-pic16bit#features)
 
 ## Notes.
 
