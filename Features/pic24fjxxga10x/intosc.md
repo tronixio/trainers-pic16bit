@@ -104,8 +104,8 @@ int main(void)
 // MCU.RA3 -> OSCILLOSCOPE.PROBE.A.
 
 // PIC16-Bit Nano Trainer.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
 
 // PIC16-Bit Mini Trainer.
 // JUMPER.URX - Not Use.
@@ -193,8 +193,8 @@ int main(void)
 // MCU.RA3 -> OSCILLOSCOPE.PROBE.A.
 
 // PIC16-Bit Nano Trainer.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
 
 // PIC16-Bit Mini Trainer.
 // JUMPER.URX - Not Use.
