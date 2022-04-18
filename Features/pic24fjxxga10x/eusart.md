@@ -145,7 +145,7 @@ void eusart_writeString(const uint8_t * u8Data)
 }
 ```
 
-<p align="center"><img alt="EUSART" src="./pics/eusart9600.png"></p>
+<p align="center"><img alt="EUSART" src="../pics/eusart9600.png"></p>
 
 ---
 DISCLAIMER: THIS CODE IS PROVIDED WITHOUT ANY WARRANTY OR GUARANTEES.
