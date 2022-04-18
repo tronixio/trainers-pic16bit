@@ -79,7 +79,7 @@ int main(void)
 
 - FOSC=31kHz, DOZE=000, DOZEN=0.
 
-<p align="center"><img alt=="LFRC" src="./pics/lprc.png"></p>
+<p align="center"><img alt="LFRC" src="./pics/lprc.png"></p>
 
 ## 2.FRC - Fast Internal Oscillator.
 
@@ -160,15 +160,15 @@ int main(void)
 
 - FOSC=8MHz, DOZE=000, DOZEN=0, OSCTUN=100000.
 
-<p align="center"><img alt=="FRC" src="./pics/frc-0.png"></p>
+<p align="center"><img alt="FRC" src="./pics/frc-0.png"></p>
 
 - FOSC=8MHz, DOZE=000, DOZEN=0, OSCTUN=000000.
 
-<p align="center"><img alt=="FRC" src="./pics/frc-1.png"></p>
+<p align="center"><img alt="FRC" src="./pics/frc-1.png"></p>
 
 - FOSC=8MHz, DOZE=000, DOZEN=0, OSCTUN=011111.
 
-<p align="center"><img alt=="FRC" src="./pics/frc-2.png"></p>
+<p align="center"><img alt="FRC" src="./pics/frc-2.png"></p>
 
 ## 3.FRCDIV - Fast Internal Oscillator with Postscaler.
 
@@ -259,35 +259,35 @@ int main(void)
 
 - FOSC=8MHz, RCDIV=000, DOZE=000, DOZEN=0, OSCTUN=000000.
 
-<p align="center"><img alt=="FRCDIV" src="./pics/frcdiv-0.png"></p>
+<p align="center"><img alt="FRCDIV" src="./pics/frcdiv-0.png"></p>
 
 - FOSC=4MHz, RCDIV=001, DOZE=000, DOZEN=0, OSCTUN=000000.
 
-<p align="center"><img alt=="FRCDIV" src="./pics/frcdiv-1.png"></p>
+<p align="center"><img alt="FRCDIV" src="./pics/frcdiv-1.png"></p>
 
 - FOSC=2MHz, RCDIV=010, DOZE=000, DOZEN=0, OSCTUN=000000.
 
-<p align="center"><img alt=="FRCDIV" src="./pics/frcdiv-2.png"></p>
+<p align="center"><img alt="FRCDIV" src="./pics/frcdiv-2.png"></p>
 
 - FOSC=1MHz, RCDIV=011, DOZE=000, DOZEN=0, OSCTUN=000000.
 
-<p align="center"><img alt=="FRCDIV" src="./pics/frcdiv-3.png"></p>
+<p align="center"><img alt="FRCDIV" src="./pics/frcdiv-3.png"></p>
 
 - FOSC=500kHz, RCDIV=100, DOZE=000, DOZEN=0, OSCTUN=000000.
 
-<p align="center"><img alt=="FRCDIV" src="./pics/frcdiv-4.png"></p>
+<p align="center"><img alt="FRCDIV" src="./pics/frcdiv-4.png"></p>
 
 - FOSC=250kHz, RCDIV=101, DOZE=000, DOZEN=0, OSCTUN=000000.
 
-<p align="center"><img alt=="FRCDIV" src="./pics/frcdiv-5.png"></p>
+<p align="center"><img alt="FRCDIV" src="./pics/frcdiv-5.png"></p>
 
 - FOSC=125kHz, RCDIV=110, DOZE=000, DOZEN=0, OSCTUN=000000.
 
-<p align="center"><img alt=="FRCDIV" src="./pics/frcdiv-6.png"></p>
+<p align="center"><img alt="FRCDIV" src="./pics/frcdiv-6.png"></p>
 
 - FOSC=31.25kHz, RCDIV=111, DOZE=000, DOZEN=0, OSCTUN=000000.
 
-<p align="center"><img alt=="FRCDIV" src="./pics/frcdiv-7.png"></p>
+<p align="center"><img alt="FRCDIV" src="./pics/frcdiv-7.png"></p>
 
 ## 4.FRCPLL - Fast Internal Oscillator with PLL.
 
@@ -372,11 +372,11 @@ int main(void)
 
 - FOSC=32MHz, RCDIV=000, DOZE=000, DOZEN=0, OSCTUN=000000.
 
-<p align="center"><img alt=="FRCPLL" src="./pics/frcpll-0.png"></p>
+<p align="center"><img alt="FRCPLL" src="./pics/frcpll-0.png"></p>
 
 - FOSC=16MHz, RCDIV=001, DOZE=000, DOZEN=0, OSCTUN=000000.
 
-<p align="center"><img alt=="FRCPLL" src="./pics/frcpll-1.png"></p>
+<p align="center"><img alt="FRCPLL" src="./pics/frcpll-1.png"></p>
 
 ---
 DISCLAIMER: THIS CODE IS PROVIDED WITHOUT ANY WARRANTY OR GUARANTEES.
