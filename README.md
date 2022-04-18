@@ -9,8 +9,8 @@
 
 ## Firmwares.
 
-- [PIC24FJxxGA10x - ADC - EUSART - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga10x/pic24fjxxga102-mini.md#1adc---eusart---switchs---rotary-encoder)
-- [PIC24FJxxGA10x - LCD - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga10x/pic24fjxxga102-mini.md#2adc---lcd---switchs---rotary-encoder)
+- [PIC24FJxxGA102 - ADC - EUSART - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga10x/pic24fjxxga102-mini.md#1adc---eusart---switchs---rotary-encoder)
+- [PIC24FJxxGA102 - LCD - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga10x/pic24fjxxga102-mini.md#2adc---lcd---switchs---rotary-encoder)
 
 ## Features.
 
@@ -21,7 +21,7 @@
 - [GPIO.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/gpio.md)
 - [EUSART.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga00x/eusart.md)
 
-### PIC24FJxxGA10x
+### PIC24FJxxGA102/4.
 
 - [Internal Oscillator.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga10x/intosc.md)
 - [GPIO.](https://github.com/tronixio/trainers-pic16bit/blob/main/Features/pic24fjxxga10x/gpio.md)
