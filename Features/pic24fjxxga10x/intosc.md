@@ -21,8 +21,8 @@
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA/GB00x - Compile with XC16(v2.00).
-// PIC24FJxxGA/GB00x - @xMHz Internal Oscillator.
+// PIC24FJxxGA/GB10x - Compile with XC16(v2.00).
+// PIC24FJxxGA/GB10x - @xMHz Internal Oscillator.
 
 // Low-Power Internal Internal Oscillator.
 // Clock Out Enable on RA3.
@@ -65,7 +65,7 @@ int main(void)
     // DOZE2.0 = 0 1 0 - 1:4.
     // DOZE2.0 = 0 0 1 - 1:2.
     // DOZE2.0 = 0 0 0 - 1:1.
-    CLKDIVbits.DOZE = 0b000;
+    CLKDIVbits.DOZE = 0B100;
     // DOZE - Clock Ratio Enable.
     // DOZEN.0 = 1 - DOZE Enable.
     // DOZEN.0 = 0 - DOZE Disable.
@@ -95,8 +95,8 @@ int main(void)
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA/GB00x - Compile with XC16(v2.00).
-// PIC24FJxxGA/GB00x - @xMHz Internal Oscillator.
+// PIC24FJxxGA/GB10x - Compile with XC16(v2.00).
+// PIC24FJxxGA/GB10x - @xMHz Internal Oscillator.
 
 // Fast Internal Internal Oscillator.
 // Clock Out Enable on RA3.
@@ -139,7 +139,7 @@ int main(void)
     // DOZE2.0 = 0 1 0 - 1:4.
     // DOZE2.0 = 0 0 1 - 1:2.
     // DOZE2.0 = 0 0 0 - 1:1.
-    CLKDIVbits.DOZE = 0b000;
+    CLKDIVbits.DOZE = 0B100;
     // DOZE - Clock Ratio Enable.
     // DOZEN.0 = 1 - DOZE Enable.
     // DOZEN.0 = 0 - DOZE Disable.
@@ -150,7 +150,7 @@ int main(void)
     // OSCTUNE5.0 = 0 0 0 0 0 0 - Factory Calibrated Frequency.
     // ...
     // OSCTUNE5.0 = 1 0 0 0 0 0 - Minimum Frequency.
-    OSCTUNbits.TUN = 0b000000;
+    OSCTUNbits.TUN = 0B100000;
 
     while(1){
     }
@@ -184,8 +184,8 @@ int main(void)
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA/GB00x - Compile with XC16(v2.00).
-// PIC24FJxxGA/GB00x - @xMHz Internal Oscillator.
+// PIC24FJxxGA/GB10x - Compile with XC16(v2.00).
+// PIC24FJxxGA/GB10x - @xMHz Internal Oscillator.
 
 // Fast Internal Oscillator with Postscaler.
 // Clock Out Enable on RA3.
@@ -228,7 +228,7 @@ int main(void)
     // DOZE2.0 = 0 1 0 - 1:4.
     // DOZE2.0 = 0 0 1 - 1:2.
     // DOZE2.0 = 0 0 0 - 1:1.
-    CLKDIVbits.DOZE = 0b000;
+    CLKDIVbits.DOZE = 0B100;
     // DOZE - Clock Ratio Enable.
     // DOZEN.0 = 1 - DOZE Enable.
     // DOZEN.0 = 0 - DOZE Disable.
@@ -242,14 +242,14 @@ int main(void)
     // 010 = 2MHz.
     // 001 = 4MHz.
     // 000 = 8MHz.
-    CLKDIVbits.RCDIV = 0b000;
+    CLKDIVbits.RCDIV = 0B100;
     // OSCTUNE - Oscillator Tuning.
     // OSCTUNE5.0 = 0 1 1 1 1 1 - Maximum Frequency.
     // ...
     // OSCTUNE5.0 = 0 0 0 0 0 0 - Factory Calibrated Frequency.
     // ...
     // OSCTUNE5.0 = 1 0 0 0 0 0 - Minimum Frequency.
-    OSCTUNbits.TUN = 0b000000;
+    OSCTUNbits.TUN = 0B100000;
 
     while(1){
     }
@@ -303,8 +303,8 @@ int main(void)
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA/GB00x - Compile with XC16(v2.00).
-// PIC24FJxxGA/GB00x - @xMHz Internal Oscillator.
+// PIC24FJxxGA/GB10x - Compile with XC16(v2.00).
+// PIC24FJxxGA/GB10x - @xMHz Internal Oscillator.
 
 // Fast Internal Oscillator with PLL.
 // Clock Out Enable on RA3.
@@ -347,7 +347,7 @@ int main(void)
     // DOZE2.0 = 0 1 0 - 1:4.
     // DOZE2.0 = 0 0 1 - 1:2.
     // DOZE2.0 = 0 0 0 - 1:1.
-    CLKDIVbits.DOZE = 0b000;
+    CLKDIVbits.DOZE = 0B100;
     // DOZE - Clock Ratio Enable.
     // DOZEN.0 = 1 - DOZE Enable.
     // DOZEN.0 = 0 - DOZE Disable.
@@ -355,14 +355,14 @@ int main(void)
     // FRCDIV Postscaler.
     // 001 = 4MHz.
     // 000 = 8MHz.
-    CLKDIVbits.RCDIV = 0b000;
+    CLKDIVbits.RCDIV = 0B100;
     // OSCTUNE - Oscillator Tuning.
     // OSCTUNE5.0 = 0 1 1 1 1 1 - Maximum Frequency.
     // ...
     // OSCTUNE5.0 = 0 0 0 0 0 0 - Factory Calibrated Frequency.
     // ...
     // OSCTUNE5.0 = 1 0 0 0 0 0 - Minimum Frequency.
-    OSCTUNbits.TUN = 0b000000;
+    OSCTUNbits.TUN = 0B100000;
 
     while(1){
     }
