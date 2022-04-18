@@ -2,9 +2,9 @@
 
 ## 0.Contents.
 
-- [1.PIC24FJxxGA102 GPIO.](#1pic24fjxxgA102-gpio)
+- [1.PIC24FJxxGA102 - GPIO.](#1pic24fjxxgA102---gpio)
 
-## 1.PIC24FJxxGA102 GPIO.
+## 1.PIC24FJxxGA102 - GPIO.
 
 ```c
 // Configuration Registers.
