@@ -19,7 +19,7 @@
 #define FCY     (FOSC/2)
 
 #include <xc.h>
-// PIC24FJxxGA002 - Compile with XC16(v1.70).
+// PIC24FJxxGA002 - Compile with XC16(v2.00).
 // PIC24FJxxGA002 - @8MHz Internal Oscillator.
 // v0.1 - 11/2020.
 
@@ -158,7 +158,7 @@ void eusart_writeString(const uint8_t * u8Data)
 #define FCY     (FOSC/2)
 
 #include <xc.h>
-// PIC24FJxxGA004 - Compile with XC16(v1.70).
+// PIC24FJxxGA004 - Compile with XC16(v2.00).
 // PIC24FJxxGA004 - @8MHz Internal Oscillator.
 
 // UART Rx/Tx Asynchronous.
@@ -286,7 +286,7 @@ void uart_writeString(const uint8_t * u8Data)
 #define FCY     (FOSC/2)
 
 #include <xc.h>
-// PIC24FJxxGA004 - Compile with XC16(v1.70).
+// PIC24FJxxGA004 - Compile with XC16(v2.00).
 // PIC24FJxxGA004 - @24.576MHz External Oscillator.
 
 // UART Rx/Tx Asynchronous.
