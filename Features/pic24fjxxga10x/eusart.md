@@ -21,9 +21,9 @@
 #define FCY     (FOSC/2)
 
 #include <xc.h>
-// PIC24FJxxGA002 - Compile with XC16(v2.00).
-// PIC24FJxxGA002 - @8MHz Internal Oscillator.
-// v0.1 - 11/2020.
+#include <libpic30.h>
+// PIC24FJxxGA102 - Compile with XC16(v2.00).
+// PIC24FJxxGA102 - @8MHz Internal Oscillator.
 
 // EUSART Asynchronous.
 
@@ -75,7 +75,7 @@ int main(void)
     CLKDIVbits.DOZEN = 0b0;
     // Ports Initialization.
     // Analog Inputs Settings.
-    AD1PCFG = 0b1001111000111111;
+    AD1PCFG = 0b1111111000111111;
     // Port A Settings.
     TRISA = 0b0000000000000000;
     PORTA = 0b0000000000000000;
