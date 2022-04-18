@@ -1,4 +1,4 @@
-# PIC24FJxxGA002/GA004 - Internal Oscillator.
+# PIC24FJxxGA102/GA104 - Internal Oscillator.
 
 ## 0.Contents.
 
