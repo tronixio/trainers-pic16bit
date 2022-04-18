@@ -1,4 +1,4 @@
-# PIC24FJxxGA002/GA004 - External Oscillator.
+# PIC24FJxxGA002/4 - External Oscillator.
 
 ## 0.Contents.
 
@@ -14,8 +14,8 @@
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA/GB00x - Compile with XC16(v2.00).
-// PIC24FJxxGA/GB00x - @24.576MHz External Oscillator.
+// PIC24FJxxGA002/4 - Compile with XC16(v2.00).
+// PIC24FJxxGA002/4 - @24.576MHz External Oscillator.
 
 // EC External Oscillator.
 // Clock Out Enable on RA3.
