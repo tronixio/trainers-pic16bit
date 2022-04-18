@@ -2,7 +2,7 @@
 
 ## 0.Contents.
 
-- [1.PIC24FJxxGA002 GPIO.](#1pic24fjxxga002-gpio)
+- [1.PIC24FJxxGA102 GPIO.](#1pic24fjxxgA102-gpio)
 
 ## 1.PIC24FJxxGA102 GPIO.
 
@@ -18,8 +18,8 @@
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA002 - Compile with XC16(v2.00).
-// PIC24FJxxGA002 - @8MHz Internal Oscillator.
+// PIC24FJxxGA102 - Compile with XC16(v2.00).
+// PIC24FJxxGA102 - @8MHz Internal Oscillator.
 
 // GPIO Ports.
 
@@ -72,11 +72,11 @@ int main(void)
 
 - Port A.
 
-<p align="center"><img alt=="GPIO A" src="./pics/pic24fjxxga002-gpio-a.png"></p>
+<p align="center"><img alt=="GPIO A" src="./pics/pic24fjxxgA102-gpio-a.png"></p>
 
 - Port B.
 
-<p align="center"><img alt=="GPIO B" src="./pics/pic24fjxxga002-gpio-b.png"></p>
+<p align="center"><img alt=="GPIO B" src="./pics/pic24fjxxgA102-gpio-b.png"></p>
 
 ---
 DISCLAIMER: THIS CODE IS PROVIDED WITHOUT ANY WARRANTY OR GUARANTEES.
