@@ -686,6 +686,9 @@
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/762095b0-f0fe-49f7-89e4-3e02c8b3bbeb"
       (reference "#PWR0166") (unit 1) (value "POWER-GND") (footprint "")
     )
+    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/1a1c3d19-af17-4779-a1fd-8ac5a36a50f5"
+      (reference "#PWR0168") (unit 1) (value "POWER-GND") (footprint "")
+    )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/36380bba-c7ac-4db6-bbd7-e4b4cc9c6541"
       (reference "BB301") (unit 1) (value "BREADBOARD-170") (footprint "tronixio:BREADBOARD-170")
     )
@@ -753,7 +756,7 @@
       (reference "IC201") (unit 1) (value "TLV1117-33") (footprint "tronixio:SOT-223-3")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/96657b4e-50d9-46c1-88bb-d97296a2209a"
-      (reference "IC202") (unit 1) (value "MICROCHIP-PIC24FJ64GA102-ISP") (footprint "tronixio:DIP-28-W762")
+      (reference "IC202") (unit 1) (value "MICROCHIP-PIC24FJ64GA102-ISP") (footprint "tronixio:DIP-28-W762-SOCKET")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/2a18c81a-56c3-4e70-b384-8772ef4752eb"
       (reference "IC301") (unit 1) (value "CAT4002A") (footprint "tronixio:SOT-23-6")
@@ -943,6 +946,9 @@
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/3141ece1-4043-41f7-ad57-bfde5b1512a3"
       (reference "TP202") (unit 1) (value "KEYSTONE-5006") (footprint "tronixio:KEYSTONE-5006")
+    )
+    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/72900d6b-1728-4f1d-af55-b7dbba81ac5d"
+      (reference "TP203") (unit 1) (value "KEYSTONE-2000-3") (footprint "tronixio:KEYSTONE-2000-3")
     )
   )
 )
