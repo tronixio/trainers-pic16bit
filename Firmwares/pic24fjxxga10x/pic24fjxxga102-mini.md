@@ -349,7 +349,7 @@ void U16toA(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base)
 }
 ```
 
-## 2.LDC - ADC - SWITCHS - ROTARY ENCODER.
+## 2.LCD - ADC - SWITCHS - ROTARY ENCODER.
 
 ```c
 // Configuration Registers.
