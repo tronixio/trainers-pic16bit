@@ -14,7 +14,7 @@
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA/GB00x - Compile with XC16(v1.70).
+// PIC24FJxxGA/GB00x - Compile with XC16(v2.00).
 // PIC24FJxxGA/GB00x - @24.576MHz External Oscillator.
 
 // EC External Oscillator.
