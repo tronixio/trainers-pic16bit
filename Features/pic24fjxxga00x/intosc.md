@@ -1,4 +1,4 @@
-# PIC24FJxxGA002/GA004 - Internal Oscillator.
+# PIC24FJxxGA002/4 - Internal Oscillator.
 
 ## 0.Contents.
 
@@ -17,8 +17,8 @@
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA/GB00x - Compile with XC16(v2.00).
-// PIC24FJxxGA/GB00x - @xMHz Internal Oscillator.
+// PIC24FJxxGA002/4 - Compile with XC16(v2.00).
+// PIC24FJxxGA002/4 - @xMHz Internal Oscillator.
 
 // Low-Power Internal Internal Oscillator.
 // Clock Out Enable on RA3.
@@ -87,8 +87,8 @@ int main(void)
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA/GB00x - Compile with XC16(v2.00).
-// PIC24FJxxGA/GB00x - @xMHz Internal Oscillator.
+// PIC24FJxxGA002/4 - Compile with XC16(v2.00).
+// PIC24FJxxGA002/4 - @xMHz Internal Oscillator.
 
 // Fast Internal Internal Oscillator.
 // Clock Out Enable on RA3.
@@ -172,8 +172,8 @@ int main(void)
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA/GB00x - Compile with XC16(v2.00).
-// PIC24FJxxGA/GB00x - @xMHz Internal Oscillator.
+// PIC24FJxxGA002/4 - Compile with XC16(v2.00).
+// PIC24FJxxGA002/4 - @xMHz Internal Oscillator.
 
 // Fast Internal Oscillator with Postscaler.
 // Clock Out Enable on RA3.
@@ -287,8 +287,8 @@ int main(void)
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA/GB00x - Compile with XC16(v2.00).
-// PIC24FJxxGA/GB00x - @xMHz Internal Oscillator.
+// PIC24FJxxGA002/4 - Compile with XC16(v2.00).
+// PIC24FJxxGA002/4 - @xMHz Internal Oscillator.
 
 // Fast Internal Oscillator with PLL.
 // Clock Out Enable on RA3.
