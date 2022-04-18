@@ -2,10 +2,10 @@
 
 ## 0.Contents.
 
-- [1.ADC - EUSART - SWITCHS - ROTARY ENCODER.](#1adc---eusart---switchs---rotary-encoder)
-- [2.ADC - LCD - SWITCHS - ROTARY ENCODER.](#2adc---lcd---switchs---rotary-encoder)
+- [1.EUSART - ADC - SWITCHS - ROTARY ENCODER.](#1eusart---adc---switchs---rotary-encoder)
+- [2.LCD - ADC - SWITCHS - ROTARY ENCODER.](#2lcd---adc---switchs---rotary-encoder)
 
-## 1.ADC - EUSART - SWITCHS - ROTARY ENCODER.
+## 1.EUSART - ADC - SWITCHS - ROTARY ENCODER.
 
 ```c
 // Configuration Registers.
@@ -349,7 +349,7 @@ void U16toA(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base)
 }
 ```
 
-## 2.ADC - LCD - SWITCHS - ROTARY ENCODER.
+## 2.LDC - ADC - SWITCHS - ROTARY ENCODER.
 
 ```c
 // Configuration Registers.
