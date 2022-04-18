@@ -28,8 +28,8 @@
 // MCU.RB1.EUSART.RTX.
 
 // PIC16-Bit Mini Trainer.
-// JUMPER.URX - Open.
-// JUMPER.UTX - Open.
+// JUMPER.URX - Close.
+// JUMPER.UTX - Close.
 // JUMPER.SDA - Open.
 // JUMPER.SCL - Open.
 // JUMPER.VREG - GND.
