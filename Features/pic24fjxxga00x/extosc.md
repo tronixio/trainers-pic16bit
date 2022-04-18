@@ -23,8 +23,8 @@
 // MCU.RA3 -> OSCILLOSCOPE.PROBE.A.
 
 // PIC16-Bit Nano Trainer with MEMS DSC1001CI2-024.5760.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
 
 // Main.
 int main(void)
