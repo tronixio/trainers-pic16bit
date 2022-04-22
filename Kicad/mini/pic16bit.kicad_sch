@@ -801,7 +801,7 @@
       (reference "JP205") (unit 1) (value "VCAP") (footprint "tronixio:HARWIN-M20-999024x")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/decd714e-c32f-40e5-b629-c0d4257717ea"
-      (reference "JP301") (unit 1) (value "EN BCKL") (footprint "tronixio:HARWIN-M20-999024x")
+      (reference "JP301") (unit 1) (value "BCKL") (footprint "tronixio:HARWIN-M20-999024x")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/5b2a7490-73c4-49fc-bb18-277203ce33eb"
       (reference "JP302") (unit 1) (value "UTX") (footprint "tronixio:HARWIN-M20-999024x")

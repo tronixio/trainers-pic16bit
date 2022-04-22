@@ -6,7 +6,7 @@
 
   (paper "A4")
   (title_block
-    (title "PIC8-Bit Mini Trainer")
+    (title "PIC16-Bit Mini Trainer")
     (date "01/2022")
     (rev "A")
   )
@@ -989,7 +989,7 @@
     (fp_arc (start -4 3.3) (mid -4.903738 -1.844892) (end -0.9 -5.2) (layer "F.Fab") (width 0.1) (tstamp 00e8f715-bd47-481f-bda3-61ec07a06bd0))
     (fp_arc (start -0.3 4.4) (mid -0.923087 4.342349) (end -1.5 4.1) (layer "F.Fab") (width 0.1) (tstamp 42afb9ff-61f6-4bf6-9abf-83346a657776))
     (fp_arc (start 0.9 -5.2) (mid 4.903738 -1.844893) (end 4 3.3) (layer "F.Fab") (width 0.1) (tstamp 5f6938b4-0f81-4526-a52a-7b2ae28f61a4))
-    (fp_arc (start 1.5 4.1) (mid 0.923087 4.342349) (end 0.3 4.4) (layer "F.Fab") (width 0.1) (tstamp 89e7acda-f64e-4818-9e67-f401485d7e56))
+    (fp_arc (start 1.5 4.1) (mid 0.923087 4.34235) (end 0.3 4.4) (layer "F.Fab") (width 0.1) (tstamp 89e7acda-f64e-4818-9e67-f401485d7e56))
     (fp_circle (center 0 0) (end 1.6 0) (layer "F.Fab") (width 0.1) (fill none) (tstamp 440232ba-850f-438a-be95-ff0db410e33b))
     (fp_circle (center -2.5 5.3) (end -1.5 5.3) (layer "F.Fab") (width 0.1) (fill none) (tstamp 4d3f81f5-213d-4f2a-9a42-f7e7a777748a))
     (fp_circle (center 2.5 5.3) (end 3.5 5.3) (layer "F.Fab") (width 0.1) (fill none) (tstamp a0058ac6-879b-4752-9e63-226559bd0410))
@@ -1552,7 +1552,7 @@
     (fp_line (start -3.8 2.5) (end -2.3 1) (layer "F.Fab") (width 0.1) (tstamp f5cd65b4-e169-481f-8a57-4dca0f8f8797))
     (fp_line (start -1.5 5.3) (end 1.5 5.3) (layer "F.Fab") (width 0.1) (tstamp fb476996-468d-4452-aef7-b2ef089b2c87))
     (fp_arc (start -4 3.3) (mid -4.903738 -1.844892) (end -0.9 -5.2) (layer "F.Fab") (width 0.1) (tstamp 0df335b2-298b-4679-b0a1-61c9ca76b80e))
-    (fp_arc (start 1.5 4.1) (mid 0.923087 4.342349) (end 0.3 4.4) (layer "F.Fab") (width 0.1) (tstamp 4e4789f2-31b6-4db5-bd40-e65feae8b7df))
+    (fp_arc (start 1.5 4.1) (mid 0.923087 4.34235) (end 0.3 4.4) (layer "F.Fab") (width 0.1) (tstamp 4e4789f2-31b6-4db5-bd40-e65feae8b7df))
     (fp_arc (start 0.9 -5.2) (mid 4.903738 -1.844893) (end 4 3.3) (layer "F.Fab") (width 0.1) (tstamp 724d77d6-935c-450b-98ec-02f7cd4f1f8f))
     (fp_arc (start -0.3 4.4) (mid -0.923087 4.342349) (end -1.5 4.1) (layer "F.Fab") (width 0.1) (tstamp ca1e8510-1a4a-4e08-9228-465bc0e94772))
     (fp_circle (center 0 0) (end 2.5 0) (layer "F.Fab") (width 0.1) (fill none) (tstamp 200b7583-a02e-48e5-b1f2-64b291d69eac))
