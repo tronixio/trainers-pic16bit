@@ -2,10 +2,10 @@
 
 ## 0.Contents.
 
-- [1.EUSART - ADC - SWITCHS - ROTARY ENCODER.](#1eusart---adc---switchs---rotary-encoder)
-- [2.LCD - ADC - SWITCHS - ROTARY ENCODER.](#2lcd---adc---switchs---rotary-encoder)
+- [1.DRAFT - EUSART - ADC - SWITCHS - ROTARY ENCODER.](#1draft---eusart---adc---switchs---rotary-encoder)
+- [2.DRAFT - LCD - ADC - SWITCHS - ROTARY ENCODER.](#2draft---lcd---adc---switchs---rotary-encoder)
 
-## 1.EUSART - ADC - SWITCHS - ROTARY ENCODER.
+## 1.DRAFT - EUSART - ADC - SWITCHS - ROTARY ENCODER.
 
 ```c
 // Configuration Registers.
@@ -28,7 +28,6 @@
 #include <libpic30.h>
 // PIC24FJxxGA102 - Compile with XC16(v2.00).
 // PIC24FJxxGA102 - @8MHz Internal Oscillator.
-// v0.1 - 04/2022.
 
 // Rotary encoder code from:
 // https://www.mikrocontroller.net/articles/Drehgeber
@@ -350,7 +349,7 @@ void u16toa(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base)
 }
 ```
 
-## 2.LCD - ADC - SWITCHS - ROTARY ENCODER.
+## 2.DRAFT - LCD - ADC - SWITCHS - ROTARY ENCODER.
 
 ```c
 // Configuration Registers.
