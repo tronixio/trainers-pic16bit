@@ -4058,7 +4058,7 @@
     (property "Value" "HARWIN-254-F-1X06-VERTICAL" (id 1) (at 254 144.7799 0)
       (effects (font (size 1.15 1.15)) (justify left) hide)
     )
-    (property "Footprint" "tronixio:zzHARWIN-M20-782064x" (id 2) (at 251.46 160.02 0)
+    (property "Footprint" "tronixio:HARWIN-M20-782064x" (id 2) (at 251.46 160.02 0)
       (effects (font (size 1 1)) hide)
     )
     (property "Datasheet" "https://www.harwin.com/products/M20-7820646/" (id 3) (at 251.46 162.56 0)

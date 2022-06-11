@@ -834,7 +834,7 @@
       (reference "K301") (unit 1) (value "HARWIN-254-F-1X08-VERTICAL") (footprint "tronixio:HARWIN-M20-782084x")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/50151c1d-c91d-453c-a0af-92c029bb2229"
-      (reference "K302") (unit 1) (value "HARWIN-254-F-1X06-VERTICAL") (footprint "tronixio:zzHARWIN-M20-782064x")
+      (reference "K302") (unit 1) (value "HARWIN-254-F-1X06-VERTICAL") (footprint "tronixio:HARWIN-M20-782064x")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/a7315d20-bb48-4d3b-bcb4-25452cf981c8"
       (reference "LCD301") (unit 1) (value "NHD-C0220BIZ") (footprint "tronixio:NHD-C0220BIZ")
