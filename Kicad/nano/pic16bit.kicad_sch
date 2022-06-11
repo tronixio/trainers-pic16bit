@@ -623,7 +623,7 @@
       )
     )
     (symbol "tronixio:MICROCHIP-MCP2221A-IST" (pin_names (offset 0.5)) (in_bom yes) (on_board yes)
-      (property "Reference" "IC" (id 0) (at 0 13.97 0)
+      (property "Reference" "U" (id 0) (at 0 13.97 0)
         (effects (font (size 1.15 1.15)))
       )
       (property "Value" "MICROCHIP-MCP2221A-IST" (id 1) (at 0 -17.78 0)
@@ -899,7 +899,7 @@
       )
     )
     (symbol "tronixio:ROHM-BU33SD5WG-500-SOT" (pin_names (offset 0.5)) (in_bom yes) (on_board yes)
-      (property "Reference" "IC" (id 0) (at 0 8.89 0)
+      (property "Reference" "U" (id 0) (at 0 8.89 0)
         (effects (font (size 1.15 1.15)))
       )
       (property "Value" "ROHM-BU33SD5WG-500-SOT" (id 1) (at 0 -6.35 0)
@@ -1146,7 +1146,7 @@
       )
     )
     (symbol "tronixio:SYMBOL-PIC16BIT-TQFP-44" (pin_names (offset 0.5)) (in_bom yes) (on_board yes)
-      (property "Reference" "IC" (id 0) (at 0 2.54 0)
+      (property "Reference" "U" (id 0) (at 0 2.54 0)
         (effects (font (size 1.15 1.15)))
       )
       (property "Value" "SYMBOL-PIC16BIT-TQFP-44" (id 1) (at 0 -5.08 0)
@@ -3536,7 +3536,7 @@
   (symbol (lib_id "tronixio:MICROCHIP-MCP2221A-IST") (at 119.38 142.24 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 15b76320-9a6e-4ed9-be26-15ea028b6641)
-    (property "Reference" "*IC2" (id 0) (at 111.76 128.27 0)
+    (property "Reference" "U2" (id 0) (at 111.76 128.27 0)
       (effects (font (size 1.15 1.15)) (justify left))
     )
     (property "Value" "MCP2221A" (id 1) (at 127 128.27 0)
@@ -4819,7 +4819,7 @@
   (symbol (lib_id "tronixio:ROHM-BU33SD5WG-500-SOT") (at 210.82 142.24 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid ef27345a-c7c1-44c7-b4de-dc92b9c6de34)
-    (property "Reference" "IC3" (id 0) (at 210.82 133.35 0)
+    (property "Reference" "U3" (id 0) (at 210.82 133.35 0)
       (effects (font (size 1.15 1.15)))
     )
     (property "Value" "ROHM-BU33SD5WG-500-SOT" (id 1) (at 210.82 148.59 0)
@@ -4908,10 +4908,10 @@
   (symbol (lib_id "tronixio:SYMBOL-PIC16BIT-TQFP-44") (at 190.5 66.04 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid fe5505d7-fd66-4a2d-bf7d-5f6dcf65e116)
-    (property "Reference" "*IC1" (id 0) (at 190.5 60.96 0)
+    (property "Reference" "U1" (id 0) (at 190.5 63.5 0)
       (effects (font (size 1.15 1.15)))
     )
-    (property "Value" "PIC24/dsPIC33" (id 1) (at 190.5 63.5 0)
+    (property "Value" "PIC24/dsPIC33" (id 1) (at 190.5 66.04 0)
       (effects (font (size 1.15 1.15)))
     )
     (property "Footprint" "tronixio:TQFP-44" (id 2) (at 190.5 96.52 0)
@@ -5082,12 +5082,6 @@
     (path "/c2b206c2-67ed-4b85-ae63-22a5f6c0ab0a"
       (reference "*C6") (unit 1) (value "10µ") (footprint "tronixio:CAPACITOR-0805")
     )
-    (path "/fe5505d7-fd66-4a2d-bf7d-5f6dcf65e116"
-      (reference "*IC1") (unit 1) (value "PIC24/dsPIC33") (footprint "tronixio:TQFP-44")
-    )
-    (path "/15b76320-9a6e-4ed9-be26-15ea028b6641"
-      (reference "*IC2") (unit 1) (value "MCP2221A") (footprint "tronixio:TSSOP-14")
-    )
     (path "/2550483c-3d98-4499-85e4-b7cc4b773158"
       (reference "*JP1") (unit 1) (value "0R") (footprint "tronixio:RESISTOR-0805")
     )
@@ -5151,9 +5145,6 @@
     (path "/9f691541-606f-4d50-8db3-0a67aaeca2e0"
       (reference "H2") (unit 1) (value "HARWIN-JUMPER-0200-03MM-BLACK") (footprint "tronixio:HARWIN-M22-190-193")
     )
-    (path "/ef27345a-c7c1-44c7-b4de-dc92b9c6de34"
-      (reference "IC3") (unit 1) (value "ROHM-BU33SD5WG-500-SOT") (footprint "tronixio:SOT-23-5")
-    )
     (path "/b98b70f3-e265-46ac-a952-ea805824e1b9"
       (reference "K1") (unit 1) (value "MCU 1") (footprint "tronixio:SAMTEC-TSW-120-22-T-S")
     )
@@ -5180,6 +5171,15 @@
     )
     (path "/b5de480f-dad0-490c-aee8-6a28e86c4cde"
       (reference "S1") (unit 1) (value "Reset") (footprint "tronixio:ALPS-SKRPAC")
+    )
+    (path "/fe5505d7-fd66-4a2d-bf7d-5f6dcf65e116"
+      (reference "U1") (unit 1) (value "PIC24/dsPIC33") (footprint "tronixio:TQFP-44")
+    )
+    (path "/15b76320-9a6e-4ed9-be26-15ea028b6641"
+      (reference "U2") (unit 1) (value "MCP2221A") (footprint "tronixio:TSSOP-14")
+    )
+    (path "/ef27345a-c7c1-44c7-b4de-dc92b9c6de34"
+      (reference "U3") (unit 1) (value "ROHM-BU33SD5WG-500-SOT") (footprint "tronixio:SOT-23-5")
     )
   )
 )
