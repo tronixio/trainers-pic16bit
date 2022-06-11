@@ -1,17 +1,14 @@
 # PIC16-Bit Mini Trainer.
 
-## DRAFT - XC16 - LCD - ADC - SWITCHS - ROTARY ENCODER.
+## XC16 - LCD - ADC - SWITCHS - ROTARY ENCODER.
 
 ```c
 // Configuration Registers.
-#pragma config DSWDTPS = DSWDTPSF, DSWDTOSC = LPRC
-#pragma config RTCOSC = SOSC, DSBOREN = ON, DSWDTEN = ON
-#pragma config WPFP = WPFP63, SOSCSEL = IO, WUTSEL = LEG
-#pragma config WPDIS = WPDIS, WPCFG = WPCFGDIS, WPEND = WPENDMEM
+#pragma config WDTPS = PS32768, FWPSA = PR128, WINDIS = OFF, FWDTEN = OFF
+#pragma config ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 #pragma config POSCMOD = NONE, I2C1SEL = PRI, IOL1WAY = ON
-#pragma config OSCIOFNC = ON, FCKSM = CSDCMD, FNOSC = FRC, IESO = OFF
-#pragma config WDTPS = PS32768, FWPSA = PR128, WINDIS = OFF
-#pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
+#pragma config OSCIOFNC = OFF, FCKSM = CSDCMD, FNOSC = FRC
+#pragma config SOSCSEL = SOSC, WUTSEL = LEG, IESO = OFF
 
 #define FOSC    (8000000UL)
 #define FCY     (FOSC/2)
@@ -48,7 +45,8 @@
 // MCU.RB2 <- SWITCH.S1.
 // MCU.RB3 <- SWITCH.S2.
 // MCU.RA2 <- ROTARY.A.
-// MCU.RA3 <- ROTARY.B.
+// MCU.RA3 -> OSCILLOSCOPE.PROBE.A.
+// MCU.RA4 <- ROTARY.B.
 // MCU.RB4 <- ROTARY.S.
 // MCU.RB6 -> BACKLIGHT.EN.
 
@@ -59,10 +57,8 @@
 #define I2C_FSCL_HZ                                         400000
 #define I2C_BRG                                             (((FCY/I2C_FSCL_HZ)-(FCY/10000000))-1)
 // CAT4002A.
-#define CAT4002_DELAY_HIGH_US                               1                               
 #define CAT4002_DELAY_LED_US                                10
-#define CAT4002_DELAY_LOW_US                                5
-#define CAT4002_DELAY_DOWN_MS                               3
+#define CAT4002_DELAY_DIM_MS                                5
 // ST7036 I2C Address.
 #define ST7036_I2C_ADDRESS_78                               0x78
 #define ST7036_I2C_CONTROL_CONTINUOUS_COMMAND               0x00
@@ -164,7 +160,7 @@
 #define LCD_BACKLIGHT_ON                                    LATBbits.LATB6 = 0b1
 // Rotary Encoder.
 #define ROTARY_ENCODER_A                                    PORTAbits.RA2
-#define ROTARY_ENCODER_B                                    PORTAbits.RA3
+#define ROTARY_ENCODER_B                                    PORTAbits.RA4
 #define ROTARY_ENCODER_SWITCH                               PORTBbits.RB4
 // Switchs.
 #define SWITCH_S1                                           PORTBbits.RB2
@@ -237,7 +233,7 @@ int main(void)
     // Analog Inputs Settings.
     AD1PCFG = 0b1001111000111100;
     // Port A Settings.
-    TRISA = 0b0000000000001111;
+    TRISA = 0b0000000000010111;
     PORTA = 0b0000000000000000;
     LATA = 0b0000000000000000;
     ODCA = 0b0000000000000000;
@@ -376,7 +372,7 @@ int main(void)
                 u16toa(u8LCDBacklight, au8Buffer, 10);
                 lcd_writeString(au8Backlight);
                 lcd_writeString(au8Buffer);
-                lcd_setBacklight(31 - u8LCDBacklight);
+                lcd_setBacklight(30 - u8LCDBacklight);
             }else if(u8encoderSwitchPressed){
                 u8encoderRotary += u8encoderRead;
                 u16toa(u8encoderRotary, au8Buffer, 10);
@@ -509,17 +505,15 @@ void lcd_setBacklight(uint8_t u8Backlight)
 {
     // CAT4002 DIM Reset.
     LCD_BACKLIGHT_OFF;
-    __delay_ms(CAT4002_DELAY_DOWN_MS);
-    LCD_BACKLIGHT_OFF;
+    __delay_ms(CAT4002_DELAY_DIM_MS);
+    LCD_BACKLIGHT_ON;
     __delay_us(CAT4002_DELAY_LED_US);
 
     // CAT4002 DIM Pulses.
     IEC0bits.T1IE = 0b0;
     do{
         LCD_BACKLIGHT_OFF;
-        __delay_us(CAT4002_DELAY_LOW_US);
         LCD_BACKLIGHT_ON;
-        __delay_us(CAT4002_DELAY_HIGH_US);
     } while(u8Backlight--);
     IEC0bits.T1IE = 0b1;
 }
