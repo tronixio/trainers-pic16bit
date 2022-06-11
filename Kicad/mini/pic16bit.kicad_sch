@@ -752,18 +752,6 @@
     (path "/d6cf4fdb-3342-4c3f-9a81-a63c4f6592dd"
       (reference "H104") (unit 1) (value "KEYSTONE-9055") (footprint "tronixio:KEYSTONE-9055")
     )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/03f77ef7-6e4b-422a-b999-2a79ff915960"
-      (reference "IC201") (unit 1) (value "TLV1117-33") (footprint "tronixio:SOT-223-3")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/96657b4e-50d9-46c1-88bb-d97296a2209a"
-      (reference "IC202") (unit 1) (value "MICROCHIP-PIC24FJ64GA102-ISP") (footprint "tronixio:DIP-28-W762-SOCKET")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/2a18c81a-56c3-4e70-b384-8772ef4752eb"
-      (reference "IC301") (unit 1) (value "CAT4002A") (footprint "tronixio:SOT-23-6")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ff1657d3-e3fc-4778-bbec-5be8aca2417b"
-      (reference "IC302") (unit 1) (value "MCP2221A") (footprint "tronixio:SOIC-SL-14")
-    )
     (path "/55795f44-b358-4de2-a286-91a0aa0ebc8a"
       (reference "JP101") (unit 1) (value "HARWIN-JUMPER-0254-06MM-BLACK") (footprint "tronixio:HARWIN-M20-7580-7583")
     )
@@ -949,6 +937,18 @@
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/72900d6b-1728-4f1d-af55-b7dbba81ac5d"
       (reference "TP203") (unit 1) (value "KEYSTONE-2000-3") (footprint "tronixio:KEYSTONE-2000-3")
+    )
+    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/03f77ef7-6e4b-422a-b999-2a79ff915960"
+      (reference "U201") (unit 1) (value "TLV1117-33") (footprint "tronixio:SOT-223-3")
+    )
+    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/96657b4e-50d9-46c1-88bb-d97296a2209a"
+      (reference "U202") (unit 1) (value "MICROCHIP-PIC24FJ64GA102-ISP") (footprint "tronixio:DIP-28-W762")
+    )
+    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/2a18c81a-56c3-4e70-b384-8772ef4752eb"
+      (reference "U301") (unit 1) (value "CAT4002A") (footprint "tronixio:SOT-23-6")
+    )
+    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ff1657d3-e3fc-4778-bbec-5be8aca2417b"
+      (reference "U302") (unit 1) (value "MCP2221A") (footprint "tronixio:SOIC-SL-14")
     )
   )
 )
