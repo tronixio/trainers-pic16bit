@@ -12,8 +12,8 @@
 
 #define FOSC    (8000000UL)
 #define FCY     (FOSC/2)
-#define _ISR_FAST __attribute__ ((interrupt, shadow))
 #define _ISR_PSV __attribute__ ((interrupt, auto_psv))
+#define _ISR_FAST __attribute__ ((interrupt, shadow))
 #define _ISR_NOPSV __attribute__ ((interrupt, no_auto_psv))
 
 #include <xc.h>
@@ -31,8 +31,8 @@
 // 2x SWITCHS.
 
 // PIC16-Bit Mini Trainer.
-// URX - Open.
-// UTX - Open.
+// URX - Not Use.
+// UTX - Not Use.
 // SDA - Close.
 // SCL - Close.
 // VREG - GND.
@@ -57,8 +57,8 @@
 #define I2C_FSCL_HZ                                         400000
 #define I2C_BRG                                             (((FCY/I2C_FSCL_HZ)-(FCY/10000000))-1)
 // CAT4002A.
-#define CAT4002_DELAY_LED_US                                10
 #define CAT4002_DELAY_DIM_MS                                5
+#define CAT4002_DELAY_LED_US                                10
 // ST7036 I2C Address.
 #define ST7036_I2C_ADDRESS_78                               0x78
 #define ST7036_I2C_CONTROL_CONTINUOUS_COMMAND               0x00
@@ -151,9 +151,9 @@
 #define ASCII_SPACE                                         0x20
 // Patterns.
 #define PATTERN_BATTERY_FULL                                0x04
-#define PATTERN_BATTERY_3_5                                 0x03
-#define PATTERN_BATTERY_2_5                                 0x02
-#define PATTERN_BATTERY_1_5                                 0x01
+#define PATTERN_BATTERY_3                                   0x03
+#define PATTERN_BATTERY_2                                   0x02
+#define PATTERN_BATTERY_1                                   0x01
 #define PATTERN_BATTERY_EMPTY                               0x00
 // LCD.
 #define LCD_BACKLIGHT_OFF                                   LATBbits.LATB6 = 0b0
@@ -272,7 +272,7 @@ int main(void)
     AD1CHSbits.CH0SA = 0b00000;
     AD1CSSL = 0b0000000000000011;
     // ADC Enable.
-    AD1CON1bits.ADON = 1;
+    AD1CON1bits.ADON = 0b1;
 
     // I2C Master Settings.
     I2C1BRG = I2C_BRG;
@@ -349,7 +349,7 @@ int main(void)
         // ROTARY ENCODER.
         if(!ROTARY_ENCODER_SWITCH){
             __delay_ms(100);
-            u8encoderSwitchPressed = 1;
+            u8encoderSwitchPressed = 0b1;
             lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
             lcd_writeString(au8Encodersw);
             lcd_writeString(au8Pressed);
@@ -382,11 +382,11 @@ int main(void)
                 if(u8encoderRotary<51)
                     lcd_writeCharacter(PATTERN_BATTERY_EMPTY);
                 else if(u8encoderRotary>50 && u8encoderRotary<101)
-                    lcd_writeCharacter(PATTERN_BATTERY_1_5);
+                    lcd_writeCharacter(PATTERN_BATTERY_1);
                 else if(u8encoderRotary>100 && u8encoderRotary<151)
-                    lcd_writeCharacter(PATTERN_BATTERY_2_5);
+                    lcd_writeCharacter(PATTERN_BATTERY_2);
                 else if(u8encoderRotary>150 && u8encoderRotary<201)
-                    lcd_writeCharacter(PATTERN_BATTERY_3_5);
+                    lcd_writeCharacter(PATTERN_BATTERY_3);
                 else
                     lcd_writeCharacter(PATTERN_BATTERY_FULL);
             }
@@ -397,7 +397,7 @@ int main(void)
         // SWITCHS.
         if(!SWITCH_S1){
             __delay_ms(100);
-            u8switchS1Pressed = 1;
+            u8switchS1Pressed = 0b1;
             lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
             lcd_writeString(au8Switch1);
             lcd_writeString(au8Pressed);
@@ -411,7 +411,7 @@ int main(void)
         }
         if(!SWITCH_S2){
             __delay_ms(100);
-            u8switchS2Pressed = 1;
+            u8switchS2Pressed = 0b1;
             lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
             lcd_writeString(au8Switch2);
             lcd_writeString(au8Pressed);

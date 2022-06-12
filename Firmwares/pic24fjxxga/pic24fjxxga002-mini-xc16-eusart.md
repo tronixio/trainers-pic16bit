@@ -12,8 +12,8 @@
 
 #define FOSC (8000000UL)
 #define FCY (FOSC/2)
-#define _ISR_FAST __attribute__ ((interrupt, shadow))
 #define _ISR_PSV __attribute__ ((interrupt, auto_psv))
+#define _ISR_FAST __attribute__ ((interrupt, shadow))
 #define _ISR_NOPSV __attribute__ ((interrupt, no_auto_psv))
 
 #include <xc.h>
@@ -160,7 +160,7 @@ int main(void)
     AD1CHSbits.CH0SA = 0b00000;
     AD1CSSL = 0b0000000000000011;
     // ADC Enable.
-    AD1CON1bits.ADON = 1;
+    AD1CON1bits.ADON = 0b1;
 
     // EUSART Settings.
     U1BRG = BAUDRATE_GENERATOR_BRGH_0;
@@ -240,7 +240,7 @@ int main(void)
         // ROTARY ENCODER.
         if(!ROTARY_ENCODER_SWITCH){
             __delay_ms(100);
-            u8encoderSwitchPressed = 1;
+            u8encoderSwitchPressed = 0b1;
             eusart_writeString(au8Encodersw);
             eusart_writeString(au8Pressed);
         }else if(ROTARY_ENCODER_SWITCH){
@@ -263,7 +263,7 @@ int main(void)
         // SWITCHS.
         if(!SWITCH_S1){
             __delay_ms(100);
-            u8switchS1Pressed = 1;
+            u8switchS1Pressed = 0b1;
             eusart_writeString(au8Switch1);
             eusart_writeString(au8Pressed);
         }else if(SWITCH_S1){
@@ -275,7 +275,7 @@ int main(void)
         }
         if(!SWITCH_S2){
             __delay_ms(100);
-            u8switchS2Pressed = 1;
+            u8switchS2Pressed = 0b1;
             eusart_writeString(au8Switch2);
             eusart_writeString(au8Pressed);
         }else if(SWITCH_S2){
