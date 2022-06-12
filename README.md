@@ -22,11 +22,11 @@
 
 ![NANO Trainer Bottom.](https://raw.githubusercontent.com/tronixio/trainers-pic16bit/main/Kicad/nano/extras/bottom.png)
 
-## DRAFT - MINI Trainer Top.
+## MINI Trainer Top.
 
 ![MINI Trainer Top.](https://raw.githubusercontent.com/tronixio/trainers-pic16bit/main/Kicad/mini/extras/top.png)
 
-## DRAFT - MINI Trainer Bottom.
+## MINI Trainer Bottom.
 
 ![MINI Trainer Bottom.](https://raw.githubusercontent.com/tronixio/trainers-pic16bit/main/Kicad/mini/extras/bottom.png)
 
