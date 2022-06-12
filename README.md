@@ -11,9 +11,10 @@
 
 - [PIC24FJxxGA002 - XC16 - LCD - ADC - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga/pic24fjxxga002-mini-xc16-lcd.md)
 - [PIC24FJxxGA002 - XC16 - EUSART - ADC - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga/pic24fjxxga002-mini-xc16-eusart.md)
+<!--
 - [DRAFT - PIC24FJxxGA102 - XC16 - LCD - ADC - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga/pic24fjxxga102-mini-xc16-lcd.md)
 - [DRAFT - PIC24FJxxGA102 - XC16 - EUSART - ADC - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga/pic24fjxxga102-mini-xc16-eusart.md)
-
+-->
 ## NANO Trainer Top.
 
 ![NANO Trainer Top.](https://raw.githubusercontent.com/tronixio/trainers-pic16bit/main/Kicad/nano/extras/top.png)
