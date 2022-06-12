@@ -18,8 +18,8 @@
 
 #include <xc.h>
 #include <libpic30.h>
-// PIC24FJxxGA002 - Compile with XC16(v2.00).
-// PIC24FJxxGA002 - @8MHz Internal Oscillator.
+// PIC24FJxxGA102 - Compile with XC16(v2.00).
+// PIC24FJxxGA102 - @8MHz Internal Oscillator.
 
 // Rotary encoder code from:
 // https://www.mikrocontroller.net/articles/Drehgeber
@@ -30,7 +30,7 @@
 // 1x ROTARY ENCODER with SWITCH.
 // 2x SWITCHS.
 
-// PIC16-Bit Mini Trainer.
+// Jumpers.
 // URX - Not Use.
 // UTX - Not Use.
 // SDA - Close.
@@ -48,7 +48,7 @@
 // MCU.RA3 -> OSCILLOSCOPE.PROBE.A.
 // MCU.RA4 <- ROTARY.B.
 // MCU.RB4 <- ROTARY.S.
-// MCU.RB6 -> BACKLIGHT.EN.
+// MCU.RB6 -> LCD.BACKLIGHT.EN.
 
 // Definitions.
 // I2C.
@@ -189,7 +189,6 @@ const uint8_t au8WWW[] = "www.tronix.io";
 const uint8_t au8Adc0[] = "ADC CHANNEL 0> ";
 const uint8_t au8Adc1[] = "ADC CHANNEL 1> ";
 const uint8_t au8Encoder[] = "ROTARY> ";
-const uint8_t au8Encodersw[] = "ROTARY SW> ";
 const uint8_t au8Backlight[] = "BACKLIGHT> ";
 const uint8_t au8Switch1[] = "SWITCH 1> ";
 const uint8_t au8Switch2[] = "SWITCH 2> ";
@@ -349,18 +348,18 @@ int main(void)
         // ROTARY ENCODER.
         if(!ROTARY_ENCODER_SWITCH){
             __delay_ms(100);
-            u8encoderSwitchPressed = 0b1;
+            u8encoderSwitchPressed = !u8encoderSwitchPressed;
             lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
-            lcd_writeString(au8Encodersw);
-            lcd_writeString(au8Pressed);
-        }else if(ROTARY_ENCODER_SWITCH){
             if(u8encoderSwitchPressed){
-                u8encoderSwitchPressed = 0;
-                lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
-                lcd_writeString(au8Encodersw);
-                lcd_writeString(au8Released);
-                u8encoderRead = 0;
+                u16toa(u8encoderRotary, au8Buffer, 10);
+                lcd_writeString(au8Encoder);
+                lcd_writeString(au8Buffer);
+            }else if(!u8encoderSwitchPressed){
+                u16toa(u8LCDBacklight, au8Buffer, 10);
+                lcd_writeString(au8Backlight);
+                lcd_writeString(au8Buffer);
             }
+            while(!ROTARY_ENCODER_SWITCH){};
         }
 
         u8encoderRead += rotary_u8encoderRead();
@@ -401,6 +400,8 @@ int main(void)
             lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
             lcd_writeString(au8Switch1);
             lcd_writeString(au8Pressed);
+            LCD_BACKLIGHT_ON;
+            while(!SWITCH_S1){};
         }else if(SWITCH_S1){
             if(u8switchS1Pressed){
                 lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
@@ -415,6 +416,8 @@ int main(void)
             lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
             lcd_writeString(au8Switch2);
             lcd_writeString(au8Pressed);
+            LCD_BACKLIGHT_OFF;
+            while(!SWITCH_S2){};
         }else if(SWITCH_S2){
             if(u8switchS2Pressed){
                 lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
@@ -591,7 +594,7 @@ void u16toa(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base)
     *au8Buffer-- = 0;
 
     do{
-        u8Buffer = (uint16_t)(u16Data % u8Base);
+        u8Buffer = (uint8_t)(u16Data % u8Base); // todo
         u16Data /= u8Base;
         if(u8Buffer >= 10)
             u8Buffer += 'A' - '0' - 10;

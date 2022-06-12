@@ -4,20 +4,20 @@
 
 ```c
 // Configuration Registers.
-#pragma config DSWDTPS = DSWDTPSF, DSWDTOSC = LPRC
-#pragma config RTCOSC = SOSC, DSBOREN = ON, DSWDTEN = ON
-#pragma config WPFP = WPFP63, SOSCSEL = IO, WUTSEL = LEG
-#pragma config WPDIS = WPDIS, WPCFG = WPCFGDIS, WPEND = WPENDMEM
-#pragma config POSCMOD = NONE, I2C1SEL = PRI, IOL1WAY = ON
-#pragma config OSCIOFNC = ON, FCKSM = CSDCMD, FNOSC = FRC, IESO = OFF
 #pragma config WDTPS = PS32768, FWPSA = PR128, WINDIS = OFF
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
+#pragma config POSCMOD = NONE, I2C1SEL = PRI, IOL1WAY = ON
+#pragma config OSCIOFNC = OFF, FCKSM = CSDCMD, FNOSC = FRC, IESO = OFF
+#pragma config WPFP = WPFP63, SOSCSEL = IO, WUTSEL = LEG
+#pragma config WPDIS = WPDIS, WPCFG = WPCFGDIS, WPEND = WPENDMEM
+#pragma config DSWDTPS = DSWDTPSF, DSWDTOSC = LPRC
+#pragma config RTCOSC = SOSC, DSBOREN = OFF, DSWDTEN = OFF
 
 #define FOSC    (8000000UL)
 #define FCY     (FOSC/2)
 #define _ISR_FAST __attribute__ ((interrupt, shadow))
-#define _ISR_PSV __attribute__ ((interrupt, auto_psv))
 #define _ISR_NOPSV __attribute__ ((interrupt, no_auto_psv))
+#define _ISR_PSV __attribute__ ((interrupt, auto_psv))
 
 #include <xc.h>
 #include <libpic30.h>
@@ -33,9 +33,9 @@
 // 1x ROTARY ENCODER with SWITCH.
 // 2x SWITCHS.
 
-// PIC16-Bit Mini Trainer.
-// URX - Open.
-// UTX - Open.
+// Jumpers.
+// URX - Not Use.
+// UTX - Not Use.
 // SDA - Close.
 // SCL - Close.
 // VREG - GND.
@@ -48,9 +48,10 @@
 // MCU.RB2 <- SWITCH.S1.
 // MCU.RB3 <- SWITCH.S2.
 // MCU.RA2 <- ROTARY.A.
-// MCU.RA3 <- ROTARY.B.
+// MCU.RA3 -> OSCILLOSCOPE.PROBE.A.
+// MCU.RA4 <- ROTARY.B.
 // MCU.RB4 <- ROTARY.S.
-// MCU.RB6 -> BACKLIGHT.EN.
+// MCU.RB6 -> LCD.BACKLIGHT.EN.
 
 // Definitions.
 // I2C.
@@ -59,10 +60,8 @@
 #define I2C_FSCL_HZ                                         400000
 #define I2C_BRG                                             (((FCY/I2C_FSCL_HZ)-(FCY/10000000))-1)
 // CAT4002A.
-#define CAT4002_DELAY_HIGH_US                               1                               
+#define CAT4002_DELAY_DIM_MS                                5
 #define CAT4002_DELAY_LED_US                                10
-#define CAT4002_DELAY_LOW_US                                5
-#define CAT4002_DELAY_DOWN_MS                               3
 // ST7036 I2C Address.
 #define ST7036_I2C_ADDRESS_78                               0x78
 #define ST7036_I2C_CONTROL_CONTINUOUS_COMMAND               0x00
@@ -155,16 +154,16 @@
 #define ASCII_SPACE                                         0x20
 // Patterns.
 #define PATTERN_BATTERY_FULL                                0x04
-#define PATTERN_BATTERY_3_5                                 0x03
-#define PATTERN_BATTERY_2_5                                 0x02
-#define PATTERN_BATTERY_1_5                                 0x01
+#define PATTERN_BATTERY_3                                   0x03
+#define PATTERN_BATTERY_2                                   0x02
+#define PATTERN_BATTERY_1                                   0x01
 #define PATTERN_BATTERY_EMPTY                               0x00
 // LCD.
 #define LCD_BACKLIGHT_OFF                                   LATBbits.LATB6 = 0b0
 #define LCD_BACKLIGHT_ON                                    LATBbits.LATB6 = 0b1
 // Rotary Encoder.
 #define ROTARY_ENCODER_A                                    PORTAbits.RA2
-#define ROTARY_ENCODER_B                                    PORTAbits.RA3
+#define ROTARY_ENCODER_B                                    PORTAbits.RA4
 #define ROTARY_ENCODER_SWITCH                               PORTBbits.RB4
 // Switchs.
 #define SWITCH_S1                                           PORTBbits.RB2
@@ -193,7 +192,6 @@ const uint8_t au8WWW[] = "www.tronix.io";
 const uint8_t au8Adc0[] = "ADC CHANNEL 0> ";
 const uint8_t au8Adc1[] = "ADC CHANNEL 1> ";
 const uint8_t au8Encoder[] = "ROTARY> ";
-const uint8_t au8Encodersw[] = "ROTARY SW> ";
 const uint8_t au8Backlight[] = "BACKLIGHT> ";
 const uint8_t au8Switch1[] = "SWITCH 1> ";
 const uint8_t au8Switch2[] = "SWITCH 2> ";
@@ -217,11 +215,11 @@ const int8_t encoderFull[16] = {0, 1, -1, 0, -1, 0, 0, 1, 1, 0, 0, -1, 0, -1, 1,
 void _ISR_NOPSV _T1Interrupt(void)
 {
     if(IFS0bits.T1IF){
-        static int8_t u8encoderLast = 0;
-        u8encoderLast = (u8encoderLast<<2) & 0x0F;
-        if(ROTARY_ENCODER_A) u8encoderLast |= 1;
-        if(ROTARY_ENCODER_B) u8encoderLast |= 2;
-        encoderDelta += encoderFull[u8encoderLast];
+        static int8_t u8encoder = 0;
+        u8encoder = (u8encoder<<2) & 0x0F;
+        if(ROTARY_ENCODER_A) u8encoder |= 1;
+        if(ROTARY_ENCODER_B) u8encoder |= 2;
+        encoderDelta += encoderFull[u8encoder];
         IFS0bits.T1IF = 0b0;
     }
     u16AdcTimer++;
@@ -237,7 +235,7 @@ int main(void)
     // Analog Inputs Settings.
     AD1PCFG = 0b1001111000111100;
     // Port A Settings.
-    TRISA = 0b0000000000001111;
+    TRISA = 0b0000000000010111;
     PORTA = 0b0000000000000000;
     LATA = 0b0000000000000000;
     ODCA = 0b0000000000000000;
@@ -276,7 +274,7 @@ int main(void)
     AD1CHSbits.CH0SA = 0b00000;
     AD1CSSL = 0b0000000000000011;
     // ADC Enable.
-    AD1CON1bits.ADON = 1;
+    AD1CON1bits.ADON = 0b1;
 
     // I2C Master Settings.
     I2C1BRG = I2C_BRG;
@@ -353,18 +351,18 @@ int main(void)
         // ROTARY ENCODER.
         if(!ROTARY_ENCODER_SWITCH){
             __delay_ms(100);
-            u8encoderSwitchPressed = 1;
+            u8encoderSwitchPressed = !u8encoderSwitchPressed;
             lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
-            lcd_writeString(au8Encodersw);
-            lcd_writeString(au8Pressed);
-        }else if(ROTARY_ENCODER_SWITCH){
             if(u8encoderSwitchPressed){
-                u8encoderSwitchPressed = 0;
-                lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
-                lcd_writeString(au8Encodersw);
-                lcd_writeString(au8Released);
-                u8encoderRead = 0;
+                u16toa(u8encoderRotary, au8Buffer, 10);
+                lcd_writeString(au8Encoder);
+                lcd_writeString(au8Buffer);
+            }else if(!u8encoderSwitchPressed){
+                u16toa(u8LCDBacklight, au8Buffer, 10);
+                lcd_writeString(au8Backlight);
+                lcd_writeString(au8Buffer);
             }
+            while(!ROTARY_ENCODER_SWITCH){};
         }
 
         u8encoderRead += rotary_u8encoderRead();
@@ -372,11 +370,11 @@ int main(void)
           lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
           if(!u8encoderSwitchPressed){
                 u8LCDBacklight += u8encoderRead;
-                if(u8LCDBacklight >= 32) u8LCDBacklight = 0;
+                if(u8LCDBacklight >= 33) u8LCDBacklight = 0;
                 u16toa(u8LCDBacklight, au8Buffer, 10);
                 lcd_writeString(au8Backlight);
                 lcd_writeString(au8Buffer);
-                lcd_setBacklight(31 - u8LCDBacklight);
+                lcd_setBacklight(30 - u8LCDBacklight);
             }else if(u8encoderSwitchPressed){
                 u8encoderRotary += u8encoderRead;
                 u16toa(u8encoderRotary, au8Buffer, 10);
@@ -386,11 +384,11 @@ int main(void)
                 if(u8encoderRotary<51)
                     lcd_writeCharacter(PATTERN_BATTERY_EMPTY);
                 else if(u8encoderRotary>50 && u8encoderRotary<101)
-                    lcd_writeCharacter(PATTERN_BATTERY_1_5);
+                    lcd_writeCharacter(PATTERN_BATTERY_1);
                 else if(u8encoderRotary>100 && u8encoderRotary<151)
-                    lcd_writeCharacter(PATTERN_BATTERY_2_5);
+                    lcd_writeCharacter(PATTERN_BATTERY_2);
                 else if(u8encoderRotary>150 && u8encoderRotary<201)
-                    lcd_writeCharacter(PATTERN_BATTERY_3_5);
+                    lcd_writeCharacter(PATTERN_BATTERY_3);
                 else
                     lcd_writeCharacter(PATTERN_BATTERY_FULL);
             }
@@ -401,10 +399,12 @@ int main(void)
         // SWITCHS.
         if(!SWITCH_S1){
             __delay_ms(100);
-            u8switchS1Pressed = 1;
+            u8switchS1Pressed = 0b1;
             lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
             lcd_writeString(au8Switch1);
             lcd_writeString(au8Pressed);
+            LCD_BACKLIGHT_ON;
+            while(!SWITCH_S1){};
         }else if(SWITCH_S1){
             if(u8switchS1Pressed){
                 lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
@@ -415,10 +415,12 @@ int main(void)
         }
         if(!SWITCH_S2){
             __delay_ms(100);
-            u8switchS2Pressed = 1;
+            u8switchS2Pressed = 0b1;
             lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
             lcd_writeString(au8Switch2);
             lcd_writeString(au8Pressed);
+            LCD_BACKLIGHT_OFF;
+            while(!SWITCH_S2){};
         }else if(SWITCH_S2){
             if(u8switchS2Pressed){
                 lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
@@ -501,25 +503,23 @@ void lcd_initialize(void)
     i2c_write(ST7036_DISPLAY_ON_CURSOR_OFF);
     i2c_write(ST7036_ENTRY_MODE_SET_DDRAM_INCREMENT_NOSHIFT);
     i2c_write(ST7036_CLEAR_DISPLAY);
-    __delay_ms(ST7036_CLEAR_DISPLAY_DELAY_MS);
     i2c_stop();
+    __delay_ms(ST7036_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_setBacklight(uint8_t u8Backlight)
 {
     // CAT4002 DIM Reset.
     LCD_BACKLIGHT_OFF;
-    __delay_ms(CAT4002_DELAY_DOWN_MS);
-    LCD_BACKLIGHT_OFF;
+    __delay_ms(CAT4002_DELAY_DIM_MS);
+    LCD_BACKLIGHT_ON;
     __delay_us(CAT4002_DELAY_LED_US);
 
     // CAT4002 DIM Pulses.
     IEC0bits.T1IE = 0b0;
     do{
         LCD_BACKLIGHT_OFF;
-        __delay_us(CAT4002_DELAY_LOW_US);
         LCD_BACKLIGHT_ON;
-        __delay_us(CAT4002_DELAY_HIGH_US);
     } while(u8Backlight--);
     IEC0bits.T1IE = 0b1;
 }
@@ -597,7 +597,7 @@ void u16toa(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base)
     *au8Buffer-- = 0;
 
     do{
-        u8Buffer = (uint16_t)(u16Data % u8Base);
+        u8Buffer = (uint8_t)(u16Data % u8Base); // todo
         u16Data /= u8Base;
         if(u8Buffer >= 10)
             u8Buffer += 'A' - '0' - 10;
