@@ -12,9 +12,9 @@
 
 #define FOSC    (8000000UL)
 #define FCY     (FOSC/2)
-#define _ISR_PSV __attribute__ ((interrupt, auto_psv))
 #define _ISR_FAST __attribute__ ((interrupt, shadow))
 #define _ISR_NOPSV __attribute__ ((interrupt, no_auto_psv))
+#define _ISR_PSV __attribute__ ((interrupt, auto_psv))
 
 #include <xc.h>
 #include <libpic30.h>
@@ -213,11 +213,11 @@ const int8_t encoderFull[16] = {0, 1, -1, 0, -1, 0, 0, 1, 1, 0, 0, -1, 0, -1, 1,
 void _ISR_NOPSV _T1Interrupt(void)
 {
     if(IFS0bits.T1IF){
-        static int8_t u8encoderLast = 0;
-        u8encoderLast = (u8encoderLast<<2) & 0x0F;
-        if(ROTARY_ENCODER_A) u8encoderLast |= 1;
-        if(ROTARY_ENCODER_B) u8encoderLast |= 2;
-        encoderDelta += encoderFull[u8encoderLast];
+        static int8_t u8encoder = 0;
+        u8encoder = (u8encoder<<2) & 0x0F;
+        if(ROTARY_ENCODER_A) u8encoder |= 1;
+        if(ROTARY_ENCODER_B) u8encoder |= 2;
+        encoderDelta += encoderFull[u8encoder];
         IFS0bits.T1IF = 0b0;
     }
     u16AdcTimer++;
@@ -368,7 +368,7 @@ int main(void)
           lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
           if(!u8encoderSwitchPressed){
                 u8LCDBacklight += u8encoderRead;
-                if(u8LCDBacklight >= 32) u8LCDBacklight = 0;
+                if(u8LCDBacklight >= 33) u8LCDBacklight = 0;
                 u16toa(u8LCDBacklight, au8Buffer, 10);
                 lcd_writeString(au8Backlight);
                 lcd_writeString(au8Buffer);
@@ -497,8 +497,8 @@ void lcd_initialize(void)
     i2c_write(ST7036_DISPLAY_ON_CURSOR_OFF);
     i2c_write(ST7036_ENTRY_MODE_SET_DDRAM_INCREMENT_NOSHIFT);
     i2c_write(ST7036_CLEAR_DISPLAY);
-    __delay_ms(ST7036_CLEAR_DISPLAY_DELAY_MS);
     i2c_stop();
+    __delay_ms(ST7036_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_setBacklight(uint8_t u8Backlight)
