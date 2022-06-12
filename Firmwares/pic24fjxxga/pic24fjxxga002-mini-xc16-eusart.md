@@ -12,9 +12,9 @@
 
 #define FOSC (8000000UL)
 #define FCY (FOSC/2)
-#define _ISR_PSV __attribute__ ((interrupt, auto_psv))
 #define _ISR_FAST __attribute__ ((interrupt, shadow))
 #define _ISR_NOPSV __attribute__ ((interrupt, no_auto_psv))
+#define _ISR_PSV __attribute__ ((interrupt, auto_psv))
 
 #include <xc.h>
 #include <libpic30.h>
