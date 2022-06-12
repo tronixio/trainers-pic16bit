@@ -1,6 +1,6 @@
 # PIC16-Bit Mini Trainer.
 
-## DRAFT - XC16 - EUSART - ADC - SWITCHS - ROTARY ENCODER.
+## XC16 - EUSART - ADC - SWITCHS - ROTARY ENCODER.
 
 ```c
 // Configuration Registers.
@@ -16,8 +16,8 @@
 #define FOSC (8000000UL)
 #define FCY (FOSC/2)
 #define _ISR_FAST __attribute__ ((interrupt, shadow))
-#define _ISR_PSV __attribute__ ((interrupt, auto_psv))
 #define _ISR_NOPSV __attribute__ ((interrupt, no_auto_psv))
+#define _ISR_PSV __attribute__ ((interrupt, auto_psv))
 
 #include <xc.h>
 #include <libpic30.h>
@@ -36,11 +36,11 @@
 
 // JUMPER.URX - Close.
 // JUMPER.UTX - Close.
-// JUMPER.SDA - Open.
-// JUMPER.SCL - Open.
+// JUMPER.SDA - Not Use.
+// JUMPER.SCL - Not Use.
 // JUMPER.VREG - GND.
 // JUMPER.VCAP - Close.
-// JUMPER.BCKL - Open.
+// JUMPER.BCKL - Not Use.
 
 // Pinout.
 // MCU.RA0 <- ANALOG.AN1.
@@ -48,7 +48,8 @@
 // MCU.RB2 <- SWITCH.S1.
 // MCU.RB3 <- SWITCH.S2.
 // MCU.RA2 <- ROTARY.A.
-// MCU.RA3 <- ROTARY.B.
+// MCU.RA3 -> OSCILLOSCOPE.PROBE.A.
+// MCU.RA4 <- ROTARY.B.
 // MCU.RB4 <- ROTARY.S.
 
 // Definitions.
@@ -60,7 +61,7 @@
 #define ASCII_CR                    0x0D
 // Rotary Encoder.
 #define ROTARY_ENCODER_A            PORTAbits.RA2
-#define ROTARY_ENCODER_B            PORTAbits.RA3
+#define ROTARY_ENCODER_B            PORTAbits.RA4
 #define ROTARY_ENCODER_SWITCH       PORTBbits.RB4
 // Switchs.
 #define SWITCH_S1                   PORTBbits.RB2
@@ -75,7 +76,7 @@ void u16toa(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base);
 
 // Strings & Custom Patterns.
 const uint8_t au8Tronix[] = "\r\n\r\nTronix I/O";
-const uint8_t au8WWW[] = "\r\nhttp://www.tronix.io/\r\n";
+const uint8_t au8WWW[] = "\r\nhttps://www.tronix.io/\r\n";
 const uint8_t au8Ready[] = "\r\nREADY> ";
 const uint8_t au8Adc0[] = "\r\nADC CHANNEL 0> ";
 const uint8_t au8Adc1[] = "\r\nADC CHANNEL 1> ";
@@ -116,7 +117,7 @@ int main(void)
     // Analog Inputs Settings.
     AD1PCFG = 0b1001111000111100;
     // Port A Settings.
-    TRISA = 0b0000000000001111;
+    TRISA = 0b0000000000010111;
     PORTA = 0b0000000000000000;
     LATA = 0b0000000000000000;
     ODCA = 0b0000000000000000;
@@ -162,7 +163,7 @@ int main(void)
     AD1CHSbits.CH0SA = 0b00000;
     AD1CSSL = 0b0000000000000011;
     // ADC Enable.
-    AD1CON1bits.ADON = 1;
+    AD1CON1bits.ADON = 0b1;
 
     // EUSART Settings.
     U1BRG = BAUDRATE_GENERATOR_BRGH_0;
@@ -242,7 +243,7 @@ int main(void)
         // ROTARY ENCODER.
         if(!ROTARY_ENCODER_SWITCH){
             __delay_ms(100);
-            u8encoderSwitchPressed = 1;
+            u8encoderSwitchPressed = 0b1;
             eusart_writeString(au8Encodersw);
             eusart_writeString(au8Pressed);
         }else if(ROTARY_ENCODER_SWITCH){
@@ -265,7 +266,7 @@ int main(void)
         // SWITCHS.
         if(!SWITCH_S1){
             __delay_ms(100);
-            u8switchS1Pressed = 1;
+            u8switchS1Pressed = 0b1;
             eusart_writeString(au8Switch1);
             eusart_writeString(au8Pressed);
         }else if(SWITCH_S1){
@@ -277,7 +278,7 @@ int main(void)
         }
         if(!SWITCH_S2){
             __delay_ms(100);
-            u8switchS2Pressed = 1;
+            u8switchS2Pressed = 0b1;
             eusart_writeString(au8Switch2);
             eusart_writeString(au8Pressed);
         }else if(SWITCH_S2){

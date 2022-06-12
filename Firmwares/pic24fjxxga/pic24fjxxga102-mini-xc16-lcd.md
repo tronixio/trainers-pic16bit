@@ -1,6 +1,6 @@
 # PIC16-Bit Mini Trainer.
 
-## DRAFT - XC16 - LCD - ADC - SWITCHS - ROTARY ENCODER.
+## XC16 - LCD - ADC - SWITCHS - ROTARY ENCODER.
 
 ```c
 // Configuration Registers.
