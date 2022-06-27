@@ -18,8 +18,8 @@
 
 #include <xc.h>
 #include <libpic30.h>
-// PIC24FJxxGA102 - Compile with XC16(v2.00).
-// PIC24FJxxGA102 - @8MHz Internal Oscillator.
+// PIC24FJxxGA002 - Compile with XC16(v2.00).
+// PIC24FJxxGA002 - @8MHz Internal Oscillator.
 
 // Rotary encoder code from:
 // https://www.mikrocontroller.net/articles/Drehgeber
