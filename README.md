@@ -9,12 +9,16 @@
 
 ## Firmwares.
 
-- [PIC24FJxxGA002 - XC16 - LCD - ADC - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga/pic24fjxxga002-mini-xc16-lcd.md)
-- [PIC24FJxxGA002 - XC16 - EUSART - ADC - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga/pic24fjxxga002-mini-xc16-eusart.md)
+### PIC24FJxxGA002
+
+- [MINI TRAINER - XC16 - LCD - ADC - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga/pic24fjxxga002-mini-xc16-lcd.md)
+- [MINI TRAINER - XC16 - EUSART - ADC - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga/pic24fjxxga002-mini-xc16-eusart.md)
+
+### PIC24FJxxGA102
 <!--
 - [PIC24FJxxGA102 - XC16 - LCD - ADC - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga/pic24fjxxga102-mini-xc16-lcd.md)
 -->
-- [PIC24FJxxGA102 - XC16 - EUSART - ADC - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga/pic24fjxxga102-mini-xc16-eusart.md)
+- [MINI TRAINER - XC16 - EUSART - ADC - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga/pic24fjxxga102-mini-xc16-eusart.md)
 
 ## NANO Trainer Top.
 
