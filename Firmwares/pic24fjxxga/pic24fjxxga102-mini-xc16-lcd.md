@@ -162,9 +162,9 @@
 #define LCD_BACKLIGHT_OFF                                   LATBbits.LATB6 = 0b0
 #define LCD_BACKLIGHT_ON                                    LATBbits.LATB6 = 0b1
 // Rotary Encoder.
-#define ROTARY_ENCODER_A                                    PORTAbits.RA2
-#define ROTARY_ENCODER_B                                    PORTAbits.RA4
-#define ROTARY_ENCODER_SWITCH                               PORTBbits.RB4
+#define ROTARY_PHASE_A                                      PORTAbits.RA2
+#define ROTARY_PHASE_B                                      PORTAbits.RA4
+#define ROTARY_SWITCH                                       PORTBbits.RB4
 // Switchs.
 #define SWITCH_S1                                           PORTBbits.RB2
 #define SWITCH_S2                                           PORTBbits.RB3
@@ -183,7 +183,7 @@ void lcd_writeCharacter(uint8_t u8Data);
 void lcd_writeInstruction(uint8_t u8Data);
 void lcd_writeString(const uint8_t * u8Data);
 void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor);
-int8_t rotary_u8encoderRead(void);
+int8_t rotary_i8encoderRead(void);
 void u16toa(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base);
 
 // Strings & Custom Patterns.
@@ -207,7 +207,7 @@ const uint8_t au8BatteryPattern[5][8] = {
 };
 
 // Global Variables.
-int8_t encoderDelta;
+int8_t i8encoderDelta;
 uint16_t u16AdcTimer;
 const int8_t encoderFull[16] = {0, 1, -1, 0, -1, 0, 0, 1, 1, 0, 0, -1, 0, -1, 1, 0};
 
@@ -217,9 +217,9 @@ void _ISR_NOPSV _T1Interrupt(void)
     if(IFS0bits.T1IF){
         static int8_t u8encoder = 0;
         u8encoder = (u8encoder<<2) & 0x0F;
-        if(ROTARY_ENCODER_A) u8encoder |= 1;
-        if(ROTARY_ENCODER_B) u8encoder |= 2;
-        encoderDelta += encoderFull[u8encoder];
+        if(ROTARY_PHASE_A) u8encoder |= 0b01; // CW.
+        if(ROTARY_PHASE_B) u8encoder |= 0b10; // CCW.
+        i8encoderDelta += encoderFull[u8encoder];
         IFS0bits.T1IF = 0b0;
     }
     u16AdcTimer++;
@@ -349,7 +349,7 @@ int main(void)
         }
 
         // ROTARY ENCODER.
-        if(!ROTARY_ENCODER_SWITCH){
+        if(!ROTARY_SWITCH){
             __delay_ms(100);
             u8encoderSwitchPressed = !u8encoderSwitchPressed;
             lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
@@ -362,10 +362,10 @@ int main(void)
                 lcd_writeString(au8Backlight);
                 lcd_writeString(au8Buffer);
             }
-            while(!ROTARY_ENCODER_SWITCH){};
+            while(!ROTARY_SWITCH){};
         }
 
-        u8encoderRead += rotary_u8encoderRead();
+        u8encoderRead += rotary_i8encoderRead();
         if(u8encoderLast != u8encoderRead){
           lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
           if(!u8encoderSwitchPressed){
@@ -410,7 +410,7 @@ int main(void)
                 lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
                 lcd_writeString(au8Switch1);
                 lcd_writeString(au8Released);
-                u8switchS1Pressed = 0;
+                u8switchS1Pressed = 0b0;
             }
         }
         if(!SWITCH_S2){
@@ -426,7 +426,7 @@ int main(void)
                 lcd_clearLine(C0220BiZ_CONFIGURATION_SECOND_LINE);
                 lcd_writeString(au8Switch2);
                 lcd_writeString(au8Released);
-                u8switchS2Pressed = 0;
+                u8switchS2Pressed = 0b0;
             }
         }
     }
@@ -573,13 +573,13 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
     i2c_stop();
 }
 
-int8_t rotary_u8encoderRead(void)
+int8_t rotary_i8encoderRead(void)
 {
     int8_t u8encoderRead;
 
     IEC0bits.T1IE = 0b0;
-    u8encoderRead = encoderDelta;
-    encoderDelta = u8encoderRead & 3;
+    u8encoderRead = i8encoderDelta;
+    i8encoderDelta = u8encoderRead & 3;
     IEC0bits.T1IE = 0b1;
 
     return(u8encoderRead>>2);

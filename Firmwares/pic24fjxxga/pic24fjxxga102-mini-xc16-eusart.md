@@ -54,24 +54,23 @@
 
 // Definitions.
 // EUSART.
-#define BAUDRATE                    9600
-#define BAUDRATE_GENERATOR_BRGH_0   (((FCY/BAUDRATE)/16)-1)
-#define BAUDRATE_GENERATOR_BRGH_1   (((FCY/BAUDRATE)/4)-1)
+#define BAUDRATE             9600
+#define BAUDRATE_GENERATOR   (((FCY/BAUDRATE)/16)-1)
 // ASCII Characters.
-#define ASCII_CR                    0x0D
+#define ASCII_CR             0x0D
 // Rotary Encoder.
-#define ROTARY_ENCODER_A            PORTAbits.RA2
-#define ROTARY_ENCODER_B            PORTAbits.RA4
-#define ROTARY_ENCODER_SWITCH       PORTBbits.RB4
+#define ROTARY_PHASE_A       PORTAbits.RA2
+#define ROTARY_PHASE_B       PORTAbits.RA4
+#define ROTARY_SWITCH        PORTBbits.RB4
 // Switchs.
-#define SWITCH_S1                   PORTBbits.RB2
-#define SWITCH_S2                   PORTBbits.RB3
+#define SWITCH_S1            PORTBbits.RB2
+#define SWITCH_S2            PORTBbits.RB3
 
 // Function Prototypes.
 uint8_t eusart_readCharacter(void);
 void eusart_writeCharacter(uint8_t u8Data);
 void eusart_writeString(const uint8_t * u8Data);
-int8_t rotary_u8encoderRead(void);
+int8_t rotary_i8encoderRead(void);
 void u16toa(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base);
 
 // Strings & Custom Patterns.
@@ -89,7 +88,7 @@ const uint8_t au8Pressed[] = "PRESSED";
 const uint8_t au8Released[] = "RELEASED";
 
 // Global Variables.
-int8_t encoderDelta;
+int8_t i8encoderDelta;
 uint16_t u16AdcTimer;
 const int8_t encoderFull[16] = {0, 1, -1, 0, -1, 0, 0, 1, 1, 0, 0, -1, 0, -1, 1, 0};
 
@@ -99,9 +98,9 @@ void _ISR_NOPSV _T1Interrupt(void)
     if(IFS0bits.T1IF){
         static int8_t u8encoderLast = 0;
         u8encoderLast = (u8encoderLast<<2) & 0x0F;
-        if(ROTARY_ENCODER_A) u8encoderLast |= 1;
-        if(ROTARY_ENCODER_B) u8encoderLast |= 2;
-        encoderDelta += encoderFull[u8encoderLast];
+        if(ROTARY_PHASE_A) u8encoderLast |= 0b01; // CW.
+        if(ROTARY_PHASE_B) u8encoderLast |= 0b10; // CCW.
+        i8encoderDelta += encoderFull[u8encoderLast];
         IFS0bits.T1IF = 0b0;
     }
     u16AdcTimer++;
@@ -166,7 +165,7 @@ int main(void)
     AD1CON1bits.ADON = 0b1;
 
     // EUSART Settings.
-    U1BRG = BAUDRATE_GENERATOR_BRGH_0;
+    U1BRG = BAUDRATE_GENERATOR;
     U1MODE = 0x0000;
     U1MODEbits.UEN = 0b00;
     U1MODEbits.BRGH = 0b0;
@@ -241,21 +240,21 @@ int main(void)
         }
 
         // ROTARY ENCODER.
-        if(!ROTARY_ENCODER_SWITCH){
+        if(!ROTARY_SWITCH){
             __delay_ms(100);
             u8encoderSwitchPressed = 0b1;
             eusart_writeString(au8Encodersw);
             eusart_writeString(au8Pressed);
-        }else if(ROTARY_ENCODER_SWITCH){
+        }else if(ROTARY_SWITCH){
             if(u8encoderSwitchPressed){
-                u8encoderSwitchPressed = 0;
+                u8encoderSwitchPressed = 0b0;
                 eusart_writeString(au8Encodersw);
                 eusart_writeString(au8Released);
                 u8encoderRead = 0;
             }
         }
 
-        u8encoderRead += rotary_u8encoderRead();
+        u8encoderRead += rotary_i8encoderRead();
         if(u8encoderLast != u8encoderRead){
             u16toa(u8encoderRead, au8Buffer, 10);
             eusart_writeString(au8Encoder);
@@ -273,7 +272,7 @@ int main(void)
             if(u8switchS1Pressed){
                 eusart_writeString(au8Switch1);
                 eusart_writeString(au8Released);
-                u8switchS1Pressed = 0;
+                u8switchS1Pressed = 0b0;
             }
         }
         if(!SWITCH_S2){
@@ -285,7 +284,7 @@ int main(void)
             if(u8switchS2Pressed){
                 eusart_writeString(au8Switch2);
             eusart_writeString(au8Released);
-            u8switchS2Pressed = 0;
+            u8switchS2Pressed = 0b0;
             }
         }
     }
@@ -311,13 +310,13 @@ void eusart_writeString(const uint8_t * u8Data)
         eusart_writeCharacter(*u8Data++);
 }
 
-int8_t rotary_u8encoderRead(void)
+int8_t rotary_i8encoderRead(void)
 {
     int8_t u8encoderRead;
 
     IEC0bits.T1IE = 0b0;
-    u8encoderRead = encoderDelta;
-    encoderDelta = u8encoderRead & 3;
+    u8encoderRead = i8encoderDelta;
+    i8encoderDelta = u8encoderRead & 3;
     IEC0bits.T1IE = 0b1;
 
     return(u8encoderRead>>2);
