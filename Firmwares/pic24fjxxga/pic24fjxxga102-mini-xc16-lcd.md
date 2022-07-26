@@ -206,10 +206,11 @@ const uint8_t au8BatteryPattern[5][8] = {
     {0x0e, 0x1f, 0x1f, 0x1f, 0x1f, 0x1f, 0x1f, 0x1f}
 };
 
+const int8_t ai8encoderFull[16] = {0, 1, -1, 0, -1, 0, 0, 1, 1, 0, 0, -1, 0, -1, 1, 0};
+
 // Global Variables.
 int8_t i8encoderDelta;
-uint16_t u16AdcTimer;
-const int8_t encoderFull[16] = {0, 1, -1, 0, -1, 0, 0, 1, 1, 0, 0, -1, 0, -1, 1, 0};
+uint16_t u16adcTimer;
 
 // Interrupts Service Routines
 void _ISR_NOPSV _T1Interrupt(void)
@@ -219,10 +220,10 @@ void _ISR_NOPSV _T1Interrupt(void)
         u8encoder = (u8encoder<<2) & 0x0F;
         if(ROTARY_PHASE_A) u8encoder |= 0b01; // CW.
         if(ROTARY_PHASE_B) u8encoder |= 0b10; // CCW.
-        i8encoderDelta += encoderFull[u8encoder];
+        i8encoderDelta += ai8encoderFull[u8encoder];
         IFS0bits.T1IF = 0b0;
     }
-    u16AdcTimer++;
+    u16adcTimer++;
 }
 
 // Main.
@@ -320,7 +321,7 @@ int main(void)
     uint8_t u8switchS1Pressed, u8switchS2Pressed;
     while(1){
         // ADC Read every ~1s.
-        if(u16AdcTimer>1000){
+        if(u16adcTimer>1000){
             u16ADCRead = 0;
             AD1CHSbits.CH0SA = 0b00000;
             __delay_us(5);
@@ -345,7 +346,7 @@ int main(void)
                 lcd_writeString(au8Buffer);
                 u16ADC1Last = u16ADCRead;
             }
-            u16AdcTimer = 0;
+            u16adcTimer = 0;
         }
 
         // ROTARY ENCODER.
