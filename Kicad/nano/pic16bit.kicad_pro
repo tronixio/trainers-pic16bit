@@ -438,8 +438,6 @@
           "/VCAP",
           "/~{MCLR}",
           "GND",
-          "Net-(*LED2-Pad2)",
-          "Net-(*LED3-Pad2)",
           "Net-(C1-Pad1)",
           "Net-(F1-Pad1)",
           "Net-(LED1-Pad2)",
