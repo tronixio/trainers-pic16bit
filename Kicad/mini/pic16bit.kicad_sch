@@ -693,43 +693,43 @@
       (reference "BB301") (unit 1) (value "BREADBOARD-170") (footprint "tronixio:BREADBOARD-170")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/3eb5e29c-65b8-4e4a-9945-da296fffefe3"
-      (reference "C201") (unit 1) (value "10µ") (footprint "tronixio:CAPACITOR-0805")
+      (reference "C201") (unit 1) (value "10µ") (footprint "tronixio:CAPACITOR-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/8d5531be-425c-471c-8d2f-56f471ef38cc"
-      (reference "C202") (unit 1) (value "100n") (footprint "tronixio:CAPACITOR-0805")
+      (reference "C202") (unit 1) (value "100n") (footprint "tronixio:CAPACITOR-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/501b335d-f76d-4bdb-8481-c31def9ac227"
-      (reference "C203") (unit 1) (value "10µ") (footprint "tronixio:CAPACITOR-0805")
+      (reference "C203") (unit 1) (value "10µ") (footprint "tronixio:CAPACITOR-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/82a800c8-cf6a-4d88-bf0c-6c131f42f7bc"
-      (reference "C204") (unit 1) (value "100n") (footprint "tronixio:CAPACITOR-0805")
+      (reference "C204") (unit 1) (value "100n") (footprint "tronixio:CAPACITOR-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/4666de14-777f-4c12-b15a-5c129f5059ea"
-      (reference "C205") (unit 1) (value "100n") (footprint "tronixio:CAPACITOR-0805")
+      (reference "C205") (unit 1) (value "100n") (footprint "tronixio:CAPACITOR-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/4c616429-e617-4622-99cc-a643a93dfefb"
       (reference "C206") (unit 1) (value "10µ") (footprint "tronixio:KEMET-C322")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/f24a25aa-1562-4ec1-b48f-b654cec37db4"
-      (reference "C301") (unit 1) (value "CAPACITOR-0805-100N") (footprint "tronixio:CAPACITOR-0805")
+      (reference "C301") (unit 1) (value "10n") (footprint "tronixio:CAPACITOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/9f9125b2-aeae-4208-b8ab-ba46c642b6d6"
-      (reference "C302") (unit 1) (value "CAPACITOR-0805-100N") (footprint "tronixio:CAPACITOR-0805")
+      (reference "C302") (unit 1) (value "1µ") (footprint "tronixio:CAPACITOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/65055372-aba5-4bfc-b429-26e6014caff2"
-      (reference "C303") (unit 1) (value "CAPACITOR-0805-100N") (footprint "tronixio:CAPACITOR-0805")
+      (reference "C303") (unit 1) (value "1µ") (footprint "tronixio:CAPACITOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/185c7dd3-5c0a-4465-b8e0-64f820a0619c"
-      (reference "C304") (unit 1) (value "CAPACITOR-0805-100N") (footprint "tronixio:CAPACITOR-0805")
+      (reference "C304") (unit 1) (value "1µ") (footprint "tronixio:CAPACITOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/67d8b11c-b0d7-4131-b2a4-eacfcefe297a"
-      (reference "C305") (unit 1) (value "CAPACITOR-0805-100N") (footprint "tronixio:CAPACITOR-0805")
+      (reference "C305") (unit 1) (value "10n") (footprint "tronixio:CAPACITOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ebc0f50d-068b-467c-8aa7-02b7ba6411cd"
-      (reference "C306") (unit 1) (value "CAPACITOR-0805-100N") (footprint "tronixio:CAPACITOR-0805")
+      (reference "C306") (unit 1) (value "100n") (footprint "tronixio:CAPACITOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/041bc186-9ab7-4f41-bed6-c360bd849954"
-      (reference "C307") (unit 1) (value "CAPACITOR-0805-100N") (footprint "tronixio:CAPACITOR-0805")
+      (reference "C307") (unit 1) (value "10n") (footprint "tronixio:CAPACITOR-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/865b8e57-628d-403a-b20f-ae88b050a883"
       (reference "D201") (unit 1) (value "PMEG3030") (footprint "tronixio:SOD-128")
@@ -738,7 +738,7 @@
       (reference "D202") (unit 1) (value "PMEG3030") (footprint "tronixio:SOD-128")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/9ae27384-0582-41c5-b120-3b00afe0fcd0"
-      (reference "F201") (unit 1) (value "500mA") (footprint "tronixio:FUSE-0805")
+      (reference "F201") (unit 1) (value "500mA") (footprint "tronixio:FUSE-1206")
     )
     (path "/c1eea772-e579-4927-94fd-1ac1e47e3b32"
       (reference "H101") (unit 1) (value "KEYSTONE-9055") (footprint "tronixio:KEYSTONE-9055")
@@ -789,13 +789,13 @@
       (reference "JP205") (unit 1) (value "VCA") (footprint "tronixio:HARWIN-M20-999024x")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/decd714e-c32f-40e5-b629-c0d4257717ea"
-      (reference "JP301") (unit 1) (value "HARWIN-254-M-1X02-JUMPER-VERTICAL") (footprint "tronixio:HARWIN-M20-999024x")
+      (reference "JP301") (unit 1) (value "BCKL") (footprint "tronixio:HARWIN-M20-999024x")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/5b2a7490-73c4-49fc-bb18-277203ce33eb"
-      (reference "JP302") (unit 1) (value "HARWIN-254-M-1X02-JUMPER-VERTICAL") (footprint "tronixio:HARWIN-M20-999024x")
+      (reference "JP302") (unit 1) (value "UTX") (footprint "tronixio:HARWIN-M20-999024x")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/08a4a2f1-6e8a-45e7-a693-0c7e4cb5ee13"
-      (reference "JP303") (unit 1) (value "HARWIN-254-M-1X02-JUMPER-VERTICAL") (footprint "tronixio:HARWIN-M20-999024x")
+      (reference "JP303") (unit 1) (value "URX") (footprint "tronixio:HARWIN-M20-999024x")
     )
     (path "/6b755907-4f96-4573-95bb-15fa8caed158"
       (reference "K101") (unit 1) (value "PE-450-4X6X-BLACK") (footprint "tronixio:PE-450-4X6X")
@@ -828,103 +828,103 @@
       (reference "LCD301") (unit 1) (value "NHD-C0220BIZ") (footprint "tronixio:NHD-C0220BIZ")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/bb9630e7-84de-450b-9dba-577063539ac5"
-      (reference "LED201") (unit 1) (value "Power") (footprint "tronixio:LED-0805")
+      (reference "LED201") (unit 1) (value "Power") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/aebba99c-334c-4929-a5a1-891c48d14b31"
-      (reference "LED301") (unit 1) (value "KINGBRIGHT-LED-0805-BLUE") (footprint "tronixio:LED-0805")
+      (reference "LED301") (unit 1) (value "URX") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/8b71b4b0-c289-4468-a7ee-4a6409128d8d"
-      (reference "LED302") (unit 1) (value "KINGBRIGHT-LED-0805-BLUE") (footprint "tronixio:LED-0805")
+      (reference "LED302") (unit 1) (value "UTX") (footprint "tronixio:LED-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/f08bf669-a7e1-403b-a155-13b894bbc40b"
-      (reference "P301") (unit 1) (value "PIHER-PT10MV-10K") (footprint "tronixio:PIHER-PT10MV")
+      (reference "P301") (unit 1) (value "10K") (footprint "tronixio:PIHER-PT10MV")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/298dbbe2-a8c4-44de-b2d4-8a15ae155257"
-      (reference "P302") (unit 1) (value "PIHER-PT10MV-10K") (footprint "tronixio:PIHER-PT10MV")
+      (reference "P302") (unit 1) (value "10K") (footprint "tronixio:PIHER-PT10MV")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/a9369e84-04c4-4b26-8073-c4fbe88c7f4d"
-      (reference "R201") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R201") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/78883502-61df-41cc-8136-60a362ad2eda"
-      (reference "R202") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R202") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/b7c8618b-5fd5-4999-89e8-fba013cb9ede"
-      (reference "R203") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-0805")
+      (reference "R203") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/99c5437e-dbc3-47a3-aae9-b12482fa0399"
-      (reference "R204") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-0805")
+      (reference "R204") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/8822b915-443b-4169-9f73-615862607291"
-      (reference "R205") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-0805")
+      (reference "R205") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/773b24ed-e183-4884-993c-a78095e3e90d"
-      (reference "R301") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R301") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/72591d40-dd00-4777-af3d-d80c5cac85f3"
-      (reference "R302") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R302") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/97492dce-bba5-47d8-951f-eaa79d996277"
-      (reference "R303") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R303") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/a84e35e6-1e41-4a8a-ad9c-3922173c0585"
-      (reference "R304") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R304") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/8506ac1c-c638-4004-aaf3-6231f2fd9cb5"
-      (reference "R305") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R305") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/06e9f46f-7e4c-4bed-b773-9e488e693926"
-      (reference "R306") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R306") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/45472bb6-324f-458e-9081-e3a7656dc643"
-      (reference "R307") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R307") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/c0c29c26-bf3e-4c51-9e2e-c56140cbf94a"
-      (reference "R308") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R308") (unit 1) (value "2K4") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/d7c3e985-bc82-4d7c-8d2e-533d7ecfd562"
-      (reference "R309") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R309") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ffecd68c-c34f-42ba-9a8b-4590333b714c"
-      (reference "R310") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R310") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/455f8c04-e1da-434c-ab20-39164d1b2dc0"
-      (reference "R311") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R311") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/79c9c3ec-cbfe-4c66-af16-1a4d9910a649"
-      (reference "R312") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R312") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/3de56383-f2b0-4cd0-9a46-6838739f3426"
-      (reference "R313") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R313") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/664c73c5-bddc-422e-9b5c-68a23bc28633"
-      (reference "R314") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R314") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/e60ba7f3-9b7c-4420-8c63-5afe6c50232c"
-      (reference "R315") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R315") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ba9d7be2-a498-4ea6-bfa9-3798135b3eec"
-      (reference "R316") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R316") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/b9cad6ce-c6ed-4a76-9d23-f660e91262df"
-      (reference "R317") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R317") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ac20018c-912f-4a10-a6a7-a8083633335f"
-      (reference "R318") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R318") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/9b7d39ee-2d23-4644-ad92-ecffb4ffdd66"
-      (reference "R319") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R319") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/4790101c-700d-40cb-8e55-6b2a24c43566"
-      (reference "R320") (unit 1) (value "RESISTOR-0805-1K") (footprint "tronixio:RESISTOR-0805")
+      (reference "R320") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-1206")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/cd8bddaf-c746-41ce-944b-266ce9f17a95"
       (reference "S201") (unit 1) (value "Reset") (footprint "tronixio:ALPS-SKRPAC")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/53457124-acb0-4603-9e52-c1ebe0433322"
-      (reference "S301") (unit 1) (value "CK-KSA") (footprint "tronixio:CK-KSA-TH")
+      (reference "S301") (unit 1) (value "S1") (footprint "tronixio:CK-KSA-TH")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/cbf5ef5a-602c-49b8-b9ee-6f73813137d9"
-      (reference "S302") (unit 1) (value "CK-KSA") (footprint "tronixio:CK-KSA-TH")
+      (reference "S302") (unit 1) (value "S2") (footprint "tronixio:CK-KSA-TH")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/181b6171-61b2-48eb-bd2c-c2e289b2fbc4"
       (reference "S303") (unit 1) (value "BOURNS-PEC12R-24DENTS-SWITCH") (footprint "tronixio:BOURNS-PEC12R-SWITCH")
@@ -945,10 +945,10 @@
       (reference "U202") (unit 1) (value "PIC24/dsPIC32") (footprint "tronixio:DIP-28-W762-SOCKET")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/2a18c81a-56c3-4e70-b384-8772ef4752eb"
-      (reference "U301") (unit 1) (value "ONSEMI-CAT4002A-SOT-23") (footprint "tronixio:SOT-23-6")
+      (reference "U301") (unit 1) (value "CAT4002A") (footprint "tronixio:SOT-23-6")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ff1657d3-e3fc-4778-bbec-5be8aca2417b"
-      (reference "U302") (unit 1) (value "MICROCHIP-MCP2221A-ISL") (footprint "tronixio:SOIC-14")
+      (reference "U302") (unit 1) (value "MCP2221A-ISL") (footprint "tronixio:SOIC-14")
     )
   )
 )
