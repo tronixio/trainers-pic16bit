@@ -67,7 +67,7 @@
 uint8_t eusart_readCharacter(void);
 void eusart_writeCharacter(uint8_t u8Data);
 void eusart_writeString(const uint8_t * u8Data);
-int8_t rotary_i8encoderRead(void);
+int8_t rotary_i8encoderFilter(void);
 void u16toa(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base);
 
 // Strings & Custom Patterns.
@@ -84,10 +84,10 @@ const uint8_t au8Switch2[] = "\r\nSWITCH 2> ";
 const uint8_t au8Pressed[] = "PRESSED";
 const uint8_t au8Released[] = "RELEASED";
 
-const int8_t ai8encoderFull[16] = {0, 1, -1, 0, -1, 0, 0, 1, 1, 0, 0, -1, 0, -1, 1, 0};
+const uint8_t au8encoder[16] = {0, 1, 255, 0, 255, 0, 0, 1, 1, 0, 0, 255, 0, 255, 1, 0};
 
 // Global Variables.
-int8_t i8encoderDelta;
+uint8_t u8encoderDelta;
 uint16_t u16adcTimer;
 
 // Interrupts Service Routines
@@ -98,7 +98,7 @@ void _ISR_NOPSV _T1Interrupt(void)
         u8encoderLast = (u8encoderLast<<2) & 0x0F;
         if(ROTARY_PHASE_A) u8encoderLast |= 0b01; // CW.
         if(ROTARY_PHASE_B) u8encoderLast |= 0b10; // CCW.
-        i8encoderDelta += ai8encoderFull[u8encoderLast];
+        u8encoderDelta += au8encoder[u8encoderLast];
         IFS0bits.T1IF = 0b0;
     }
     u16adcTimer++;
@@ -252,7 +252,7 @@ int main(void)
             }
         }
 
-        u8encoderRead += rotary_i8encoderRead();
+        u8encoderRead += rotary_i8encoderFilter();
         if(u8encoderLast != u8encoderRead){
             u16toa(u8encoderRead, au8Buffer, 10);
             eusart_writeString(au8Encoder);
@@ -308,16 +308,16 @@ void eusart_writeString(const uint8_t * u8Data)
         eusart_writeCharacter(*u8Data++);
 }
 
-int8_t rotary_i8encoderRead(void)
+int8_t rotary_i8encoderFilter(void)
 {
-    int8_t u8encoderRead;
+    int8_t i8encoderFilter;
 
     IEC0bits.T1IE = 0b0;
-    u8encoderRead = i8encoderDelta;
-    i8encoderDelta = u8encoderRead & 3;
+    i8encoderFilter = u8encoderDelta;
+    u8encoderDelta = i8encoderFilter & 3;
     IEC0bits.T1IE = 0b1;
 
-    return(u8encoderRead>>2);
+    return(i8encoderFilter>>2);
 }
 
 void u16toa(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base)
