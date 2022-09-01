@@ -464,10 +464,6 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid f658a35b-cd3f-4917-860c-af80aebedc84)
     )
-    (pin "SCL" input (at 165.1 96.52 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 615ecb1b-6627-4bbb-bb41-d2b98a4c48c0)
-    )
     (pin "PGD{slash}UTX{slash}RB0" bidirectional (at 165.1 104.14 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid b21dd1d4-8336-443e-940e-33671d02e493)
@@ -475,6 +471,10 @@
     (pin "PGC{slash}URX{slash}RB1" bidirectional (at 165.1 106.68 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 6235f4f1-ec90-4bdd-ab30-e5dbf77d2a6b)
+    )
+    (pin "SCL" bidirectional (at 165.1 96.52 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 080c4085-e6e2-464f-a6cc-01d6a2b33315)
     )
   )
 
@@ -786,7 +786,7 @@
       (reference "JP204") (unit 1) (value "VREG") (footprint "tronixio:HARWIN-M20-999034x")
     )
     (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/2259c208-8ca0-4ca4-9675-2e8cdca370a7"
-      (reference "JP205") (unit 1) (value "VCA") (footprint "tronixio:HARWIN-M20-999024x")
+      (reference "JP205") (unit 1) (value "VCAP") (footprint "tronixio:HARWIN-M20-999024x")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/decd714e-c32f-40e5-b629-c0d4257717ea"
       (reference "JP301") (unit 1) (value "BCKL") (footprint "tronixio:HARWIN-M20-999024x")
@@ -945,10 +945,10 @@
       (reference "U202") (unit 1) (value "PIC24/dsPIC32") (footprint "tronixio:DIP-28-W762")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/2a18c81a-56c3-4e70-b384-8772ef4752eb"
-      (reference "U301") (unit 1) (value "CAT4002A") (footprint "tronixio:SOT-23-6")
+      (reference "U301") (unit 1) (value "CAT4002A") (footprint "tronixioZZZ:SC-70-6")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ff1657d3-e3fc-4778-bbec-5be8aca2417b"
-      (reference "U302") (unit 1) (value "MCP2221A-ISL") (footprint "tronixio:SOIC-14")
+      (reference "U302") (unit 1) (value "MCP2221A") (footprint "tronixio:SOIC-14")
     )
   )
 )
