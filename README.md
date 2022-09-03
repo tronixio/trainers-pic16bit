@@ -5,7 +5,7 @@
 - [**Nano** Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/nano/extras/schematic.pdf)
 - [TODO - Micro Trainer.](https://github.com/tronixio/trainers-pic8bit/blob/main/Kicad/micro/extras/schematic.pdf)
 - [**Mini** Trainer.](https://github.com/tronixio/trainers-pic16bit/blob/main/Kicad/mini/extras/schematic.pdf)
-- [TODO - PIC 16-Bit Trainer.](https://github.com/tronixio/trainers-pic8bit/blob/main/Kicad/micro/extras/schematic.pdf)
+- [**PIC 16-Bit** Trainer.](https://github.com/tronixio/trainers-pic8bit/blob/main/Kicad/micro/extras/schematic.pdf)
 
 ## Firmwares.
 
@@ -31,6 +31,14 @@
 ## MINI Trainer Bottom.
 
 ![MINI Trainer Bottom.](https://raw.githubusercontent.com/tronixio/trainers-pic16bit/main/Kicad/mini/extras/bottom.png)
+
+## PIC 16-Bit Trainer Top.
+
+![PIC 16-Bit Trainer Top.](https://raw.githubusercontent.com/tronixio/trainers-pic16bit/main/Kicad/trainer/extras/top.png)
+
+## PIC 16-Bit Trainer Bottom.
+
+![PIC 16-Bit Trainer Bottom.](https://raw.githubusercontent.com/tronixio/trainers-pic16bit/main/Kicad/trainer/extras/bottom.png)
 
 ## Note.
 
