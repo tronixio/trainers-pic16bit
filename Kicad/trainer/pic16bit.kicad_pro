@@ -369,7 +369,7 @@
     ]
   },
   "meta": {
-    "filename": "pic8bit.kicad_pro",
+    "filename": "pic16bit.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -456,7 +456,23 @@
         "microvia_drill": 0.0,
         "name": "CLASS-05",
         "nets": [
-          "GND"
+          "GND",
+          "Net-(EB401-Pad1)",
+          "Net-(EB401-Pad10)",
+          "Net-(EB401-Pad11)",
+          "Net-(EB401-Pad12)",
+          "Net-(EB401-Pad13)",
+          "Net-(EB401-Pad14)",
+          "Net-(EB401-Pad15)",
+          "Net-(EB401-Pad16)",
+          "Net-(EB401-Pad2)",
+          "Net-(EB401-Pad3)",
+          "Net-(EB401-Pad4)",
+          "Net-(EB401-Pad5)",
+          "Net-(EB401-Pad6)",
+          "Net-(EB401-Pad7)",
+          "Net-(EB401-Pad8)",
+          "Net-(EB401-Pad9)"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
