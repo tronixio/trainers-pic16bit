@@ -945,7 +945,7 @@
       (reference "U202") (unit 1) (value "PIC24/dsPIC32") (footprint "tronixio:DIP-28-W762")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/2a18c81a-56c3-4e70-b384-8772ef4752eb"
-      (reference "U301") (unit 1) (value "CAT4002A") (footprint "tronixioZZZ:SC-70-6")
+      (reference "U301") (unit 1) (value "CAT4002A") (footprint "tronixio:SC-70-6")
     )
     (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ff1657d3-e3fc-4778-bbec-5be8aca2417b"
       (reference "U302") (unit 1) (value "MCP2221A") (footprint "tronixio:SOIC-14")
