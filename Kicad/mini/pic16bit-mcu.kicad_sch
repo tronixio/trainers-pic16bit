@@ -3358,7 +3358,7 @@
     (property "Mouser" "80-C322C106K3R" (id 6) (at 193.04 165.1 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Voltage" "25V" (id 6) (at 194.31 154.94 0)
+    (property "Voltage" "25V" (id 7) (at 194.31 154.94 0)
       (effects (font (size 1.15 1.15)) (justify left) hide)
     )
     (pin "1" (uuid b81929bd-d2cf-421c-ba10-f00347e37190))
