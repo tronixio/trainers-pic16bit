@@ -352,7 +352,7 @@
       (property "Mouser" "854-BB170" (id 4) (at 0 -17.78 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "ki_description" "Breadboard 170 Tie-point" (id 5) (at 0 0 0)
+      (property "ki_description" "170 tie-point Solderless Plug-in BreadBoard" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "BREADBOARD-170_0_1"
