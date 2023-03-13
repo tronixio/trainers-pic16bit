@@ -1,5 +1,6 @@
 {
   "board": {
+    "3dviewports": [],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.15,
@@ -151,7 +152,8 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -335,18 +337,23 @@
     "rule_severities": {
       "bus_definition_conflict": "error",
       "bus_entry_needed": "error",
-      "bus_label_syntax": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
+      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
       "extra_units": "error",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "lib_symbol_issues": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
       "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
@@ -356,6 +363,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
+      "simulation_model_issue": "error",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -377,7 +385,7 @@
   "net_settings": {
     "classes": [
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.25,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -391,10 +399,10 @@
         "track_width": 0.3,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 5.0
+        "wire_width": 5
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -403,16 +411,15 @@
         "microvia_diameter": 0.0,
         "microvia_drill": 0.0,
         "name": "CLASS-02",
-        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 5.0
+        "wire_width": 5
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.25,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -421,16 +428,15 @@
         "microvia_diameter": 0.0,
         "microvia_drill": 0.0,
         "name": "CLASS-03",
-        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.3,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 5.0
+        "wire_width": 5
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.25,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -439,19 +445,15 @@
         "microvia_diameter": 0.0,
         "microvia_drill": 0.0,
         "name": "CLASS-04",
-        "nets": [
-          "/HID/D+",
-          "/HID/D-"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.4,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 5.0
+        "wire_width": 5
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.25,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -460,53 +462,15 @@
         "microvia_diameter": 0.0,
         "microvia_drill": 0.0,
         "name": "CLASS-05",
-        "nets": [
-          "+3V3",
-          "+5V",
-          "/HID/SCL",
-          "/HID/SDA",
-          "BCKL",
-          "GND",
-          "Net-(C202-Pad1)",
-          "Net-(C206-Pad1)",
-          "Net-(C301-Pad1)",
-          "Net-(C302-Pad1)",
-          "Net-(C303-Pad1)",
-          "Net-(C303-Pad2)",
-          "Net-(C305-Pad1)",
-          "Net-(D201-Pad2)",
-          "Net-(D202-Pad2)",
-          "Net-(F201-Pad1)",
-          "Net-(K301-Pad1)",
-          "Net-(K301-Pad2)",
-          "Net-(K301-Pad3)",
-          "Net-(K302-Pad1)",
-          "Net-(LED201-Pad2)",
-          "Net-(LED301-Pad2)",
-          "Net-(LED302-Pad2)",
-          "Net-(P301-Pad2)",
-          "Net-(P302-Pad2)",
-          "Net-(R301-Pad2)",
-          "Net-(R304-Pad2)",
-          "Net-(R309-Pad2)",
-          "PGC{slash}URX{slash}RB1",
-          "PGD{slash}UTX{slash}RB0",
-          "ROTARY_A",
-          "ROTARY_B",
-          "ROTARY_S",
-          "unconnected-(K201-Pad4)",
-          "unconnected-(K204-Pad1)",
-          "~{MCLR}"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 5.0
+        "wire_width": 5
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.3,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -515,16 +479,15 @@
         "microvia_diameter": 0.0,
         "microvia_drill": 0.0,
         "name": "POWER-05",
-        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 10.0
+        "wire_width": 10
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.4,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -533,16 +496,15 @@
         "microvia_diameter": 0.0,
         "microvia_drill": 0.0,
         "name": "POWER-08",
-        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.8,
         "via_diameter": 1.0,
         "via_drill": 0.5,
-        "wire_width": 10.0
+        "wire_width": 10
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.5,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -551,19 +513,173 @@
         "microvia_diameter": 0.0,
         "microvia_drill": 0.0,
         "name": "POWER-10",
-        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.0,
         "via_diameter": 1.0,
         "via_drill": 0.5,
-        "wire_width": 10.0
+        "wire_width": 10
       }
     ],
     "meta": {
-      "version": 2
+      "version": 3
     },
-    "net_colors": null
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "CLASS-04",
+        "pattern": "/HID/D+"
+      },
+      {
+        "netclass": "CLASS-04",
+        "pattern": "/HID/D-"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "/HID/SCL"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "/HID/SDA"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "BCKL"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(C202-Pad1)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(C206-Pad1)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(C301-Pad1)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(C302-Pad1)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(C303-Pad1)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(C303-Pad2)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(C305-Pad1)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(D201-Pad2)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(D202-Pad2)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(F201-Pad1)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(K301-Pad1)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(K301-Pad2)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(K301-Pad3)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(K302-Pad1)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(LED201-Pad2)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(LED301-Pad2)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(LED302-Pad2)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(P301-Pad2)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(P302-Pad2)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(R301-Pad2)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(R304-Pad2)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "Net-(R309-Pad2)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "PGC{slash}URX{slash}RB1"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "PGD{slash}UTX{slash}RB0"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "ROTARY_A"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "ROTARY_B"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "ROTARY_S"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "unconnected-(K201-Pad4)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "unconnected-(K204-Pad1)"
+      },
+      {
+        "netclass": "CLASS-05",
+        "pattern": "~{MCLR}"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -579,6 +695,8 @@
   "schematic": {
     "annotate_start_num": 100,
     "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
       "default_bus_thickness": 12.0,
       "default_junction_size": 36.0,
       "default_line_thickness": 6.0,
@@ -613,7 +731,11 @@
     "page_layout_descr_file": "/Users/sly/Nextcloud/Tronix/1.Kicad/layouts/layout4.kicad_wks",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
+    "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },

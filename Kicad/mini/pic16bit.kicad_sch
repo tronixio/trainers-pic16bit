@@ -1,11 +1,11 @@
-(kicad_sch (version 20211123) (generator eeschema)
+(kicad_sch (version 20230121) (generator eeschema)
 
   (uuid d431d485-8cd8-4e00-afcd-f39218d614ca)
 
   (paper "A4")
 
   (title_block
-    (title "Connections")
+    (title "Root")
     (date "01/2022")
     (rev "A")
     (comment 1 "PIC16-Bit Mini Trainer")
@@ -13,22 +13,22 @@
 
   (lib_symbols
     (symbol "tronixio:HARWIN-JUMPER-0254-06MM-BLACK" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "JP" (id 0) (at 0 2.54 0)
+      (property "Reference" "JP" (at 0 2.54 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (id 1) (at 0 -2.54 0)
+      (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 0 -2.54 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (id 2) (at 0 -5.08 0)
+      (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 0 -5.08 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 0 -7.62 0)
+      (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 0 -7.62 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "Mouser" "855-M7582" (id 4) (at 0 -10.16 0)
+      (property "Mouser" "855-M7582" (at 0 -10.16 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "ki_description" "2.54 Pitch Open Top Jumper Socket" (id 5) (at 0 0 0)
+      (property "ki_description" "2.54 Pitch Open Top Jumper Socket" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "HARWIN-JUMPER-0254-06MM-BLACK_0_1"
@@ -37,7 +37,7 @@
             (xy -1.016 -1.016)
             (xy 1.016 1.016)
           )
-          (stroke (width 0.3) (type default) (color 0 0 0 0))
+          (stroke (width 0.3) (type default))
           (fill (type none))
         )
         (polyline
@@ -45,32 +45,32 @@
             (xy 1.016 -1.016)
             (xy -1.016 1.016)
           )
-          (stroke (width 0.3) (type default) (color 0 0 0 0))
+          (stroke (width 0.3) (type default))
           (fill (type none))
         )
         (circle (center 0 0) (radius 1.524)
-          (stroke (width 0.3) (type default) (color 0 0 0 0))
+          (stroke (width 0.3) (type default))
           (fill (type none))
         )
       )
     )
     (symbol "tronixio:KEYSTONE-9055" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (id 0) (at 0 2.54 0)
+      (property "Reference" "H" (at 0 2.54 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "Value" "KEYSTONE-9055" (id 1) (at 0 -2.54 0)
+      (property "Value" "KEYSTONE-9055" (at 0 -2.54 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "Footprint" "tronixio:KEYSTONE-9055" (id 2) (at 0 -5.08 0)
+      (property "Footprint" "tronixio:KEYSTONE-9055" (at 0 -5.08 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (id 3) (at 0 -7.62 0)
+      (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (at 0 -7.62 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "Mouser" "534-9055" (id 4) (at 0 -10.16 0)
+      (property "Mouser" "534-9055" (at 0 -10.16 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "ki_description" "PC Lock-In Support 3.18mm" (id 5) (at 0 0 0)
+      (property "ki_description" "PC Lock-In Support 3.18mm" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "KEYSTONE-9055_0_1"
@@ -79,7 +79,7 @@
             (xy -1.016 -1.016)
             (xy 1.016 1.016)
           )
-          (stroke (width 0.3) (type default) (color 0 0 0 0))
+          (stroke (width 0.3) (type default))
           (fill (type none))
         )
         (polyline
@@ -87,32 +87,32 @@
             (xy 1.016 -1.016)
             (xy -1.016 1.016)
           )
-          (stroke (width 0.3) (type default) (color 0 0 0 0))
+          (stroke (width 0.3) (type default))
           (fill (type none))
         )
         (circle (center 0 0) (radius 1.524)
-          (stroke (width 0.3) (type default) (color 0 0 0 0))
+          (stroke (width 0.3) (type default))
           (fill (type none))
         )
       )
     )
     (symbol "tronixio:PE-450-4X6X-BLACK" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "K" (id 0) (at 0 2.54 0)
+      (property "Reference" "K" (at 0 2.54 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "Value" "PE-450-4X6X-BLACK" (id 1) (at 0 -2.54 0)
+      (property "Value" "PE-450-4X6X-BLACK" (at 0 -2.54 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "Footprint" "tronixio:PE-450-4X6X" (id 2) (at 0 -5.08 0)
+      (property "Footprint" "tronixio:PE-450-4X6X" (at 0 -5.08 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "Datasheet" "https://www.mouser.fr/datasheet/2/209/EPD-200220-1171146.pdf" (id 3) (at 0 -7.62 0)
+      (property "Datasheet" "https://www.mouser.fr/datasheet/2/209/EPD-200220-1171146.pdf" (at 0 -7.62 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "Mouser" "450-476" (id 4) (at 0 -10.16 0)
+      (property "Mouser" "450-476" (at 0 -10.16 0)
         (effects (font (size 1 1)) hide)
       )
-      (property "ki_description" "Instrument Control Knobs" (id 5) (at 0 0 0)
+      (property "ki_description" "Instrument Control Knobs" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "PE-450-4X6X-BLACK_0_1"
@@ -121,7 +121,7 @@
             (xy -1.016 -1.016)
             (xy 1.016 1.016)
           )
-          (stroke (width 0.3) (type default) (color 0 0 0 0))
+          (stroke (width 0.3) (type default))
           (fill (type none))
         )
         (polyline
@@ -129,11 +129,11 @@
             (xy 1.016 -1.016)
             (xy -1.016 1.016)
           )
-          (stroke (width 0.3) (type default) (color 0 0 0 0))
+          (stroke (width 0.3) (type default))
           (fill (type none))
         )
         (circle (center 0 0) (radius 1.524)
-          (stroke (width 0.3) (type default) (color 0 0 0 0))
+          (stroke (width 0.3) (type default))
           (fill (type none))
         )
       )
@@ -142,278 +142,362 @@
 
 
   (wire (pts (xy 124.46 106.68) (xy 165.1 106.68))
-    (stroke (width 0) (type default) (color 0 0 0 0))
+    (stroke (width 0) (type default))
     (uuid 649d34df-e359-4f6f-a514-767709ad99dc)
   )
   (wire (pts (xy 124.46 91.44) (xy 165.1 91.44))
-    (stroke (width 0) (type default) (color 0 0 0 0))
+    (stroke (width 0) (type default))
     (uuid 86e0f92e-5d64-47ef-ae5a-c465217f62eb)
   )
   (wire (pts (xy 124.46 88.9) (xy 165.1 88.9))
-    (stroke (width 0) (type default) (color 0 0 0 0))
+    (stroke (width 0) (type default))
     (uuid aa9d4b0a-fe62-4d63-951a-f4d1b108c65d)
   )
   (wire (pts (xy 124.46 99.06) (xy 165.1 99.06))
-    (stroke (width 0) (type default) (color 0 0 0 0))
+    (stroke (width 0) (type default))
     (uuid bc582007-c697-44bf-9888-88c0313f58cc)
   )
   (wire (pts (xy 124.46 104.14) (xy 165.1 104.14))
-    (stroke (width 0) (type default) (color 0 0 0 0))
+    (stroke (width 0) (type default))
     (uuid bcd31248-1323-4e3a-bd98-3f92f669e422)
   )
   (wire (pts (xy 124.46 96.52) (xy 165.1 96.52))
-    (stroke (width 0) (type default) (color 0 0 0 0))
+    (stroke (width 0) (type default))
     (uuid fa7bfc2c-4d34-426a-90c5-d436357849f6)
   )
 
   (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 254 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2561e122-81ba-4e0d-985f-7458f0d0519a)
-    (property "Reference" "JP103" (id 0) (at 254 170.18 0)
+    (property "Reference" "JP103" (at 254 170.18 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (id 1) (at 254 175.26 0)
+    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 254 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (id 2) (at 254 177.8 0)
+    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 254 177.8 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 254 180.34 0)
+    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 254 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Mouser" "855-M7582" (id 4) (at 254 182.88 0)
+    (property "Mouser" "855-M7582" (at 254 182.88 0)
       (effects (font (size 1 1)) hide)
+    )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+          (reference "JP103") (unit 1)
+        )
+      )
     )
   )
 
   (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 274.32 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 38d314bd-8e96-4267-9857-5de91a868038)
-    (property "Reference" "JP107" (id 0) (at 274.32 170.18 0)
+    (property "Reference" "JP107" (at 274.32 170.18 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (id 1) (at 274.32 175.26 0)
+    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 274.32 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (id 2) (at 274.32 177.8 0)
+    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 274.32 177.8 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 274.32 180.34 0)
+    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 274.32 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Mouser" "855-M7582" (id 4) (at 274.32 182.88 0)
+    (property "Mouser" "855-M7582" (at 274.32 182.88 0)
       (effects (font (size 1 1)) hide)
+    )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+          (reference "JP107") (unit 1)
+        )
+      )
     )
   )
 
   (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 243.84 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 55795f44-b358-4de2-a286-91a0aa0ebc8a)
-    (property "Reference" "JP101" (id 0) (at 243.84 170.18 0)
+    (property "Reference" "JP101" (at 243.84 170.18 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (id 1) (at 243.84 175.26 0)
+    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 243.84 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (id 2) (at 243.84 177.8 0)
+    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 243.84 177.8 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 243.84 180.34 0)
+    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 243.84 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Mouser" "855-M7582" (id 4) (at 243.84 182.88 0)
+    (property "Mouser" "855-M7582" (at 243.84 182.88 0)
       (effects (font (size 1 1)) hide)
+    )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+          (reference "JP101") (unit 1)
+        )
+      )
     )
   )
 
   (symbol (lib_id "tronixio:PE-450-4X6X-BLACK") (at 243.84 167.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6b755907-4f96-4573-95bb-15fa8caed158)
-    (property "Reference" "K101" (id 0) (at 243.84 165.1 0)
+    (property "Reference" "K101" (at 243.84 165.1 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Value" "PE-450-4X6X-BLACK" (id 1) (at 243.84 170.18 0)
+    (property "Value" "PE-450-4X6X-BLACK" (at 243.84 170.18 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Footprint" "tronixio:PE-450-4X6X" (id 2) (at 243.84 172.72 0)
+    (property "Footprint" "tronixio:PE-450-4X6X" (at 243.84 172.72 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Datasheet" "https://www.mouser.fr/datasheet/2/209/EPD-200220-1171146.pdf" (id 3) (at 243.84 175.26 0)
+    (property "Datasheet" "https://www.mouser.fr/datasheet/2/209/EPD-200220-1171146.pdf" (at 243.84 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Mouser" "450-476" (id 4) (at 243.84 177.8 0)
+    (property "Mouser" "450-476" (at 243.84 177.8 0)
       (effects (font (size 1 1)) hide)
+    )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+          (reference "K101") (unit 1)
+        )
+      )
     )
   )
 
   (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 269.24 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6facdeeb-0e24-4926-88ea-a11dcb194ea7)
-    (property "Reference" "JP106" (id 0) (at 269.24 170.18 0)
+    (property "Reference" "JP106" (at 269.24 170.18 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (id 1) (at 269.24 175.26 0)
+    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 269.24 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (id 2) (at 269.24 177.8 0)
+    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 269.24 177.8 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 269.24 180.34 0)
+    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 269.24 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Mouser" "855-M7582" (id 4) (at 269.24 182.88 0)
+    (property "Mouser" "855-M7582" (at 269.24 182.88 0)
       (effects (font (size 1 1)) hide)
+    )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+          (reference "JP106") (unit 1)
+        )
+      )
     )
   )
 
   (symbol (lib_id "tronixio:KEYSTONE-9055") (at 269.24 167.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7003504b-9f97-4ac5-818a-56ae471796ba)
-    (property "Reference" "H103" (id 0) (at 269.24 165.1 0)
+    (property "Reference" "H103" (at 269.24 165.1 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Value" "KEYSTONE-9055" (id 1) (at 269.24 170.18 0)
+    (property "Value" "KEYSTONE-9055" (at 269.24 170.18 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Footprint" "tronixio:KEYSTONE-9055" (id 2) (at 269.24 172.72 0)
+    (property "Footprint" "tronixio:KEYSTONE-9055" (at 269.24 172.72 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (id 3) (at 269.24 175.26 0)
+    (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (at 269.24 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Mouser" "534-9055" (id 4) (at 269.24 177.8 0)
+    (property "Mouser" "534-9055" (at 269.24 177.8 0)
       (effects (font (size 1 1)) hide)
+    )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+          (reference "H103") (unit 1)
+        )
+      )
     )
   )
 
   (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 248.92 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b15662d8-7a8e-4960-a0aa-90bd603f6387)
-    (property "Reference" "JP102" (id 0) (at 248.92 170.18 0)
+    (property "Reference" "JP102" (at 248.92 170.18 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (id 1) (at 248.92 175.26 0)
+    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 248.92 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (id 2) (at 248.92 177.8 0)
+    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 248.92 177.8 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 248.92 180.34 0)
+    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 248.92 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Mouser" "855-M7582" (id 4) (at 248.92 182.88 0)
+    (property "Mouser" "855-M7582" (at 248.92 182.88 0)
       (effects (font (size 1 1)) hide)
+    )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+          (reference "JP102") (unit 1)
+        )
+      )
     )
   )
 
   (symbol (lib_id "tronixio:KEYSTONE-9055") (at 259.08 167.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c1eea772-e579-4927-94fd-1ac1e47e3b32)
-    (property "Reference" "H101" (id 0) (at 259.08 165.1 0)
+    (property "Reference" "H101" (at 259.08 165.1 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Value" "KEYSTONE-9055" (id 1) (at 259.08 170.18 0)
+    (property "Value" "KEYSTONE-9055" (at 259.08 170.18 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Footprint" "tronixio:KEYSTONE-9055" (id 2) (at 259.08 172.72 0)
+    (property "Footprint" "tronixio:KEYSTONE-9055" (at 259.08 172.72 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (id 3) (at 259.08 175.26 0)
+    (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (at 259.08 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Mouser" "534-9055" (id 4) (at 259.08 177.8 0)
+    (property "Mouser" "534-9055" (at 259.08 177.8 0)
       (effects (font (size 1 1)) hide)
+    )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+          (reference "H101") (unit 1)
+        )
+      )
     )
   )
 
   (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 264.16 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ca884991-93b5-427d-a5bf-e3992c319b14)
-    (property "Reference" "JP105" (id 0) (at 264.16 170.18 0)
+    (property "Reference" "JP105" (at 264.16 170.18 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (id 1) (at 264.16 175.26 0)
+    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 264.16 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (id 2) (at 264.16 177.8 0)
+    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 264.16 177.8 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 264.16 180.34 0)
+    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 264.16 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Mouser" "855-M7582" (id 4) (at 264.16 182.88 0)
+    (property "Mouser" "855-M7582" (at 264.16 182.88 0)
       (effects (font (size 1 1)) hide)
+    )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+          (reference "JP105") (unit 1)
+        )
+      )
     )
   )
 
   (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 259.08 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ccd38e6f-ac6c-417c-a6ae-7a2737a58c97)
-    (property "Reference" "JP104" (id 0) (at 259.08 170.18 0)
+    (property "Reference" "JP104" (at 259.08 170.18 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (id 1) (at 259.08 175.26 0)
+    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 259.08 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (id 2) (at 259.08 177.8 0)
+    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 259.08 177.8 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (id 3) (at 259.08 180.34 0)
+    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 259.08 180.34 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Mouser" "855-M7582" (id 4) (at 259.08 182.88 0)
+    (property "Mouser" "855-M7582" (at 259.08 182.88 0)
       (effects (font (size 1 1)) hide)
+    )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+          (reference "JP104") (unit 1)
+        )
+      )
     )
   )
 
   (symbol (lib_id "tronixio:KEYSTONE-9055") (at 264.16 167.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d58c3ce6-5988-49c9-81fe-f006bdc55a35)
-    (property "Reference" "H102" (id 0) (at 264.16 165.1 0)
+    (property "Reference" "H102" (at 264.16 165.1 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Value" "KEYSTONE-9055" (id 1) (at 264.16 170.18 0)
+    (property "Value" "KEYSTONE-9055" (at 264.16 170.18 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Footprint" "tronixio:KEYSTONE-9055" (id 2) (at 264.16 172.72 0)
+    (property "Footprint" "tronixio:KEYSTONE-9055" (at 264.16 172.72 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (id 3) (at 264.16 175.26 0)
+    (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (at 264.16 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Mouser" "534-9055" (id 4) (at 264.16 177.8 0)
+    (property "Mouser" "534-9055" (at 264.16 177.8 0)
       (effects (font (size 1 1)) hide)
+    )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+          (reference "H102") (unit 1)
+        )
+      )
     )
   )
 
   (symbol (lib_id "tronixio:KEYSTONE-9055") (at 274.32 167.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d6cf4fdb-3342-4c3f-9a81-a63c4f6592dd)
-    (property "Reference" "H104" (id 0) (at 274.32 165.1 0)
+    (property "Reference" "H104" (at 274.32 165.1 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Value" "KEYSTONE-9055" (id 1) (at 274.32 170.18 0)
+    (property "Value" "KEYSTONE-9055" (at 274.32 170.18 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Footprint" "tronixio:KEYSTONE-9055" (id 2) (at 274.32 172.72 0)
+    (property "Footprint" "tronixio:KEYSTONE-9055" (at 274.32 172.72 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (id 3) (at 274.32 175.26 0)
+    (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (at 274.32 175.26 0)
       (effects (font (size 1 1)) hide)
     )
-    (property "Mouser" "534-9055" (id 4) (at 274.32 177.8 0)
+    (property "Mouser" "534-9055" (at 274.32 177.8 0)
       (effects (font (size 1 1)) hide)
+    )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+          (reference "H104") (unit 1)
+        )
+      )
     )
   )
 
   (sheet (at 78.74 76.2) (size 45.72 45.72) (fields_autoplaced)
-    (stroke (width 0.1) (type solid) (color 0 0 0 0))
+    (stroke (width 0.1) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 64edc06d-d6ae-4dac-9759-3f1fbed6457d)
-    (property "Sheet name" "MCU" (id 0) (at 78.74 75.1496 0)
+    (property "Sheetname" "MCU" (at 78.74 75.1496 0)
       (effects (font (size 2 2)) (justify left bottom))
     )
-    (property "Sheet file" "pic16bit-mcu.kicad_sch" (id 1) (at 78.74 122.4784 0)
+    (property "Sheetfile" "pic16bit-mcu.kicad_sch" (at 78.74 122.4784 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (pin "SDA" bidirectional (at 124.46 99.06 0)
@@ -440,16 +524,21 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid a365828c-3669-44ee-954a-9b27d8c9002a)
     )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca" (page "2"))
+      )
+    )
   )
 
   (sheet (at 165.1 76.2) (size 45.72 45.72) (fields_autoplaced)
-    (stroke (width 0.1) (type solid) (color 0 0 0 0))
+    (stroke (width 0.1) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 8cdf8b92-b881-481d-a85a-c0055e9a856b)
-    (property "Sheet name" "HID" (id 0) (at 165.1 75.1496 0)
+    (property "Sheetname" "HID" (at 165.1 75.1496 0)
       (effects (font (size 2 2)) (justify left bottom))
     )
-    (property "Sheet file" "pic16bit-hid.kicad_sch" (id 1) (at 165.1 122.4784 0)
+    (property "Sheetfile" "pic16bit-hid.kicad_sch" (at 165.1 122.4784 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (pin "SDA" bidirectional (at 165.1 99.06 180)
@@ -476,479 +565,14 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 080c4085-e6e2-464f-a6cc-01d6a2b33315)
     )
+    (instances
+      (project "pic16bit"
+        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca" (page "3"))
+      )
+    )
   )
 
   (sheet_instances
     (path "/" (page "1"))
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d" (page "2"))
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b" (page "3"))
-  )
-
-  (symbol_instances
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/4729242a-02fb-42e4-9a5a-53bdf70afd2c"
-      (reference "#FLG0201") (unit 1) (value "PWR_FLAG") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/2022cc83-3f05-4c30-a5fb-c6ec73813a36"
-      (reference "#PWR0101") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/be5eb89b-05e2-42c2-9d0a-9f29b7342ad3"
-      (reference "#PWR0102") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/24d67936-ff6b-448c-a994-0e5b53911a04"
-      (reference "#PWR0103") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/d6935410-6de8-4832-85fd-71f2e6005cda"
-      (reference "#PWR0104") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/414946f0-7b8a-48f8-aaa1-5609ea0bc0d1"
-      (reference "#PWR0105") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/18b0b3eb-a85c-484e-9d73-8b1e5f5ed096"
-      (reference "#PWR0106") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/da3d5957-41a2-449b-90f7-b7d97a502e84"
-      (reference "#PWR0107") (unit 1) (value "POWER-+5V") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/39547ac9-c152-4f50-9cd1-5968dfe76f0d"
-      (reference "#PWR0108") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/4757e10b-9c66-43d0-9f3d-70a5b8d7f590"
-      (reference "#PWR0109") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/6e69b7e1-262a-4535-ae77-5200aea03442"
-      (reference "#PWR0110") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/1c1463f2-af2d-45f5-aec3-30fedc3070c9"
-      (reference "#PWR0111") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/c6efbb25-a770-4354-a69f-359fb231a1c6"
-      (reference "#PWR0112") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/647fa114-ef72-4c94-bf51-8fb52074d759"
-      (reference "#PWR0113") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/bb321330-0b36-488c-b4c4-1ae8123d6af9"
-      (reference "#PWR0114") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/b392d6b4-3069-4180-9c19-c99c557552d3"
-      (reference "#PWR0115") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/6f1e21a6-fbe1-4302-a169-27dfee5b46a3"
-      (reference "#PWR0116") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/f8704056-9374-4c6f-b68c-8a92ea9f2fee"
-      (reference "#PWR0117") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/f683a11f-c0b5-4dda-84ac-84d1dbfd3e0a"
-      (reference "#PWR0118") (unit 1) (value "POWER-+5V") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/17f89b77-f3de-42d8-a6c8-ac8e41a8b38b"
-      (reference "#PWR0119") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/042d4d4c-4a2e-460e-bde0-78614102b093"
-      (reference "#PWR0120") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/83005153-a7bd-488a-9801-c8386f589afb"
-      (reference "#PWR0121") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/608f0965-a401-4f7c-818a-2c09b4cdc8f7"
-      (reference "#PWR0122") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/018505a0-41ac-4c25-8150-1a0e52b86dd2"
-      (reference "#PWR0123") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/c91eeb64-f183-4621-98c8-b8a52d9472ec"
-      (reference "#PWR0124") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/cd67b54b-f731-4f9b-9bcd-b43fc9297e71"
-      (reference "#PWR0125") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/e5db63a1-7467-4c47-8cb5-5cbb10d3c4e9"
-      (reference "#PWR0126") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/21dfd998-a670-4d73-91fb-ada62fc9bd5b"
-      (reference "#PWR0127") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/f90f8365-48be-4522-8bc7-14c03f13d6a6"
-      (reference "#PWR0128") (unit 1) (value "POWER-+5V") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/c65babff-7fbd-4f9a-9cce-0e29e131d439"
-      (reference "#PWR0129") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/3bd86612-b1bd-4c53-981a-5f71f05bc808"
-      (reference "#PWR0130") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/f75f617f-fff3-4822-b40a-96e3c4182b65"
-      (reference "#PWR0131") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/3ad3550c-ccd6-488f-8ab9-28a5643662d3"
-      (reference "#PWR0132") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/041e4a34-68ef-4605-a13e-4a561ee3bf73"
-      (reference "#PWR0133") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/58f21bbb-74fa-4742-9087-6111a36766a3"
-      (reference "#PWR0134") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ac101d2c-83ca-4269-8784-b3705efcd487"
-      (reference "#PWR0135") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/1b917c28-3ccf-4bc0-a3b8-0cb082837b69"
-      (reference "#PWR0136") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/f14686ab-c3ea-47d0-88b2-9a3243f11c86"
-      (reference "#PWR0137") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/c510faf5-376b-4e68-9c55-20438cea3ba7"
-      (reference "#PWR0138") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/592a45ef-5e92-4c96-94b0-556860ab35bb"
-      (reference "#PWR0139") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/8ef91346-25c9-4015-a3e3-9f24ce026804"
-      (reference "#PWR0140") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/6b4e7de2-7507-4c74-b301-59efc5900cfc"
-      (reference "#PWR0141") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/c566dcb4-a71d-4701-a35c-2be0ed80b5cd"
-      (reference "#PWR0142") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/322c3e87-e7a7-4f55-bf96-c9de46227372"
-      (reference "#PWR0143") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/e0acd20b-5f6a-4e82-a847-dafec710c766"
-      (reference "#PWR0144") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/1d78df71-642e-4bdf-8731-35a5e24c2766"
-      (reference "#PWR0145") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/386d2ac3-cc05-4360-9e0a-09a32bb1d2d2"
-      (reference "#PWR0146") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/bc3ac926-4cab-48cb-91a2-91edd0d87d19"
-      (reference "#PWR0147") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/09ab3b68-d4a1-4266-aa6a-25207e3051df"
-      (reference "#PWR0148") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/e7ebf16c-23a8-4a02-8dc3-221aea380656"
-      (reference "#PWR0149") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/82ef7fd3-3745-4ead-9366-91372d0e821d"
-      (reference "#PWR0150") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/a6b40004-0f52-4262-b996-f98a337c1e09"
-      (reference "#PWR0151") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/99c66c1b-f4ec-4ee0-bfa9-c19953867a8e"
-      (reference "#PWR0152") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/dcf222ff-38d5-4c2a-b877-8cfbd7820bf3"
-      (reference "#PWR0153") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/7813f025-44ac-4141-acc9-0659c62ec273"
-      (reference "#PWR0154") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/93f57085-e144-4171-aa6e-7f54d532ff93"
-      (reference "#PWR0155") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/d6459878-9fb8-4693-895b-d5bf6347836b"
-      (reference "#PWR0156") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/24b855cd-9eac-47ee-9521-7d0e622922ce"
-      (reference "#PWR0157") (unit 1) (value "POWER-+5V") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/5cf7d906-9c67-4203-8dcd-4ea87141ca1b"
-      (reference "#PWR0158") (unit 1) (value "POWER-+5V") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/d59cfc5b-056f-48c6-8b60-5ee90ae3be5c"
-      (reference "#PWR0159") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/128b4e1e-1320-4179-ae4e-c80167118095"
-      (reference "#PWR0160") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/0cd77f7d-d460-4f33-acea-ec52b8800920"
-      (reference "#PWR0161") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/01ef46b0-7257-42c7-93a7-e3bf64a6b326"
-      (reference "#PWR0162") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/54591e46-fad8-4947-9225-1d7570166b2a"
-      (reference "#PWR0163") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/15d38fa0-21e7-4f4f-826e-727b57eae1ea"
-      (reference "#PWR0164") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/04725e29-98f9-4442-8888-606235862cb7"
-      (reference "#PWR0165") (unit 1) (value "POWER-+3V3") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/762095b0-f0fe-49f7-89e4-3e02c8b3bbeb"
-      (reference "#PWR0166") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/1a1c3d19-af17-4779-a1fd-8ac5a36a50f5"
-      (reference "#PWR0168") (unit 1) (value "POWER-GND") (footprint "")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/36380bba-c7ac-4db6-bbd7-e4b4cc9c6541"
-      (reference "BB301") (unit 1) (value "BREADBOARD-170") (footprint "tronixio:BREADBOARD-170")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/3eb5e29c-65b8-4e4a-9945-da296fffefe3"
-      (reference "C201") (unit 1) (value "10µ") (footprint "tronixio:CAPACITOR-SMD-1206")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/8d5531be-425c-471c-8d2f-56f471ef38cc"
-      (reference "C202") (unit 1) (value "100n") (footprint "tronixio:CAPACITOR-SMD-1206")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/501b335d-f76d-4bdb-8481-c31def9ac227"
-      (reference "C203") (unit 1) (value "10µ") (footprint "tronixio:CAPACITOR-SMD-1206")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/82a800c8-cf6a-4d88-bf0c-6c131f42f7bc"
-      (reference "C204") (unit 1) (value "100n") (footprint "tronixio:CAPACITOR-SMD-1206")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/4666de14-777f-4c12-b15a-5c129f5059ea"
-      (reference "C205") (unit 1) (value "100n") (footprint "tronixio:CAPACITOR-SMD-1206")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/4c616429-e617-4622-99cc-a643a93dfefb"
-      (reference "C206") (unit 1) (value "10µ") (footprint "tronixio:KEMET-C322")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/f24a25aa-1562-4ec1-b48f-b654cec37db4"
-      (reference "C301") (unit 1) (value "10n") (footprint "tronixio:CAPACITOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/9f9125b2-aeae-4208-b8ab-ba46c642b6d6"
-      (reference "C302") (unit 1) (value "1µ") (footprint "tronixio:CAPACITOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/65055372-aba5-4bfc-b429-26e6014caff2"
-      (reference "C303") (unit 1) (value "1µ") (footprint "tronixio:CAPACITOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/185c7dd3-5c0a-4465-b8e0-64f820a0619c"
-      (reference "C304") (unit 1) (value "1µ") (footprint "tronixio:CAPACITOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/67d8b11c-b0d7-4131-b2a4-eacfcefe297a"
-      (reference "C305") (unit 1) (value "10n") (footprint "tronixio:CAPACITOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ebc0f50d-068b-467c-8aa7-02b7ba6411cd"
-      (reference "C306") (unit 1) (value "100n") (footprint "tronixio:CAPACITOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/041bc186-9ab7-4f41-bed6-c360bd849954"
-      (reference "C307") (unit 1) (value "10n") (footprint "tronixio:CAPACITOR-SMD-1206")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/865b8e57-628d-403a-b20f-ae88b050a883"
-      (reference "D201") (unit 1) (value "PMEG3030") (footprint "tronixio:SOD-128")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/35c609f9-352f-4c85-9d67-585c7489a901"
-      (reference "D202") (unit 1) (value "PMEG3030") (footprint "tronixio:SOD-128")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/9ae27384-0582-41c5-b120-3b00afe0fcd0"
-      (reference "F201") (unit 1) (value "500mA") (footprint "tronixio:FUSE-SMD-1206")
-    )
-    (path "/c1eea772-e579-4927-94fd-1ac1e47e3b32"
-      (reference "H101") (unit 1) (value "KEYSTONE-9055") (footprint "tronixio:KEYSTONE-9055")
-    )
-    (path "/d58c3ce6-5988-49c9-81fe-f006bdc55a35"
-      (reference "H102") (unit 1) (value "KEYSTONE-9055") (footprint "tronixio:KEYSTONE-9055")
-    )
-    (path "/7003504b-9f97-4ac5-818a-56ae471796ba"
-      (reference "H103") (unit 1) (value "KEYSTONE-9055") (footprint "tronixio:KEYSTONE-9055")
-    )
-    (path "/d6cf4fdb-3342-4c3f-9a81-a63c4f6592dd"
-      (reference "H104") (unit 1) (value "KEYSTONE-9055") (footprint "tronixio:KEYSTONE-9055")
-    )
-    (path "/55795f44-b358-4de2-a286-91a0aa0ebc8a"
-      (reference "JP101") (unit 1) (value "HARWIN-JUMPER-0254-06MM-BLACK") (footprint "tronixio:HARWIN-M20-7580-7583")
-    )
-    (path "/b15662d8-7a8e-4960-a0aa-90bd603f6387"
-      (reference "JP102") (unit 1) (value "HARWIN-JUMPER-0254-06MM-BLACK") (footprint "tronixio:HARWIN-M20-7580-7583")
-    )
-    (path "/2561e122-81ba-4e0d-985f-7458f0d0519a"
-      (reference "JP103") (unit 1) (value "HARWIN-JUMPER-0254-06MM-BLACK") (footprint "tronixio:HARWIN-M20-7580-7583")
-    )
-    (path "/ccd38e6f-ac6c-417c-a6ae-7a2737a58c97"
-      (reference "JP104") (unit 1) (value "HARWIN-JUMPER-0254-06MM-BLACK") (footprint "tronixio:HARWIN-M20-7580-7583")
-    )
-    (path "/ca884991-93b5-427d-a5bf-e3992c319b14"
-      (reference "JP105") (unit 1) (value "HARWIN-JUMPER-0254-06MM-BLACK") (footprint "tronixio:HARWIN-M20-7580-7583")
-    )
-    (path "/6facdeeb-0e24-4926-88ea-a11dcb194ea7"
-      (reference "JP106") (unit 1) (value "HARWIN-JUMPER-0254-06MM-BLACK") (footprint "tronixio:HARWIN-M20-7580-7583")
-    )
-    (path "/38d314bd-8e96-4267-9857-5de91a868038"
-      (reference "JP107") (unit 1) (value "HARWIN-JUMPER-0254-06MM-BLACK") (footprint "tronixio:HARWIN-M20-7580-7583")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/48d7a7e1-4fb3-4483-a129-6cbe11cc5015"
-      (reference "JP201") (unit 1) (value "Power IN") (footprint "tronixio:HARWIN-M20-999024x")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/74829a15-f61a-4ebe-a603-9d8411858579"
-      (reference "JP202") (unit 1) (value "SCL") (footprint "tronixio:HARWIN-M20-999024x")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/b8c21ba3-3d7a-4e4f-b270-49132d8383d1"
-      (reference "JP203") (unit 1) (value "SDA") (footprint "tronixio:HARWIN-M20-999024x")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/65ac7040-1149-437f-8282-b1bb1b706af6"
-      (reference "JP204") (unit 1) (value "VREG") (footprint "tronixio:HARWIN-M20-999034x")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/2259c208-8ca0-4ca4-9675-2e8cdca370a7"
-      (reference "JP205") (unit 1) (value "VCAP") (footprint "tronixio:HARWIN-M20-999024x")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/decd714e-c32f-40e5-b629-c0d4257717ea"
-      (reference "JP301") (unit 1) (value "BCKL") (footprint "tronixio:HARWIN-M20-999024x")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/5b2a7490-73c4-49fc-bb18-277203ce33eb"
-      (reference "JP302") (unit 1) (value "UTX") (footprint "tronixio:HARWIN-M20-999024x")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/08a4a2f1-6e8a-45e7-a693-0c7e4cb5ee13"
-      (reference "JP303") (unit 1) (value "URX") (footprint "tronixio:HARWIN-M20-999024x")
-    )
-    (path "/6b755907-4f96-4573-95bb-15fa8caed158"
-      (reference "K101") (unit 1) (value "PE-450-4X6X-BLACK") (footprint "tronixio:PE-450-4X6X")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/9b2e4f84-ffbf-4a0a-a91f-5e2440193799"
-      (reference "K201") (unit 1) (value "*Power & UART") (footprint "tronixio:FCI-USB-TYPE-B-MICRO-THT")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/2c0a744d-ba30-4cb5-9f9d-15d196a148b2"
-      (reference "K202") (unit 1) (value "MCU 1") (footprint "tronixio:HARWIN-M20-999144x")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/37acb9d9-3009-48a3-9184-481c831dc751"
-      (reference "K203") (unit 1) (value "MCU 1") (footprint "tronixio:HARWIN-M20-782144x")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/e4028da1-e1f8-478f-89bc-27fc35cf11fa"
-      (reference "K204") (unit 1) (value "ICSP") (footprint "tronixio:SAMTEC-SSW-106-02-T-S-RA")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/ebd1fc0e-1e3e-4dd9-bd9c-573a612fe205"
-      (reference "K205") (unit 1) (value "MCU 2") (footprint "tronixio:HARWIN-M20-999144x")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/f28cb1f3-23cf-476a-8aa2-c5c9cb70c1a0"
-      (reference "K206") (unit 1) (value "MCU 2") (footprint "tronixio:HARWIN-M20-782144x")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/d8dfe39a-4c2d-4583-9a29-5f6578ad8af3"
-      (reference "K301") (unit 1) (value "HARWIN-254-F-1X08-VERTICAL") (footprint "tronixio:HARWIN-M20-782084x")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/50151c1d-c91d-453c-a0af-92c029bb2229"
-      (reference "K302") (unit 1) (value "HARWIN-254-F-1X06-VERTICAL") (footprint "tronixio:HARWIN-M20-782064x")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/a7315d20-bb48-4d3b-bcb4-25452cf981c8"
-      (reference "LCD301") (unit 1) (value "NHD-C0220BIZ") (footprint "tronixio:NHD-C0220BIZ")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/bb9630e7-84de-450b-9dba-577063539ac5"
-      (reference "LED201") (unit 1) (value "Power") (footprint "tronixio:LED-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/aebba99c-334c-4929-a5a1-891c48d14b31"
-      (reference "LED301") (unit 1) (value "URX") (footprint "tronixio:LED-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/8b71b4b0-c289-4468-a7ee-4a6409128d8d"
-      (reference "LED302") (unit 1) (value "UTX") (footprint "tronixio:LED-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/f08bf669-a7e1-403b-a155-13b894bbc40b"
-      (reference "P301") (unit 1) (value "10K") (footprint "tronixio:PIHER-PT10MV")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/298dbbe2-a8c4-44de-b2d4-8a15ae155257"
-      (reference "P302") (unit 1) (value "10K") (footprint "tronixio:PIHER-PT10MV")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/a9369e84-04c4-4b26-8073-c4fbe88c7f4d"
-      (reference "R201") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/78883502-61df-41cc-8136-60a362ad2eda"
-      (reference "R202") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/b7c8618b-5fd5-4999-89e8-fba013cb9ede"
-      (reference "R203") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/99c5437e-dbc3-47a3-aae9-b12482fa0399"
-      (reference "R204") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/8822b915-443b-4169-9f73-615862607291"
-      (reference "R205") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/773b24ed-e183-4884-993c-a78095e3e90d"
-      (reference "R301") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/72591d40-dd00-4777-af3d-d80c5cac85f3"
-      (reference "R302") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/97492dce-bba5-47d8-951f-eaa79d996277"
-      (reference "R303") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/a84e35e6-1e41-4a8a-ad9c-3922173c0585"
-      (reference "R304") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/8506ac1c-c638-4004-aaf3-6231f2fd9cb5"
-      (reference "R305") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/06e9f46f-7e4c-4bed-b773-9e488e693926"
-      (reference "R306") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/45472bb6-324f-458e-9081-e3a7656dc643"
-      (reference "R307") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/c0c29c26-bf3e-4c51-9e2e-c56140cbf94a"
-      (reference "R308") (unit 1) (value "2K4") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/d7c3e985-bc82-4d7c-8d2e-533d7ecfd562"
-      (reference "R309") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ffecd68c-c34f-42ba-9a8b-4590333b714c"
-      (reference "R310") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/455f8c04-e1da-434c-ab20-39164d1b2dc0"
-      (reference "R311") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/79c9c3ec-cbfe-4c66-af16-1a4d9910a649"
-      (reference "R312") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/3de56383-f2b0-4cd0-9a46-6838739f3426"
-      (reference "R313") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/664c73c5-bddc-422e-9b5c-68a23bc28633"
-      (reference "R314") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/e60ba7f3-9b7c-4420-8c63-5afe6c50232c"
-      (reference "R315") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ba9d7be2-a498-4ea6-bfa9-3798135b3eec"
-      (reference "R316") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/b9cad6ce-c6ed-4a76-9d23-f660e91262df"
-      (reference "R317") (unit 1) (value "10K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ac20018c-912f-4a10-a6a7-a8083633335f"
-      (reference "R318") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/9b7d39ee-2d23-4644-ad92-ecffb4ffdd66"
-      (reference "R319") (unit 1) (value "4K7") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/4790101c-700d-40cb-8e55-6b2a24c43566"
-      (reference "R320") (unit 1) (value "1K") (footprint "tronixio:RESISTOR-SMD-1206")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/cd8bddaf-c746-41ce-944b-266ce9f17a95"
-      (reference "S201") (unit 1) (value "Reset") (footprint "tronixio:ALPS-SKRPAC")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/53457124-acb0-4603-9e52-c1ebe0433322"
-      (reference "S301") (unit 1) (value "S1") (footprint "tronixio:CK-KSA-TH")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/cbf5ef5a-602c-49b8-b9ee-6f73813137d9"
-      (reference "S302") (unit 1) (value "S2") (footprint "tronixio:CK-KSA-TH")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/181b6171-61b2-48eb-bd2c-c2e289b2fbc4"
-      (reference "S303") (unit 1) (value "BOURNS-PEC12R-24DENTS-SWITCH") (footprint "tronixio:BOURNS-PEC12R-SWITCH")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/103996e8-ab54-47cd-b36d-1a8be624108b"
-      (reference "TP201") (unit 1) (value "KEYSTONE-5006") (footprint "tronixio:KEYSTONE-5006")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/3141ece1-4043-41f7-ad57-bfde5b1512a3"
-      (reference "TP202") (unit 1) (value "KEYSTONE-5006") (footprint "tronixio:KEYSTONE-5006")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/72900d6b-1728-4f1d-af55-b7dbba81ac5d"
-      (reference "TP203") (unit 1) (value "KEYSTONE-2000-3") (footprint "tronixio:KEYSTONE-2000-3")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/03f77ef7-6e4b-422a-b999-2a79ff915960"
-      (reference "U201") (unit 1) (value "TLV1117-33") (footprint "tronixio:SOT-223-3")
-    )
-    (path "/64edc06d-d6ae-4dac-9759-3f1fbed6457d/96657b4e-50d9-46c1-88bb-d97296a2209a"
-      (reference "U202") (unit 1) (value "PIC24/dsPIC32") (footprint "tronixio:DIP-28-W762")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/2a18c81a-56c3-4e70-b384-8772ef4752eb"
-      (reference "U301") (unit 1) (value "CAT4002A") (footprint "tronixio:SC-70-6")
-    )
-    (path "/8cdf8b92-b881-481d-a85a-c0055e9a856b/ff1657d3-e3fc-4778-bbec-5be8aca2417b"
-      (reference "U302") (unit 1) (value "MCP2221A") (footprint "tronixio:SOIC-14")
-    )
   )
 )
