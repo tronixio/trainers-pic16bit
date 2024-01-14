@@ -3024,7 +3024,7 @@
     (property "Value" "PIC24/dsPIC33" (at 157.48 57.15 0)
       (effects (font (size 1.15 1.15)) (justify right))
     )
-    (property "Footprint" "" (at 144.78 101.6 0)
+    (property "Footprint" "tronixio:DIP-28-W762-SOCKET" (at 144.78 101.6 0)
       (effects (font (size 1 1)) hide)
     )
     (property "Datasheet" "" (at 144.78 100.33 0)
