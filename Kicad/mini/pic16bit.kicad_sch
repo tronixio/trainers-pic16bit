@@ -1,575 +1,1500 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid d431d485-8cd8-4e00-afcd-f39218d614ca)
-
-  (paper "A4")
-
-  (title_block
-    (title "Root")
-    (date "01/2022")
-    (rev "A")
-    (comment 1 "PIC16-Bit Mini Trainer")
-  )
-
-  (lib_symbols
-    (symbol "tronixio:HARWIN-JUMPER-0254-06MM-BLACK" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "JP" (at 0 2.54 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 0 -2.54 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 0 -5.08 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 0 -7.62 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "Mouser" "855-M7582" (at 0 -10.16 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "ki_description" "2.54 Pitch Open Top Jumper Socket" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "HARWIN-JUMPER-0254-06MM-BLACK_0_1"
-        (polyline
-          (pts
-            (xy -1.016 -1.016)
-            (xy 1.016 1.016)
-          )
-          (stroke (width 0.3) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 -1.016)
-            (xy -1.016 1.016)
-          )
-          (stroke (width 0.3) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 0) (radius 1.524)
-          (stroke (width 0.3) (type default))
-          (fill (type none))
-        )
-      )
-    )
-    (symbol "tronixio:KEYSTONE-9055" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "X" (at 0 2.54 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "Value" "KEYSTONE-9055" (at 0 -2.54 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "Footprint" "tronixio:KEYSTONE-9055" (at 0 -5.08 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (at 0 -7.62 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "Mouser" "534-9055" (at 0 -10.16 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (symbol "KEYSTONE-9055_0_1"
-        (polyline
-          (pts
-            (xy -1.016 -1.016)
-            (xy 1.016 1.016)
-          )
-          (stroke (width 0.3) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 -1.016)
-            (xy -1.016 1.016)
-          )
-          (stroke (width 0.3) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 0) (radius 1.524)
-          (stroke (width 0.3) (type default))
-          (fill (type none))
-        )
-      )
-    )
-    (symbol "tronixio:PE-450-4X6X-BLACK" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "K" (at 0 2.54 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "Value" "PE-450-4X6X-BLACK" (at 0 -2.54 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "Footprint" "tronixio:PE-450-4X6X" (at 0 -5.08 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "Datasheet" "https://www.mouser.fr/datasheet/2/209/EPD-200220-1171146.pdf" (at 0 -7.62 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "Mouser" "450-476" (at 0 -10.16 0) (do_not_autoplace)
-        (effects (font (size 1 1)) hide)
-      )
-      (property "ki_description" "Instrument Control Knobs" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "PE-450-4X6X-BLACK_0_1"
-        (polyline
-          (pts
-            (xy -1.016 -1.016)
-            (xy 1.016 1.016)
-          )
-          (stroke (width 0.3) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 -1.016)
-            (xy -1.016 1.016)
-          )
-          (stroke (width 0.3) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 0) (radius 1.524)
-          (stroke (width 0.3) (type default))
-          (fill (type none))
-        )
-      )
-    )
-  )
-
-
-  (wire (pts (xy 124.46 106.68) (xy 165.1 106.68))
-    (stroke (width 0) (type default))
-    (uuid 649d34df-e359-4f6f-a514-767709ad99dc)
-  )
-  (wire (pts (xy 124.46 91.44) (xy 165.1 91.44))
-    (stroke (width 0) (type default))
-    (uuid 86e0f92e-5d64-47ef-ae5a-c465217f62eb)
-  )
-  (wire (pts (xy 124.46 88.9) (xy 165.1 88.9))
-    (stroke (width 0) (type default))
-    (uuid aa9d4b0a-fe62-4d63-951a-f4d1b108c65d)
-  )
-  (wire (pts (xy 124.46 99.06) (xy 165.1 99.06))
-    (stroke (width 0) (type default))
-    (uuid bc582007-c697-44bf-9888-88c0313f58cc)
-  )
-  (wire (pts (xy 124.46 104.14) (xy 165.1 104.14))
-    (stroke (width 0) (type default))
-    (uuid bcd31248-1323-4e3a-bd98-3f92f669e422)
-  )
-  (wire (pts (xy 124.46 96.52) (xy 165.1 96.52))
-    (stroke (width 0) (type default))
-    (uuid fa7bfc2c-4d34-426a-90c5-d436357849f6)
-  )
-
-  (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 254 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2561e122-81ba-4e0d-985f-7458f0d0519a)
-    (property "Reference" "JP103" (at 254 170.18 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 254 175.26 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 254 177.8 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 254 180.34 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Mouser" "855-M7582" (at 254 182.88 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
-          (reference "JP103") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 274.32 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 38d314bd-8e96-4267-9857-5de91a868038)
-    (property "Reference" "JP107" (at 274.32 170.18 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 274.32 175.26 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 274.32 177.8 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 274.32 180.34 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Mouser" "855-M7582" (at 274.32 182.88 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
-          (reference "JP107") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 243.84 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 55795f44-b358-4de2-a286-91a0aa0ebc8a)
-    (property "Reference" "JP101" (at 243.84 170.18 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 243.84 175.26 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 243.84 177.8 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 243.84 180.34 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Mouser" "855-M7582" (at 243.84 182.88 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
-          (reference "JP101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "tronixio:PE-450-4X6X-BLACK") (at 243.84 167.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6b755907-4f96-4573-95bb-15fa8caed158)
-    (property "Reference" "K101" (at 243.84 165.1 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Value" "PE-450-4X6X-BLACK" (at 243.84 170.18 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Footprint" "tronixio:PE-450-4X6X" (at 243.84 172.72 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Datasheet" "https://www.mouser.fr/datasheet/2/209/EPD-200220-1171146.pdf" (at 243.84 175.26 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Mouser" "450-476" (at 243.84 177.8 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
-          (reference "K101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 269.24 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6facdeeb-0e24-4926-88ea-a11dcb194ea7)
-    (property "Reference" "JP106" (at 269.24 170.18 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 269.24 175.26 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 269.24 177.8 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 269.24 180.34 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Mouser" "855-M7582" (at 269.24 182.88 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
-          (reference "JP106") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "tronixio:KEYSTONE-9055") (at 269.24 167.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 7003504b-9f97-4ac5-818a-56ae471796ba)
-    (property "Reference" "H103" (at 269.24 165.1 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Value" "KEYSTONE-9055" (at 269.24 170.18 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Footprint" "tronixio:KEYSTONE-9055" (at 269.24 172.72 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (at 269.24 175.26 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Mouser" "534-9055" (at 269.24 177.8 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
-          (reference "H103") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 248.92 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b15662d8-7a8e-4960-a0aa-90bd603f6387)
-    (property "Reference" "JP102" (at 248.92 170.18 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 248.92 175.26 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 248.92 177.8 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 248.92 180.34 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Mouser" "855-M7582" (at 248.92 182.88 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
-          (reference "JP102") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "tronixio:KEYSTONE-9055") (at 259.08 167.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c1eea772-e579-4927-94fd-1ac1e47e3b32)
-    (property "Reference" "H101" (at 259.08 165.1 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Value" "KEYSTONE-9055" (at 259.08 170.18 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Footprint" "tronixio:KEYSTONE-9055" (at 259.08 172.72 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (at 259.08 175.26 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Mouser" "534-9055" (at 259.08 177.8 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
-          (reference "H101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 264.16 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ca884991-93b5-427d-a5bf-e3992c319b14)
-    (property "Reference" "JP105" (at 264.16 170.18 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 264.16 175.26 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 264.16 177.8 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 264.16 180.34 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Mouser" "855-M7582" (at 264.16 182.88 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
-          (reference "JP105") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK") (at 259.08 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ccd38e6f-ac6c-417c-a6ae-7a2737a58c97)
-    (property "Reference" "JP104" (at 259.08 170.18 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Value" "HARWIN-JUMPER-0254-06MM-BLACK" (at 259.08 175.26 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Footprint" "tronixio:HARWIN-M20-7580-7583" (at 259.08 177.8 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf" (at 259.08 180.34 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Mouser" "855-M7582" (at 259.08 182.88 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
-          (reference "JP104") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "tronixio:KEYSTONE-9055") (at 264.16 167.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d58c3ce6-5988-49c9-81fe-f006bdc55a35)
-    (property "Reference" "H102" (at 264.16 165.1 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Value" "KEYSTONE-9055" (at 264.16 170.18 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Footprint" "tronixio:KEYSTONE-9055" (at 264.16 172.72 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (at 264.16 175.26 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Mouser" "534-9055" (at 264.16 177.8 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
-          (reference "H102") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "tronixio:KEYSTONE-9055") (at 274.32 167.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d6cf4fdb-3342-4c3f-9a81-a63c4f6592dd)
-    (property "Reference" "H104" (at 274.32 165.1 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Value" "KEYSTONE-9055" (at 274.32 170.18 0)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Footprint" "tronixio:KEYSTONE-9055" (at 274.32 172.72 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757" (at 274.32 175.26 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (property "Mouser" "534-9055" (at 274.32 177.8 0) (do_not_autoplace)
-      (effects (font (size 1 1)) hide)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
-          (reference "H104") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet (at 78.74 76.2) (size 45.72 45.72) (fields_autoplaced)
-    (stroke (width 0.1) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 64edc06d-d6ae-4dac-9759-3f1fbed6457d)
-    (property "Sheetname" "MCU" (at 78.74 75.1496 0)
-      (effects (font (size 2 2)) (justify left bottom))
-    )
-    (property "Sheetfile" "pic16bit-mcu.kicad_sch" (at 78.74 122.4784 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "SDA" bidirectional (at 124.46 99.06 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid b7c7bbce-1667-4f68-828e-12923dd33182)
-    )
-    (pin "D-" bidirectional (at 124.46 88.9 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid e8a24c2b-9dc7-40ec-a404-20a7eed49f4d)
-    )
-    (pin "D+" bidirectional (at 124.46 91.44 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid f5303bc4-2eb3-446f-94fb-749c8e1d9e59)
-    )
-    (pin "SCL" bidirectional (at 124.46 96.52 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid ff3de5ca-529f-408b-a305-80aeaa656147)
-    )
-    (pin "PGD{slash}UTX{slash}RB0" bidirectional (at 124.46 104.14 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 639c3fff-1d47-43fd-9e9b-cb9bcfedf5e4)
-    )
-    (pin "PGC{slash}URX{slash}RB1" bidirectional (at 124.46 106.68 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid a365828c-3669-44ee-954a-9b27d8c9002a)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca" (page "2"))
-      )
-    )
-  )
-
-  (sheet (at 165.1 76.2) (size 45.72 45.72) (fields_autoplaced)
-    (stroke (width 0.1) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 8cdf8b92-b881-481d-a85a-c0055e9a856b)
-    (property "Sheetname" "HID" (at 165.1 75.1496 0)
-      (effects (font (size 2 2)) (justify left bottom))
-    )
-    (property "Sheetfile" "pic16bit-hid.kicad_sch" (at 165.1 122.4784 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "SDA" bidirectional (at 165.1 99.06 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid eccfcb12-d782-4e0e-98f7-f07c72a831df)
-    )
-    (pin "D+" bidirectional (at 165.1 91.44 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid b6408c6f-0dc4-4ba8-b3ac-d5f53e8f61f4)
-    )
-    (pin "D-" bidirectional (at 165.1 88.9 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid f658a35b-cd3f-4917-860c-af80aebedc84)
-    )
-    (pin "PGD{slash}UTX{slash}RB0" bidirectional (at 165.1 104.14 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid b21dd1d4-8336-443e-940e-33671d02e493)
-    )
-    (pin "PGC{slash}URX{slash}RB1" bidirectional (at 165.1 106.68 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 6235f4f1-ec90-4bdd-ab30-e5dbf77d2a6b)
-    )
-    (pin "SCL" bidirectional (at 165.1 96.52 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 080c4085-e6e2-464f-a6cc-01d6a2b33315)
-    )
-    (instances
-      (project "pic16bit"
-        (path "/d431d485-8cd8-4e00-afcd-f39218d614ca" (page "3"))
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "d431d485-8cd8-4e00-afcd-f39218d614ca")
+	(paper "A4")
+	(title_block
+		(title "Root")
+		(date "01/2022")
+		(rev "A")
+		(comment 1 "PIC16-Bit Mini Trainer")
+	)
+	(lib_symbols
+		(symbol "tronixio:HARWIN-JUMPER-0254-06MM-BLACK"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.54 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "HARWIN-JUMPER-0254-06MM-BLACK"
+				(at 0 -2.54 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "tronixio:HARWIN-M20-7580-7583"
+				(at 0 -5.08 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf"
+				(at 0 -7.62 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2.54 Pitch Open Top Jumper Socket"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" "855-M7582"
+				(at 0 -10.16 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "HARWIN-JUMPER-0254-06MM-BLACK_0_1"
+				(polyline
+					(pts
+						(xy -1.016 -1.016) (xy 1.016 1.016)
+					)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.016) (xy -1.016 1.016)
+					)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 1.524)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "tronixio:KEYSTONE-9055"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "X"
+				(at 0 2.54 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "KEYSTONE-9055"
+				(at 0 -2.54 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "tronixio:KEYSTONE-9055"
+				(at 0 -5.08 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757"
+				(at 0 -7.62 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" "534-9055"
+				(at 0 -10.16 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "KEYSTONE-9055_0_1"
+				(polyline
+					(pts
+						(xy -1.016 -1.016) (xy 1.016 1.016)
+					)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.016) (xy -1.016 1.016)
+					)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 1.524)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "tronixio:PE-450-4X6X-BLACK"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 0 2.54 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PE-450-4X6X-BLACK"
+				(at 0 -2.54 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "tronixio:PE-450-4X6X"
+				(at 0 -5.08 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.mouser.fr/datasheet/2/209/EPD-200220-1171146.pdf"
+				(at 0 -7.62 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Instrument Control Knobs"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" "450-476"
+				(at 0 -10.16 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PE-450-4X6X-BLACK_0_1"
+				(polyline
+					(pts
+						(xy -1.016 -1.016) (xy 1.016 1.016)
+					)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.016) (xy -1.016 1.016)
+					)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 1.524)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 106.68) (xy 165.1 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "649d34df-e359-4f6f-a514-767709ad99dc")
+	)
+	(wire
+		(pts
+			(xy 124.46 91.44) (xy 165.1 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86e0f92e-5d64-47ef-ae5a-c465217f62eb")
+	)
+	(wire
+		(pts
+			(xy 124.46 88.9) (xy 165.1 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa9d4b0a-fe62-4d63-951a-f4d1b108c65d")
+	)
+	(wire
+		(pts
+			(xy 124.46 99.06) (xy 165.1 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc582007-c697-44bf-9888-88c0313f58cc")
+	)
+	(wire
+		(pts
+			(xy 124.46 104.14) (xy 165.1 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcd31248-1323-4e3a-bd98-3f92f669e422")
+	)
+	(wire
+		(pts
+			(xy 124.46 96.52) (xy 165.1 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa7bfc2c-4d34-426a-90c5-d436357849f6")
+	)
+	(symbol
+		(lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK")
+		(at 254 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2561e122-81ba-4e0d-985f-7458f0d0519a")
+		(property "Reference" "JP103"
+			(at 254 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "HARWIN-JUMPER-0254-06MM-BLACK"
+			(at 254 175.26 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "tronixio:HARWIN-M20-7580-7583"
+			(at 254 177.8 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf"
+			(at 254 180.34 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2.54 Pitch Open Top Jumper Socket"
+			(at 254 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "855-M7582"
+			(at 254 182.88 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(reference "JP103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK")
+		(at 274.32 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38d314bd-8e96-4267-9857-5de91a868038")
+		(property "Reference" "JP107"
+			(at 274.32 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "HARWIN-JUMPER-0254-06MM-BLACK"
+			(at 274.32 175.26 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "tronixio:HARWIN-M20-7580-7583"
+			(at 274.32 177.8 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf"
+			(at 274.32 180.34 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2.54 Pitch Open Top Jumper Socket"
+			(at 274.32 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "855-M7582"
+			(at 274.32 182.88 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(reference "JP107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK")
+		(at 243.84 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55795f44-b358-4de2-a286-91a0aa0ebc8a")
+		(property "Reference" "JP101"
+			(at 243.84 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "HARWIN-JUMPER-0254-06MM-BLACK"
+			(at 243.84 175.26 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "tronixio:HARWIN-M20-7580-7583"
+			(at 243.84 177.8 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf"
+			(at 243.84 180.34 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2.54 Pitch Open Top Jumper Socket"
+			(at 243.84 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "855-M7582"
+			(at 243.84 182.88 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(reference "JP101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tronixio:PE-450-4X6X-BLACK")
+		(at 243.84 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b755907-4f96-4573-95bb-15fa8caed158")
+		(property "Reference" "K101"
+			(at 243.84 165.1 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PE-450-4X6X-BLACK"
+			(at 243.84 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "tronixio:PE-450-4X6X"
+			(at 243.84 172.72 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.fr/datasheet/2/209/EPD-200220-1171146.pdf"
+			(at 243.84 175.26 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Instrument Control Knobs"
+			(at 243.84 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "450-476"
+			(at 243.84 177.8 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(reference "K101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK")
+		(at 269.24 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6facdeeb-0e24-4926-88ea-a11dcb194ea7")
+		(property "Reference" "JP106"
+			(at 269.24 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "HARWIN-JUMPER-0254-06MM-BLACK"
+			(at 269.24 175.26 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "tronixio:HARWIN-M20-7580-7583"
+			(at 269.24 177.8 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf"
+			(at 269.24 180.34 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2.54 Pitch Open Top Jumper Socket"
+			(at 269.24 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "855-M7582"
+			(at 269.24 182.88 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(reference "JP106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tronixio:KEYSTONE-9055")
+		(at 269.24 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7003504b-9f97-4ac5-818a-56ae471796ba")
+		(property "Reference" "H103"
+			(at 269.24 165.1 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "KEYSTONE-9055"
+			(at 269.24 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "tronixio:KEYSTONE-9055"
+			(at 269.24 172.72 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757"
+			(at 269.24 175.26 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 269.24 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "534-9055"
+			(at 269.24 177.8 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(reference "H103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK")
+		(at 248.92 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b15662d8-7a8e-4960-a0aa-90bd603f6387")
+		(property "Reference" "JP102"
+			(at 248.92 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "HARWIN-JUMPER-0254-06MM-BLACK"
+			(at 248.92 175.26 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "tronixio:HARWIN-M20-7580-7583"
+			(at 248.92 177.8 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf"
+			(at 248.92 180.34 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2.54 Pitch Open Top Jumper Socket"
+			(at 248.92 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "855-M7582"
+			(at 248.92 182.88 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(reference "JP102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tronixio:KEYSTONE-9055")
+		(at 259.08 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1eea772-e579-4927-94fd-1ac1e47e3b32")
+		(property "Reference" "H101"
+			(at 259.08 165.1 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "KEYSTONE-9055"
+			(at 259.08 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "tronixio:KEYSTONE-9055"
+			(at 259.08 172.72 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757"
+			(at 259.08 175.26 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 259.08 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "534-9055"
+			(at 259.08 177.8 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(reference "H101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK")
+		(at 264.16 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca884991-93b5-427d-a5bf-e3992c319b14")
+		(property "Reference" "JP105"
+			(at 264.16 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "HARWIN-JUMPER-0254-06MM-BLACK"
+			(at 264.16 175.26 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "tronixio:HARWIN-M20-7580-7583"
+			(at 264.16 177.8 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf"
+			(at 264.16 180.34 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2.54 Pitch Open Top Jumper Socket"
+			(at 264.16 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "855-M7582"
+			(at 264.16 182.88 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(reference "JP105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tronixio:HARWIN-JUMPER-0254-06MM-BLACK")
+		(at 259.08 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ccd38e6f-ac6c-417c-a6ae-7a2737a58c97")
+		(property "Reference" "JP104"
+			(at 259.08 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "HARWIN-JUMPER-0254-06MM-BLACK"
+			(at 259.08 175.26 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "tronixio:HARWIN-M20-7580-7583"
+			(at 259.08 177.8 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/M7580-M7583.pdf"
+			(at 259.08 180.34 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2.54 Pitch Open Top Jumper Socket"
+			(at 259.08 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "855-M7582"
+			(at 259.08 182.88 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(reference "JP104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tronixio:KEYSTONE-9055")
+		(at 264.16 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d58c3ce6-5988-49c9-81fe-f006bdc55a35")
+		(property "Reference" "H102"
+			(at 264.16 165.1 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "KEYSTONE-9055"
+			(at 264.16 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "tronixio:KEYSTONE-9055"
+			(at 264.16 172.72 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757"
+			(at 264.16 175.26 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 264.16 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "534-9055"
+			(at 264.16 177.8 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(reference "H102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tronixio:KEYSTONE-9055")
+		(at 274.32 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6cf4fdb-3342-4c3f-9a81-a63c4f6592dd")
+		(property "Reference" "H104"
+			(at 274.32 165.1 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "KEYSTONE-9055"
+			(at 274.32 170.18 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "tronixio:KEYSTONE-9055"
+			(at 274.32 172.72 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=9757"
+			(at 274.32 175.26 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "534-9055"
+			(at 274.32 177.8 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(reference "H104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 78.74 76.2)
+		(size 45.72 45.72)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "64edc06d-d6ae-4dac-9759-3f1fbed6457d")
+		(property "Sheetname" "MCU"
+			(at 78.74 75.1496 0)
+			(effects
+				(font
+					(size 2 2)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pic16bit-mcu.kicad_sch"
+			(at 78.74 122.4784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 124.46 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b7c7bbce-1667-4f68-828e-12923dd33182")
+		)
+		(pin "D-" bidirectional
+			(at 124.46 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e8a24c2b-9dc7-40ec-a404-20a7eed49f4d")
+		)
+		(pin "D+" bidirectional
+			(at 124.46 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f5303bc4-2eb3-446f-94fb-749c8e1d9e59")
+		)
+		(pin "SCL" bidirectional
+			(at 124.46 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ff3de5ca-529f-408b-a305-80aeaa656147")
+		)
+		(pin "PGD{slash}UTX{slash}RB0" bidirectional
+			(at 124.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "639c3fff-1d47-43fd-9e9b-cb9bcfedf5e4")
+		)
+		(pin "PGC{slash}URX{slash}RB1" bidirectional
+			(at 124.46 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a365828c-3669-44ee-954a-9b27d8c9002a")
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 76.2)
+		(size 45.72 45.72)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8cdf8b92-b881-481d-a85a-c0055e9a856b")
+		(property "Sheetname" "HID"
+			(at 165.1 75.1496 0)
+			(effects
+				(font
+					(size 2 2)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pic16bit-hid.kicad_sch"
+			(at 165.1 122.4784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 165.1 99.06 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "eccfcb12-d782-4e0e-98f7-f07c72a831df")
+		)
+		(pin "D+" bidirectional
+			(at 165.1 91.44 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b6408c6f-0dc4-4ba8-b3ac-d5f53e8f61f4")
+		)
+		(pin "D-" bidirectional
+			(at 165.1 88.9 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f658a35b-cd3f-4917-860c-af80aebedc84")
+		)
+		(pin "PGD{slash}UTX{slash}RB0" bidirectional
+			(at 165.1 104.14 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b21dd1d4-8336-443e-940e-33671d02e493")
+		)
+		(pin "PGC{slash}URX{slash}RB1" bidirectional
+			(at 165.1 106.68 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6235f4f1-ec90-4bdd-ab30-e5dbf77d2a6b")
+		)
+		(pin "SCL" bidirectional
+			(at 165.1 96.52 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "080c4085-e6e2-464f-a6cc-01d6a2b33315")
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
