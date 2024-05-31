@@ -15654,7 +15654,7 @@
 				)
 			)
 		)
-		(property "Value" "PIC24/dsPIC32"
+		(property "Value" "PIC24/dsPIC33"
 			(at 190.5 63.5 0)
 			(effects
 				(font

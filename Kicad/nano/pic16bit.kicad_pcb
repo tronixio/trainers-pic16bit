@@ -195,7 +195,7 @@
 			)
 		)
 		(property "Value" "SDA"
-			(at 0 4.5 90)
+			(at 0 1 180)
 			(layer "F.Fab")
 			(uuid "70c7677a-0ee8-49df-90bd-21ec97e47643")
 			(effects
@@ -254,6 +254,8 @@
 			)
 		)
 		(path "/736e8a57-d87e-4ca2-8e20-b79dda87646e")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 0.75 -1)
@@ -815,7 +817,7 @@
 			)
 		)
 		(property "Value" "Power"
-			(at 0 2 -90)
+			(at -1.7 0 -90)
 			(layer "F.Fab")
 			(uuid "16ab3e3c-fad5-4f9d-bad4-55f87074a0b1")
 			(effects
@@ -823,6 +825,7 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "tronixio:LED-SMD-0805"
@@ -874,6 +877,8 @@
 			)
 		)
 		(path "/75379488-d6ed-4e75-a608-f88744a4fff0")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(zone_connect 2)
 		(attr smd)
 		(fp_line
@@ -992,7 +997,7 @@
 			)
 		)
 		(property "Value" "ICSP"
-			(at 0 7.5 90)
+			(at 1.27 2.54 180)
 			(layer "F.Fab")
 			(uuid "ad238816-f466-4ee5-8a05-02f1bd6f3aac")
 			(effects
@@ -1051,6 +1056,8 @@
 			)
 		)
 		(path "/73c556e9-bbb7-48e3-ae14-01318bf73ebf")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 3.4925 -1.27)
@@ -1544,6 +1551,8 @@
 			)
 		)
 		(path "/9f691541-606f-4d50-8db3-0a67aaeca2e0")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr through_hole)
 		(fp_rect
 			(start -2 0)
@@ -1606,8 +1615,8 @@
 				)
 			)
 		)
-		(property "Value" "PIC24/dsPIC32"
-			(at 0 0 -45)
+		(property "Value" "PIC24/dsPIC33"
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "45cea4a0-4d74-478d-838b-c59a6c436701")
 			(effects
@@ -1666,6 +1675,8 @@
 			)
 		)
 		(path "/fe5505d7-fd66-4a2d-bf7d-5f6dcf65e116")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -7.100001 3.6)
@@ -2439,6 +2450,8 @@
 			)
 		)
 		(path "/2ffeddf3-cab8-4382-b586-ca5f8b6f53e5")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr through_hole)
 		(fp_rect
 			(start -2 0)
@@ -2502,7 +2515,7 @@
 			)
 		)
 		(property "Value" "SCL"
-			(at 0 4.5 90)
+			(at 0 1 180)
 			(layer "F.Fab")
 			(uuid "4d01f86b-3f89-46e4-84df-96a38e0407aa")
 			(effects
@@ -2561,6 +2574,8 @@
 			)
 		)
 		(path "/11fdfe8d-ab60-4c39-986c-736a762545a1")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 0.75 -1)
@@ -2824,7 +2839,7 @@
 			)
 		)
 		(property "Value" "POWER & UART"
-			(at 0 6 -90)
+			(at 5.1 0 0)
 			(layer "F.Fab")
 			(uuid "a0bb12d6-0ed8-4e80-9df4-d38c91443bd3")
 			(effects
@@ -2883,6 +2898,8 @@
 			)
 		)
 		(path "/4568a9d2-eecb-4623-b60b-3d9c267a3153")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.6 4.5)
@@ -3096,7 +3113,7 @@
 			)
 		)
 		(property "Value" "UTX"
-			(at 0 2 90)
+			(at -1.5 0 90)
 			(layer "F.Fab")
 			(uuid "c05e62d0-867b-4d7b-a260-6470ea631f78")
 			(effects
@@ -3104,6 +3121,7 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "tronixio:LED-SMD-0805"
@@ -3155,6 +3173,8 @@
 			)
 		)
 		(path "/421bf036-98e1-4de5-a64f-1a4eaf693fe2")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(zone_connect 2)
 		(attr smd)
 		(fp_line
@@ -3637,7 +3657,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 0 2 90)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "73b28bfb-66e3-43c1-86a3-fd49c01749c5")
 			(effects
@@ -3708,6 +3728,8 @@
 			)
 		)
 		(path "/901095a2-995c-4897-8645-08cbf7eb50a0")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.25 -0.75)
@@ -3789,7 +3811,7 @@
 			)
 		)
 		(property "Value" "Reset"
-			(at 0 3 0)
+			(at 0 -2.75 0)
 			(layer "F.Fab")
 			(uuid "4e243635-03d1-42b4-b1e7-fccd4ed38d62")
 			(effects
@@ -3848,6 +3870,8 @@
 			)
 		)
 		(path "/b5de480f-dad0-490c-aee8-6a28e86c4cde")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.7 -1.9)
@@ -4050,7 +4074,7 @@
 			)
 		)
 		(property "Value" "URX"
-			(at 0 2 90)
+			(at -1.5 0 90)
 			(layer "F.Fab")
 			(uuid "66ee8705-1ee4-433f-bd36-bbbe58855657")
 			(effects
@@ -4058,6 +4082,7 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "tronixio:LED-SMD-0805"
@@ -4109,6 +4134,8 @@
 			)
 		)
 		(path "/2be25940-f7e5-4517-9e01-eaed4356399a")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(zone_connect 2)
 		(attr smd)
 		(fp_line
@@ -4228,7 +4255,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 0 -2 180)
+			(at 0 0 180)
 			(layer "B.Fab")
 			(uuid "87e11809-102b-4411-8a15-4bbc47ba3df2")
 			(effects
@@ -4305,6 +4332,8 @@
 			)
 		)
 		(path "/2550483c-3d98-4499-85e4-b7cc4b773158")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 0.75)
@@ -4387,7 +4416,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 -2 180)
+			(at 0 0 180)
 			(layer "B.Fab")
 			(uuid "55e2aab4-3010-4ef4-8756-84c2a6f55858")
 			(effects
@@ -4477,6 +4506,8 @@
 			)
 		)
 		(path "/f7846212-527f-4a4e-bd74-81348abd1be7")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 0.75)
@@ -4559,7 +4590,7 @@
 			)
 		)
 		(property "Value" "4K7"
-			(at 0 -2 90)
+			(at 0 0 90)
 			(layer "B.Fab")
 			(uuid "15ece4fb-3ccf-442d-a7a5-9d88ec557a0d")
 			(effects
@@ -4636,6 +4667,8 @@
 			)
 		)
 		(path "/554c8dc8-9044-456a-85cb-ceba93e707df")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 -0.75)
@@ -4718,7 +4751,8 @@
 			)
 		)
 		(property "Value" "MCU 2"
-			(at 0 -51 180)
+			(at -0.11 -49.165 -90)
+			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "42c8c584-4da0-4818-8499-d72acb9d7d6c")
 			(effects
@@ -4726,7 +4760,7 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Footprint" "tronixio:SAMTEC-TSW-120-22-T-S"
@@ -4782,6 +4816,8 @@
 			)
 		)
 		(path "/b50ab0f5-1d48-4e3a-9b88-02175f9c353f")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.27 0.9525)
@@ -6513,6 +6549,8 @@
 			)
 		)
 		(path "/ef27345a-c7c1-44c7-b4de-dc92b9c6de34")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.3 -1)
@@ -6719,6 +6757,8 @@
 			)
 		)
 		(path "/15b76320-9a6e-4ed9-be26-15ea028b6641")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 2 2)
@@ -7149,7 +7189,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 -2 180)
+			(at 0 0 180)
 			(layer "B.Fab")
 			(uuid "a4f27c6a-de70-4dc5-917d-743e4e65f6c9")
 			(effects
@@ -7239,6 +7279,8 @@
 			)
 		)
 		(path "/172519e8-50bd-4caa-8c5b-02bc6f028215")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 0.75)
@@ -7321,7 +7363,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 0 -2 -90)
+			(at 0 0 -90)
 			(layer "B.Fab")
 			(uuid "d6eb8e9e-c818-4e21-99d8-cb6e436bc5c1")
 			(effects
@@ -7398,6 +7440,8 @@
 			)
 		)
 		(path "/665ac855-a116-43cb-9be3-358debddc4b4")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 0.75)
@@ -7480,7 +7524,7 @@
 			)
 		)
 		(property "Value" "10µ"
-			(at 0 -2 0)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "36925d18-5e6c-4167-b063-c21a30b2f4e8")
 			(effects
@@ -7570,6 +7614,8 @@
 			)
 		)
 		(path "/c2b206c2-67ed-4b85-ae63-22a5f6c0ab0a")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 -0.75)
@@ -7652,7 +7698,7 @@
 			)
 		)
 		(property "Value" "4K7"
-			(at 0 -2 90)
+			(at 0 0 90)
 			(layer "B.Fab")
 			(uuid "9fba0488-31d3-482b-a4cf-de0322cd3fdf")
 			(effects
@@ -7729,6 +7775,8 @@
 			)
 		)
 		(path "/6aa95f48-7cbe-46f2-8767-2f91135d3b48")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 -0.75)
@@ -7875,6 +7923,8 @@
 			)
 		)
 		(path "/4f76de3c-473b-4434-acab-e487ac549f8c")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.8 1.8)
@@ -8003,7 +8053,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 0 -2 -90)
+			(at 0 0 -90)
 			(layer "B.Fab")
 			(uuid "7db5dc3a-18bb-4ca1-a378-0567de6069b5")
 			(effects
@@ -8080,6 +8130,8 @@
 			)
 		)
 		(path "/9a2f342d-8357-42c6-bf57-40296123415a")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 0.75)
@@ -8162,7 +8214,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 -2 0)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "b0bf619f-2e04-4683-955a-69f8b3573fb1")
 			(effects
@@ -8252,6 +8304,8 @@
 			)
 		)
 		(path "/baef1db5-2571-438e-8a92-d03f7e464cf9")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 -0.75)
@@ -8334,7 +8388,8 @@
 			)
 		)
 		(property "Value" "MCU 1"
-			(at 0 -51 180)
+			(at 0 -49.165 -90)
+			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "7fd39ce6-2f3d-4def-adf6-04c382074f51")
 			(effects
@@ -8342,7 +8397,7 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
-				(justify mirror)
+				(justify left mirror)
 			)
 		)
 		(property "Footprint" "tronixio:SAMTEC-TSW-120-22-T-S"
@@ -8398,6 +8453,8 @@
 			)
 		)
 		(path "/b98b70f3-e265-46ac-a952-ea805824e1b9")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.27 0.9525)
@@ -9940,7 +9997,7 @@
 			)
 		)
 		(property "Value" "4K7"
-			(at 0 -2 0)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "0fa2b23d-739e-4e2f-90de-5c802f895280")
 			(effects
@@ -10017,6 +10074,8 @@
 			)
 		)
 		(path "/87fb2154-fc5f-4996-a127-c0af624e25f8")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 -0.75)
@@ -10099,7 +10158,7 @@
 			)
 		)
 		(property "Value" "4K7"
-			(at 0 -2 180)
+			(at 0 0 180)
 			(layer "B.Fab")
 			(uuid "5aa6e66a-325b-4c65-ae2c-9e004a811d4c")
 			(effects
@@ -10176,6 +10235,8 @@
 			)
 		)
 		(path "/e70eb951-4c24-48d6-b10c-8cbb8fe19823")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 0.75)
@@ -10258,7 +10319,7 @@
 			)
 		)
 		(property "Value" "1µ"
-			(at 0 -2 0)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "c5af211f-12ea-4d1b-b2b6-22369c721585")
 			(effects
@@ -10348,6 +10409,8 @@
 			)
 		)
 		(path "/e66f6db9-9f45-41cb-87fc-ae0982711577")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 -0.75)
@@ -10555,7 +10618,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 -2 180)
+			(at 0 0 180)
 			(layer "B.Fab")
 			(uuid "9967e21d-9f76-4829-be09-25ce9838056f")
 			(effects
@@ -10645,6 +10708,8 @@
 			)
 		)
 		(path "/79cfb867-efa4-4570-bea7-e291d0c35842")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 0.75)
@@ -10727,7 +10792,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 0 -2 180)
+			(at 0 0 180)
 			(layer "B.Fab")
 			(uuid "e44b64fd-978a-41c5-940b-73df51fc5c02")
 			(effects
@@ -10804,6 +10869,8 @@
 			)
 		)
 		(path "/05429a89-1266-49b0-bbad-f961fc261b12")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 0.75)
@@ -11012,7 +11079,7 @@
 			)
 		)
 		(property "Value" "1µ"
-			(at 0 -2 180)
+			(at 0 0 180)
 			(layer "B.Fab")
 			(uuid "c16ff91a-be90-4626-be49-6468abdea7ad")
 			(effects
@@ -11102,6 +11169,8 @@
 			)
 		)
 		(path "/a4c5b4c4-be01-4e74-8a51-6ba73657070d")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 0.75)
@@ -11357,7 +11426,7 @@
 			(at 0 -2 180)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "a7b7dced-63a3-466d-8aad-d76a2684b8c5")
+			(uuid "78b3ca39-aba9-4b03-b2ea-22052cf57677")
 			(effects
 				(font
 					(size 1 1)
@@ -11367,9 +11436,9 @@
 			)
 		)
 		(property "Value" "500mA"
-			(at 0 -2 180)
+			(at 0 0 180)
 			(layer "B.Fab")
-			(uuid "e5f2258c-2526-44e4-beb3-cc9b1d9087cd")
+			(uuid "520ca873-878d-4f28-a585-96fb534cbab0")
 			(effects
 				(font
 					(size 1 1)
@@ -11383,7 +11452,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "33bd5ce0-a326-4611-85b5-f2ba78641a00")
+			(uuid "fe434b6f-76c5-4134-9eb8-dcad9cd5d2e2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11396,7 +11465,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "ba9aa344-d197-452e-951a-945278f7ad06")
+			(uuid "9810722c-a853-49c4-a614-959dfd582670")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11409,7 +11478,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "e093ede3-203e-4802-b9b9-473000816c2c")
+			(uuid "cdcc96ee-ae27-4d51-891a-b177970fb43a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11431,27 +11500,29 @@
 			)
 		)
 		(path "/877d49a7-ac97-4130-831c-2a7c6bda0b3c")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(zone_connect 2)
 		(attr smd)
 		(fp_line
-			(start 0.25 0.75)
-			(end -0.25 0.75)
+			(start 0.2 0.8)
+			(end -0.2 0.8)
 			(stroke
-				(width 0.15)
+				(width 0.2)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "3fa57146-c4de-4937-8c7a-de179e7ef4f1")
+			(uuid "3f19a420-cb5e-46e9-8ac8-f62f1ce733e9")
 		)
 		(fp_line
-			(start 0.25 -0.75)
-			(end -0.25 -0.75)
+			(start 0.2 -0.8)
+			(end -0.2 -0.8)
 			(stroke
-				(width 0.15)
+				(width 0.2)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "acef0cf2-9545-4ed0-9029-fec172009a1b")
+			(uuid "74e2e016-1578-4864-a421-d7fb5ec8f2ab")
 		)
 		(fp_rect
 			(start 1.7 0.9)
@@ -11462,7 +11533,7 @@
 			)
 			(fill none)
 			(layer "B.CrtYd")
-			(uuid "97684a90-0726-4b31-af87-722ece9f137b")
+			(uuid "f1ca8f49-9e08-488c-ae8f-7bf1c2773b31")
 		)
 		(fp_rect
 			(start 1.1 0.6)
@@ -11473,7 +11544,7 @@
 			)
 			(fill solid)
 			(layer "B.Fab")
-			(uuid "61095063-1691-4790-a95b-c6d1e7784fb0")
+			(uuid "3d5992c7-3bcd-4855-b6cc-a77763635194")
 		)
 		(fp_rect
 			(start 0.9 0.6)
@@ -11484,7 +11555,7 @@
 			)
 			(fill none)
 			(layer "B.Fab")
-			(uuid "4dcbd011-99d6-4259-ba14-902786a7aada")
+			(uuid "4eeff886-fa5e-48cb-9960-34f90d4bf873")
 		)
 		(fp_rect
 			(start -0.9 0.6)
@@ -11495,7 +11566,7 @@
 			)
 			(fill solid)
 			(layer "B.Fab")
-			(uuid "328456d7-ee80-4be4-931a-4623c47ea7d7")
+			(uuid "d9838eb8-1147-4778-a8cf-702ed1f4dd84")
 		)
 		(pad "1" smd roundrect
 			(at -1 0 180)
@@ -11505,7 +11576,7 @@
 			(net 35 "Net-(K4-VBUS)")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "cbe9e634-e73c-465c-a5e7-0f7d7313d7c7")
+			(uuid "0ecbf7db-4813-4b01-99ec-cd092fca1b90")
 		)
 		(pad "2" smd roundrect
 			(at 1 0 180)
@@ -11515,7 +11586,7 @@
 			(net 4 "POWER-+5V")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "43f67930-cb1e-4b07-90de-d2c9d57636d0")
+			(uuid "a1911cec-323f-4ca2-8248-1e278ff45a38")
 		)
 		(model "${KICAD_USER_3DMODEL_DIR}/SMD/FUSE-0805.step"
 			(offset
@@ -11547,7 +11618,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 -2 180)
+			(at 0 0 180)
 			(layer "B.Fab")
 			(uuid "c7314bf2-df1e-4ad3-96a5-58b6a36346d5")
 			(effects
@@ -11637,6 +11708,8 @@
 			)
 		)
 		(path "/bf06c99b-7fd7-4ba4-a831-82628e616819")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 0.75)
@@ -11719,7 +11792,7 @@
 			)
 		)
 		(property "Value" "4K7"
-			(at 0 -2 -90)
+			(at 0 0 -90)
 			(layer "B.Fab")
 			(uuid "e909f3c1-2ef3-47cf-82e1-92d514eab2f1")
 			(effects
@@ -11796,6 +11869,8 @@
 			)
 		)
 		(path "/64686095-368a-48bb-b6a3-209dc1ca32cd")
+		(sheetname "Root")
+		(sheetfile "pic16bit.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.25 0.75)

@@ -81,7 +81,6 @@ const uint8_t au8Adc0[] = "\r\nADC CHANNEL 0> ";
 const uint8_t au8Adc1[] = "\r\nADC CHANNEL 1> ";
 const uint8_t au8Encoder[] = "\r\nROTARY ENCODER> ";
 const uint8_t au8Encodersw[] = "\r\nROTARY ENCODER SWITCH> ";
-const uint8_t au8Eusart[] = "\r\nEUSART ECHO> ";
 const uint8_t au8Switch1[] = "\r\nSWITCH 1> ";
 const uint8_t au8Switch2[] = "\r\nSWITCH 2> ";
 const uint8_t au8Pressed[] = "PRESSED";
@@ -234,10 +233,10 @@ int main(void)
         // EUSART.
         if(IFS0bits.U1RXIF){
             u8Rx = eusart_readCharacter();
-            eusart_writeString(au8Eusart);
             eusart_writeCharacter(u8Rx);
             if(u8Rx == ASCII_CR)
                 eusart_writeString(au8Ready);
+            IFS0bits.U1RXIF = 0b0;
         }
 
         // ROTARY ENCODER.
