@@ -4703,10 +4703,11 @@
 				)
 			)
 			(property "Description" "M20 Series - 2.54mm Pitch PCB Connector"
-				(at 0 0 0)
+				(at 0 -25.4 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -5566,10 +5567,11 @@
 				)
 			)
 			(property "Description" "USB to I2C/UART Protocol Converter with GPIO"
-				(at 0 0 0)
+				(at 10.16 -33.02 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -5898,10 +5900,11 @@
 				)
 			)
 			(property "Description" "COG (Chip-On-Glass) Character Liquid Crystal Display Module"
-				(at 0 0 0)
+				(at 10.16 -38.1 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)

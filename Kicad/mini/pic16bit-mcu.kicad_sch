@@ -2813,7 +2813,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "PIC24FJ64GA102-ISP"
+			(property "Value" "PIC24FJ64GA102"
 				(at 27.94 3.81 0)
 				(do_not_autoplace)
 				(effects
@@ -2844,10 +2844,11 @@
 				)
 			)
 			(property "Description" "28/44-Pin, 16-Bit General Purpose Flash Microcontrollers with nanoWatt XLP Technology"
-				(at 0 0 0)
+				(at 15.24 -45.72 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -4341,7 +4342,7 @@
 				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -10852,7 +10853,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PIC24/dsPIC32"
+		(property "Value" "PIC24/dsPIC33"
 			(at 157.48 52.07 0)
 			(effects
 				(font
