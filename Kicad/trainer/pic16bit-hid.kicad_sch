@@ -20,6 +20,7 @@
 			(on_board yes)
 			(property "Reference" "RA"
 				(at 5.08 2.54 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.15 1.15)
@@ -28,6 +29,7 @@
 			)
 			(property "Value" "330Ω"
 				(at 5.08 0 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.15 1.15)
@@ -36,6 +38,7 @@
 			)
 			(property "Footprint" "tronixio:BOURNS-4611X"
 				(at 0 -27.94 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -43,8 +46,9 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/4600x.pdf?sfvrsn=92b2512c_0"
+			(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/4600x.pdf"
 				(at 0 -30.48 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -64,6 +68,7 @@
 			)
 			(property "Tolerance" "2%"
 				(at 5.08 -2.54 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.15 1.15)
@@ -73,6 +78,7 @@
 			)
 			(property "Mouser" "652-4611X-1LF-330"
 				(at 0 -33.02 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -5562,10 +5568,11 @@
 				)
 			)
 			(property "Description" "M20 Series - 2.54mm Pitch PCB Connector"
-				(at 0 0 0)
+				(at 0 -20.32 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -7034,10 +7041,11 @@
 				)
 			)
 			(property "Description" "10mm Carbon Potentiometer"
-				(at 0 0 0)
+				(at 0 -20.32 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -7287,6 +7295,7 @@
 			(on_board yes)
 			(property "Reference" "#PWR"
 				(at 0 -5.08 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -7296,6 +7305,7 @@
 			)
 			(property "Value" "POWER-GND"
 				(at 0 -7.62 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -7501,6 +7511,7 @@
 			(on_board yes)
 			(property "Reference" "EB"
 				(at 10.16 3.81 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.15 1.15)
@@ -7509,6 +7520,7 @@
 			)
 			(property "Value" "TRONIXIO-EXPANSION-BOARD"
 				(at 10.16 -41.91 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.15 1.15)
@@ -10557,7 +10569,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/4600x.pdf?sfvrsn=92b2512c_0"
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/4600x.pdf"
 			(at 160.02 86.36 0)
 			(effects
 				(font

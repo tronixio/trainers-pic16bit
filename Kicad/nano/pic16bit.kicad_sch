@@ -1083,10 +1083,11 @@
 				)
 			)
 			(property "Description" "M22 Series - 2.00mm Pitch PCB Connector"
-				(at 0 0 0)
+				(at 0 -20.32 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -1181,7 +1182,7 @@
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "JP"
 				(at 0 2.54 0)
@@ -1203,7 +1204,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "tronixio:HARWIN-M22-190-193"
+			(property "Footprint" "tronixio:HARWIN-M22-190-19X"
 				(at 0 -5.08 0)
 				(do_not_autoplace)
 				(effects
@@ -1224,10 +1225,11 @@
 				)
 			)
 			(property "Description" "2.00 Pitch Closed-box Jumper Socket with Handle"
-				(at 0 0 0)
+				(at 0 -12.7 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -1433,7 +1435,6 @@
 			)
 		)
 		(symbol "tronixio:MICROCHIP-DSC1001C-245760-CDFN"
-			(pin_numbers hide)
 			(pin_names
 				(offset 0.5)
 			)
@@ -1500,8 +1501,8 @@
 			)
 			(symbol "MICROCHIP-DSC1001C-245760-CDFN_0_1"
 				(rectangle
-					(start 1.27 1.27)
-					(end 8.89 -6.35)
+					(start 2.54 1.27)
+					(end 10.16 -6.35)
 					(stroke
 						(width 0.4)
 						(type default)
@@ -1514,7 +1515,7 @@
 			(symbol "MICROCHIP-DSC1001C-245760-CDFN_1_1"
 				(pin input line
 					(at 0 -2.54 0)
-					(length 1.27)
+					(length 2.54)
 					(name "STY"
 						(effects
 							(font
@@ -1532,7 +1533,7 @@
 				)
 				(pin power_in line
 					(at 0 -5.08 0)
-					(length 1.27)
+					(length 2.54)
 					(name "GND"
 						(effects
 							(font
@@ -1549,8 +1550,8 @@
 					)
 				)
 				(pin output line
-					(at 10.16 -2.54 180)
-					(length 1.27)
+					(at 12.7 -2.54 180)
+					(length 2.54)
 					(name "OUT"
 						(effects
 							(font
@@ -1568,7 +1569,7 @@
 				)
 				(pin power_in line
 					(at 0 0 0)
-					(length 1.27)
+					(length 2.54)
 					(name "VDD"
 						(effects
 							(font
@@ -3381,6 +3382,7 @@
 			(on_board yes)
 			(property "Reference" "#PWR"
 				(at 0 -5.08 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -3390,6 +3392,7 @@
 			)
 			(property "Value" "POWER-GND"
 				(at 0 -7.62 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -3503,8 +3506,9 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
+			(property "Description" ""
+				(at 0 -12.7 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3630,12 +3634,12 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
-				(at 0 -17.78 0)
+			(property "Description" ""
+				(at 0 -12.7 0)
 				(do_not_autoplace)
 				(effects
 					(font
-						(size 1 1)
+						(size 1.27 1.27)
 					)
 					(hide yes)
 				)
@@ -4015,10 +4019,11 @@
 				)
 			)
 			(property "Description" "1ch 500mA CMOS LDO Regulators"
-				(at 0 0 0)
+				(at 7.62 -20.32 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -6163,16 +6168,6 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 66.04) (xy 236.22 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c3ca168-9b4a-4b9a-96af-e88988a50900")
-	)
-	(wire
-		(pts
 			(xy 48.26 71.12) (xy 58.42 71.12)
 		)
 		(stroke
@@ -8293,6 +8288,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 66.04) (xy 233.68 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe1ea39c-76e6-448b-bc9b-0132db5c1b9c")
+	)
+	(wire
+		(pts
 			(xy 195.58 35.56) (xy 195.58 45.72)
 		)
 		(stroke
@@ -10195,7 +10200,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 142.24 91.44 0)
 			(effects
 				(font
@@ -10784,7 +10789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 142.24 76.2 0)
 			(effects
 				(font
@@ -11111,7 +11116,7 @@
 		(at 269.24 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -11134,7 +11139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "tronixio:HARWIN-M22-190-193"
+		(property "Footprint" "tronixio:HARWIN-M22-190-19X"
 			(at 269.24 182.88 0)
 			(do_not_autoplace yes)
 			(effects
@@ -12128,7 +12133,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 101.6 124.46 0)
 			(effects
 				(font
@@ -13297,7 +13302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 254 33.02 0)
 			(effects
 				(font
@@ -13569,7 +13574,7 @@
 		(at 274.32 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -13592,7 +13597,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "tronixio:HARWIN-M22-190-193"
+		(property "Footprint" "tronixio:HARWIN-M22-190-19X"
 			(at 274.32 182.88 0)
 			(do_not_autoplace yes)
 			(effects

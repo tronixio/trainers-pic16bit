@@ -132,6 +132,7 @@
 			(on_board yes)
 			(property "Reference" "#PWR"
 				(at 0 -5.08 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -141,6 +142,7 @@
 			)
 			(property "Value" "POWER-GND"
 				(at 0 -7.62 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -254,8 +256,9 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
+			(property "Description" ""
+				(at 0 -12.7 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.27 1.27)

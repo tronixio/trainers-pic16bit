@@ -80,6 +80,7 @@
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -788,10 +789,11 @@
       "svg": "",
       "vrml": ""
     },
-    "page_layout_descr_file": "${KICAD_USER_DIR}/layouts/layout.kicad_wks"
+    "page_layout_descr_file": "${KICAD_USER_DIR}/layouts/layout4.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 100,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",

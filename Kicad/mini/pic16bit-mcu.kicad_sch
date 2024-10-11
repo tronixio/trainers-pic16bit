@@ -1421,10 +1421,11 @@
 				)
 			)
 			(property "Description" "M20 Series - 2.54mm Pitch PCB Connector"
-				(at 0 0 0)
+				(at 0 -20.32 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -3834,6 +3835,7 @@
 			(on_board yes)
 			(property "Reference" "#PWR"
 				(at 0 -5.08 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -3843,6 +3845,7 @@
 			)
 			(property "Value" "POWER-GND"
 				(at 0 -7.62 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -3956,8 +3959,9 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
+			(property "Description" ""
+				(at 0 -12.7 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4083,8 +4087,9 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
+			(property "Description" ""
+				(at 0 -12.7 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -10350,7 +10355,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 91.44 38.1 0)
 			(effects
 				(font
@@ -11301,7 +11306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 76.2 33.02 0)
 			(effects
 				(font

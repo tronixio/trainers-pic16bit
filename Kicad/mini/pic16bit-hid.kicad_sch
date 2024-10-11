@@ -5274,10 +5274,11 @@
 				)
 			)
 			(property "Description" "M20 Series - 2.54mm Pitch PCB Connector"
-				(at 0 0 0)
+				(at 0 -20.32 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -6362,10 +6363,11 @@
 				)
 			)
 			(property "Description" "10mm Carbon Potentiometer"
-				(at 0 0 0)
+				(at 0 -20.32 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -6728,6 +6730,7 @@
 			(on_board yes)
 			(property "Reference" "#PWR"
 				(at 0 -5.08 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -6737,6 +6740,7 @@
 			)
 			(property "Value" "POWER-GND"
 				(at 0 -7.62 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -6850,8 +6854,9 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
+			(property "Description" ""
+				(at 0 -12.7 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -6977,8 +6982,9 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
+			(property "Description" ""
+				(at 0 -12.7 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -9342,7 +9348,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 83.82 129.54 0)
 			(effects
 				(font
@@ -10691,7 +10697,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 177.8 43.18 0)
 			(effects
 				(font
@@ -10781,7 +10787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 109.22 76.2 0)
 			(effects
 				(font
@@ -10871,7 +10877,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 149.86 124.46 0)
 			(effects
 				(font
@@ -10960,7 +10966,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 236.22 137.16 0)
 			(effects
 				(font
@@ -11609,7 +11615,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 182.88 124.46 0)
 			(effects
 				(font
@@ -11867,7 +11873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 50.8 137.16 0)
 			(effects
 				(font
@@ -11957,7 +11963,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 43.18 129.54 0)
 			(effects
 				(font
@@ -12112,7 +12118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 157.48 124.46 0)
 			(effects
 				(font
@@ -12266,7 +12272,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 68.58 139.7 0)
 			(effects
 				(font
@@ -12570,7 +12576,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 50.8 43.18 0)
 			(effects
 				(font
@@ -13085,7 +13091,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 58.42 129.54 0)
 			(effects
 				(font
@@ -13416,7 +13422,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 210.82 43.18 0)
 			(effects
 				(font
@@ -13506,7 +13512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 203.2 43.18 0)
 			(effects
 				(font
@@ -14241,7 +14247,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 142.24 134.62 0)
 			(effects
 				(font
@@ -14705,7 +14711,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 190.5 139.7 0)
 			(effects
 				(font
@@ -15472,7 +15478,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 142.24 139.7 0)
 			(effects
 				(font

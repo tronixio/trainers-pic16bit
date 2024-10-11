@@ -302,389 +302,12 @@
 				)
 			)
 		)
-		(symbol "tronixio:CUI-PJ-102AH-TH"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "K"
-				(at 0 5.08 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1.15 1.15)
-					)
-				)
-			)
-			(property "Value" "PJ-102H"
-				(at 0 -5.08 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1.15 1.15)
-					)
-				)
-			)
-			(property "Footprint" "tronixio:CUI-PJ-102AH"
-				(at 0 -7.62 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.cuidevices.com/product/interconnect/connectors/dc-power-connectors/jacks/pj-102ah"
-				(at 0 -10.16 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Mouser" "490-PJ-102AH"
-				(at 0 -12.7 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CUI-PJ-102AH-TH_0_1"
-				(rectangle
-					(start -3.81 -3.81)
-					(end 3.81 3.81)
-					(stroke
-						(width 0.4)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.794 0.254)
-					(end 2.286 -0.254)
-					(stroke
-						(width 0.3)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.048 -2.54) (xy -2.286 -1.27) (xy -1.524 -2.54) (xy 2.286 -2.54)
-					)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.778) (xy -1.016 -2.286) (xy -0.762 -1.778) (xy 1.27 -1.778) (xy 1.27 2.54) (xy 2.286 2.54)
-					)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.794 -2.54)
-					(radius 0.3592)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.794 0)
-					(radius 0.3592)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.794 2.54)
-					(radius 0.3592)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CUI-PJ-102AH-TH_1_1"
-				(pin passive line
-					(at 5.08 0 180)
-					(length 1.905)
-					(name "~"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 1.905)
-					(name "~"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 1.905)
-					(name "~"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "tronixio:CUI-TB006-508-02BE"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "K"
-				(at 0 2.54 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1.15 1.15)
-					)
-				)
-			)
-			(property "Value" "CUI-TB006-508-02BE"
-				(at 0 -5.715 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1.15 1.15)
-					)
-				)
-			)
-			(property "Footprint" "tronixio:CUI-TB006-508-02BE"
-				(at 0 -7.62 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.cuidevices.com/product/interconnect/connectors/terminal-blocks/tb006-508-series"
-				(at 0 -10.16 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "2~24 Poles, Screw Type, Horizontal, 5.08 Pitch, 26~14 (AWG), Terminal Block Connector"
-				(at 0 -15.24 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Mouser" "490-TB006-508-02BE"
-				(at 0 -12.7 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CUI-TB006-508-02BE_0_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.905 -3.81)
-					(stroke
-						(width 0.4)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.32 -2.24) (xy -0.32 -2.88)
-					)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.32 0.32) (xy -0.32 -0.32)
-					)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CUI-TB006-508-02BE_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.905)
-					(name "~"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -2.54 0)
-					(length 1.905)
-					(name "~"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "tronixio:HARWIN-JUMPER-0254-06MM-BLACK"
 			(pin_numbers hide)
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "JP"
 				(at 0 2.54 0)
@@ -788,7 +411,7 @@
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "JP"
 				(at 0 2.54 0)
@@ -892,7 +515,7 @@
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "JP"
 				(at 0 2.54 0)
@@ -1106,7 +729,7 @@
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "X"
 				(at 0 2.54 0)
@@ -2111,7 +1734,7 @@
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "K"
 				(at 0 2.54 0)
@@ -2530,6 +2153,7 @@
 			(on_board yes)
 			(property "Reference" "#PWR"
 				(at 0 -5.08 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -2539,6 +2163,7 @@
 			)
 			(property "Value" "POWER-GND"
 				(at 0 -7.62 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -2717,6 +2342,383 @@
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "tronixio:SSD-PJ-102AH-TH"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 0 5.08 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.15 1.15)
+					)
+				)
+			)
+			(property "Value" "PJ-102H"
+				(at 0 -5.08 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.15 1.15)
+					)
+				)
+			)
+			(property "Footprint" "tronixio:SSD-PJ-102AH"
+				(at 0 -7.62 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.sameskydevices.com/product/interconnect/connectors/dc-power-connectors/jacks/pj-102ah"
+				(at 0 -10.16 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" "490-PJ-102AH"
+				(at 0 -12.7 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SSD-PJ-102AH-TH_0_1"
+				(rectangle
+					(start -3.81 -3.81)
+					(end 3.81 3.81)
+					(stroke
+						(width 0.4)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.794 0.254)
+					(end 2.286 -0.254)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -2.54) (xy -2.286 -1.27) (xy -1.524 -2.54) (xy 2.286 -2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.778) (xy -1.016 -2.286) (xy -0.762 -1.778) (xy 1.27 -1.778) (xy 1.27 2.54) (xy 2.286 2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.794 -2.54)
+					(radius 0.3592)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.794 0)
+					(radius 0.3592)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.794 2.54)
+					(radius 0.3592)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SSD-PJ-102AH-TH_1_1"
+				(pin passive line
+					(at 5.08 0 180)
+					(length 1.905)
+					(name "~"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 1.905)
+					(name "~"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 1.905)
+					(name "~"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "tronixio:SSD-TB006-508-02BE"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 0 2.54 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.15 1.15)
+					)
+				)
+			)
+			(property "Value" "SSD-TB006-508-02BE"
+				(at 0 -5.715 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.15 1.15)
+					)
+				)
+			)
+			(property "Footprint" "tronixio:SSD-TB006-508-02BE"
+				(at 0 -7.62 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.sameskydevices.com/product/interconnect/connectors/terminal-blocks/tb006-508-series"
+				(at 0 -10.16 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2~24 Poles, Screw Type, Horizontal, 5.08 Pitch, 26~14 (AWG), Terminal Block Connector"
+				(at 0 -12.7 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" "490-TB006-508-02BE"
+				(at 0 -15.24 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SSD-TB006-508-02BE_0_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.905 -3.81)
+					(stroke
+						(width 0.4)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.32 -2.24) (xy -0.32 -2.88)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.32 0.32) (xy -0.32 -0.32)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SSD-TB006-508-02BE_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.905)
+					(name "~"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 1.905)
 					(name "~"
 						(effects
 							(font
@@ -3496,7 +3498,7 @@
 		(uuid "fd9ad7b6-a379-49fa-ae00-f6056a89247b")
 	)
 	(symbol
-		(lib_id "tronixio:CUI-TB006-508-02BE")
+		(lib_id "tronixio:SSD-TB006-508-02BE")
 		(at 78.74 55.88 0)
 		(mirror y)
 		(unit 1)
@@ -3521,7 +3523,7 @@
 				)
 			)
 		)
-		(property "Footprint" "tronixio:CUI-TB006-508-02BE"
+		(property "Footprint" "tronixio:SSD-TB006-508-02BE"
 			(at 78.74 66.04 0)
 			(effects
 				(font
@@ -3530,7 +3532,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.cuidevices.com/product/interconnect/connectors/terminal-blocks/tb006-508-series"
+		(property "Datasheet" "https://www.sameskydevices.com/product/interconnect/connectors/terminal-blocks/tb006-508-series"
 			(at 78.74 68.58 0)
 			(effects
 				(font
@@ -4353,7 +4355,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:CUI-PJ-102AH-TH")
+		(lib_id "tronixio:SSD-PJ-102AH-TH")
 		(at 78.74 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4377,7 +4379,7 @@
 				)
 			)
 		)
-		(property "Footprint" "tronixio:CUI-PJ-102AH"
+		(property "Footprint" "tronixio:SSD-PJ-102AH"
 			(at 78.74 50.8 0)
 			(effects
 				(font
@@ -4386,7 +4388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.cuidevices.com/product/interconnect/connectors/dc-power-connectors/jacks/pj-102ah"
+		(property "Datasheet" "https://www.sameskydevices.com/product/interconnect/connectors/dc-power-connectors/jacks/pj-102ah"
 			(at 78.74 53.34 0)
 			(effects
 				(font
