@@ -9,6 +9,13 @@
 
 ## Firmwares.
 
+- [TODO]()
+
+## Hats & Modules.
+
+- [Trainer Hats](https://github.com/tronixio/modules)
+- [Trainer Modules (GPIO/UART/I2C/SPI)](https://github.com/tronixio/modules)
+
 ### MINI Trainer.
 
 - [PIC24FJxxGA002 - XC16 - LCD - ADC - SWITCHS - ROTARY ENCODER.](https://github.com/tronixio/trainers-pic16bit/blob/main/Firmwares/pic24fjxxga/pic24fjxxga002-mini-xc16-lcd.md)
