@@ -7550,7 +7550,6 @@
 	(hierarchical_label "SCL"
 		(shape bidirectional)
 		(at 180.34 40.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -7562,7 +7561,6 @@
 	(hierarchical_label "PGD{slash}UTX{slash}RB0"
 		(shape bidirectional)
 		(at 71.12 144.78 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -7574,7 +7572,6 @@
 	(hierarchical_label "PGC{slash}URX{slash}RB1"
 		(shape bidirectional)
 		(at 71.12 147.32 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -7586,7 +7583,6 @@
 	(hierarchical_label "SDA"
 		(shape bidirectional)
 		(at 190.5 40.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -7598,7 +7594,6 @@
 	(hierarchical_label "D+"
 		(shape bidirectional)
 		(at 45.72 175.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -7610,7 +7605,6 @@
 	(hierarchical_label "D-"
 		(shape bidirectional)
 		(at 45.72 172.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.2 1.2)

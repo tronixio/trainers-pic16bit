@@ -6127,7 +6127,7 @@
 				)
 			)
 		)
-		(symbol "tronixio:ONSEMI-CAT4002A-SC-70"
+		(symbol "tronixio:ONSEMI-CAT4002A-SC"
 			(pin_names
 				(offset 0.5)
 			)
@@ -6173,15 +6173,6 @@
 				)
 			)
 			(property "Description" "Constant Current LED Driver with 32 Dimming Levels and Rset"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Mouser" "863-CAT4002ASD-GT3"
 				(at 7.62 -17.78 0)
 				(do_not_autoplace)
 				(effects
@@ -6191,7 +6182,17 @@
 					(hide yes)
 				)
 			)
-			(symbol "ONSEMI-CAT4002A-SC-70_0_1"
+			(property "Mouser" "863-CAT4002ASD-GT3"
+				(at 7.62 -20.32 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ONSEMI-CAT4002A-SC_0_1"
 				(rectangle
 					(start 2.54 2.54)
 					(end 12.7 -7.62)
@@ -6204,7 +6205,7 @@
 					)
 				)
 			)
-			(symbol "ONSEMI-CAT4002A-SC-70_1_1"
+			(symbol "ONSEMI-CAT4002A-SC_1_1"
 				(pin input line
 					(at 0 -2.54 0)
 					(length 2.54)
@@ -6223,10 +6224,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -5.08 0)
+				(pin passive line
+					(at 15.24 -5.08 180)
 					(length 2.54)
-					(name "GND"
+					(name "RSET"
 						(effects
 							(font
 								(size 1 1)
@@ -6277,10 +6278,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 15.24 -5.08 180)
+				(pin power_in line
+					(at 0 -5.08 0)
 					(length 2.54)
-					(name "RSET"
+					(name "GND"
 						(effects
 							(font
 								(size 1 1)
@@ -7764,26 +7765,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 68.58) (xy 142.24 68.58)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "44acc66e-1f4d-4ceb-a022-2a89790b5c74")
-	)
-	(wire
-		(pts
-			(xy 142.24 68.58) (xy 142.24 71.12)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "44acc66e-1f4d-4ceb-a022-2a89790b5c75")
-	)
-	(wire
-		(pts
 			(xy 200.66 73.66) (xy 226.06 73.66)
 		)
 		(stroke
@@ -8344,6 +8325,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 68.58) (xy 142.24 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd589ab1-70f3-41fb-91a5-4e114926202d")
+	)
+	(wire
+		(pts
 			(xy 177.8 55.88) (xy 180.34 55.88)
 		)
 		(stroke
@@ -8571,6 +8562,16 @@
 			(type default)
 		)
 		(uuid "e8afd2f8-ac8b-4aa3-9bae-0fe501ae917b")
+	)
+	(wire
+		(pts
+			(xy 139.7 68.58) (xy 142.24 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec3afa12-9282-4e25-8839-e5357c5e5153")
 	)
 	(wire
 		(pts
@@ -8977,7 +8978,6 @@
 	(hierarchical_label "SDA"
 		(shape bidirectional)
 		(at 248.92 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -8989,7 +8989,6 @@
 	(hierarchical_label "SCL"
 		(shape bidirectional)
 		(at 45.72 55.88 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -9001,7 +9000,6 @@
 	(hierarchical_label "PGD{slash}UTX{slash}RB0"
 		(shape bidirectional)
 		(at 248.92 53.34 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -9013,7 +9011,6 @@
 	(hierarchical_label "SDA"
 		(shape bidirectional)
 		(at 45.72 58.42 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -9025,7 +9022,6 @@
 	(hierarchical_label "D+"
 		(shape bidirectional)
 		(at 165.1 66.04 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -9037,7 +9033,6 @@
 	(hierarchical_label "SCL"
 		(shape bidirectional)
 		(at 248.92 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -9049,7 +9044,6 @@
 	(hierarchical_label "D-"
 		(shape bidirectional)
 		(at 165.1 63.5 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -9061,7 +9055,6 @@
 	(hierarchical_label "PGC{slash}URX{slash}RB1"
 		(shape bidirectional)
 		(at 248.92 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.2 1.2)
@@ -10222,7 +10215,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:ONSEMI-CAT4002A-SC-70")
+		(lib_id "tronixio:ONSEMI-CAT4002A-SC")
 		(at 124.46 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10267,16 +10260,17 @@
 			)
 		)
 		(property "Description" "Constant Current LED Driver with 32 Dimming Levels and Rset"
-			(at 124.46 63.5 0)
+			(at 132.08 81.28 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
 		)
 		(property "Mouser" "863-CAT4002ASD-GT3"
-			(at 132.08 81.28 0)
+			(at 132.08 83.82 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
