@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "06c5cf88-e74e-436e-8b37-23dcf7ca7be1")
 	(paper "A4")
 	(title_block
@@ -11,11 +11,15 @@
 		(comment 1 "PIC16-Bit Trainer")
 	)
 	(lib_symbols
-		(symbol "tronixio:POWER-+VDD"
+		(symbol "tronixio:+VDD"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -28,7 +32,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "POWER-+VDD"
+			(property "Value" "+VDD"
 				(at 0 -12.7 0)
 				(effects
 					(font
@@ -64,22 +68,10 @@
 					)
 				)
 			)
-			(symbol "POWER-+VDD_0_1"
+			(symbol "+VDD_0_1"
 				(polyline
 					(pts
 						(xy -0.635 2.54) (xy 0.635 2.54)
-					)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.905) (xy 0 3.175)
 					)
 					(stroke
 						(width 0.2)
@@ -100,12 +92,24 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 1.905) (xy 0 3.175)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "POWER-+VDD_1_1"
+			(symbol "+VDD_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 1.27)
-					(name "+VDD"
+					(name "~"
 						(effects
 							(font
 								(size 1 1)
@@ -121,18 +125,22 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "tronixio:POWER-GND"
+		(symbol "tronixio:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
 				(at 0 -5.08 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -140,9 +148,8 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "POWER-GND"
+			(property "Value" "GND"
 				(at 0 -7.62 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -168,16 +175,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Description" "GND"
+				(at 0 -3.175 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
 			)
-			(symbol "POWER-GND_0_1"
+			(symbol "GND_0_1"
 				(rectangle
 					(start -1.778 -2.032)
 					(end 1.778 -1.27)
@@ -190,11 +197,11 @@
 					)
 				)
 			)
-			(symbol "POWER-GND_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 1.27)
-					(name "GND"
+					(name "~"
 						(effects
 							(font
 								(size 1 1)
@@ -210,11 +217,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:RESISTOR-1206-200R-5P"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -338,11 +350,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:SAMTEC-254-F-1X06-RIGHT-ANGLE"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -404,8 +421,20 @@
 				)
 			)
 			(symbol "SAMTEC-254-F-1X06-RIGHT-ANGLE_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -13.97) (xy 1.27 -13.97) (xy 1.27 0.635) (xy 0.635 1.27) (xy -1.27 1.27) (xy -1.27 -13.97)
+					)
+					(stroke
+						(width 0.4)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
-					(center 0 -12.7)
+					(center 0 0)
 					(radius 0.635)
 					(stroke
 						(width 0.2)
@@ -416,18 +445,7 @@
 					)
 				)
 				(circle
-					(center 0 -10.16)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -7.62)
+					(center 0 -2.54)
 					(radius 0.635)
 					(stroke
 						(width 0.2)
@@ -449,7 +467,7 @@
 					)
 				)
 				(circle
-					(center 0 -2.54)
+					(center 0 -7.62)
 					(radius 0.635)
 					(stroke
 						(width 0.2)
@@ -459,12 +477,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.27 -13.97) (xy 1.27 -13.97) (xy 1.27 0.635) (xy 0.635 1.27) (xy -1.27 1.27) (xy -1.27 -13.97)
-					)
+				(circle
+					(center 0 -10.16)
+					(radius 0.635)
 					(stroke
-						(width 0.4)
+						(width 0.2)
 						(type default)
 					)
 					(fill
@@ -472,7 +489,7 @@
 					)
 				)
 				(circle
-					(center 0 0)
+					(center 0 -12.7)
 					(radius 0.635)
 					(stroke
 						(width 0.2)
@@ -593,11 +610,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:SAMTEC-254-F-2X06-RIGHT-ANGLE"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -659,61 +681,6 @@
 				)
 			)
 			(symbol "SAMTEC-254-F-2X06-RIGHT-ANGLE_0_0"
-				(circle
-					(center 0 -12.7)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -10.16)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -7.62)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -5.08)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -1.27 -13.97) (xy 3.81 -13.97) (xy 3.81 1.27) (xy -0.635 1.27) (xy -1.27 0.635) (xy -1.27 -13.97)
@@ -738,7 +705,7 @@
 					)
 				)
 				(circle
-					(center 2.54 -12.7)
+					(center 0 -2.54)
 					(radius 0.635)
 					(stroke
 						(width 0.2)
@@ -749,7 +716,7 @@
 					)
 				)
 				(circle
-					(center 2.54 -10.16)
+					(center 0 -5.08)
 					(radius 0.635)
 					(stroke
 						(width 0.2)
@@ -760,7 +727,7 @@
 					)
 				)
 				(circle
-					(center 2.54 -7.62)
+					(center 0 -7.62)
 					(radius 0.635)
 					(stroke
 						(width 0.2)
@@ -771,7 +738,29 @@
 					)
 				)
 				(circle
-					(center 2.54 -5.08)
+					(center 0 -10.16)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -12.7)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 0)
 					(radius 0.635)
 					(stroke
 						(width 0.2)
@@ -793,7 +782,40 @@
 					)
 				)
 				(circle
-					(center 2.54 0)
+					(center 2.54 -5.08)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -7.62)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -10.16)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -12.7)
 					(radius 0.635)
 					(stroke
 						(width 0.2)
@@ -824,78 +846,6 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -10.16 180)
-					(length 1.905)
-					(name "10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -12.7 0)
-					(length 1.905)
-					(name "11"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -12.7 180)
-					(length 1.905)
-					(name "12"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 1.905)
-					(name "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -2.54 -2.54 0)
 					(length 1.905)
 					(name "3"
@@ -906,24 +856,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 1.905)
-					(name "4"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1 1)
@@ -950,24 +882,6 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 1.905)
-					(name "6"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -2.54 -7.62 0)
 					(length 1.905)
 					(name "7"
@@ -978,6 +892,96 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -10.16 0)
+					(length 1.905)
+					(name "9"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -12.7 0)
+					(length 1.905)
+					(name "11"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 1.905)
+					(name "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 1.905)
+					(name "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 1.905)
+					(name "6"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1 1)
@@ -1004,16 +1008,34 @@
 					)
 				)
 				(pin passive line
-					(at -2.54 -10.16 0)
+					(at 5.08 -10.16 180)
 					(length 1.905)
-					(name "9"
+					(name "10"
 						(effects
 							(font
 								(size 1 1)
 							)
 						)
 					)
-					(number "9"
+					(number "10"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -12.7 180)
+					(length 1.905)
+					(name "12"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "12"
 						(effects
 							(font
 								(size 1 1)
@@ -1022,11 +1044,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:ST-ESDA14V2SC5Y-SOT-23"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1162,24 +1189,6 @@
 			)
 			(symbol "ST-ESDA14V2SC5Y-SOT-23_2_1"
 				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.27)
-					(name "A"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 0 2.54 270)
 					(length 1.905)
 					(name "C"
@@ -1197,8 +1206,6 @@
 						)
 					)
 				)
-			)
-			(symbol "ST-ESDA14V2SC5Y-SOT-23_3_1"
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 1.27)
@@ -1217,6 +1224,8 @@
 						)
 					)
 				)
+			)
+			(symbol "ST-ESDA14V2SC5Y-SOT-23_3_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 1.905)
@@ -1235,8 +1244,6 @@
 						)
 					)
 				)
-			)
-			(symbol "ST-ESDA14V2SC5Y-SOT-23_4_1"
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 1.27)
@@ -1255,6 +1262,8 @@
 						)
 					)
 				)
+			)
+			(symbol "ST-ESDA14V2SC5Y-SOT-23_4_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 1.905)
@@ -1273,8 +1282,159 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name "A"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "INT"
+		(exclude_from_sim no)
+		(at 106.68 44.45 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "14724b33-8faf-4ee4-960c-f5436c53718a")
+	)
+	(text "TX"
+		(exclude_from_sim no)
+		(at 243.84 46.99 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ee421da-f77e-4c39-8356-5d6d7c8b923c")
+	)
+	(text "VDD"
+		(exclude_from_sim no)
+		(at 106.68 57.15 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "29216071-4e6d-4e5a-a098-348c16e19dac")
+	)
+	(text "SCL"
+		(exclude_from_sim no)
+		(at 106.68 49.53 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "46ccf6e4-4c16-4a45-9558-3cbe1012ab65")
+	)
+	(text "GND"
+		(exclude_from_sim no)
+		(at 106.68 54.61 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "6f5646c5-157d-41fe-9a7d-0b984b9016cb")
+	)
+	(text "RX"
+		(exclude_from_sim no)
+		(at 243.84 49.53 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "78a9f586-a408-48f0-905f-2c354083a418")
+	)
+	(text "GND"
+		(exclude_from_sim no)
+		(at 243.84 54.61 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "8bf71503-58cf-4874-b23a-83ddeb282076")
+	)
+	(text "SDA"
+		(exclude_from_sim no)
+		(at 106.68 52.07 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "a64d55b0-fd6e-4869-99f1-f840875b4d83")
+	)
+	(text "CTS"
+		(exclude_from_sim no)
+		(at 243.84 44.45 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "bca1355a-2d0a-4615-b80a-c4babdab2ae8")
+	)
+	(text "VDD"
+		(exclude_from_sim no)
+		(at 243.84 57.15 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "c5b26a69-ef71-465f-a946-43dd53519dea")
+	)
+	(text "RESET"
+		(exclude_from_sim no)
+		(at 106.68 46.99 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "e3d55811-4a2c-48d2-9f87-b0daaad97f64")
+	)
+	(text "RTS"
+		(exclude_from_sim no)
+		(at 243.84 52.07 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "e523b801-b15b-4dd8-9687-0a02914d9d48")
 	)
 	(junction
 		(at 228.6 43.18)
@@ -2332,141 +2492,8 @@
 		)
 		(uuid "fde990a5-8c5a-4a0d-a0c6-dde3462b41c5")
 	)
-	(text "INT"
-		(exclude_from_sim no)
-		(at 106.68 44.45 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "14724b33-8faf-4ee4-960c-f5436c53718a")
-	)
-	(text "TX"
-		(exclude_from_sim no)
-		(at 243.84 46.99 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "1ee421da-f77e-4c39-8356-5d6d7c8b923c")
-	)
-	(text "VDD"
-		(exclude_from_sim no)
-		(at 106.68 57.15 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "29216071-4e6d-4e5a-a098-348c16e19dac")
-	)
-	(text "SCL"
-		(exclude_from_sim no)
-		(at 106.68 49.53 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "46ccf6e4-4c16-4a45-9558-3cbe1012ab65")
-	)
-	(text "GND"
-		(exclude_from_sim no)
-		(at 106.68 54.61 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "6f5646c5-157d-41fe-9a7d-0b984b9016cb")
-	)
-	(text "RX"
-		(exclude_from_sim no)
-		(at 243.84 49.53 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "78a9f586-a408-48f0-905f-2c354083a418")
-	)
-	(text "GND"
-		(exclude_from_sim no)
-		(at 243.84 54.61 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "8bf71503-58cf-4874-b23a-83ddeb282076")
-	)
-	(text "SDA"
-		(exclude_from_sim no)
-		(at 106.68 52.07 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "a64d55b0-fd6e-4869-99f1-f840875b4d83")
-	)
-	(text "CTS"
-		(exclude_from_sim no)
-		(at 243.84 44.45 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "bca1355a-2d0a-4615-b80a-c4babdab2ae8")
-	)
-	(text "VDD"
-		(exclude_from_sim no)
-		(at 243.84 57.15 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "c5b26a69-ef71-465f-a946-43dd53519dea")
-	)
-	(text "RESET"
-		(exclude_from_sim no)
-		(at 106.68 46.99 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "e3d55811-4a2c-48d2-9f87-b0daaad97f64")
-	)
-	(text "RTS"
-		(exclude_from_sim no)
-		(at 243.84 52.07 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "e523b801-b15b-4dd8-9687-0a02914d9d48")
-	)
 	(label "SPI_MISO"
 		(at 101.6 129.54 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2477,7 +2504,6 @@
 	)
 	(label "SPI_MOSI"
 		(at 101.6 127 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2488,7 +2514,6 @@
 	)
 	(label "UART_RTS"
 		(at 205.74 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1 1)
@@ -2499,7 +2524,6 @@
 	)
 	(label "SPI_CS2"
 		(at 180.34 129.54 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2510,7 +2534,6 @@
 	)
 	(label "UART_TX"
 		(at 205.74 45.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1 1)
@@ -2521,7 +2544,6 @@
 	)
 	(label "UART_CTS"
 		(at 205.74 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1 1)
@@ -2532,7 +2554,6 @@
 	)
 	(label "I2C_SDA"
 		(at 66.04 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1 1)
@@ -2543,7 +2564,6 @@
 	)
 	(label "IC2_SCL"
 		(at 66.04 48.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1 1)
@@ -2554,7 +2574,6 @@
 	)
 	(label "SPI_RESET"
 		(at 180.34 127 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2565,7 +2584,6 @@
 	)
 	(label "UART_RX"
 		(at 205.74 48.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1 1)
@@ -2576,7 +2594,6 @@
 	)
 	(label "SPI_SCK"
 		(at 101.6 132.08 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2587,7 +2604,6 @@
 	)
 	(label "I2C_RESET"
 		(at 66.04 45.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1 1)
@@ -2598,7 +2614,6 @@
 	)
 	(label "SPI_INT"
 		(at 180.34 124.46 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2609,7 +2624,6 @@
 	)
 	(label "I2C_INT"
 		(at 66.04 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1 1)
@@ -2620,7 +2634,6 @@
 	)
 	(label "SPI_CS"
 		(at 101.6 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2631,7 +2644,6 @@
 	)
 	(label "SPI_CS3"
 		(at 180.34 132.08 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2643,7 +2655,6 @@
 	(hierarchical_label "RA0{slash}SPI_CS3"
 		(shape input)
 		(at 198.12 132.08 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2655,7 +2666,6 @@
 	(hierarchical_label "RA4{slash}UCTS"
 		(shape input)
 		(at 187.96 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2667,7 +2677,6 @@
 	(hierarchical_label "RB2{slash}SPI_RESET"
 		(shape input)
 		(at 198.12 127 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2679,7 +2688,6 @@
 	(hierarchical_label "RB1{slash}URX{slash}PGC"
 		(shape output)
 		(at 187.96 48.26 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2691,7 +2699,6 @@
 	(hierarchical_label "RB13{slash}SPI_MISO"
 		(shape output)
 		(at 83.82 129.54 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2703,7 +2710,6 @@
 	(hierarchical_label "RB9{slash}I2C_SDA"
 		(shape bidirectional)
 		(at 48.26 50.8 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2715,7 +2721,6 @@
 	(hierarchical_label "RB4{slash}URTS"
 		(shape output)
 		(at 187.96 50.8 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2727,7 +2732,6 @@
 	(hierarchical_label "RB15{slash}SPI_CS"
 		(shape input)
 		(at 83.82 124.46 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2739,7 +2743,6 @@
 	(hierarchical_label "RB10{slash}SPI_MOSI"
 		(shape input)
 		(at 83.82 127 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2751,7 +2754,6 @@
 	(hierarchical_label "RB0{slash}UTX{slash}PGD"
 		(shape input)
 		(at 187.96 45.72 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2763,7 +2765,6 @@
 	(hierarchical_label "RA1{slash}SPI_CS2"
 		(shape input)
 		(at 198.12 129.54 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2775,7 +2776,6 @@
 	(hierarchical_label "RB7{slash}INT"
 		(shape output)
 		(at 198.12 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2787,7 +2787,6 @@
 	(hierarchical_label "RB11{slash}SPI_SCK"
 		(shape bidirectional)
 		(at 83.82 132.08 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2799,7 +2798,6 @@
 	(hierarchical_label "RB7{slash}INT"
 		(shape output)
 		(at 48.26 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2811,7 +2809,6 @@
 	(hierarchical_label "RB5{slash}I2C_RESET"
 		(shape input)
 		(at 48.26 45.72 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2823,7 +2820,6 @@
 	(hierarchical_label "RB8{slash}I2C_SCL"
 		(shape bidirectional)
 		(at 48.26 48.26 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -2921,7 +2917,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+VDD")
+		(lib_id "tronixio:+VDD")
 		(at 236.22 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2967,9 +2963,10 @@
 		)
 		(property "Description" "VDD"
 			(at 236.22 30.48 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -2986,7 +2983,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 154.94 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3031,11 +3028,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 154.94 160.02 0)
+		(property "Description" "GND"
+			(at 154.94 163.195 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -3053,7 +3050,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 116.84 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3098,11 +3095,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 116.84 160.02 0)
+		(property "Description" "GND"
+			(at 116.84 163.195 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -3208,7 +3205,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 233.68 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3253,11 +3250,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 233.68 76.2 0)
+		(property "Description" "GND"
+			(at 233.68 79.375 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -3651,7 +3648,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 81.28 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3696,11 +3693,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 81.28 76.2 0)
+		(property "Description" "GND"
+			(at 81.28 79.375 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -3718,7 +3715,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 170.18 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3763,11 +3760,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 170.18 160.02 0)
+		(property "Description" "GND"
+			(at 170.18 163.195 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -3785,7 +3782,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 121.92 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3830,11 +3827,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 121.92 160.02 0)
+		(property "Description" "GND"
+			(at 121.92 163.195 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -4132,7 +4129,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+VDD")
+		(lib_id "tronixio:+VDD")
 		(at 134.62 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4178,9 +4175,10 @@
 		)
 		(property "Description" "VDD"
 			(at 134.62 111.76 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -4557,7 +4555,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 91.44 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4602,11 +4600,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 91.44 76.2 0)
+		(property "Description" "GND"
+			(at 91.44 79.375 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -4720,7 +4718,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+VDD")
+		(lib_id "tronixio:+VDD")
 		(at 99.06 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4766,9 +4764,10 @@
 		)
 		(property "Description" "VDD"
 			(at 99.06 30.48 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -4785,7 +4784,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 218.44 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4830,11 +4829,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 218.44 76.2 0)
+		(property "Description" "GND"
+			(at 218.44 79.375 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -4852,7 +4851,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 228.6 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4897,11 +4896,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 228.6 76.2 0)
+		(property "Description" "GND"
+			(at 228.6 79.375 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5007,7 +5006,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 160.02 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5052,11 +5051,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 160.02 160.02 0)
+		(property "Description" "GND"
+			(at 160.02 163.195 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5074,7 +5073,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 223.52 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5119,11 +5118,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 223.52 76.2 0)
+		(property "Description" "GND"
+			(at 223.52 79.375 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5237,7 +5236,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 149.86 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5282,11 +5281,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 149.86 160.02 0)
+		(property "Description" "GND"
+			(at 149.86 163.195 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5480,7 +5479,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 132.08 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5525,11 +5524,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 132.08 160.02 0)
+		(property "Description" "GND"
+			(at 132.08 163.195 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5547,7 +5546,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 213.36 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5592,11 +5591,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 213.36 76.2 0)
+		(property "Description" "GND"
+			(at 213.36 79.375 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -5798,7 +5797,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 76.2 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5843,11 +5842,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 76.2 76.2 0)
+		(property "Description" "GND"
+			(at 76.2 79.375 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -6433,7 +6432,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+VDD")
+		(lib_id "tronixio:+VDD")
 		(at 147.32 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6479,9 +6478,10 @@
 		)
 		(property "Description" "VDD"
 			(at 147.32 111.76 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -6498,7 +6498,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 165.1 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6543,11 +6543,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 165.1 160.02 0)
+		(property "Description" "GND"
+			(at 165.1 163.195 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -6829,7 +6829,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 111.76 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6874,11 +6874,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 111.76 160.02 0)
+		(property "Description" "GND"
+			(at 111.76 163.195 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -6896,7 +6896,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 86.36 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6941,11 +6941,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 86.36 76.2 0)
+		(property "Description" "GND"
+			(at 86.36 79.375 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -7419,7 +7419,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 127 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7464,11 +7464,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 127 160.02 0)
+		(property "Description" "GND"
+			(at 127 163.195 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -7592,7 +7592,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 96.52 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7637,11 +7637,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 96.52 76.2 0)
+		(property "Description" "GND"
+			(at 96.52 79.375 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)

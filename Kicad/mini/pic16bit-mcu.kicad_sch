@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "06c5cf88-e74e-436e-8b37-23dcf7ca7be1")
 	(paper "A4")
 	(title_block
@@ -11,10 +11,248 @@
 		(comment 1 "PIC16-Bit Mini Trainer")
 	)
 	(lib_symbols
-		(symbol "tronixio:ALPS-SKRPAC"
-			(pin_numbers hide)
+		(symbol "tronixio:+3V3"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -10.16 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 -12.7 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "3V3"
+				(at 0 5.08 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.15 1.15)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.635 2.54) (xy 0.635 2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 1.27)
+					(stroke
+						(width 0.4)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.905) (xy 0 3.175)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "tronixio:+5V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "5V"
+				(at 0 5.08 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.15 1.15)
+					)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.635 2.54) (xy 0.635 2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 1.27)
+					(stroke
+						(width 0.4)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.905) (xy 0 3.175)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "tronixio:ALPS-SKRPAC"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -57,7 +295,7 @@
 				)
 			)
 			(property "Description" "4.2×3.2mm Compact High Operating Force Type (Surface Mount) SKRP Series"
-				(at 0 -15.24 0)
+				(at 0 -12.7 0)
 				(do_not_autoplace)
 				(effects
 					(font
@@ -67,7 +305,7 @@
 				)
 			)
 			(property "Mouser" "688-SKRPACE010"
-				(at 0 -12.7 0)
+				(at 0 -15.24 0)
 				(do_not_autoplace)
 				(effects
 					(font
@@ -89,7 +327,7 @@
 					)
 				)
 				(circle
-					(center -1.905 -2.54)
+					(center -1.905 0)
 					(radius 0.508)
 					(stroke
 						(width 0.2)
@@ -100,7 +338,7 @@
 					)
 				)
 				(circle
-					(center -1.905 0)
+					(center -1.905 -2.54)
 					(radius 0.508)
 					(stroke
 						(width 0.2)
@@ -113,6 +351,18 @@
 				(rectangle
 					(start -1.27 4.572)
 					(end 1.27 3.81)
+					(stroke
+						(width 0.001)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 2.286) (xy 1.016 2.286) (xy 0 3.302) (xy -1.016 2.286)
+					)
 					(stroke
 						(width 0.001)
 						(type default)
@@ -145,20 +395,8 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.016 2.286) (xy 1.016 2.286) (xy 0 3.302) (xy -1.016 2.286)
-					)
-					(stroke
-						(width 0.001)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 				(circle
-					(center 1.905 -2.54)
+					(center 1.905 0)
 					(radius 0.508)
 					(stroke
 						(width 0.2)
@@ -169,7 +407,7 @@
 					)
 				)
 				(circle
-					(center 1.905 0)
+					(center 1.905 -2.54)
 					(radius 0.508)
 					(stroke
 						(width 0.2)
@@ -252,11 +490,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:BOURNS-FUSE-MF-NSMF050"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -380,11 +623,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:CAPACITOR-1206-100N-50V-5P-X7R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -410,7 +658,6 @@
 			)
 			(property "Footprint" "tronixio:CAPACITOR-SMD-1206"
 				(at 0 -10.16 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -428,7 +675,7 @@
 				)
 			)
 			(property "Description" "Unpolarized Capacitor"
-				(at 0 0 0)
+				(at 0 -15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -460,7 +707,6 @@
 			)
 			(property "Mouser" "80-C1206C104J5R"
 				(at 0 -12.7 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -470,8 +716,8 @@
 			)
 			(symbol "CAPACITOR-1206-100N-50V-5P-X7R_0_1"
 				(rectangle
-					(start -1.524 -0.254)
-					(end 1.524 -1.016)
+					(start -1.524 1.016)
+					(end 1.524 0.254)
 					(stroke
 						(width 0.001)
 						(type default)
@@ -481,8 +727,8 @@
 					)
 				)
 				(rectangle
-					(start -1.524 1.016)
-					(end 1.524 0.254)
+					(start -1.524 -0.254)
+					(end 1.524 -1.016)
 					(stroke
 						(width 0.001)
 						(type default)
@@ -530,11 +776,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:CAPACITOR-1206-10U-25V-5P-X7R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -578,7 +829,7 @@
 				)
 			)
 			(property "Description" "Unpolarized Capacitor"
-				(at 0 0 0)
+				(at 0 -15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -620,8 +871,8 @@
 			)
 			(symbol "CAPACITOR-1206-10U-25V-5P-X7R_0_1"
 				(rectangle
-					(start -1.524 -0.254)
-					(end 1.524 -1.016)
+					(start -1.524 1.016)
+					(end 1.524 0.254)
 					(stroke
 						(width 0.001)
 						(type default)
@@ -631,8 +882,8 @@
 					)
 				)
 				(rectangle
-					(start -1.524 1.016)
-					(end 1.524 0.254)
+					(start -1.524 -0.254)
+					(end 1.524 -1.016)
 					(stroke
 						(width 0.001)
 						(type default)
@@ -680,9 +931,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:FCI-USB-TYPE-B-MICRO-TH"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.5)
 			)
@@ -776,6 +1030,24 @@
 				)
 			)
 			(symbol "FCI-USB-TYPE-B-MICRO-TH_1_1"
+				(pin passive line
+					(at 2.54 -10.16 90)
+					(length 2.54)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "SH"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
 				(pin power_out line
 					(at 5.08 5.08 180)
 					(length 2.54)
@@ -866,30 +1138,109 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 -10.16 90)
-					(length 2.54)
-					(name "SHIELD"
+			)
+			(embedded_fonts no)
+		)
+		(symbol "tronixio:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "GND"
+				(at 0 -3.175 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(rectangle
+					(start -1.778 -2.032)
+					(end 1.778 -1.27)
+					(stroke
+						(width 0.001)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
-								(size 0 0)
+								(size 1 1)
 							)
 						)
 					)
-					(number "SH"
+					(number "1"
 						(effects
 							(font
-								(size 0 0)
+								(size 1 1)
 							)
 						)
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:HARWIN-254-F-1X14-VERTICAL"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -951,149 +1302,6 @@
 				)
 			)
 			(symbol "HARWIN-254-F-1X14-VERTICAL_0_1"
-				(circle
-					(center 0 -33.02)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -30.48)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -27.94)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -25.4)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -22.86)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -20.32)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -17.78)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -15.24)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -12.7)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -10.16)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -7.62)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -5.08)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -1.27 -34.29) (xy 1.27 -34.29) (xy 1.27 0.635) (xy 0.635 1.27) (xy -1.27 1.27) (xy -1.27 -34.29)
@@ -1117,6 +1325,149 @@
 						(type none)
 					)
 				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -5.08)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -7.62)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -10.16)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -12.7)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -15.24)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -17.78)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -20.32)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -22.86)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -25.4)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -27.94)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -30.48)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -33.02)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "HARWIN-254-F-1X14-VERTICAL_1_1"
 				(pin passive line
@@ -1130,96 +1481,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -22.86 0)
-					(length 1.905)
-					(name "Pin_10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -25.4 0)
-					(length 1.905)
-					(name "Pin_11"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -27.94 0)
-					(length 1.905)
-					(name "Pin_12"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -30.48 0)
-					(length 1.905)
-					(name "Pin_13"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -33.02 0)
-					(length 1.905)
-					(name "Pin_14"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "14"
 						(effects
 							(font
 								(size 1 1)
@@ -1371,12 +1632,107 @@
 						)
 					)
 				)
+				(pin passive line
+					(at -2.54 -22.86 0)
+					(length 1.905)
+					(name "Pin_10"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -25.4 0)
+					(length 1.905)
+					(name "Pin_11"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -27.94 0)
+					(length 1.905)
+					(name "Pin_12"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -30.48 0)
+					(length 1.905)
+					(name "Pin_13"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -33.02 0)
+					(length 1.905)
+					(name "Pin_14"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:HARWIN-254-M-1X02-JUMPER-VERTICAL"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1441,17 +1797,6 @@
 				)
 			)
 			(symbol "HARWIN-254-M-1X02-JUMPER-VERTICAL_0_1"
-				(circle
-					(center 0 -1.27)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 				(polyline
 					(pts
 						(xy -1.27 -2.54) (xy 1.27 -2.54) (xy 1.27 1.905) (xy 0.635 2.54) (xy -1.27 2.54) (xy -1.27 -2.54)
@@ -1466,6 +1811,17 @@
 				)
 				(circle
 					(center 0 1.27)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -1.27)
 					(radius 0.635)
 					(stroke
 						(width 0.2)
@@ -1514,11 +1870,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:HARWIN-254-M-1X03-VERTICAL"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1580,8 +1941,20 @@
 				)
 			)
 			(symbol "HARWIN-254-M-1X03-VERTICAL_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -6.35) (xy 1.27 -6.35) (xy 1.27 0.635) (xy 0.635 1.27) (xy -1.27 1.27) (xy -1.27 -6.35)
+					)
+					(stroke
+						(width 0.4)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
-					(center 0 -5.08)
+					(center 0 0)
 					(radius 0.635)
 					(stroke
 						(width 0.2)
@@ -1602,20 +1975,8 @@
 						(type outline)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.27 -6.35) (xy 1.27 -6.35) (xy 1.27 0.635) (xy 0.635 1.27) (xy -1.27 1.27) (xy -1.27 -6.35)
-					)
-					(stroke
-						(width 0.4)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(circle
-					(center 0 0)
+					(center 0 -5.08)
 					(radius 0.635)
 					(stroke
 						(width 0.2)
@@ -1682,11 +2043,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:HARWIN-254-M-1X14-VERTICAL"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1748,149 +2114,6 @@
 				)
 			)
 			(symbol "HARWIN-254-M-1X14-VERTICAL_0_1"
-				(circle
-					(center 0 -33.02)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -30.48)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -27.94)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -25.4)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -22.86)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -20.32)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -17.78)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -15.24)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -12.7)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -10.16)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -7.62)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -5.08)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 				(polyline
 					(pts
 						(xy -1.27 -34.29) (xy 1.27 -34.29) (xy 1.27 0.635) (xy 0.635 1.27) (xy -1.27 1.27) (xy -1.27 -34.29)
@@ -1914,6 +2137,149 @@
 						(type outline)
 					)
 				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -5.08)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -7.62)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -10.16)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -12.7)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -15.24)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -17.78)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -20.32)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -22.86)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -25.4)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -27.94)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -30.48)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -33.02)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 			)
 			(symbol "HARWIN-254-M-1X14-VERTICAL_1_1"
 				(pin passive line
@@ -1927,96 +2293,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -22.86 0)
-					(length 1.905)
-					(name "Pin_10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -25.4 0)
-					(length 1.905)
-					(name "Pin_11"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -27.94 0)
-					(length 1.905)
-					(name "Pin_12"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -30.48 0)
-					(length 1.905)
-					(name "Pin_13"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -33.02 0)
-					(length 1.905)
-					(name "Pin_14"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "14"
 						(effects
 							(font
 								(size 1 1)
@@ -2168,12 +2444,107 @@
 						)
 					)
 				)
+				(pin passive line
+					(at -2.54 -22.86 0)
+					(length 1.905)
+					(name "Pin_10"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -25.4 0)
+					(length 1.905)
+					(name "Pin_11"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -27.94 0)
+					(length 1.905)
+					(name "Pin_12"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -30.48 0)
+					(length 1.905)
+					(name "Pin_13"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -33.02 0)
+					(length 1.905)
+					(name "Pin_14"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:KEYSTONE-2000-3"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2263,7 +2634,7 @@
 				(pin passive line
 					(at 0 0 90)
 					(length 1.27)
-					(name "1"
+					(name "~"
 						(effects
 							(font
 								(size 1 1)
@@ -2279,11 +2650,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:KEYSTONE-5006"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2373,7 +2749,7 @@
 				(pin passive line
 					(at 0 0 90)
 					(length 1.27)
-					(name "1"
+					(name "~"
 						(effects
 							(font
 								(size 1 1)
@@ -2389,11 +2765,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:KINGBRIGHT-LED-1206-BLUE"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2417,7 +2798,6 @@
 			)
 			(property "Footprint" "tronixio:LED-SMD-1206"
 				(at 0 -5.08 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -2427,6 +2807,15 @@
 			)
 			(property "Datasheet" "http://www.kingbrightusa.com/images/catalog/SPEC/APT3216LVBC-D.pdf"
 				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light Emitting Diode"
+				(at 0 -12.7 0)
 				(do_not_autoplace)
 				(effects
 					(font
@@ -2435,18 +2824,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(property "Mouser" "604-APT3216LVBCD"
 				(at 0 -10.16 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -2458,18 +2837,6 @@
 				(rectangle
 					(start -1.27 1.27)
 					(end -0.762 -1.27)
-					(stroke
-						(width 0.001)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 -1.27) (xy 1.524 1.27) (xy -0.762 0) (xy 1.524 -1.27)
-					)
 					(stroke
 						(width 0.001)
 						(type default)
@@ -2500,6 +2867,18 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.27) (xy 1.524 1.27) (xy -0.762 0) (xy 1.524 -1.27)
+					)
+					(stroke
+						(width 0.001)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 			)
@@ -2541,11 +2920,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:MICROCHIP-ICSP-F-RIGHT-ANGLE-TH"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2607,61 +2991,6 @@
 				)
 			)
 			(symbol "MICROCHIP-ICSP-F-RIGHT-ANGLE-TH_0_1"
-				(circle
-					(center 0 -12.7)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -10.16)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -7.62)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -5.08)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -1.27 -13.97) (xy 1.27 -13.97) (xy 1.27 0.635) (xy 0.635 1.27) (xy -1.27 1.27) (xy -1.27 -13.97)
@@ -2685,73 +3014,74 @@
 						(type none)
 					)
 				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -5.08)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -7.62)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -10.16)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -12.7)
+					(radius 0.635)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "MICROCHIP-ICSP-F-RIGHT-ANGLE-TH_1_1"
-				(pin no_connect line
-					(at -2.54 -12.7 0)
+				(pin passive line
+					(at -2.54 0 0)
 					(length 1.905)
-					(name "~"
+					(name "~{MCLR}"
 						(effects
 							(font
 								(size 1 1)
 							)
 						)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -2.54 -10.16 0)
-					(length 1.905)
-					(name "PGC"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -7.62 0)
-					(length 1.905)
-					(name "PGD"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 -5.08 0)
-					(length 1.905)
-					(name "GND"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "4"
+					(number "6"
 						(effects
 							(font
 								(size 1 1)
@@ -2777,17 +3107,71 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -2.54 0 0)
+				(pin power_in line
+					(at -2.54 -5.08 0)
 					(length 1.905)
-					(name "~{MCLR}"
+					(name "GND"
 						(effects
 							(font
 								(size 1 1)
 							)
 						)
 					)
-					(number "6"
+					(number "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 -7.62 0)
+					(length 1.905)
+					(name "PGD"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -2.54 -10.16 0)
+					(length 1.905)
+					(name "PGC"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -2.54 -12.7 0)
+					(length 1.905)
+					(name "~"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1 1)
@@ -2796,6 +3180,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:MICROCHIP-PIC24FJ64GA102-ISP"
 			(pin_names
@@ -2897,186 +3282,6 @@
 					)
 				)
 				(pin bidirectional line
-					(at 0 -22.86 0)
-					(length 2.54)
-					(name "RA3/CLKO"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 0 -25.4 0)
-					(length 2.54)
-					(name "RB4"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 0 -27.94 0)
-					(length 2.54)
-					(name "RA4"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -30.48 0)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 0 -33.02 0)
-					(length 2.54)
-					(name "RB5"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 30.48 -33.02 180)
-					(length 2.54)
-					(name "RB6"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 30.48 -30.48 180)
-					(length 2.54)
-					(name "RB7"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 30.48 -27.94 180)
-					(length 2.54)
-					(name "RB8"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 30.48 -25.4 180)
-					(length 2.54)
-					(name "RB9"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 -22.86 180)
-					(length 2.54)
-					(name "DISVREG"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
 					(at 0 -2.54 0)
 					(length 2.54)
 					(name "RA0"
@@ -3087,168 +3292,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 -20.32 180)
-					(length 2.54)
-					(name "VCAP/VDDCORE"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 30.48 -17.78 180)
-					(length 2.54)
-					(name "RB10"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 30.48 -15.24 180)
-					(length 2.54)
-					(name "RB11"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 30.48 -12.7 180)
-					(length 2.54)
-					(name "RB12"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 30.48 -10.16 180)
-					(length 2.54)
-					(name "RB13"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 30.48 -7.62 180)
-					(length 2.54)
-					(name "RB14"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 30.48 -5.08 180)
-					(length 2.54)
-					(name "RB15"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 30.48 -2.54 180)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 30.48 0 180)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "28"
 						(effects
 							(font
 								(size 1 1)
@@ -3382,12 +3425,359 @@
 						)
 					)
 				)
+				(pin bidirectional line
+					(at 0 -22.86 0)
+					(length 2.54)
+					(name "RA3/CLKO"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -25.4 0)
+					(length 2.54)
+					(name "RB4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -27.94 0)
+					(length 2.54)
+					(name "RA4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -33.02 0)
+					(length 2.54)
+					(name "RB5"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 30.48 0 180)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 30.48 -2.54 180)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 30.48 -5.08 180)
+					(length 2.54)
+					(name "RB15"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 30.48 -7.62 180)
+					(length 2.54)
+					(name "RB14"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 30.48 -10.16 180)
+					(length 2.54)
+					(name "RB13"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 30.48 -12.7 180)
+					(length 2.54)
+					(name "RB12"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 30.48 -15.24 180)
+					(length 2.54)
+					(name "RB11"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 30.48 -17.78 180)
+					(length 2.54)
+					(name "RB10"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -20.32 180)
+					(length 2.54)
+					(name "VCAP/VDDCORE"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -22.86 180)
+					(length 2.54)
+					(name "DISVREG"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 30.48 -25.4 180)
+					(length 2.54)
+					(name "RB9"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 30.48 -27.94 180)
+					(length 2.54)
+					(name "RB8"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 30.48 -30.48 180)
+					(length 2.54)
+					(name "RB7"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 30.48 -33.02 180)
+					(length 2.54)
+					(name "RB6"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:NEXPERIA-PMEG3030-SOD"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3411,7 +3801,6 @@
 			)
 			(property "Footprint" "tronixio:SOD-128"
 				(at 0 -5.08 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -3419,9 +3808,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.nexperia.com/search.html?q=pmeg3030&searchCategory=product"
+			(property "Datasheet" "https://www.nexperia.com/product/PMEG3030EP"
 				(at 0 -7.62 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -3429,18 +3817,26 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Schottky Diode"
-				(at 0 0 0)
+			(property "Description" "Diode Schottky"
+				(at 0 -10.16 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
 			)
 			(property "Mouser" "771-PMEG3030EP115"
-				(at 0 -10.16 0)
-				(do_not_autoplace)
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Part Marking" "A5"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1 1)
@@ -3451,18 +3847,6 @@
 			(symbol "NEXPERIA-PMEG3030-SOD_0_1"
 				(polyline
 					(pts
-						(xy 1.524 -1.27) (xy 1.524 1.27) (xy -0.762 0) (xy 1.524 -1.27)
-					)
-					(stroke
-						(width 0.001)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
 						(xy -0.254 -0.762) (xy -0.254 -1.27) (xy -0.762 -1.27) (xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 0.762)
 					)
 					(stroke
@@ -3471,6 +3855,18 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.27) (xy 1.524 1.27) (xy -0.762 0) (xy 1.524 -1.27)
+					)
+					(stroke
+						(width 0.001)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 			)
@@ -3512,241 +3908,22 @@
 					)
 				)
 			)
-		)
-		(symbol "tronixio:POWER-+3V3"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -12.7 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "POWER-+3V3"
-				(at 0 -10.16 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "3V3"
-				(at 0 5.08 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1.15 1.15)
-					)
-				)
-			)
-			(symbol "POWER-+3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.635 2.54) (xy 0.635 2.54)
-					)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.905) (xy 0 3.175)
-					)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 2.54)
-					(radius 1.27)
-					(stroke
-						(width 0.4)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "POWER-+3V3_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 1.27)
-					(name "+3V3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "tronixio:POWER-+5V"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "POWER-+5V"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "5V"
-				(at 0 5.08 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1.15 1.15)
-					)
-				)
-			)
-			(symbol "POWER-+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.635 2.54) (xy 0.635 2.54)
-					)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.905) (xy 0 3.175)
-					)
-					(stroke
-						(width 0.2)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 2.54)
-					(radius 1.27)
-					(stroke
-						(width 0.4)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "POWER-+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 1.27)
-					(name "+5V"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:POWER-FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#FLG"
-				(at 0 7.62 0)
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1 1)
@@ -3755,7 +3932,7 @@
 				)
 			)
 			(property "Value" "POWER-FLAG"
-				(at 0 5.08 0)
+				(at 0 -15.24 0)
 				(effects
 					(font
 						(size 1 1)
@@ -3782,7 +3959,7 @@
 				)
 			)
 			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
+				(at 0 -17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3824,100 +4001,16 @@
 					)
 				)
 			)
-		)
-		(symbol "tronixio:POWER-GND"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -5.08 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "POWER-GND"
-				(at 0 -7.62 0)
-				(do_not_autoplace)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1 1)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "POWER-GND_0_1"
-				(rectangle
-					(start -1.778 -2.032)
-					(end 1.778 -1.27)
-					(stroke
-						(width 0.001)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "POWER-GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 1.27)
-					(name "GND"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:RESISTOR-1206-10K-5P"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3959,12 +4052,12 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
-				(at 0 -12.7 0)
+			(property "Description" "Resistor"
+				(at 0 -17.78 0)
 				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -4041,16 +4134,21 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:RESISTOR-1206-1K-5P"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0 3.81 0)
+				(at 0.635 3.81 0)
 				(do_not_autoplace)
 				(effects
 					(font
@@ -4087,18 +4185,18 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
-				(at 0 -12.7 0)
+			(property "Description" "Resistor"
+				(at 0 -17.78 0)
 				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
 			)
 			(property "Tolerance" "5%"
-				(at 0 -3.81 0)
+				(at 0.635 -3.81 0)
 				(do_not_autoplace)
 				(effects
 					(font
@@ -4169,11 +4267,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:RESISTOR-1206-4K7-5P"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4216,10 +4319,11 @@
 				)
 			)
 			(property "Description" "Resistor"
-				(at 0 0 0)
+				(at 0 -17.78 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
@@ -4296,11 +4400,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "tronixio:TI-TLV1117-33-SOT-223"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4324,7 +4433,6 @@
 			)
 			(property "Footprint" "tronixio:SOT-223-3-TABPIN2"
 				(at 0 -15.24 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -4334,7 +4442,6 @@
 			)
 			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv1117.pdf"
 				(at 0 -17.78 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -4343,8 +4450,7 @@
 				)
 			)
 			(property "Description" "Adjustable and Fixed Low-Dropout Voltage Regulator"
-				(at 0 -22.86 0)
-				(do_not_autoplace)
+				(at 0 -20.32 0)
 				(effects
 					(font
 						(size 1 1)
@@ -4353,8 +4459,7 @@
 				)
 			)
 			(property "Mouser" "595-TLV1117-33CDC"
-				(at 0 -20.32 0)
-				(do_not_autoplace)
+				(at 0 -22.86 0)
 				(effects
 					(font
 						(size 1 1)
@@ -4374,20 +4479,9 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start -0.762 -1.778)
-					(end 0.762 -2.032)
-					(stroke
-						(width 0.001)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 				(polyline
 					(pts
-						(xy -2.032 0) (xy -2.794 -0.762)
+						(xy -2.54 -0.508) (xy -3.048 -0.508) (xy -3.048 0.508) (xy -2.54 0.508)
 					)
 					(stroke
 						(width 0.1)
@@ -4411,7 +4505,7 @@
 				)
 				(polyline
 					(pts
-						(xy 3.048 0) (xy 2.286 -0.762)
+						(xy -2.032 0) (xy -2.794 -0.762)
 					)
 					(stroke
 						(width 0.1)
@@ -4421,28 +4515,15 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 3.048 0) (xy 2.286 0.762)
-					)
+				(rectangle
+					(start -0.762 -1.778)
+					(end 0.762 -2.032)
 					(stroke
-						(width 0.1)
+						(width 0.001)
 						(type default)
 					)
 					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -0.508) (xy -3.048 -0.508) (xy -3.048 0.508) (xy -2.54 0.508)
-					)
-					(stroke
-						(width 0.1)
-						(type default)
-					)
-					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(polyline
@@ -4469,6 +4550,30 @@
 						(type outline)
 					)
 				)
+				(polyline
+					(pts
+						(xy 3.048 0) (xy 2.286 0.762)
+					)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.048 0) (xy 2.286 -0.762)
+					)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "TI-TLV1117-33-SOT-223_1_1"
 				(polyline
@@ -4481,6 +4586,24 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(pin power_in line
+					(at -5.08 0 0)
+					(length 1.27)
+					(name "VIN"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
 					)
 				)
 				(pin power_in line
@@ -4519,26 +4642,724 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -5.08 0 0)
-					(length 1.27)
-					(name "VIN"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "RB8/SCL"
+		(exclude_from_sim no)
+		(at 223.52 85.09 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "03720c20-3560-4c8b-9a43-6dec2dd3210e")
+	)
+	(text "*U202: Check the pinout for the desired MCU family"
+		(exclude_from_sim no)
+		(at 181.61 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05515a2e-57ee-4a09-a8bf-01a547cabc04")
+	)
+	(text "RB2"
+		(exclude_from_sim no)
+		(at 66.04 69.85 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "0fd42381-2039-4260-af1c-b402e756e969")
+	)
+	(text "*Power & UART OR Header Power IN"
+		(exclude_from_sim no)
+		(at 181.61 171.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "13b51858-7805-44e1-b9bc-118e2d0de768")
+	)
+	(text "CLKI/RA2"
+		(exclude_from_sim no)
+		(at 66.04 77.47 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "17453b20-b3b7-4bc6-8ea2-4fc21552f546")
+	)
+	(text "RA1"
+		(exclude_from_sim no)
+		(at 66.04 107.95 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "18bebfb4-1676-4b27-b252-5e943398726d")
+	)
+	(text "RB11"
+		(exclude_from_sim no)
+		(at 223.52 118.11 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "213e22c2-01f8-4f3d-a7f9-3e22ac93c8a6")
+	)
+	(text "VCAP/VDDCORE"
+		(exclude_from_sim no)
+		(at 223.52 123.19 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "21b99cc7-a754-4ad3-acdb-e930f9a5b4f0")
+	)
+	(text "VCAP/VDDCORE"
+		(exclude_from_sim no)
+		(at 223.52 77.47 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "33e83052-8cc4-4fac-baab-b6bf09d13c30")
+	)
+	(text "PGC"
+		(exclude_from_sim no)
+		(at 152.4 123.19 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "340c5e4d-dc99-40d3-a1ae-7179134c5a28")
+	)
+	(text "RB13"
+		(exclude_from_sim no)
+		(at 223.52 113.03 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c1e1ff1-a1b4-4547-838f-20c9522a9644")
+	)
+	(text "RB6"
+		(exclude_from_sim no)
+		(at 223.52 135.89 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d260348-bee9-44e0-baf8-a0ae94275499")
+	)
+	(text "VREG"
+		(exclude_from_sim no)
+		(at 223.52 125.73 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "3ec17521-7dd3-4a97-8b4a-5127bec9ff41")
+	)
+	(text "PGC/URX/RB1"
+		(exclude_from_sim no)
+		(at 66.04 67.31 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "44a23939-57f9-48f3-90f6-d7b2a07ea46b")
+	)
+	(text "PGC/URX/RB1"
+		(exclude_from_sim no)
+		(at 66.04 113.03 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "4717c16e-4caf-41db-976f-f247d2a86ecc")
+	)
+	(text "RA0"
+		(exclude_from_sim no)
+		(at 66.04 59.69 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "49faf978-0f99-4901-88fd-2824f278b292")
+	)
+	(text "PGD/UTX/RB0"
+		(exclude_from_sim no)
+		(at 66.04 64.77 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "4a32938d-9579-43af-a35d-b2ea11e3fa0f")
+	)
+	(text "CLKI/RA2"
+		(exclude_from_sim no)
+		(at 66.04 123.19 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "4c0792dc-7d80-42b1-8f63-17f4bd265f82")
+	)
+	(text "GND"
+		(exclude_from_sim no)
+		(at 223.52 59.69 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d32959c-9cd3-47a5-9773-1f3529403cad")
+	)
+	(text "RB12"
+		(exclude_from_sim no)
+		(at 223.52 115.57 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "4de57643-308f-47f3-bed0-fde311412eca")
+	)
+	(text "RB2"
+		(exclude_from_sim no)
+		(at 66.04 115.57 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "5a1b632c-fbc4-425d-96a1-cb374dc73d2f")
+	)
+	(text "RB15"
+		(exclude_from_sim no)
+		(at 223.52 62.23 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "60354f8f-cde1-4533-8251-808cca5ac67c")
+	)
+	(text "+3V3"
+		(exclude_from_sim no)
+		(at 223.52 57.15 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "65227765-a347-4710-9b68-53943712368a")
+	)
+	(text "RB9/SDA"
+		(exclude_from_sim no)
+		(at 223.52 128.27 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "6f23ec34-a626-41d8-9fa8-5175c4d8b159")
+	)
+	(text "~{MCLR}"
+		(exclude_from_sim no)
+		(at 66.04 57.15 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "72720d17-bdd0-47ec-97bf-f8d105566b46")
+	)
+	(text "RB4"
+		(exclude_from_sim no)
+		(at 66.04 128.27 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "727cc7c5-dd89-4311-8171-7990b064c3ad")
+	)
+	(text "~{MCLR}"
+		(exclude_from_sim no)
+		(at 152.4 113.03 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "774bc828-2b85-416a-b011-b8abd8c29d21")
+	)
+	(text "GND"
+		(exclude_from_sim no)
+		(at 66.04 120.65 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "794226e4-6627-4549-8950-ebba4827fe3b")
+	)
+	(text "GND"
+		(exclude_from_sim no)
+		(at 152.4 118.11 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c7b36e5-d9f6-45c2-a2f1-3e40f976e93c")
+	)
+	(text "RA0"
+		(exclude_from_sim no)
+		(at 66.04 105.41 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "7ca584b7-1f4b-4538-a08f-16454efd381e")
+	)
+	(text "RB3"
+		(exclude_from_sim no)
+		(at 66.04 118.11 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "81f5211c-b130-4fa9-b31c-95b22363ec75")
+	)
+	(text "CLKO/RA3"
+		(exclude_from_sim no)
+		(at 66.04 80.01 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "82051010-12ae-40bc-aa7a-2a959e80c879")
+	)
+	(text "VREG"
+		(exclude_from_sim no)
+		(at 223.52 80.01 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "899cd2a9-b5d9-4ea3-a749-a0594c09cad9")
+	)
+	(text "PGD/UTX/RB0"
+		(exclude_from_sim no)
+		(at 66.04 110.49 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "8adf8756-e80a-4a1c-9c40-281f521ca8c2")
+	)
+	(text "VDD"
+		(exclude_from_sim no)
+		(at 152.4 115.57 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "9241991b-ba26-4d75-9ae0-6004659ac7b4")
+	)
+	(text "RB10"
+		(exclude_from_sim no)
+		(at 223.52 120.65 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "931161a5-e1d5-4aed-8ca6-b0011e5e6d48")
+	)
+	(text "RB15"
+		(exclude_from_sim no)
+		(at 223.52 107.95 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "94712ad2-b018-4a9f-a81c-631ef28b6923")
+	)
+	(text "PGD"
+		(exclude_from_sim no)
+		(at 152.4 120.65 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "96065ec0-ac4e-49a5-88eb-dae90c86681c")
+	)
+	(text "RB14"
+		(exclude_from_sim no)
+		(at 223.52 64.77 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "98e57c8d-7da9-48e4-b814-70e9d8c160b5")
+	)
+	(text "RB12"
+		(exclude_from_sim no)
+		(at 223.52 69.85 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "a0c93809-c6db-451a-9788-2bcf3e888ff7")
+	)
+	(text "RA1"
+		(exclude_from_sim no)
+		(at 66.04 62.23 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "a4cffdf8-8535-41fc-864c-798c7c2c8b82")
+	)
+	(text "CLKO/RA3"
+		(exclude_from_sim no)
+		(at 66.04 125.73 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "a5dd1de1-c847-4091-bf92-fc027d5d1a33")
+	)
+	(text "RB13"
+		(exclude_from_sim no)
+		(at 223.52 67.31 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "aafda06e-e1d1-491c-86d1-89798ada1635")
+	)
+	(text "RB7"
+		(exclude_from_sim no)
+		(at 223.52 87.63 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "b17aa3aa-b32f-409e-a069-650bf25cd600")
+	)
+	(text "RB8/SCL"
+		(exclude_from_sim no)
+		(at 223.52 130.81 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3c06df4-81bd-403d-a2b0-21724469db1a")
+	)
+	(text "RB5"
+		(exclude_from_sim no)
+		(at 66.04 135.89 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "bd6044d3-5e6c-4668-ae15-1840f7fee7a5")
+	)
+	(text "GND"
+		(exclude_from_sim no)
+		(at 66.04 74.93 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "be95b68e-0778-4280-854e-ad43947b475c")
+	)
+	(text "*"
+		(exclude_from_sim no)
+		(at 132.08 52.705 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c301c712-8fb7-4828-bd34-47497b8636fe")
+	)
+	(text "RB3"
+		(exclude_from_sim no)
+		(at 66.04 72.39 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "c38108d7-a8ad-48a3-806e-2fa0f6f2575f")
+	)
+	(text "RB7"
+		(exclude_from_sim no)
+		(at 223.52 133.35 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca5397ab-106e-45db-bacd-a37d0453b450")
+	)
+	(text "RA4"
+		(exclude_from_sim no)
+		(at 66.04 130.81 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "cc2616eb-32c2-492f-b489-39c6a76dbe3d")
+	)
+	(text "GND"
+		(exclude_from_sim no)
+		(at 223.52 105.41 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc6573b7-a351-4933-b5e7-b4c1e2ef141c")
+	)
+	(text "RB10"
+		(exclude_from_sim no)
+		(at 223.52 74.93 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf297969-0824-4fea-8637-56f5535ee3d9")
+	)
+	(text "5V MAX"
+		(exclude_from_sim no)
+		(at 57.785 187.96 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "e3481cce-7c83-42b2-aa07-732537635526")
+	)
+	(text "RB9/SDA"
+		(exclude_from_sim no)
+		(at 223.52 82.55 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "e8cee36a-ba04-435a-b36b-395893871638")
+	)
+	(text "RB14"
+		(exclude_from_sim no)
+		(at 223.52 110.49 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "ede72e91-c645-4729-950c-33d89724bd82")
+	)
+	(text "~{MCLR}"
+		(exclude_from_sim no)
+		(at 66.04 102.87 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "eed54263-4042-4250-b65b-f4823a51e154")
+	)
+	(text "RB6"
+		(exclude_from_sim no)
+		(at 223.52 90.17 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef404242-90c6-4990-b169-e56c38700085")
+	)
+	(text "RA4"
+		(exclude_from_sim no)
+		(at 66.04 85.09 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "f679886d-082e-4958-82b2-e03cccf3af03")
+	)
+	(text "RB4"
+		(exclude_from_sim no)
+		(at 66.04 82.55 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "f7a8044b-14c5-48ad-bb96-34cb7a82a809")
+	)
+	(text "+3V3"
+		(exclude_from_sim no)
+		(at 223.52 102.87 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "f878ab87-bdec-4f37-87b1-7996f137305c")
+	)
+	(text "+3V3"
+		(exclude_from_sim no)
+		(at 66.04 133.35 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "f9f0b891-241c-46c9-87a2-644064c3dbfa")
+	)
+	(text "+3V3"
+		(exclude_from_sim no)
+		(at 66.04 87.63 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "fb632069-8e9a-4128-8e50-dfe8773e6996")
+	)
+	(text "RB11"
+		(exclude_from_sim no)
+		(at 223.52 72.39 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "fbb91777-21db-4440-ad10-603cdd8a9080")
+	)
+	(text "RB5"
+		(exclude_from_sim no)
+		(at 66.04 90.17 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify right bottom)
+		)
+		(uuid "fbfc32f1-5d0b-4fe4-b12e-90b56d7f00a6")
 	)
 	(junction
 		(at 187.96 81.28)
@@ -6744,721 +7565,6 @@
 		)
 		(uuid "ff3b46f5-3ec7-4f34-ab45-cab6bed308db")
 	)
-	(text "RB8/SCL"
-		(exclude_from_sim no)
-		(at 223.52 85.09 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "03720c20-3560-4c8b-9a43-6dec2dd3210e")
-	)
-	(text "*U202: Check the pinout for the desired MCU family"
-		(exclude_from_sim no)
-		(at 181.61 173.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "05515a2e-57ee-4a09-a8bf-01a547cabc04")
-	)
-	(text "RB2"
-		(exclude_from_sim no)
-		(at 66.04 69.85 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "0fd42381-2039-4260-af1c-b402e756e969")
-	)
-	(text "*Power & UART OR Header Power IN"
-		(exclude_from_sim no)
-		(at 181.61 171.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "13b51858-7805-44e1-b9bc-118e2d0de768")
-	)
-	(text "CLKI/RA2"
-		(exclude_from_sim no)
-		(at 66.04 77.47 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "17453b20-b3b7-4bc6-8ea2-4fc21552f546")
-	)
-	(text "RA1"
-		(exclude_from_sim no)
-		(at 66.04 107.95 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "18bebfb4-1676-4b27-b252-5e943398726d")
-	)
-	(text "RB11"
-		(exclude_from_sim no)
-		(at 223.52 118.11 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "213e22c2-01f8-4f3d-a7f9-3e22ac93c8a6")
-	)
-	(text "VCAP/VDDCORE"
-		(exclude_from_sim no)
-		(at 223.52 123.19 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "21b99cc7-a754-4ad3-acdb-e930f9a5b4f0")
-	)
-	(text "VCAP/VDDCORE"
-		(exclude_from_sim no)
-		(at 223.52 77.47 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "33e83052-8cc4-4fac-baab-b6bf09d13c30")
-	)
-	(text "PGC"
-		(exclude_from_sim no)
-		(at 152.4 123.19 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "340c5e4d-dc99-40d3-a1ae-7179134c5a28")
-	)
-	(text "RB13"
-		(exclude_from_sim no)
-		(at 223.52 113.03 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "3c1e1ff1-a1b4-4547-838f-20c9522a9644")
-	)
-	(text "RB6"
-		(exclude_from_sim no)
-		(at 223.52 135.89 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "3d260348-bee9-44e0-baf8-a0ae94275499")
-	)
-	(text "VREG"
-		(exclude_from_sim no)
-		(at 223.52 125.73 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "3ec17521-7dd3-4a97-8b4a-5127bec9ff41")
-	)
-	(text "PGC/URX/RB1"
-		(exclude_from_sim no)
-		(at 66.04 67.31 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "44a23939-57f9-48f3-90f6-d7b2a07ea46b")
-	)
-	(text "PGC/URX/RB1"
-		(exclude_from_sim no)
-		(at 66.04 113.03 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "4717c16e-4caf-41db-976f-f247d2a86ecc")
-	)
-	(text "RA0"
-		(exclude_from_sim no)
-		(at 66.04 59.69 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "49faf978-0f99-4901-88fd-2824f278b292")
-	)
-	(text "PGD/UTX/RB0"
-		(exclude_from_sim no)
-		(at 66.04 64.77 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "4a32938d-9579-43af-a35d-b2ea11e3fa0f")
-	)
-	(text "CLKI/RA2"
-		(exclude_from_sim no)
-		(at 66.04 123.19 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "4c0792dc-7d80-42b1-8f63-17f4bd265f82")
-	)
-	(text "GND"
-		(exclude_from_sim no)
-		(at 223.52 59.69 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "4d32959c-9cd3-47a5-9773-1f3529403cad")
-	)
-	(text "RB12"
-		(exclude_from_sim no)
-		(at 223.52 115.57 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "4de57643-308f-47f3-bed0-fde311412eca")
-	)
-	(text "RB2"
-		(exclude_from_sim no)
-		(at 66.04 115.57 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "5a1b632c-fbc4-425d-96a1-cb374dc73d2f")
-	)
-	(text "RB15"
-		(exclude_from_sim no)
-		(at 223.52 62.23 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "60354f8f-cde1-4533-8251-808cca5ac67c")
-	)
-	(text "+3V3"
-		(exclude_from_sim no)
-		(at 223.52 57.15 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "65227765-a347-4710-9b68-53943712368a")
-	)
-	(text "RB9/SDA"
-		(exclude_from_sim no)
-		(at 223.52 128.27 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "6f23ec34-a626-41d8-9fa8-5175c4d8b159")
-	)
-	(text "~{MCLR}"
-		(exclude_from_sim no)
-		(at 66.04 57.15 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "72720d17-bdd0-47ec-97bf-f8d105566b46")
-	)
-	(text "RB4"
-		(exclude_from_sim no)
-		(at 66.04 128.27 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "727cc7c5-dd89-4311-8171-7990b064c3ad")
-	)
-	(text "~{MCLR}"
-		(exclude_from_sim no)
-		(at 152.4 113.03 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "774bc828-2b85-416a-b011-b8abd8c29d21")
-	)
-	(text "GND"
-		(exclude_from_sim no)
-		(at 66.04 120.65 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "794226e4-6627-4549-8950-ebba4827fe3b")
-	)
-	(text "GND"
-		(exclude_from_sim no)
-		(at 152.4 118.11 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "7c7b36e5-d9f6-45c2-a2f1-3e40f976e93c")
-	)
-	(text "RA0"
-		(exclude_from_sim no)
-		(at 66.04 105.41 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "7ca584b7-1f4b-4538-a08f-16454efd381e")
-	)
-	(text "RB3"
-		(exclude_from_sim no)
-		(at 66.04 118.11 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "81f5211c-b130-4fa9-b31c-95b22363ec75")
-	)
-	(text "CLKO/RA3"
-		(exclude_from_sim no)
-		(at 66.04 80.01 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "82051010-12ae-40bc-aa7a-2a959e80c879")
-	)
-	(text "VREG"
-		(exclude_from_sim no)
-		(at 223.52 80.01 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "899cd2a9-b5d9-4ea3-a749-a0594c09cad9")
-	)
-	(text "PGD/UTX/RB0"
-		(exclude_from_sim no)
-		(at 66.04 110.49 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "8adf8756-e80a-4a1c-9c40-281f521ca8c2")
-	)
-	(text "VDD"
-		(exclude_from_sim no)
-		(at 152.4 115.57 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "9241991b-ba26-4d75-9ae0-6004659ac7b4")
-	)
-	(text "RB10"
-		(exclude_from_sim no)
-		(at 223.52 120.65 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "931161a5-e1d5-4aed-8ca6-b0011e5e6d48")
-	)
-	(text "RB15"
-		(exclude_from_sim no)
-		(at 223.52 107.95 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "94712ad2-b018-4a9f-a81c-631ef28b6923")
-	)
-	(text "PGD"
-		(exclude_from_sim no)
-		(at 152.4 120.65 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "96065ec0-ac4e-49a5-88eb-dae90c86681c")
-	)
-	(text "RB14"
-		(exclude_from_sim no)
-		(at 223.52 64.77 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "98e57c8d-7da9-48e4-b814-70e9d8c160b5")
-	)
-	(text "RB12"
-		(exclude_from_sim no)
-		(at 223.52 69.85 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "a0c93809-c6db-451a-9788-2bcf3e888ff7")
-	)
-	(text "RA1"
-		(exclude_from_sim no)
-		(at 66.04 62.23 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "a4cffdf8-8535-41fc-864c-798c7c2c8b82")
-	)
-	(text "CLKO/RA3"
-		(exclude_from_sim no)
-		(at 66.04 125.73 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "a5dd1de1-c847-4091-bf92-fc027d5d1a33")
-	)
-	(text "RB13"
-		(exclude_from_sim no)
-		(at 223.52 67.31 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "aafda06e-e1d1-491c-86d1-89798ada1635")
-	)
-	(text "RB7"
-		(exclude_from_sim no)
-		(at 223.52 87.63 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "b17aa3aa-b32f-409e-a069-650bf25cd600")
-	)
-	(text "RB8/SCL"
-		(exclude_from_sim no)
-		(at 223.52 130.81 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "b3c06df4-81bd-403d-a2b0-21724469db1a")
-	)
-	(text "RB5"
-		(exclude_from_sim no)
-		(at 66.04 135.89 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "bd6044d3-5e6c-4668-ae15-1840f7fee7a5")
-	)
-	(text "GND"
-		(exclude_from_sim no)
-		(at 66.04 74.93 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "be95b68e-0778-4280-854e-ad43947b475c")
-	)
-	(text "*"
-		(exclude_from_sim no)
-		(at 132.08 52.705 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c301c712-8fb7-4828-bd34-47497b8636fe")
-	)
-	(text "RB3"
-		(exclude_from_sim no)
-		(at 66.04 72.39 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "c38108d7-a8ad-48a3-806e-2fa0f6f2575f")
-	)
-	(text "RB7"
-		(exclude_from_sim no)
-		(at 223.52 133.35 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "ca5397ab-106e-45db-bacd-a37d0453b450")
-	)
-	(text "RA4"
-		(exclude_from_sim no)
-		(at 66.04 130.81 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "cc2616eb-32c2-492f-b489-39c6a76dbe3d")
-	)
-	(text "GND"
-		(exclude_from_sim no)
-		(at 223.52 105.41 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "cc6573b7-a351-4933-b5e7-b4c1e2ef141c")
-	)
-	(text "RB10"
-		(exclude_from_sim no)
-		(at 223.52 74.93 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "cf297969-0824-4fea-8637-56f5535ee3d9")
-	)
-	(text "5V MAX"
-		(exclude_from_sim no)
-		(at 57.785 187.96 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "e3481cce-7c83-42b2-aa07-732537635526")
-	)
-	(text "RB9/SDA"
-		(exclude_from_sim no)
-		(at 223.52 82.55 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "e8cee36a-ba04-435a-b36b-395893871638")
-	)
-	(text "RB14"
-		(exclude_from_sim no)
-		(at 223.52 110.49 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "ede72e91-c645-4729-950c-33d89724bd82")
-	)
-	(text "~{MCLR}"
-		(exclude_from_sim no)
-		(at 66.04 102.87 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "eed54263-4042-4250-b65b-f4823a51e154")
-	)
-	(text "RB6"
-		(exclude_from_sim no)
-		(at 223.52 90.17 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "ef404242-90c6-4990-b169-e56c38700085")
-	)
-	(text "RA4"
-		(exclude_from_sim no)
-		(at 66.04 85.09 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "f679886d-082e-4958-82b2-e03cccf3af03")
-	)
-	(text "RB4"
-		(exclude_from_sim no)
-		(at 66.04 82.55 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "f7a8044b-14c5-48ad-bb96-34cb7a82a809")
-	)
-	(text "+3V3"
-		(exclude_from_sim no)
-		(at 223.52 102.87 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "f878ab87-bdec-4f37-87b1-7996f137305c")
-	)
-	(text "+3V3"
-		(exclude_from_sim no)
-		(at 66.04 133.35 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "f9f0b891-241c-46c9-87a2-644064c3dbfa")
-	)
-	(text "+3V3"
-		(exclude_from_sim no)
-		(at 66.04 87.63 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "fb632069-8e9a-4128-8e50-dfe8773e6996")
-	)
-	(text "RB11"
-		(exclude_from_sim no)
-		(at 223.52 72.39 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "fbb91777-21db-4440-ad10-603cdd8a9080")
-	)
-	(text "RB5"
-		(exclude_from_sim no)
-		(at 66.04 90.17 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify right bottom)
-		)
-		(uuid "fbfc32f1-5d0b-4fe4-b12e-90b56d7f00a6")
-	)
 	(global_label "~{MCLR}"
 		(shape output)
 		(at 142.24 111.76 180)
@@ -7614,7 +7720,7 @@
 		(uuid "dc4abc31-c3cc-44ad-8cbc-c7d5ba261d0e")
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+3V3")
+		(lib_id "tronixio:+3V3")
 		(at 121.92 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7660,9 +7766,10 @@
 		)
 		(property "Description" "3V3"
 			(at 121.92 157.48 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -7761,7 +7868,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 106.68 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7806,11 +7913,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 106.68 187.96 0)
+		(property "Description" "GND"
+			(at 106.68 191.135 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -7828,7 +7935,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+3V3")
+		(lib_id "tronixio:+3V3")
 		(at 175.26 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7874,9 +7981,10 @@
 		)
 		(property "Description" "3V3"
 			(at 175.26 127 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -7970,7 +8078,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+3V3")
+		(lib_id "tronixio:+3V3")
 		(at 121.92 27.94 0)
 		(mirror y)
 		(unit 1)
@@ -8017,9 +8125,10 @@
 		)
 		(property "Description" "3V3"
 			(at 121.92 22.86 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -8138,7 +8247,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 121.92 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8183,11 +8292,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 121.92 187.96 0)
+		(property "Description" "GND"
+			(at 121.92 191.135 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -8205,7 +8314,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 162.56 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8250,11 +8359,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 162.56 101.6 0)
+		(property "Description" "GND"
+			(at 162.56 104.775 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -8272,7 +8381,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 157.48 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8317,11 +8426,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 157.48 187.96 0)
+		(property "Description" "GND"
+			(at 157.48 191.135 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -8339,7 +8448,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 76.2 48.26 0)
 		(mirror y)
 		(unit 1)
@@ -8385,11 +8494,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 76.2 48.26 0)
+		(property "Description" "GND"
+			(at 76.2 51.435 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -8407,7 +8516,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+3V3")
+		(lib_id "tronixio:+3V3")
 		(at 167.64 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8453,9 +8562,10 @@
 		)
 		(property "Description" "3V3"
 			(at 167.64 22.86 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -8554,7 +8664,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+3V3")
+		(lib_id "tronixio:+3V3")
 		(at 144.78 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8600,9 +8710,10 @@
 		)
 		(property "Description" "3V3"
 			(at 144.78 104.14 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -8846,7 +8957,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.nexperia.com/search.html?q=pmeg3030&searchCategory=product"
+		(property "Datasheet" "https://www.nexperia.com/product/PMEG3030EP"
 			(at 68.58 167.64 0)
 			(do_not_autoplace yes)
 			(effects
@@ -8856,7 +8967,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Schottky Diode"
+		(property "Description" "Diode Schottky"
 			(at 68.58 175.26 0)
 			(effects
 				(font
@@ -8868,6 +8979,15 @@
 		(property "Mouser" "771-PMEG3030EP115"
 			(at 68.58 165.1 0)
 			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Marking" "A5"
+			(at 68.58 162.56 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9007,7 +9127,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 147.32 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9052,11 +9172,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 147.32 187.96 0)
+		(property "Description" "GND"
+			(at 147.32 191.135 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -9176,7 +9296,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 167.64 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9221,11 +9341,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 167.64 101.6 0)
+		(property "Description" "GND"
+			(at 167.64 104.775 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -9412,7 +9532,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 137.16 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9457,11 +9577,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 137.16 187.96 0)
+		(property "Description" "GND"
+			(at 137.16 191.135 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -9663,7 +9783,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 193.04 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9708,11 +9828,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 193.04 152.4 0)
+		(property "Description" "GND"
+			(at 193.04 155.575 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -9730,7 +9850,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 93.98 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9775,11 +9895,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 93.98 187.96 0)
+		(property "Description" "GND"
+			(at 93.98 191.135 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -9797,7 +9917,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+3V3")
+		(lib_id "tronixio:+3V3")
 		(at 187.96 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9843,9 +9963,10 @@
 		)
 		(property "Description" "3V3"
 			(at 187.96 22.86 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -9945,7 +10066,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+3V3")
+		(lib_id "tronixio:+3V3")
 		(at 76.2 27.94 0)
 		(mirror y)
 		(unit 1)
@@ -9992,9 +10113,10 @@
 		)
 		(property "Description" "3V3"
 			(at 76.2 22.86 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -10011,7 +10133,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 58.42 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10056,11 +10178,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 58.42 187.96 0)
+		(property "Description" "GND"
+			(at 58.42 191.135 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -10239,7 +10361,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 175.26 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10284,11 +10406,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 175.26 152.4 0)
+		(property "Description" "GND"
+			(at 175.26 155.575 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -10349,7 +10471,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 91.44 38.1 0)
 			(effects
 				(font
@@ -10497,7 +10619,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 81.28 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10542,11 +10664,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 81.28 187.96 0)
+		(property "Description" "GND"
+			(at 81.28 191.135 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -10598,7 +10720,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.nexperia.com/search.html?q=pmeg3030&searchCategory=product"
+		(property "Datasheet" "https://www.nexperia.com/product/PMEG3030EP"
 			(at 68.58 162.56 0)
 			(do_not_autoplace yes)
 			(effects
@@ -10608,7 +10730,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Schottky Diode"
+		(property "Description" "Diode Schottky"
 			(at 68.58 170.18 0)
 			(effects
 				(font
@@ -10620,6 +10742,15 @@
 		(property "Mouser" "771-PMEG3030EP115"
 			(at 68.58 160.02 0)
 			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Marking" "A5"
+			(at 68.58 157.48 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11300,7 +11431,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 76.2 33.02 0)
 			(effects
 				(font
@@ -11346,7 +11477,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 121.92 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11391,11 +11522,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 121.92 101.6 0)
+		(property "Description" "GND"
+			(at 121.92 104.775 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -11585,7 +11716,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 127 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11630,11 +11761,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 127 101.6 0)
+		(property "Description" "GND"
+			(at 127 104.775 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -11699,7 +11830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light Emitting Diode"
 			(at 121.92 180.34 0)
 			(effects
 				(font
@@ -11734,7 +11865,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+3V3")
+		(lib_id "tronixio:+3V3")
 		(at 177.8 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11780,9 +11911,10 @@
 		)
 		(property "Description" "3V3"
 			(at 177.8 22.86 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -11799,7 +11931,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 83.82 48.26 0)
 		(mirror y)
 		(unit 1)
@@ -11845,11 +11977,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 83.82 48.26 0)
+		(property "Description" "GND"
+			(at 83.82 51.435 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -11867,7 +11999,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+3V3")
+		(lib_id "tronixio:+3V3")
 		(at 106.68 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11913,9 +12045,10 @@
 		)
 		(property "Description" "3V3"
 			(at 106.68 157.48 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -12020,7 +12153,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 144.78 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12065,11 +12198,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 144.78 127 0)
+		(property "Description" "GND"
+			(at 144.78 130.175 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
@@ -12408,7 +12541,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-+5V")
+		(lib_id "tronixio:+5V")
 		(at 81.28 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12454,9 +12587,10 @@
 		)
 		(property "Description" "5V"
 			(at 81.28 157.48 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.15 1.15)
 				)
 			)
 		)
@@ -12473,7 +12607,7 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:POWER-GND")
+		(lib_id "tronixio:GND")
 		(at 45.72 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12518,11 +12652,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 45.72 187.96 0)
+		(property "Description" "GND"
+			(at 45.72 191.135 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(hide yes)
 			)
