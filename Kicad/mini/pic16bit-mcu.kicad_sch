@@ -1903,7 +1903,6 @@
 			)
 			(property "Footprint" "tronixio:HARWIN-M20-999034x"
 				(at 0 -10.16 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -1913,7 +1912,6 @@
 			)
 			(property "Datasheet" "https://www.harwin.com/products/M20-9990346/"
 				(at 0 -12.7 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -1921,18 +1919,17 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "M20 Series - 2.54mm Pitch PCB Connector"
-				(at 0 0 0)
+			(property "Description" "Header"
+				(at 0 -15.24 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
 			)
 			(property "Mouser" "855-M20-999034"
-				(at 0 -15.24 0)
-				(do_not_autoplace)
+				(at 0 -17.78 0)
 				(effects
 					(font
 						(size 1 1)
@@ -2953,7 +2950,6 @@
 			)
 			(property "Footprint" "tronixio:SAMTEC-SSW-106-02-T-S-RA"
 				(at 0 -17.78 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -2963,7 +2959,6 @@
 			)
 			(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/30277d.pdf"
 				(at 0 -20.32 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -2971,18 +2966,17 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Description" "HEADER - In-Circuit Serial Programming"
+				(at 0 -22.86 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1 1)
 					)
 					(hide yes)
 				)
 			)
 			(property "Mouser" "200-SSW10602TSRA"
-				(at 0 -22.86 0)
-				(do_not_autoplace)
+				(at 0 -25.4 0)
 				(effects
 					(font
 						(size 1 1)
@@ -3071,6 +3065,51 @@
 				)
 			)
 			(symbol "MICROCHIP-ICSP-F-RIGHT-ANGLE-TH_1_1"
+				(text "~{MCLR}"
+					(at 1.905 0 0)
+					(effects
+						(font
+							(size 1.15 1.15)
+						)
+						(justify left)
+					)
+				)
+				(text "VDD"
+					(at 1.905 -2.54 0)
+					(effects
+						(font
+							(size 1.15 1.15)
+						)
+						(justify left)
+					)
+				)
+				(text "VSS"
+					(at 1.905 -5.08 0)
+					(effects
+						(font
+							(size 1.15 1.15)
+						)
+						(justify left)
+					)
+				)
+				(text "PGD"
+					(at 1.905 -7.62 0)
+					(effects
+						(font
+							(size 1.15 1.15)
+						)
+						(justify left)
+					)
+				)
+				(text "PGC"
+					(at 1.905 -10.16 0)
+					(effects
+						(font
+							(size 1.15 1.15)
+						)
+						(justify left)
+					)
+				)
 				(pin passive line
 					(at -2.54 0 0)
 					(length 1.905)
@@ -4745,17 +4784,6 @@
 		)
 		(uuid "33e83052-8cc4-4fac-baab-b6bf09d13c30")
 	)
-	(text "PGC"
-		(exclude_from_sim no)
-		(at 152.4 123.19 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "340c5e4d-dc99-40d3-a1ae-7179134c5a28")
-	)
 	(text "RB13"
 		(exclude_from_sim no)
 		(at 223.52 113.03 0)
@@ -4932,17 +4960,6 @@
 		)
 		(uuid "727cc7c5-dd89-4311-8171-7990b064c3ad")
 	)
-	(text "~{MCLR}"
-		(exclude_from_sim no)
-		(at 152.4 113.03 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "774bc828-2b85-416a-b011-b8abd8c29d21")
-	)
 	(text "GND"
 		(exclude_from_sim no)
 		(at 66.04 120.65 0)
@@ -4953,17 +4970,6 @@
 			(justify right bottom)
 		)
 		(uuid "794226e4-6627-4549-8950-ebba4827fe3b")
-	)
-	(text "GND"
-		(exclude_from_sim no)
-		(at 152.4 118.11 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "7c7b36e5-d9f6-45c2-a2f1-3e40f976e93c")
 	)
 	(text "RA0"
 		(exclude_from_sim no)
@@ -5020,17 +5026,6 @@
 		)
 		(uuid "8adf8756-e80a-4a1c-9c40-281f521ca8c2")
 	)
-	(text "VDD"
-		(exclude_from_sim no)
-		(at 152.4 115.57 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "9241991b-ba26-4d75-9ae0-6004659ac7b4")
-	)
 	(text "RB10"
 		(exclude_from_sim no)
 		(at 223.52 120.65 0)
@@ -5052,17 +5047,6 @@
 			(justify left bottom)
 		)
 		(uuid "94712ad2-b018-4a9f-a81c-631ef28b6923")
-	)
-	(text "PGD"
-		(exclude_from_sim no)
-		(at 152.4 120.65 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-			)
-			(justify left bottom)
-		)
-		(uuid "96065ec0-ac4e-49a5-88eb-dae90c86681c")
 	)
 	(text "RB14"
 		(exclude_from_sim no)
@@ -5967,7 +5951,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 170.18) (xy 106.68 162.56)
+			(xy 106.68 170.18) (xy 106.68 165.1)
 		)
 		(stroke
 			(width 0)
@@ -5987,7 +5971,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 162.56) (xy 157.48 187.96)
+			(xy 157.48 165.1) (xy 157.48 187.96)
 		)
 		(stroke
 			(width 0)
@@ -6587,7 +6571,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 162.56) (xy 137.16 187.96)
+			(xy 137.16 165.1) (xy 137.16 187.96)
 		)
 		(stroke
 			(width 0)
@@ -6714,16 +6698,6 @@
 			(type solid)
 		)
 		(uuid "91931f6a-6e9c-46cf-b2f1-c5231d6a899c")
-	)
-	(wire
-		(pts
-			(xy 121.92 162.56) (xy 121.92 165.1)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "937198cf-fe3b-479e-8e1c-640f11aedc07")
 	)
 	(wire
 		(pts
@@ -6877,7 +6851,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 162.56) (xy 81.28 170.18)
+			(xy 81.28 165.1) (xy 81.28 170.18)
 		)
 		(stroke
 			(width 0)
@@ -7067,7 +7041,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 162.56) (xy 147.32 187.96)
+			(xy 147.32 165.1) (xy 147.32 187.96)
 		)
 		(stroke
 			(width 0)
@@ -7721,7 +7695,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:+3V3")
-		(at 121.92 162.56 0)
+		(at 121.92 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7729,7 +7703,7 @@
 		(dnp no)
 		(uuid "018505a0-41ac-4c25-8150-1a0e52b86dd2")
 		(property "Reference" "#PWR0123"
-			(at 121.92 175.26 0)
+			(at 121.92 177.8 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7738,7 +7712,7 @@
 			)
 		)
 		(property "Value" "POWER-+3V3"
-			(at 121.92 172.72 0)
+			(at 121.92 175.26 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7747,7 +7721,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 121.92 162.56 0)
+			(at 121.92 165.1 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7756,7 +7730,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 162.56 0)
+			(at 121.92 165.1 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7765,7 +7739,7 @@
 			)
 		)
 		(property "Description" "3V3"
-			(at 121.92 157.48 0)
+			(at 121.92 160.02 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8002,7 +7976,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:KEYSTONE-5006")
-		(at 137.16 162.56 0)
+		(at 137.16 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8010,7 +7984,7 @@
 		(dnp no)
 		(uuid "103996e8-ab54-47cd-b36d-1a8be624108b")
 		(property "Reference" "TP201"
-			(at 137.16 157.48 0)
+			(at 137.16 160.02 0)
 			(effects
 				(font
 					(size 1.15 1.15)
@@ -8018,7 +7992,7 @@
 			)
 		)
 		(property "Value" "KEYSTONE-5006"
-			(at 137.16 154.94 0)
+			(at 137.16 157.48 0)
 			(effects
 				(font
 					(size 1.15 1.15)
@@ -8027,16 +8001,6 @@
 			)
 		)
 		(property "Footprint" "tronixio:KEYSTONE-5006"
-			(at 137.16 170.18 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.keyelco.com/product.cfm/product_id/1315"
 			(at 137.16 172.72 0)
 			(do_not_autoplace yes)
 			(effects
@@ -8046,8 +8010,18 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet" "https://www.keyelco.com/product.cfm/product_id/1315"
+			(at 137.16 175.26 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" ""
-			(at 137.16 162.56 0)
+			(at 137.16 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8056,7 +8030,7 @@
 			)
 		)
 		(property "Mouser" "534-5006"
-			(at 137.16 175.26 0)
+			(at 137.16 177.8 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8847,7 +8821,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:KEYSTONE-5006")
-		(at 147.32 162.56 0)
+		(at 147.32 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8855,7 +8829,7 @@
 		(dnp no)
 		(uuid "3141ece1-4043-41f7-ad57-bfde5b1512a3")
 		(property "Reference" "TP202"
-			(at 147.32 157.48 0)
+			(at 147.32 160.02 0)
 			(effects
 				(font
 					(size 1.15 1.15)
@@ -8863,7 +8837,7 @@
 			)
 		)
 		(property "Value" "KEYSTONE-5006"
-			(at 147.32 154.94 0)
+			(at 147.32 157.48 0)
 			(effects
 				(font
 					(size 1.15 1.15)
@@ -8872,16 +8846,6 @@
 			)
 		)
 		(property "Footprint" "tronixio:KEYSTONE-5006"
-			(at 147.32 170.18 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.keyelco.com/product.cfm/product_id/1315"
 			(at 147.32 172.72 0)
 			(do_not_autoplace yes)
 			(effects
@@ -8891,8 +8855,18 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet" "https://www.keyelco.com/product.cfm/product_id/1315"
+			(at 147.32 175.26 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" ""
-			(at 147.32 162.56 0)
+			(at 147.32 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8901,7 +8875,7 @@
 			)
 		)
 		(property "Mouser" "534-5006"
-			(at 147.32 175.26 0)
+			(at 147.32 177.8 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -10028,7 +10002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "M20 Series - 2.54mm Pitch PCB Connector"
+		(property "Description" "Header"
 			(at 170.18 139.7 0)
 			(effects
 				(font
@@ -10201,7 +10175,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:KEYSTONE-2000-3")
-		(at 157.48 162.56 0)
+		(at 157.48 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10209,7 +10183,7 @@
 		(dnp no)
 		(uuid "72900d6b-1728-4f1d-af55-b7dbba81ac5d")
 		(property "Reference" "TP203"
-			(at 157.48 157.48 0)
+			(at 157.48 160.02 0)
 			(effects
 				(font
 					(size 1.15 1.15)
@@ -10217,7 +10191,7 @@
 			)
 		)
 		(property "Value" "KEYSTONE-2000-3"
-			(at 157.48 154.94 0)
+			(at 157.48 157.48 0)
 			(effects
 				(font
 					(size 1.15 1.15)
@@ -10226,16 +10200,6 @@
 			)
 		)
 		(property "Footprint" "tronixio:KEYSTONE-2000-3"
-			(at 157.48 170.18 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.keyelco.com/product.cfm/product_id/3037"
 			(at 157.48 172.72 0)
 			(do_not_autoplace yes)
 			(effects
@@ -10245,8 +10209,18 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet" "https://www.keyelco.com/product.cfm/product_id/3037"
+			(at 157.48 175.26 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" ""
-			(at 157.48 162.56 0)
+			(at 157.48 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10255,7 +10229,7 @@
 			)
 		)
 		(property "Mouser" "534-2000-3"
-			(at 157.48 175.26 0)
+			(at 157.48 177.8 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -12000,7 +11974,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:+3V3")
-		(at 106.68 162.56 0)
+		(at 106.68 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12008,7 +11982,7 @@
 		(dnp no)
 		(uuid "c91eeb64-f183-4621-98c8-b8a52d9472ec")
 		(property "Reference" "#PWR0124"
-			(at 106.68 175.26 0)
+			(at 106.68 177.8 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12017,7 +11991,7 @@
 			)
 		)
 		(property "Value" "POWER-+3V3"
-			(at 106.68 172.72 0)
+			(at 106.68 175.26 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12026,7 +12000,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 162.56 0)
+			(at 106.68 165.1 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12035,7 +12009,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 162.56 0)
+			(at 106.68 165.1 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12044,7 +12018,7 @@
 			)
 		)
 		(property "Description" "3V3"
-			(at 106.68 157.48 0)
+			(at 106.68 160.02 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -12264,7 +12238,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "HEADER - In-Circuit Serial Programming"
 			(at 149.86 111.76 0)
 			(effects
 				(font
@@ -12542,7 +12516,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:+5V")
-		(at 81.28 162.56 0)
+		(at 81.28 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12550,15 +12524,6 @@
 		(dnp no)
 		(uuid "f683a11f-c0b5-4dda-84ac-84d1dbfd3e0a")
 		(property "Reference" "#PWR0118"
-			(at 81.28 172.72 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "POWER-+5V"
 			(at 81.28 175.26 0)
 			(effects
 				(font
@@ -12567,8 +12532,17 @@
 				(hide yes)
 			)
 		)
+		(property "Value" "POWER-+5V"
+			(at 81.28 177.8 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
 		(property "Footprint" ""
-			(at 81.28 162.56 0)
+			(at 81.28 165.1 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12577,7 +12551,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 162.56 0)
+			(at 81.28 165.1 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12586,7 +12560,7 @@
 			)
 		)
 		(property "Description" "5V"
-			(at 81.28 157.48 0)
+			(at 81.28 160.02 0)
 			(do_not_autoplace yes)
 			(effects
 				(font

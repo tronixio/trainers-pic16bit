@@ -5038,7 +5038,6 @@
 			)
 			(property "Footprint" "tronixio:HARWIN-M20-782064x"
 				(at 0 -17.78 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -5048,7 +5047,6 @@
 			)
 			(property "Datasheet" "https://www.harwin.com/products/M20-7820646/"
 				(at 0 -20.32 0)
-				(do_not_autoplace)
 				(effects
 					(font
 						(size 1 1)
@@ -5056,8 +5054,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "M20 Series - 2.54mm Pitch PCB Connector"
-				(at 0 -25.4 0)
+			(property "Description" "HEADER"
+				(at 0 -22.86 0)
 				(do_not_autoplace)
 				(effects
 					(font
@@ -5067,8 +5065,7 @@
 				)
 			)
 			(property "Mouser" "855-M20-782064"
-				(at 0 -22.86 0)
-				(do_not_autoplace)
+				(at 0 -25.4 0)
 				(effects
 					(font
 						(size 1 1)
@@ -7723,7 +7720,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 119.38) (xy 43.18 124.46)
+			(xy 43.18 121.92) (xy 43.18 124.46)
 		)
 		(stroke
 			(width 0)
@@ -7733,7 +7730,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 152.4) (xy 43.18 157.48)
+			(xy 43.18 152.4) (xy 43.18 154.94)
 		)
 		(stroke
 			(width 0)
@@ -7773,7 +7770,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 134.62) (xy 177.8 157.48)
+			(xy 177.8 134.62) (xy 177.8 154.94)
 		)
 		(stroke
 			(width 0)
@@ -7813,7 +7810,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 119.38) (xy 58.42 124.46)
+			(xy 58.42 121.92) (xy 58.42 124.46)
 		)
 		(stroke
 			(width 0)
@@ -7923,16 +7920,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 119.38) (xy 76.2 121.92)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "323b480e-9663-4f92-bf7b-32725a71f5e0")
-	)
-	(wire
-		(pts
 			(xy 147.32 139.7) (xy 149.86 139.7)
 		)
 		(stroke
@@ -7943,7 +7930,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 139.7) (xy 149.86 129.54)
+			(xy 149.86 139.7) (xy 149.86 132.08)
 		)
 		(stroke
 			(width 0)
@@ -8063,7 +8050,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 129.54) (xy 157.48 134.62)
+			(xy 157.48 132.08) (xy 157.48 134.62)
 		)
 		(stroke
 			(width 0)
@@ -8183,7 +8170,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 152.4) (xy 93.98 157.48)
+			(xy 93.98 152.4) (xy 93.98 154.94)
 		)
 		(stroke
 			(width 0)
@@ -8193,7 +8180,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 152.4) (xy 182.88 157.48)
+			(xy 182.88 152.4) (xy 182.88 154.94)
 		)
 		(stroke
 			(width 0)
@@ -8233,7 +8220,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 152.4) (xy 149.86 157.48)
+			(xy 149.86 152.4) (xy 149.86 154.94)
 		)
 		(stroke
 			(width 0)
@@ -8313,7 +8300,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 129.54) (xy 182.88 139.7)
+			(xy 182.88 132.08) (xy 182.88 139.7)
 		)
 		(stroke
 			(width 0)
@@ -8343,7 +8330,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 152.4) (xy 58.42 157.48)
+			(xy 58.42 152.4) (xy 58.42 154.94)
 		)
 		(stroke
 			(width 0)
@@ -8403,7 +8390,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 142.24) (xy 167.64 157.48)
+			(xy 167.64 142.24) (xy 167.64 154.94)
 		)
 		(stroke
 			(width 0)
@@ -8423,7 +8410,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 119.38) (xy 226.06 129.54)
+			(xy 226.06 121.92) (xy 226.06 129.54)
 		)
 		(stroke
 			(width 0)
@@ -8493,7 +8480,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 132.08) (xy 76.2 157.48)
+			(xy 76.2 132.08) (xy 76.2 154.94)
 		)
 		(stroke
 			(width 0)
@@ -8523,7 +8510,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 119.38) (xy 93.98 142.24)
+			(xy 93.98 121.92) (xy 93.98 142.24)
 		)
 		(stroke
 			(width 0)
@@ -8743,7 +8730,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 139.7) (xy 226.06 157.48)
+			(xy 226.06 139.7) (xy 226.06 154.94)
 		)
 		(stroke
 			(width 0)
@@ -8873,7 +8860,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 149.86) (xy 246.38 157.48)
+			(xy 246.38 149.86) (xy 246.38 154.94)
 		)
 		(stroke
 			(width 0)
@@ -9326,7 +9313,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:+3V3")
-		(at 149.86 119.38 0)
+		(at 149.86 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9334,7 +9321,7 @@
 		(dnp no)
 		(uuid "041e4a34-68ef-4605-a13e-4a561ee3bf73")
 		(property "Reference" "#PWR0133"
-			(at 149.86 132.08 0)
+			(at 149.86 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9343,7 +9330,7 @@
 			)
 		)
 		(property "Value" "POWER-+3V3"
-			(at 149.86 129.54 0)
+			(at 149.86 132.08 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9352,7 +9339,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 119.38 0)
+			(at 149.86 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9361,7 +9348,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 119.38 0)
+			(at 149.86 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9370,7 +9357,7 @@
 			)
 		)
 		(property "Description" "3V3"
-			(at 149.86 114.3 0)
+			(at 149.86 116.84 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -9953,7 +9940,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:GND")
-		(at 177.8 157.48 0)
+		(at 177.8 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9962,7 +9949,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b917c28-3ccf-4bc0-a3b8-0cb082837b69")
 		(property "Reference" "#PWR0136"
-			(at 177.8 162.56 0)
+			(at 177.8 160.02 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9971,7 +9958,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 177.8 165.1 0)
+			(at 177.8 162.56 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9980,7 +9967,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 157.48 0)
+			(at 177.8 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9989,7 +9976,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 157.48 0)
+			(at 177.8 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9998,7 +9985,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 177.8 160.655 0)
+			(at 177.8 158.115 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10020,7 +10007,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:+3V3")
-		(at 43.18 119.38 0)
+		(at 43.18 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10028,7 +10015,7 @@
 		(dnp no)
 		(uuid "1d78df71-642e-4bdf-8731-35a5e24c2766")
 		(property "Reference" "#PWR0145"
-			(at 43.18 132.08 0)
+			(at 43.18 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10037,7 +10024,7 @@
 			)
 		)
 		(property "Value" "POWER-+3V3"
-			(at 43.18 129.54 0)
+			(at 43.18 132.08 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10046,7 +10033,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 119.38 0)
+			(at 43.18 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10055,7 +10042,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 119.38 0)
+			(at 43.18 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10064,7 +10051,7 @@
 			)
 		)
 		(property "Description" "3V3"
-			(at 43.18 114.3 0)
+			(at 43.18 116.84 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -10405,7 +10392,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:GND")
-		(at 76.2 157.48 0)
+		(at 76.2 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10414,7 +10401,7 @@
 		(fields_autoplaced yes)
 		(uuid "322c3e87-e7a7-4f55-bf96-c9de46227372")
 		(property "Reference" "#PWR0143"
-			(at 76.2 162.56 0)
+			(at 76.2 160.02 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10423,7 +10410,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 76.2 165.1 0)
+			(at 76.2 162.56 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10432,7 +10419,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 157.48 0)
+			(at 76.2 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10441,7 +10428,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 157.48 0)
+			(at 76.2 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10450,7 +10437,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 76.2 160.655 0)
+			(at 76.2 158.115 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10613,7 +10600,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:+3V3")
-		(at 157.48 119.38 0)
+		(at 157.48 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10621,7 +10608,7 @@
 		(dnp no)
 		(uuid "3ad3550c-ccd6-488f-8ab9-28a5643662d3")
 		(property "Reference" "#PWR0132"
-			(at 157.48 132.08 0)
+			(at 157.48 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10630,7 +10617,7 @@
 			)
 		)
 		(property "Value" "POWER-+3V3"
-			(at 157.48 129.54 0)
+			(at 157.48 132.08 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10639,7 +10626,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 157.48 119.38 0)
+			(at 157.48 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10648,7 +10635,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 119.38 0)
+			(at 157.48 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10657,7 +10644,7 @@
 			)
 		)
 		(property "Description" "3V3"
-			(at 157.48 114.3 0)
+			(at 157.48 116.84 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -10926,7 +10913,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:RESISTOR-1206-10K-5P")
-		(at 149.86 124.46 0)
+		(at 149.86 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10934,7 +10921,7 @@
 		(dnp no)
 		(uuid "455f8c04-e1da-434c-ab20-39164d1b2dc0")
 		(property "Reference" "R311"
-			(at 149.225 120.65 0)
+			(at 149.225 123.19 0)
 			(effects
 				(font
 					(size 1.15 1.15)
@@ -10943,7 +10930,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 149.86 124.46 90)
+			(at 149.86 127 90)
 			(effects
 				(font
 					(size 1.15 1.15)
@@ -10951,7 +10938,7 @@
 			)
 		)
 		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
-			(at 149.86 137.16 0)
+			(at 149.86 139.7 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -10961,7 +10948,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 139.7 0)
+			(at 149.86 142.24 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10970,7 +10957,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 149.86 124.46 0)
+			(at 149.86 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10979,7 +10966,7 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 152.4 128.27 0)
+			(at 152.4 130.81 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -10990,7 +10977,7 @@
 			)
 		)
 		(property "Mouser" "660-RK73B2BTTDD103J"
-			(at 149.86 139.7 0)
+			(at 149.86 142.24 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -11149,7 +11136,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "M20 Series - 2.54mm Pitch PCB Connector"
+		(property "Description" "HEADER"
 			(at 251.46 137.16 0)
 			(effects
 				(font
@@ -11284,7 +11271,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:GND")
-		(at 167.64 157.48 0)
+		(at 167.64 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11293,7 +11280,7 @@
 		(fields_autoplaced yes)
 		(uuid "58f21bbb-74fa-4742-9087-6111a36766a3")
 		(property "Reference" "#PWR0134"
-			(at 167.64 162.56 0)
+			(at 167.64 160.02 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11302,7 +11289,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 167.64 165.1 0)
+			(at 167.64 162.56 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11311,7 +11298,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 157.48 0)
+			(at 167.64 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11320,7 +11307,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 157.48 0)
+			(at 167.64 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11329,7 +11316,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 167.64 160.655 0)
+			(at 167.64 158.115 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11351,7 +11338,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:+3V3")
-		(at 76.2 119.38 0)
+		(at 76.2 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11359,7 +11346,7 @@
 		(dnp no)
 		(uuid "592a45ef-5e92-4c96-94b0-556860ab35bb")
 		(property "Reference" "#PWR0139"
-			(at 76.2 132.08 0)
+			(at 76.2 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11368,7 +11355,7 @@
 			)
 		)
 		(property "Value" "POWER-+3V3"
-			(at 76.2 129.54 0)
+			(at 76.2 132.08 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11377,7 +11364,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 119.38 0)
+			(at 76.2 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11386,7 +11373,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 119.38 0)
+			(at 76.2 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11395,7 +11382,7 @@
 			)
 		)
 		(property "Description" "3V3"
-			(at 76.2 114.3 0)
+			(at 76.2 116.84 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -11666,7 +11653,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:RESISTOR-1206-10K-5P")
-		(at 182.88 124.46 0)
+		(at 182.88 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11674,7 +11661,7 @@
 		(dnp no)
 		(uuid "664c73c5-bddc-422e-9b5c-68a23bc28633")
 		(property "Reference" "R314"
-			(at 183.515 120.65 0)
+			(at 183.515 123.19 0)
 			(effects
 				(font
 					(size 1.15 1.15)
@@ -11683,7 +11670,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 182.88 124.46 90)
+			(at 182.88 127 90)
 			(effects
 				(font
 					(size 1.15 1.15)
@@ -11691,7 +11678,7 @@
 			)
 		)
 		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
-			(at 182.88 137.16 0)
+			(at 182.88 139.7 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -11701,7 +11688,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 139.7 0)
+			(at 182.88 142.24 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11710,7 +11697,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 182.88 124.46 0)
+			(at 182.88 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11719,7 +11706,7 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 185.42 128.27 0)
+			(at 185.42 130.81 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -11730,7 +11717,7 @@
 			)
 		)
 		(property "Mouser" "660-RK73B2BTTDD103J"
-			(at 182.88 139.7 0)
+			(at 182.88 142.24 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -11858,7 +11845,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:GND")
-		(at 58.42 157.48 0)
+		(at 58.42 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11867,7 +11854,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b4e7de2-7507-4c74-b301-59efc5900cfc")
 		(property "Reference" "#PWR0141"
-			(at 58.42 162.56 0)
+			(at 58.42 160.02 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11876,7 +11863,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 58.42 165.1 0)
+			(at 58.42 162.56 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11885,7 +11872,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 157.48 0)
+			(at 58.42 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11894,7 +11881,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 157.48 0)
+			(at 58.42 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11903,7 +11890,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 58.42 160.655 0)
+			(at 58.42 158.115 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12104,7 +12091,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:+3V3")
-		(at 226.06 119.38 0)
+		(at 226.06 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12112,7 +12099,7 @@
 		(dnp no)
 		(uuid "7813f025-44ac-4141-acc9-0659c62ec273")
 		(property "Reference" "#PWR0154"
-			(at 226.06 132.08 0)
+			(at 226.06 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12121,7 +12108,7 @@
 			)
 		)
 		(property "Value" "POWER-+3V3"
-			(at 226.06 129.54 0)
+			(at 226.06 132.08 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12130,7 +12117,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 226.06 119.38 0)
+			(at 226.06 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12139,7 +12126,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 226.06 119.38 0)
+			(at 226.06 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12148,7 +12135,7 @@
 			)
 		)
 		(property "Description" "3V3"
-			(at 226.06 114.3 0)
+			(at 226.06 116.84 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -12170,7 +12157,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:RESISTOR-1206-10K-5P")
-		(at 157.48 124.46 0)
+		(at 157.48 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12178,7 +12165,7 @@
 		(dnp no)
 		(uuid "79c9c3ec-cbfe-4c66-af16-1a4d9910a649")
 		(property "Reference" "R312"
-			(at 156.845 120.65 0)
+			(at 156.845 123.19 0)
 			(effects
 				(font
 					(size 1.15 1.15)
@@ -12187,7 +12174,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 157.48 124.46 90)
+			(at 157.48 127 90)
 			(effects
 				(font
 					(size 1.15 1.15)
@@ -12195,7 +12182,7 @@
 			)
 		)
 		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
-			(at 157.48 137.16 0)
+			(at 157.48 139.7 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -12205,7 +12192,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 139.7 0)
+			(at 157.48 142.24 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12214,7 +12201,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 157.48 124.46 0)
+			(at 157.48 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12223,7 +12210,7 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 160.02 128.27 0)
+			(at 160.02 130.81 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -12234,7 +12221,7 @@
 			)
 		)
 		(property "Mouser" "660-RK73B2BTTDD103J"
-			(at 157.48 139.7 0)
+			(at 157.48 142.24 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -12497,7 +12484,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:+3V3")
-		(at 93.98 119.38 0)
+		(at 93.98 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12505,7 +12492,7 @@
 		(dnp no)
 		(uuid "8ef91346-25c9-4015-a3e3-9f24ce026804")
 		(property "Reference" "#PWR0140"
-			(at 93.98 132.08 0)
+			(at 93.98 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12514,7 +12501,7 @@
 			)
 		)
 		(property "Value" "POWER-+3V3"
-			(at 93.98 129.54 0)
+			(at 93.98 132.08 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12523,7 +12510,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 119.38 0)
+			(at 93.98 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12532,7 +12519,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 119.38 0)
+			(at 93.98 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12541,7 +12528,7 @@
 			)
 		)
 		(property "Description" "3V3"
-			(at 93.98 114.3 0)
+			(at 93.98 116.84 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -12563,7 +12550,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:GND")
-		(at 246.38 157.48 0)
+		(at 246.38 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12572,7 +12559,7 @@
 		(fields_autoplaced yes)
 		(uuid "93f57085-e144-4171-aa6e-7f54d532ff93")
 		(property "Reference" "#PWR0155"
-			(at 246.38 162.56 0)
+			(at 246.38 160.02 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12581,7 +12568,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 246.38 165.1 0)
+			(at 246.38 162.56 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12590,7 +12577,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 157.48 0)
+			(at 246.38 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12599,7 +12586,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 157.48 0)
+			(at 246.38 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12608,7 +12595,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 246.38 160.655 0)
+			(at 246.38 158.115 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13237,7 +13224,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:GND")
-		(at 149.86 157.48 0)
+		(at 149.86 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13246,7 +13233,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac101d2c-83ca-4269-8784-b3705efcd487")
 		(property "Reference" "#PWR0135"
-			(at 149.86 162.56 0)
+			(at 149.86 160.02 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13255,7 +13242,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 149.86 165.1 0)
+			(at 149.86 162.56 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13264,7 +13251,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 157.48 0)
+			(at 149.86 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13273,7 +13260,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 157.48 0)
+			(at 149.86 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13282,7 +13269,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 149.86 160.655 0)
+			(at 149.86 158.115 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13815,7 +13802,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:GND")
-		(at 43.18 157.48 0)
+		(at 43.18 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13824,7 +13811,7 @@
 		(fields_autoplaced yes)
 		(uuid "c510faf5-376b-4e68-9c55-20438cea3ba7")
 		(property "Reference" "#PWR0138"
-			(at 43.18 162.56 0)
+			(at 43.18 160.02 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13833,7 +13820,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 43.18 165.1 0)
+			(at 43.18 162.56 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13842,7 +13829,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 157.48 0)
+			(at 43.18 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13851,7 +13838,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 157.48 0)
+			(at 43.18 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13860,7 +13847,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 43.18 160.655 0)
+			(at 43.18 158.115 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13882,7 +13869,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:GND")
-		(at 93.98 157.48 0)
+		(at 93.98 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13891,7 +13878,7 @@
 		(fields_autoplaced yes)
 		(uuid "c566dcb4-a71d-4701-a35c-2be0ed80b5cd")
 		(property "Reference" "#PWR0142"
-			(at 93.98 162.56 0)
+			(at 93.98 160.02 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13900,7 +13887,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 93.98 165.1 0)
+			(at 93.98 162.56 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13909,7 +13896,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 157.48 0)
+			(at 93.98 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13918,7 +13905,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 157.48 0)
+			(at 93.98 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13927,7 +13914,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 93.98 160.655 0)
+			(at 93.98 158.115 0)
 			(effects
 				(font
 					(size 1 1)
@@ -14237,7 +14224,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:GND")
-		(at 226.06 157.48 0)
+		(at 226.06 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14246,7 +14233,7 @@
 		(fields_autoplaced yes)
 		(uuid "d6459878-9fb8-4693-895b-d5bf6347836b")
 		(property "Reference" "#PWR0156"
-			(at 226.06 162.56 0)
+			(at 226.06 160.02 0)
 			(effects
 				(font
 					(size 1 1)
@@ -14255,7 +14242,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 226.06 165.1 0)
+			(at 226.06 162.56 0)
 			(effects
 				(font
 					(size 1 1)
@@ -14264,7 +14251,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 226.06 157.48 0)
+			(at 226.06 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -14273,7 +14260,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 226.06 157.48 0)
+			(at 226.06 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -14282,7 +14269,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 226.06 160.655 0)
+			(at 226.06 158.115 0)
 			(effects
 				(font
 					(size 1 1)
@@ -14639,7 +14626,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:+3V3")
-		(at 58.42 119.38 0)
+		(at 58.42 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14647,7 +14634,7 @@
 		(dnp no)
 		(uuid "e0acd20b-5f6a-4e82-a847-dafec710c766")
 		(property "Reference" "#PWR0144"
-			(at 58.42 132.08 0)
+			(at 58.42 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -14656,7 +14643,7 @@
 			)
 		)
 		(property "Value" "POWER-+3V3"
-			(at 58.42 129.54 0)
+			(at 58.42 132.08 0)
 			(effects
 				(font
 					(size 1 1)
@@ -14665,7 +14652,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 119.38 0)
+			(at 58.42 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -14674,7 +14661,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 119.38 0)
+			(at 58.42 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -14683,7 +14670,7 @@
 			)
 		)
 		(property "Description" "3V3"
-			(at 58.42 114.3 0)
+			(at 58.42 116.84 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -15123,7 +15110,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:GND")
-		(at 182.88 157.48 0)
+		(at 182.88 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15132,7 +15119,7 @@
 		(fields_autoplaced yes)
 		(uuid "f14686ab-c3ea-47d0-88b2-9a3243f11c86")
 		(property "Reference" "#PWR0137"
-			(at 182.88 162.56 0)
+			(at 182.88 160.02 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15141,7 +15128,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 182.88 165.1 0)
+			(at 182.88 162.56 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15150,7 +15137,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 157.48 0)
+			(at 182.88 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15159,7 +15146,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 157.48 0)
+			(at 182.88 154.94 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15168,7 +15155,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 182.88 160.655 0)
+			(at 182.88 158.115 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15292,7 +15279,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:+3V3")
-		(at 182.88 119.38 0)
+		(at 182.88 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15300,7 +15287,7 @@
 		(dnp no)
 		(uuid "f75f617f-fff3-4822-b40a-96e3c4182b65")
 		(property "Reference" "#PWR0131"
-			(at 182.88 132.08 0)
+			(at 182.88 134.62 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15309,7 +15296,7 @@
 			)
 		)
 		(property "Value" "POWER-+3V3"
-			(at 182.88 129.54 0)
+			(at 182.88 132.08 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15318,7 +15305,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 119.38 0)
+			(at 182.88 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15327,7 +15314,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 119.38 0)
+			(at 182.88 121.92 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15336,7 +15323,7 @@
 			)
 		)
 		(property "Description" "3V3"
-			(at 182.88 114.3 0)
+			(at 182.88 116.84 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
