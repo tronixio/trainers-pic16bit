@@ -5440,7 +5440,7 @@
 		)
 		(uuid "cf297969-0824-4fea-8637-56f5535ee3d9")
 	)
-	(text "5V MAX"
+	(text "5VDC MAX"
 		(exclude_from_sim no)
 		(at 57.785 187.96 0)
 		(effects

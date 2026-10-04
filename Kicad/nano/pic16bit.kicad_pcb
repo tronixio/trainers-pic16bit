@@ -1402,7 +1402,7 @@
 	(footprint "tronixio:HARWIN-M22-190-19X"
 		(layer "F.Cu")
 		(uuid "31ff6a32-1a6c-4736-a233-d43cb1ea8968")
-		(at 154.12 104.25)
+		(at 162.5 90)
 		(property "Reference" "H2"
 			(at 0 1 0)
 			(layer "F.Fab")
@@ -2286,7 +2286,7 @@
 	(footprint "tronixio:HARWIN-M22-190-19X"
 		(layer "F.Cu")
 		(uuid "43b98334-d97b-455f-9f73-58260fd4973e")
-		(at 149 104.25)
+		(at 162.5 95)
 		(property "Reference" "H1"
 			(at 0 1 0)
 			(layer "F.Fab")
@@ -12150,17 +12150,6 @@
 		(at 145.5 61 0)
 		(layer "F.SilkS")
 		(uuid "213729d2-3801-4ca2-bddd-283cd97e2c63")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.1)
-			)
-		)
-	)
-	(gr_text "JLCJLCJLCJLC"
-		(at 145.5 75.235 0)
-		(layer "F.SilkS")
-		(uuid "eb97730c-693f-44a7-a5c4-6f12ad38b156")
 		(effects
 			(font
 				(size 0.8 0.8)

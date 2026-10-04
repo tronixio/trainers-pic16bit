@@ -7197,149 +7197,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "tronixio:RESISTOR-1206-1K-5P"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0.635 3.81 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.15 1.15)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "1k"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.15 1.15)
-					)
-				)
-			)
-			(property "Footprint" "tronixio:RESISTOR-SMD-1206"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1 1)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1 1)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1 1)
-					)
-				)
-			)
-			(property "Tolerance" "5%"
-				(at 0.635 -3.81 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.15 1.15)
-					)
-					(justify left)
-				)
-			)
-			(property "Mouser" "660-RK73B2BTTDD102J"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1 1)
-					)
-				)
-			)
-			(symbol "RESISTOR-1206-1K-5P_0_1"
-				(rectangle
-					(start -1.27 -2.54)
-					(end 1.27 2.54)
-					(stroke
-						(width 0.4)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "RESISTOR-1206-1K-5P_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "tronixio:RESISTOR-1206-2K4-5P"
 			(pin_numbers
 				(hide yes)
@@ -7660,6 +7517,17 @@
 		)
 		(uuid "1c695f39-79a0-48f3-af11-400c038d8c35")
 	)
+	(text "Notes:\n- CAT4002A (VL08)\n- Ibckl: (125 * 0.6) / 2400 = ~30mA."
+		(exclude_from_sim no)
+		(at 180.975 174.625 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1dd64b1e-f1b0-407f-9f9e-d2e596ff942b")
+	)
 	(text "ROTARY A"
 		(exclude_from_sim no)
 		(at 254 140.97 0)
@@ -7761,7 +7629,7 @@
 	)
 	(text "EN"
 		(exclude_from_sim no)
-		(at 107.315 58.42 0)
+		(at 104.775 58.42 0)
 		(effects
 			(font
 				(size 1.15 1.15)
@@ -7791,17 +7659,6 @@
 			(justify left bottom)
 		)
 		(uuid "d16101ae-178f-4937-9748-318ae1c3f72c")
-	)
-	(text "Notes:\n- Ibckl ~30mA = (125 * 0.6) / 2400"
-		(exclude_from_sim no)
-		(at 181.61 173.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e2a3e90c-fb39-4076-b0b5-9e6d20a5a455")
 	)
 	(junction
 		(at 43.18 142.24)
@@ -7918,7 +7775,7 @@
 		(uuid "d6eb8a31-2203-4e89-8100-a1fa336b9826")
 	)
 	(junction
-		(at 109.22 66.04)
+		(at 106.68 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e4595158-a16e-4f32-b5bd-8d95daa29e4a")
@@ -7930,7 +7787,7 @@
 		(uuid "ebca7c5e-ae52-43e5-ac6c-69a96a9a5b24")
 	)
 	(junction
-		(at 116.84 63.5)
+		(at 114.3 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f3044f68-903d-4063-b253-30d8e3a83eae")
@@ -7940,7 +7797,7 @@
 		(uuid "548c32d8-d6d2-47e0-bf93-c29394739df3")
 	)
 	(no_connect
-		(at 139.7 66.04)
+		(at 137.16 66.04)
 		(uuid "74f164ee-fb3e-45b0-82dd-5e727be0a1d7")
 	)
 	(no_connect
@@ -7979,7 +7836,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 48.26) (xy 109.22 50.8)
+			(xy 106.68 48.26) (xy 106.68 50.8)
 		)
 		(stroke
 			(width 0)
@@ -8109,7 +7966,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 68.58) (xy 121.92 81.28)
+			(xy 119.38 68.58) (xy 119.38 81.28)
 		)
 		(stroke
 			(width 0)
@@ -8119,7 +7976,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 68.58) (xy 121.92 68.58)
+			(xy 121.92 68.58) (xy 119.38 68.58)
 		)
 		(stroke
 			(width 0)
@@ -8199,7 +8056,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 60.96) (xy 109.22 66.04)
+			(xy 106.68 60.96) (xy 106.68 66.04)
 		)
 		(stroke
 			(width 0)
@@ -8219,7 +8076,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 66.04) (xy 109.22 66.04)
+			(xy 121.92 66.04) (xy 106.68 66.04)
 		)
 		(stroke
 			(width 0)
@@ -8249,7 +8106,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 66.04) (xy 109.22 71.12)
+			(xy 106.68 66.04) (xy 106.68 71.12)
 		)
 		(stroke
 			(width 0)
@@ -8339,7 +8196,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 63.5) (xy 124.46 63.5)
+			(xy 114.3 63.5) (xy 121.92 63.5)
 		)
 		(stroke
 			(width 0)
@@ -8779,7 +8636,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 78.74) (xy 116.84 81.28)
+			(xy 114.3 78.74) (xy 114.3 81.28)
 		)
 		(stroke
 			(width 0)
@@ -8859,7 +8716,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 68.58) (xy 142.24 71.12)
+			(xy 139.7 68.58) (xy 139.7 71.12)
 		)
 		(stroke
 			(width 0)
@@ -9059,7 +8916,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 63.5) (xy 144.78 63.5)
+			(xy 137.16 63.5) (xy 142.24 63.5)
 		)
 		(stroke
 			(width 0)
@@ -9069,7 +8926,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 48.26) (xy 116.84 63.5)
+			(xy 114.3 48.26) (xy 114.3 63.5)
 		)
 		(stroke
 			(width 0)
@@ -9079,7 +8936,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 63.5) (xy 116.84 73.66)
+			(xy 114.3 63.5) (xy 114.3 73.66)
 		)
 		(stroke
 			(width 0)
@@ -9099,7 +8956,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 68.58) (xy 142.24 68.58)
+			(xy 137.16 68.58) (xy 139.7 68.58)
 		)
 		(stroke
 			(width 0)
@@ -9169,7 +9026,7 @@
 	)
 	(global_label "BCKL"
 		(shape output)
-		(at 144.78 63.5 0)
+		(at 142.24 63.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9179,7 +9036,7 @@
 		)
 		(uuid "18291bc1-1f1a-4fb4-b787-24b621126155")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.8114 63.425 0)
+			(at 149.2714 63.425 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9449,7 +9306,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:GND")
-		(at 121.92 81.28 0)
+		(at 119.38 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9460,7 +9317,7 @@
 		(fields_autoplaced yes)
 		(uuid "01ef46b0-7257-42c7-93a7-e3bf64a6b326")
 		(property "Reference" "#PWR0162"
-			(at 121.92 86.36 0)
+			(at 119.38 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9471,7 +9328,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 121.92 88.9 0)
+			(at 119.38 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9482,7 +9339,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 121.92 81.28 0)
+			(at 119.38 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9493,7 +9350,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 81.28 0)
+			(at 119.38 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9504,7 +9361,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 121.92 84.455 0)
+			(at 119.38 84.455 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9720,108 +9577,6 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:RESISTOR-1206-1K-5P")
-		(at 83.82 129.54 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "06e9f46f-7e4c-4bed-b773-9e488e693926")
-		(property "Reference" "R306"
-			(at 83.82 127 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 83.82 129.54 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-			)
-		)
-		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
-			(at 96.52 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 83.82 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "5%"
-			(at 87.63 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-				(justify left)
-			)
-		)
-		(property "Mouser" "660-RK73B2BTTDD102J"
-			(at 99.06 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "40e38bda-36d2-4764-b793-a2074f3bcfe2")
-		)
-		(pin "2"
-			(uuid "ed90df45-da5d-46a3-8eaf-9b42be37be7c")
-		)
-		(instances
-			(project "pic16bit"
-				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
-					(reference "R306")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tronixio:HARWIN-254-M-1X02-JUMPER-VERTICAL")
 		(at 236.22 55.88 90)
 		(unit 1)
@@ -9992,7 +9747,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:GND")
-		(at 109.22 81.28 0)
+		(at 106.68 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10003,7 +9758,7 @@
 		(fields_autoplaced yes)
 		(uuid "0cd77f7d-d460-4f33-acea-ec52b8800920")
 		(property "Reference" "#PWR0161"
-			(at 109.22 86.36 0)
+			(at 106.68 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10014,7 +9769,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 109.22 88.9 0)
+			(at 106.68 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10025,7 +9780,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 81.28 0)
+			(at 106.68 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10036,7 +9791,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 81.28 0)
+			(at 106.68 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10047,7 +9802,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 109.22 84.455 0)
+			(at 106.68 84.455 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10071,7 +9826,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:GND")
-		(at 116.84 81.28 0)
+		(at 114.3 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10082,7 +9837,7 @@
 		(fields_autoplaced yes)
 		(uuid "128b4e1e-1320-4179-ae4e-c80167118095")
 		(property "Reference" "#PWR0160"
-			(at 116.84 86.36 0)
+			(at 114.3 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10093,7 +9848,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 116.84 88.9 0)
+			(at 114.3 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10104,7 +9859,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 81.28 0)
+			(at 114.3 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10115,7 +9870,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 81.28 0)
+			(at 114.3 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10126,7 +9881,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 116.84 84.455 0)
+			(at 114.3 84.455 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10250,7 +10005,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:CAPACITOR-1206-1U-16V-10P-X7R")
-		(at 116.84 76.2 0)
+		(at 114.3 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10260,7 +10015,7 @@
 		(dnp no)
 		(uuid "185c7dd3-5c0a-4465-b8e0-64f820a0619c")
 		(property "Reference" "C304"
-			(at 116.205 73.66 0)
+			(at 113.665 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10271,7 +10026,7 @@
 			)
 		)
 		(property "Value" "1µ"
-			(at 116.205 78.74 0)
+			(at 113.665 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10282,7 +10037,7 @@
 			)
 		)
 		(property "Footprint" "tronixio:CAPACITOR-SMD-1206"
-			(at 116.84 86.36 0)
+			(at 114.3 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10293,7 +10048,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 78.74 0)
+			(at 114.3 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10304,7 +10059,7 @@
 			)
 		)
 		(property "Description" "Unpolarized Capacitor"
-			(at 116.84 76.2 0)
+			(at 114.3 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10315,7 +10070,7 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 117.475 81.28 0)
+			(at 114.935 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10327,7 +10082,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 117.475 83.82 0)
+			(at 114.935 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10339,7 +10094,7 @@
 			)
 		)
 		(property "Mouser" "80-C1206C105K4R"
-			(at 116.84 88.9 0)
+			(at 114.3 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10599,7 +10354,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:+5V")
-		(at 116.84 48.26 0)
+		(at 114.3 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10609,7 +10364,7 @@
 		(dnp no)
 		(uuid "24b855cd-9eac-47ee-9521-7d0e622922ce")
 		(property "Reference" "#PWR0157"
-			(at 116.84 58.42 0)
+			(at 114.3 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10620,7 +10375,7 @@
 			)
 		)
 		(property "Value" "POWER-+5V"
-			(at 116.84 60.96 0)
+			(at 114.3 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10631,7 +10386,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 48.26 0)
+			(at 114.3 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10642,7 +10397,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 48.26 0)
+			(at 114.3 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10653,7 +10408,7 @@
 			)
 		)
 		(property "Description" "5V"
-			(at 116.84 43.18 0)
+			(at 114.3 43.18 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -10783,7 +10538,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:ONSEMI-CAT4002A-SC")
-		(at 124.46 63.5 0)
+		(at 121.92 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10793,7 +10548,7 @@
 		(dnp no)
 		(uuid "2a18c81a-56c3-4e70-b384-8772ef4752eb")
 		(property "Reference" "U301"
-			(at 132.08 59.69 0)
+			(at 129.54 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10803,7 +10558,7 @@
 			)
 		)
 		(property "Value" "CAT4002A"
-			(at 132.08 72.39 0)
+			(at 129.54 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10813,7 +10568,7 @@
 			)
 		)
 		(property "Footprint" "tronixio:SC-70-6"
-			(at 132.08 76.2 0)
+			(at 129.54 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10824,7 +10579,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/cat4002a-d.pdf"
-			(at 132.08 78.74 0)
+			(at 129.54 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10835,7 +10590,7 @@
 			)
 		)
 		(property "Description" "Constant Current LED Driver with 32 Dimming Levels and Rset"
-			(at 132.08 81.28 0)
+			(at 129.54 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10846,7 +10601,7 @@
 			)
 		)
 		(property "Mouser" "863-CAT4002ASD-GT3"
-			(at 132.08 83.82 0)
+			(at 129.54 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11387,7 +11142,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:RESISTOR-1206-10K-5P")
-		(at 109.22 76.2 0)
+		(at 106.68 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11397,7 +11152,7 @@
 		(dnp no)
 		(uuid "45472bb6-324f-458e-9081-e3a7656dc643")
 		(property "Reference" "R307"
-			(at 108.585 72.39 0)
+			(at 106.045 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11408,7 +11163,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 109.22 76.2 90)
+			(at 106.68 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11418,7 +11173,7 @@
 			)
 		)
 		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
-			(at 109.22 88.9 0)
+			(at 106.68 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11429,7 +11184,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 91.44 0)
+			(at 106.68 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11440,7 +11195,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 109.22 76.2 0)
+			(at 106.68 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11451,7 +11206,7 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 111.76 80.01 0)
+			(at 109.22 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11463,7 +11218,7 @@
 			)
 		)
 		(property "Mouser" "660-RK73B2BTTDD103J"
-			(at 109.22 91.44 0)
+			(at 106.68 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11586,108 +11341,6 @@
 			(project "pic16bit"
 				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
 					(reference "R311")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "tronixio:RESISTOR-1206-1K-5P")
-		(at 236.22 137.16 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4790101c-700d-40cb-8e55-6b2a24c43566")
-		(property "Reference" "R320"
-			(at 236.22 134.62 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 236.22 137.16 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-			)
-		)
-		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
-			(at 248.92 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 251.46 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 236.22 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "5%"
-			(at 240.03 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-				(justify left)
-			)
-		)
-		(property "Mouser" "660-RK73B2BTTDD102J"
-			(at 251.46 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fabd5432-6ee7-4b1a-a3d4-327382ca0127")
-		)
-		(pin "2"
-			(uuid "519b453f-90f0-4fc5-bc11-f6c972cc227d")
-		)
-		(instances
-			(project "pic16bit"
-				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
-					(reference "R320")
 					(unit 1)
 				)
 			)
@@ -12144,7 +11797,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:+5V")
-		(at 109.22 48.26 0)
+		(at 106.68 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12154,7 +11807,7 @@
 		(dnp no)
 		(uuid "5cf7d906-9c67-4203-8dcd-4ea87141ca1b")
 		(property "Reference" "#PWR0158"
-			(at 109.22 58.42 0)
+			(at 106.68 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12165,7 +11818,7 @@
 			)
 		)
 		(property "Value" "POWER-+5V"
-			(at 109.22 60.96 0)
+			(at 106.68 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12176,7 +11829,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 48.26 0)
+			(at 106.68 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12187,7 +11840,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 48.26 0)
+			(at 106.68 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12198,7 +11851,7 @@
 			)
 		)
 		(property "Description" "5V"
-			(at 109.22 43.18 0)
+			(at 106.68 43.18 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -12555,6 +12208,108 @@
 		)
 	)
 	(symbol
+		(lib_id "tronixio:RESISTOR-1206-10K-5P")
+		(at 83.82 129.54 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "683e1fa5-1811-45bb-b2b6-d8e68cf5086b")
+		(property "Reference" "R323"
+			(at 83.82 127 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 83.82 129.54 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
+			(at 96.52 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 83.82 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 87.63 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Mouser" "660-RK73B2BTTDD103J"
+			(at 99.06 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "95886938-d47b-45b2-a345-40b3cf6894a9")
+		)
+		(pin "2"
+			(uuid "2f8d260e-a6d3-4127-bcdd-746da96f9467")
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
+					(reference "R323")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tronixio:GND")
 		(at 58.42 154.94 0)
 		(unit 1)
@@ -12628,108 +12383,6 @@
 			(project "pic16bit"
 				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
 					(reference "#PWR0141")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "tronixio:RESISTOR-1206-1K-5P")
-		(at 50.8 137.16 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "72591d40-dd00-4777-af3d-d80c5cac85f3")
-		(property "Reference" "R302"
-			(at 50.8 134.62 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 50.8 137.16 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-			)
-		)
-		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
-			(at 63.5 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 50.8 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "5%"
-			(at 54.61 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-				(justify left)
-			)
-		)
-		(property "Mouser" "660-RK73B2BTTDD102J"
-			(at 66.04 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e33fd815-71ce-482b-b408-15a1dc2cc1f5")
-		)
-		(pin "2"
-			(uuid "0959c663-40a9-40b8-9f9e-043323b584c2")
-		)
-		(instances
-			(project "pic16bit"
-				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
-					(reference "R302")
 					(unit 1)
 				)
 			)
@@ -13019,6 +12672,108 @@
 		)
 	)
 	(symbol
+		(lib_id "tronixio:RESISTOR-1206-10K-5P")
+		(at 50.8 137.16 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c0febc2-0932-4397-aac1-d045a5f7d084")
+		(property "Reference" "R321"
+			(at 50.8 134.62 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 50.8 137.16 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
+			(at 63.5 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 50.8 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 54.61 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Mouser" "660-RK73B2BTTDD103J"
+			(at 66.04 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d51ed31e-b593-4a1c-9052-6cf1dbcc5408")
+		)
+		(pin "2"
+			(uuid "2f5b2094-031a-4df9-93a6-36c1cfa0d64a")
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
+					(reference "R321")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tronixio:+3V3")
 		(at 203.2 38.1 0)
 		(unit 1)
@@ -13090,108 +12845,6 @@
 			(project "pic16bit"
 				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
 					(reference "#PWR0150")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "tronixio:RESISTOR-1206-1K-5P")
-		(at 68.58 139.7 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8506ac1c-c638-4004-aaf3-6231f2fd9cb5")
-		(property "Reference" "R305"
-			(at 68.58 142.24 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 68.58 139.7 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-			)
-		)
-		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
-			(at 81.28 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 68.58 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "5%"
-			(at 72.39 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-				(justify left)
-			)
-		)
-		(property "Mouser" "660-RK73B2BTTDD102J"
-			(at 83.82 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fdffca22-d2a1-4ee9-ad75-b45afbe6228c")
-		)
-		(pin "2"
-			(uuid "376e2cc3-0e09-43e8-94a8-005a00c9be5c")
-		)
-		(instances
-			(project "pic16bit"
-				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
-					(reference "R305")
 					(unit 1)
 				)
 			)
@@ -14416,6 +14069,108 @@
 	)
 	(symbol
 		(lib_id "tronixio:RESISTOR-1206-10K-5P")
+		(at 190.5 139.7 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b9c51926-c0b9-4225-84fa-2035a296451e")
+		(property "Reference" "R325"
+			(at 190.5 137.16 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 190.5 139.7 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
+			(at 203.2 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 190.5 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 194.31 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Mouser" "660-RK73B2BTTDD103J"
+			(at 205.74 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "410eaeef-1dbc-4cde-a7c4-b5f6f7047b05")
+		)
+		(pin "2"
+			(uuid "33f9185c-56b4-48bd-b12d-e24a035656e6")
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
+					(reference "R325")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tronixio:RESISTOR-1206-10K-5P")
 		(at 210.82 43.18 0)
 		(unit 1)
 		(body_style 1)
@@ -14700,8 +14455,8 @@
 		)
 	)
 	(symbol
-		(lib_id "tronixio:RESISTOR-1206-2K4-5P")
-		(at 142.24 76.2 0)
+		(lib_id "tronixio:RESISTOR-1206-10K-5P")
+		(at 68.58 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14709,20 +14464,19 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c0c29c26-bf3e-4c51-9e2e-c56140cbf94a")
-		(property "Reference" "R308"
-			(at 142.875 72.39 0)
+		(uuid "bfbd9d7f-a1de-4b3c-a050-8525c51f909b")
+		(property "Reference" "R322"
+			(at 68.58 142.24 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.15 1.15)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "2K4"
-			(at 142.24 76.2 90)
+		(property "Value" "10K"
+			(at 68.58 139.7 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14732,7 +14486,7 @@
 			)
 		)
 		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
-			(at 142.24 88.9 0)
+			(at 81.28 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14743,7 +14497,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 91.44 0)
+			(at 83.82 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14754,7 +14508,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 142.24 76.2 0)
+			(at 68.58 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14765,7 +14519,110 @@
 			)
 		)
 		(property "Tolerance" "5%"
-			(at 144.78 80.01 0)
+			(at 72.39 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Mouser" "660-RK73B2BTTDD103J"
+			(at 83.82 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6bf64178-8e70-4410-aaf1-c4fca5a59a88")
+		)
+		(pin "2"
+			(uuid "d5865a93-6e09-469d-935b-6fa0946ca6ba")
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
+					(reference "R322")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tronixio:RESISTOR-1206-2K4-5P")
+		(at 139.7 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c0c29c26-bf3e-4c51-9e2e-c56140cbf94a")
+		(property "Reference" "R308"
+			(at 140.335 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2K4"
+			(at 139.7 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
+			(at 139.7 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 139.7 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 142.24 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14777,7 +14634,7 @@
 			)
 		)
 		(property "Mouser" "660-RK73B2BTTDD242J"
-			(at 142.24 91.44 0)
+			(at 139.7 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15217,8 +15074,110 @@
 		)
 	)
 	(symbol
+		(lib_id "tronixio:RESISTOR-1206-10K-5P")
+		(at 236.22 137.16 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cfd08f14-c2ba-4fc3-aee2-487ba2cdc879")
+		(property "Reference" "R326"
+			(at 236.22 134.62 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 236.22 137.16 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
+			(at 248.92 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 236.22 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 240.03 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Mouser" "660-RK73B2BTTDD103J"
+			(at 251.46 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb81ff7f-4494-44d7-93ad-cbfaa759228f")
+		)
+		(pin "2"
+			(uuid "9147865a-aa7d-4c72-9d30-d6084118493a")
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
+					(reference "R326")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tronixio:GND")
-		(at 142.24 81.28 0)
+		(at 139.7 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15229,7 +15188,7 @@
 		(fields_autoplaced yes)
 		(uuid "d59cfc5b-056f-48c6-8b60-5ee90ae3be5c")
 		(property "Reference" "#PWR0159"
-			(at 142.24 86.36 0)
+			(at 139.7 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15240,7 +15199,7 @@
 			)
 		)
 		(property "Value" "POWER-GND"
-			(at 142.24 88.9 0)
+			(at 139.7 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15251,7 +15210,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 81.28 0)
+			(at 139.7 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15262,7 +15221,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 81.28 0)
+			(at 139.7 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15273,7 +15232,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 142.24 84.455 0)
+			(at 139.7 84.455 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15369,108 +15328,6 @@
 			(project "pic16bit"
 				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
 					(reference "#PWR0156")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "tronixio:RESISTOR-1206-1K-5P")
-		(at 142.24 134.62 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d7c3e985-bc82-4d7c-8d2e-533d7ecfd562")
-		(property "Reference" "R309"
-			(at 142.24 132.08 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 142.24 134.62 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-			)
-		)
-		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
-			(at 154.94 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 142.24 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "5%"
-			(at 146.05 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-				(justify left)
-			)
-		)
-		(property "Mouser" "660-RK73B2BTTDD102J"
-			(at 157.48 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "334d0bfc-2c2a-4911-8ad6-852265874f06")
-		)
-		(pin "2"
-			(uuid "2b31019c-5f4c-4e99-a1d5-5b9977c610fa")
-		)
-		(instances
-			(project "pic16bit"
-				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
-					(reference "R309")
 					(unit 1)
 				)
 			)
@@ -15586,6 +15443,108 @@
 		)
 	)
 	(symbol
+		(lib_id "tronixio:RESISTOR-1206-10K-5P")
+		(at 142.24 134.62 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d901edcd-c4f2-4820-be60-ff03e071a7a5")
+		(property "Reference" "R324"
+			(at 142.24 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 142.24 134.62 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+			)
+		)
+		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
+			(at 154.94 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 142.24 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 146.05 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.15 1.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Mouser" "660-RK73B2BTTDD103J"
+			(at 157.48 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "72f75754-03a0-4673-97f2-110c2d6785c1")
+		)
+		(pin "2"
+			(uuid "23b3706a-c3c2-47da-ad23-b469b605a9f4")
+		)
+		(instances
+			(project "pic16bit"
+				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
+					(reference "R324")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tronixio:+3V3")
 		(at 226.06 38.1 0)
 		(unit 1)
@@ -15664,7 +15623,7 @@
 	)
 	(symbol
 		(lib_id "tronixio:HARWIN-254-M-1X02-JUMPER-VERTICAL")
-		(at 109.22 55.88 0)
+		(at 106.68 55.88 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -15675,7 +15634,7 @@
 		(dnp no)
 		(uuid "decd714e-c32f-40e5-b629-c0d4257717ea")
 		(property "Reference" "JP301"
-			(at 108.585 52.07 0)
+			(at 106.045 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15686,7 +15645,7 @@
 			)
 		)
 		(property "Value" "BCKL"
-			(at 108.585 59.69 0)
+			(at 106.045 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15697,7 +15656,7 @@
 			)
 		)
 		(property "Footprint" "tronixio:HARWIN-M20-999024x"
-			(at 109.22 68.58 0)
+			(at 106.68 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15708,7 +15667,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.harwin.com/products/M20-9990246/"
-			(at 109.22 71.12 0)
+			(at 106.68 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15719,7 +15678,7 @@
 			)
 		)
 		(property "Description" "M20 Series - 2.54mm Pitch PCB Connector"
-			(at 109.22 55.88 0)
+			(at 106.68 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15730,7 +15689,7 @@
 			)
 		)
 		(property "Mouser" "855-M20-999024"
-			(at 109.22 73.66 0)
+			(at 106.68 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15904,108 +15863,6 @@
 			(project "pic16bit"
 				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
 					(reference "#PWR0126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "tronixio:RESISTOR-1206-10K-5P")
-		(at 190.5 139.7 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e60ba7f3-9b7c-4420-8c63-5afe6c50232c")
-		(property "Reference" "R315"
-			(at 190.5 137.16 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 190.5 139.7 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-			)
-		)
-		(property "Footprint" "tronixio:RESISTOR-SMD-1206"
-			(at 203.2 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 190.5 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "5%"
-			(at 194.31 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.15 1.15)
-				)
-				(justify left)
-			)
-		)
-		(property "Mouser" "660-RK73B2BTTDD103J"
-			(at 205.74 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2c72444d-fc28-47a3-b9b5-e4460ebc2d95")
-		)
-		(pin "2"
-			(uuid "d5412043-d004-4fe0-b6e0-cbc891166d4f")
-		)
-		(instances
-			(project "pic16bit"
-				(path "/d431d485-8cd8-4e00-afcd-f39218d614ca/8cdf8b92-b881-481d-a85a-c0055e9a856b"
-					(reference "R315")
 					(unit 1)
 				)
 			)
